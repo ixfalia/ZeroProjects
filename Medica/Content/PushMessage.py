@@ -11,6 +11,7 @@ class PushMessage:
         Zero.Connect(self.Owner, Events.CollisionPersisted, self.onCollisionPersist)
         Zero.Connect(self.Owner, Events.CollisionEnded, self.onCollisionEnd)
         Zero.Connect(self.Space, "PushDelete", self.onPushDelete)
+        #Zero.Connect(self.Space, Events.LogicUpdate, self.onUpdate)
         
         self.Velocity = VectorMath.Vec3(0,6,0)
         
@@ -71,6 +72,9 @@ class PushMessage:
         Action.Delay(seq, self.Owner.Fader.FadeOutDuration)
         Action.Call(seq, self.Space.DispatchEvent, ("PushDelete", e))
     
+    def onUpdate(self, e):
+        self.Owner.RigidBody.Velocity = self.Velocity
+    
     def onCollisionPersist(self, e):
         other = e.OtherObject
         
@@ -78,7 +82,7 @@ class PushMessage:
             return
         
         if other.PushMessage:
-            if self.Item and other.PushMessage.Item == self.Item:
+            if other.PushMessage.Item == self.Item:
                 text = self.Owner.FindChildByName("entryText")
                 
                 if self.Amount and other.PushMessage.Amount:

@@ -5,8 +5,10 @@ import VectorMath
 
 import math
 
+Vec3 = VectorMath.Vec3
+
 class Rotator:
-    Disabled = Property.Bool(default = False)
+    Active = Property.Bool( default = True )
     
     RotateX = Property.Bool( default = False )
     RotatorX = Property.Float( default = 0.0 )
@@ -20,13 +22,16 @@ class Rotator:
     
     def Initialize(self, initializer):
         Zero.Connect(self.Space, Events.LogicUpdate, self.onUpdate)
+        Zero.Connect(self.Owner, "ToggleRotation", self.onRotToggle)
         
         self.Timer = 0.0
         self.negator = 1.0
-        self.StartingRotation = self.Owner.Transform.Rotation
+        
+        #debug
+        self.Active = False;
     
     def onUpdate(self, Event):
-        if self.Disabled:
+        if not self.Active:
             return
         
         NormalizedTime = Event.Dt * 0.5
@@ -45,23 +50,26 @@ class Rotator:
         #########################################
         
         if self.RotateX:
-            self.Owner.Transform.RotateByAnglesXYZ( self.negator * self.RotatorX * NormalizedTime, 0, 0 )
+            vecAxis = Vec3(1, 0, 0);
+            angle = self.negator * self.RotatorX * math.pi * self.Timer;
+            self.Owner.Transform.Rotation = VectorMath.Quat.AxisAngle(vecAxis, angle);
         
         if self.RotateY:
-            self.Owner.Transform.RotateByAnglesXYZ( 0, self.negator * self.RotatorY * NormalizedTime, 0 )
+            vecAxis = Vec3(0, 1, 0);
+            angle = self.negator * self.RotatorY * math.pi * self.Timer;
+            self.Owner.Transform.Rotation = VectorMath.Quat.AxisAngle(vecAxis, angle);
         
         if self.RotateZ:
-            self.Owner.Transform.RotateByAnglesXYZ( 0, 0, self.negator * self.RotatorZ * NormalizedTime )
+            vecAxis = Vec3(0, 0, 1);
+            angle = self.negator * self.RotatorZ * math.pi * self.Timer;
+            angle = self.negator * math.radians(self.RotatorZ * 360) * self.Timer;
+            self.Owner.Transform.Rotation = VectorMath.Quat.AxisAngle(vecAxis, angle);
+            #self.Owner.Transform.Translation = self.Owner.Transform.Rotation.rotate(Vec3(5, 0, 0))
     #enddef
     
-    def Disable(self):
-        self.Disabled = True
+    def onRotToggle(self, tEvent):
+        self.Active = not self.Active
     
-    def Enable(self):
-        self.Disabled = False
-    
-    def resetRotation(self):
-        self.Owner.Transform.Rotation = self.StartingRotation
 #endclass
 
 Zero.RegisterComponent("Rotator", Rotator)

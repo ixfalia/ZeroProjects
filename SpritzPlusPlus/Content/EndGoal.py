@@ -27,7 +27,7 @@ class EndGoal:
     #end init()
     
     def onEvent(self, eEvent):
-        #gSpace = Zero.Game.FindSpaceByName("GameSpace")
+        gSpace = Zero.Game.FindSpaceByName("GameSpace")
         #Zero.Game.LevelManager.loadNextLevel()
         
         EndEvent = Zero.ScriptEvent()
@@ -38,7 +38,7 @@ class EndGoal:
         
         seq = Action.Sequence(self.Owner)
         Action.Delay(seq, self.LevelTransitionDelay)
-        Action.Call(seq, Zero.Game.LevelManager.loadLevelSelect)
+        Action.Call(seq, Zero.Game.LevelManager.loadNextLevel)
         #gSpace.LevelManager.loadNextLevel()
         #raise
     #onEvent()

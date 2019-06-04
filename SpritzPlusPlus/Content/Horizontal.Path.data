@@ -2,11 +2,11 @@ Path =
 {
 	Vec3 Scale = [1, 1, 1],
 	Quat Rotation = [0, 0, 0, 1],
-	Vec3 Origin = [249.219, -5.55611, 1.14441e-005],
+	Vec3 Origin = [146.824, -2.74832, 7.62939e-006],
 	Array ControlPoints = 
 	[
 [0, 0, 0],
-[-15, 0, 0],
+[-7, 0, 0],
 	],
 	bool Closed = false,
 	PathType PathType = Linear,

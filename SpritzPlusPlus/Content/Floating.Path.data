@@ -2,7 +2,7 @@ Path =
 {
 	Vec3 Scale = [1, 1, 1],
 	Quat Rotation = [0, 0, 0, 1],
-	Vec3 Origin = [0, 0, 0],
+	Vec3 Origin = [35.9251, 8.4421, 3.6946e-006],
 	Array ControlPoints = 
 	[
 [0, 0, 0],

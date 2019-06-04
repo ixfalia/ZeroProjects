@@ -14,13 +14,13 @@ Cog =
 	},
 	Transform = 
 	{
-		Vec3 Translation = [27.8738, 9.82524, 0],
-		Vec3 Scale = [1, 1, 1],
+		Vec3 Translation = [174.651, 1.61835, 0],
+		Vec3 Scale = [2.5, 2.5, 2.5],
 		Quat Rotation = [0, 0, 0, 1],
 	},
 	Sprite = 
 	{
-		string SpriteSource = "52876cce0bb0ff2e:bubblesprite",
+		string SpriteSource = "527372ca9c4ed583:MoonCollectible",
 		bool FlipX = false,
 		bool FlipY = false,
 		Vec4 Color = [1, 1, 1, 0.8],
@@ -40,7 +40,7 @@ Cog =
 		string MaterialName = "4faa6050b8692851:HardMaterial",
 		string SerializedGroupName = "5217ab7799116ab9:Collectible",
 		Vec3 Offset = [0, 0, 0],
-		float Radius = 0.5,
+		float Radius = 0.2,
 	},
 	RigidBody = 
 	{
@@ -58,7 +58,7 @@ Cog =
 	{
 		bool DebugMode = false,
 		string Type = "replenish",
-		float PrizeStrength = 0.2,
+		float PrizeStrength = 0.25,
 		float Timing = 5,
 		float Lifetime = 0,
 		bool Blinking = false,

@@ -49,12 +49,9 @@ class ItemBox:
     
     def onInactive(self, e):
         #self.Owner.Sprite.Color = Color.OliveDrab
-        if self.Owner.Fader:
+        if self.FadeOut:
             self.Owner.Fader.FadeOut()
         self.Owner.Reactive.Active = False
-        
-        if self.Owner.Collider:
-            self.Owner.Collider.Ghost = True
         
         seq = Action.Sequence(self.Owner)
         Action.Delay(seq, self.RespawnDuration)
@@ -64,9 +61,6 @@ class ItemBox:
         if self.FadeOut:
             self.Owner.Fader.FadeIn()
         self.Owner.Reactive.Active = True
-        
-        if self.Owner.Collider:
-            self.Owner.Collider.Ghost = False
         
         self.Limit = self.StartingLimit
     

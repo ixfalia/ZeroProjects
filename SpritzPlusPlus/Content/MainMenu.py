@@ -30,25 +30,25 @@ class MainMenu:
         #self.menuPoint = self.Space.CreateAtPosition("MenuPointer", self.menuPointerShift + self.selection[0].Transform.Translation)
         
     def onButtonDown(self, Event):
-        #if(Event.Button == Zero.Buttons.DpadLeft):
-         #   self.selectID -= 1
+        if(Event.Button == Zero.Buttons.DpadLeft):
+            self.selectID -= 1
             
-          #  if self.selectID < 0:
-           #     self.selectID = 0
-            #else:
-             #   self.Owner.SoundEmitter.Play()
+            if self.selectID < 0:
+                self.selectID = 0
+            else:
+                self.Owner.SoundEmitter.Play()
             
-            #self.updateCursor()
+            self.updateCursor()
         #endif
-        #if(Event.Button == Zero.Buttons.DpadRight):
-        #    self.selectID += 1
+        if(Event.Button == Zero.Buttons.DpadRight):
+            self.selectID += 1
             
-         #   if self.selectID > len(self.selection)-1:
-          #      self.selectID = len(self.selection)-1
-           # else:
-            #    self.Owner.SoundEmitter.Play()
+            if self.selectID > len(self.selection)-1:
+                self.selectID = len(self.selection)-1
+            else:
+                self.Owner.SoundEmitter.Play()
             
-         #   self.updateCursor()
+            self.updateCursor()
         #endif
         if(Event.Button == Zero.Buttons.A or Event.Button == Zero.Buttons.Start):
             #self.selection[self.selectID].SpriteText.Text = "DURR"
@@ -80,7 +80,7 @@ class MainMenu:
     def updateCursor(self):
         if self.DebugMode:
             print(self.selectID)
-        #self.setCursorPosition(self.menuPointerShift + self.selection[self.selectID].Transform.Translation)
+        self.setCursorPosition(self.menuPointerShift + self.selection[self.selectID].Transform.Translation)
     
     def onUpdate(self, Event):
         self.Timer += Event.Dt

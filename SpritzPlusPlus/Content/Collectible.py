@@ -48,13 +48,12 @@ class Collectible:
     
     def onUpdate(self, Event):
         self.timer += Event.Dt
-        return
         
         if self.timer >= self.Timing:
-            if self.Type == "replenish" and not self.enoughTime:
+            if self.Type == "replenish":
                 self.enoughTime = True
                 self.Owner.Sprite.Color = VectorMath.Vec4(1,1,1,1)
-                self.timer = 0
+            self.timer = 0
         #endif
         
         #if self.Owner.Transform.Translation.z > 0:
@@ -90,12 +89,9 @@ class Collectible:
                 other.SoundEmitter.PlayCue("Bubble")
                 ReplenishEvent = Zero.ScriptEvent()
                 self.Space.DispatchEvent("ReplenishGet", ReplenishEvent)
-                self.Owner.Sprite.Color = VectorMath.Vec4(0.6, 0.6, 0.6, 0.75)
-                self.enoughTime = False
-                seq = Action.Sequence(self.Owner)
-                Action.Delay(seq, self.Timing)
-                Action.Call(seq, self.bubbleBack)
+                self.Owner.Sprite.Color = VectorMath.Vec4(0.6, 0.6, 0.6, 0.25)
                 
+                self.enoughTime = False
                 self.Timer = 0
             elif( self.Type == "coin" ):
                 print("coinget")
@@ -167,10 +163,6 @@ class Collectible:
             self.Owner.Sprite.Color = VectorMath.Vec4(1,1,1,1)
     
     def onEvent(self, eEvent):
-        self.enoughTime = True
-        self.Owner.Sprite.Color = VectorMath.Vec4(1,1,1,1)
-    
-    def bubbleBack(self):
         self.enoughTime = True
         self.Owner.Sprite.Color = VectorMath.Vec4(1,1,1,1)
 #endclass

@@ -9,19 +9,11 @@ class HUDFactory:
             Zero.Connect(self.Owner, "CreateHUDObject", self.onCreateHUDObj)
         else:
             Zero.Connect(self.Space, "CreateHUDObject", self.onCreateHUDObj)
-        
-        Zero.Connect(self.Owner, "HUDRegisterEvent", self.onRegister)
-        
-        self.HUDElements = {}
     
-    def createHUDObject(self, object, offset, pause = False):
+    def createHUDObject(self, object, offset):
         HUD = Zero.Game.LevelManager.getHUDSpace()
         
         created = HUD.CreateAtPosition(object, offset)
-        
-        if pause:
-            self.pauseGame()
-        
         return created
     
     def onCreateHUDObj(self, hEvent):
@@ -42,20 +34,12 @@ class HUDFactory:
     
     def pauseGame(self):
         e = Zero.ScriptEvent()
-        
-        spaceDispatcher = Zero.Game.GameSpaceEventDispatcher
-        spaceDispatcher.DispatchGameSpaceEvent("FreezeEvent", e)
-        
+        #spaceDispatcher.DispatchGameSpaceEvent("PauseEvent", e)
         self.Space.DispatchEvent("PauseEvent", e)
     
     def freezeGame(self):
         e = Zero.ScriptEvent()
         #spaceDispatcher.DispatchGameSpaceEvent("FreezeEvent", e)
         self.Space.DispatchEvent("FreezeEvent", e)
-    
-    def onRegister(self, rEvent):
-        self.HUDElements[rEvent.Name] = rEvent.Object
-        
-        print("HUDFactory registered:", rEvent.Name, rEvent.Object)
 
 Zero.RegisterComponent("HUDFactory", HUDFactory)

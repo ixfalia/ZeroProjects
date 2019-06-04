@@ -25,7 +25,6 @@ GameSession =
 	{
 		bool Debug = true,
 		string ItemDescriptions = "52ccebace2fad739:itemDescriptions",
-		string LocationDescriptions = "532d2e92c395ab16:LocationsDescriptions",
 	},
 	GameSpaceEventDispatcher = 
 	{
@@ -50,20 +49,5 @@ GameSession =
 	NotificationManager = 
 	{
 		Vec3 SpawnPoint = [9, 0, 1],
-	},
-	QuestManager = 
-	{
-	},
-	TimeManager = 
-	{
-		uint IncrementInHours = 6,
-		int DaysRemaining = 4,
-	},
-	TownManager = 
-	{
-		uint TimeRemaining = 10,
-	},
-	TextParser = 
-	{
 	},
 },

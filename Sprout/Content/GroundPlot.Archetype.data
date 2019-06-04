@@ -20,16 +20,24 @@ Cog =
 	},
 	Sprite = 
 	{
+		bool Visible = true,
+		bool VisibilityCulling = true,
 		string SpriteSource = "525ccc94eec5f3b0:GroundPlot",
+		bool RenderMask = false,
 		bool FlipX = false,
 		bool FlipY = false,
 		Vec4 Color = [1, 1, 1, 1],
-		bool Visible = true,
 		bool OnTop = false,
 		bool AnimationActive = true,
 		float AnimationSpeed = 1,
 		uint StartFrame = 0,
 		BlendMode BlendMode = Alpha,
 		SpriteGeometryMode GeometryMode = ZPlane,
+		string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+	},
+	Reactive = 
+	{
+		bool Active = true,
+		bool CaptureMouse = false,
 	},
 },

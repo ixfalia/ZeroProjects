@@ -19,11 +19,6 @@ class MovementController:
         Zero.Connect(self.Owner, Events.CollisionStarted, self.onCollision)
         Zero.Connect(self.Owner, Events.CollisionEnded, self.onCollisionEnd)
         
-        Zero.Connect(self.Space, "PauseEvent", self.onDisable)
-        Zero.Connect(self.Space, "FreezeEvent", self.onDisable)
-        #Zero.Connect(self.Space, "UnpauseEvent", self.onEnble)
-        #Zero.Connect(self.Space, "UnfreezeEvent", self.onEnble)
-        
         settings = self.Space.FindObjectByName("LevelSettings")
         self.Viewport = settings.CameraViewport
         self.depth = -1
@@ -46,7 +41,7 @@ class MovementController:
         #Rotation = VectorMath.Vec3.RotateTowards(self.Owner.Transform.Rotation, angleVec, 1);
         self.Space.PhysicsSpace.CastRayFirst
         
-        #self.Owner.Transform.Rotation = VectorMath.Quat.AxisAngle(zAxis, angle);
+        self.Owner.Transform.Rotation = VectorMath.Quat.AxisAngle(zAxis, angle);
         #self.Owner.Transform.Rotation = Rotation
         
         #print(direction)
@@ -73,11 +68,7 @@ class MovementController:
         
         #print(mypos, position, distance, duration)
         
-        #Action.Property(self.seq, self.Owner.Transform, "Translation", position, duration)
-        self.Owner.RigidBody.Velocity = (position-mypos)
-        #self.Owner.RigidBody.Velocity.normalize()
-        #print(self.Owner.RigidBody.Velocity)
-        
+        Action.Property(self.seq, self.Owner.Transform, "Translation", position, duration)
     
     def onCollision(self, e):
         other = e.OtherObject
@@ -104,9 +95,6 @@ class MovementController:
         color = Color.LawnGreen
         
         return self.Space.PhysicsSpace.CastRayFirst(ray)
-    
-    def onDisable(self, e):
-        self.Owner.RigidBody.Velocity = VectorMath.Vec3()
     
     def moveLeft(self):
         pass

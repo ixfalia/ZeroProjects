@@ -4,7 +4,6 @@ import Property
 import VectorMath
 
 import ItemsEnumerations
-import Color
 
 Vec3 = VectorMath.Vec3
 TabTypes = ItemsEnumerations.EntryTypes
@@ -14,7 +13,7 @@ class JournalUI:
     def Initialize(self, initializer):
         Zero.Connect(self.Owner, "MouseActivateEvent", self.onActivate)
         Zero.Connect(self.Space, "CloseUI", self.onClose)
-        #Zero.Connect(self.Space, "AddEntry", self.onEntry)
+        Zero.Connect(self.Space, "AddEntry", self.onEntry)
         Zero.Connect(self.Space, "EnableEvent", self.onEnable)
         Zero.Connect(self.Space, "DisableEvent", self.onDisable)
         
@@ -93,36 +92,22 @@ class JournalUI:
         
         items = Zero.Game.Inventory.items
         itemEntries = Zero.Game.Journal.ItemEntries
-        locEntries = Zero.Game.Journal.LocationEntries
         
-        itemFlags = Zero.Game.Journal.ItemFlags
-        locFlags = Zero.Game.Journal.LocationFlags
+        dataFlags = Zero.Game.Journal.ItemFlags
         
         i = 0 
         self.wipeSlots()
         
-        #make this stuff a function, or at least the checking a function, 
-        #then you can easily check if i is out of bounds and needs to go to a new page
-        for name in itemFlags.keys():
+        for name in dataFlags.keys():
             if name in itemEntries:
                 data = Zero.Game.Inventory.itemData[name]
                 
                 sprite = Zero.Game.Inventory.TypeSprites[data.type]
                 slot = self.slots[i]
-                slot.UIEntry.setData(name, data.sprite, data.color, itemEntries[name], self.Owner)
+                slot.UIEntry.setData(name, data.sprite, data.color, itemEntries[name])
                 
                 #slot.Reactive.Active = True
                 i += 1
-        
-        for name in locFlags.keys():
-            print(name, locEntries)
-            if name in locEntries:
-                sprite = "icon_location"
-                color = Color.ForestGreen
-                slot = self.slots[i]
-                slot.UIEntry.setData(name, sprite, color, locEntries[name], self.Owner)
-                
-                i+=1
         
         self.disableSlots()
         #self.enableSlots()

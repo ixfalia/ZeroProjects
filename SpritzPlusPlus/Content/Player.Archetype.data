@@ -14,7 +14,7 @@ Cog =
 	},
 	Transform = 
 	{
-		Vec3 Translation = [0.981191, -2.55896, 0],
+		Vec3 Translation = [-4.36487, -2.55896, 0],
 		Vec3 Scale = [2, 2, 1],
 		Quat Rotation = [0, 0, 0, 1],
 	},
@@ -39,8 +39,8 @@ Cog =
 		bool Seamless = false,
 		string MaterialName = "52151fb078f175b7:Basic",
 		string SerializedGroupName = "5217ab189ff2aa2b:Player",
-		Vec3 Offset = [0.08, -0.12, 0],
-		float Radius = 0.42,
+		Vec3 Offset = [0, -0.08, 0],
+		float Radius = 0.5,
 		float Height = 0.0001,
 		uint Direction = 1,
 	},
@@ -62,7 +62,6 @@ Cog =
 		bool Paused = false,
 		float deadzone = 0.2,
 		bool disableControlPad = false,
-		bool detectEvents = true,
 	},
 	WaterTank = 
 	{
@@ -77,7 +76,7 @@ Cog =
 	MovementController = 
 	{
 		bool DebugMode = false,
-		float JumpStrength = 7,
+		float JumpStrength = 10,
 		float GroundForgiveness = 1,
 		float MovementStrength = 12,
 	},
@@ -107,7 +106,7 @@ Cog =
 	},
 	Player = 
 	{
-		float DeathLength = 3,
+		float DeathLength = 2.5,
 	},
 	PointsCounter = 
 	{
@@ -118,7 +117,6 @@ Cog =
 	{
 		bool DebugMode = true,
 		Vec2 Checkpoint = [0, 0],
-		uint CurrentCheckpoint = 0,
 	},
 	HUDEventDispatcher = 
 	{
@@ -128,8 +126,14 @@ Cog =
 		bool Active = false,
 		bool WakeUpOnChange = false,
 		bool LocalSpaceDirection = false,
-		float Strength = 15,
+		float Strength = 0,
 		Vec3 Direction = [0, -1, 0],
+	},
+	DragEffect = 
+	{
+		bool Active = false,
+		bool WakeUpOnChange = false,
+		float Drag = 0.8,
 	},
 	Microphone = 
 	{
@@ -139,19 +143,10 @@ Cog =
 	{
 		bool DebugMode = false,
 		bool DisableControl = false,
-		bool DetectControlEvents = true,
-		bool spaceEvents = true,
-		bool ownerEvents = false,
 		float deadzone = 0.8,
 	},
 	Cheater = 
 	{
 		bool CheatModeActive = false,
-	},
-	DragEffect = 
-	{
-		bool Active = false,
-		bool WakeUpOnChange = false,
-		float Drag = 0.5,
 	},
 },

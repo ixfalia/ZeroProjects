@@ -19,7 +19,7 @@ class Fader:
         Zero.Connect(self.Space, Events.LogicUpdate, self.onUpdate)
         
         #clear any actions that might be lingering
-        self.Owner.Actions.Clear()
+        self.Owner.Actions.Cancel();
         
         if self.Owner.Sprite:
             currentColor = self.Owner.Sprite.Color

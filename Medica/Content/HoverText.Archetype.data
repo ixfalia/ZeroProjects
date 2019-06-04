@@ -14,8 +14,8 @@ Cog =
 	},
 	Transform = 
 	{
-		Vec3 Translation = [-127.949, 45.6515, 2.1],
-		Vec3 Scale = [1.25, 1.25, 1.25],
+		Vec3 Translation = [0, 0, 0],
+		Vec3 Scale = [1, 1, 1],
 		Quat Rotation = [0, 0, 0, 1],
 	},
 	SpriteText = 
@@ -62,7 +62,7 @@ Cog =
 			},
 			Sprite = 
 			{
-				string SpriteSource = "52d0dc199ab33c97:FillTile",
+				string SpriteSource = "5275aa4d802dd6dc:Square",
 				bool FlipX = false,
 				bool FlipY = false,
 				Vec4 Color = [0.059375, 0.0659375, 0.125, 1],

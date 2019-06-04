@@ -27,7 +27,6 @@ class HUDFlowerText:
         FlowerEvent.FlowerCount = self.FlowerCount
         
         self.Space.DispatchEvent("FlowerEvent", FlowerEvent)
-        Zero.Game.DispatchEvent("FlowerEvent", FlowerEvent)
         
         if self.FlowerCount >= self.TotalFlowers:
             self.Space.DispatchEvent("AllFlowers", FlowerEvent)

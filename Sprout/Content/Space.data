@@ -10,12 +10,16 @@ Space =
 	},
 	TimeSpace = 
 	{
+		float MaxDt = 0.3,
+		float MinDt = 1e-006,
 		float TimeScale = 1,
-		float Framerate = 60,
-		float FramelossCap = 0.5,
+		uint TimeMode = 0,
+		uint StepCount = 1,
 	},
 	GraphicsSpace = 
 	{
+		TransparentSort TransparentSort = ViewDepth,
+		string SpriteLayerOrder = "52b23ad3c402d436:DefaultSpriteLayerOrder",
 	},
 	ActionSpace = 
 	{
@@ -27,8 +31,13 @@ Space =
 		bool Deterministic = false,
 		uint SubStepCount = 1,
 		string CollisionFilterName = "4e66a5c0b9dc59b9:DefaultCollisionTable",
+		string PhysicsSolverConfigName = "52a967fb4cda91cb:Baumgarte",
 	},
 	SoundSpace = 
 	{
+	},
+	ReactiveSpace = 
+	{
+		bool Active = true,
 	},
 },

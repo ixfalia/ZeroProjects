@@ -54,16 +54,16 @@ class LevelChangeButton:
                 
             else:
                 if self.LevelChange.Name == "TitleScreen":
-                    Zero.Game.LevelManager.loadLevelName(self.LevelChange.Name)
+                    self.GameSession.LevelManager.loadLevelName(self.LevelChange.Name)
                 else:
                     self.Space.LoadLevel(self.LevelChange)
                 
         else:
             if Playsound:
-                Action.Call(seq, Zero.Game.LevelManager.loadNextLevel)
+                Action.Call(seq, self.GameSession.LevelManager.loadNextLevel)
                 
             else:
-                Zero.Game.LevelManager.loadNextLevel()
+                self.GameSession.LevelManager.loadNextLevel()
 #end Class
 
 Zero.RegisterComponent("LevelChangeButton", LevelChangeButton)

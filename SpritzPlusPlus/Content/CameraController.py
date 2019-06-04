@@ -4,8 +4,6 @@ import Property
 import VectorMath
 import Action
 
-import math
-
 Vec3 = VectorMath.Vec3
 
 class CameraController:
@@ -14,7 +12,6 @@ class CameraController:
     targetObject = Property.Cog()
     startingTarget = Property.Cog()
     #stringTarget = Property.String(default="MainCharacter")
-    Offset = Property.Vector3(default = Vec3())
     ZValue =Property.Float(default = 40)
     
     goalViewing = Property.Bool(default = True)
@@ -22,28 +19,17 @@ class CameraController:
     traveltime = Property.Float(default = 5)
     
     def Initialize(self, initializer):
-        #Zero.Connect(self.Space, Events.LevelStarted, self.onLevelStart)
         Zero.Connect(self.Space, Events.LogicUpdate, self.onLogicUpdate)
         Zero.Connect(self.Space, "myGamepadEvent", self.onGamepad)
-        Zero.Connect(self.Space, Events.KeyDown, self.onKeyboard)
-        #Zero.Connect(self.Space, "OnGround", self.onOnGround)
         
         self.seq = Action.Sequence(self.Owner)
         self.travelling = False
-        self.tweenTime = 1.0
-        self.tweenTimer = 0.0
-        self.tweening = False
         
         player = self.Space.FindObjectByName("MainCharacter")
-        #player.GamepadController.disable()
+        player.GamepadController.disable()
         
-        if not self.targetObject:
-            self.targetObject = player
         if not self.startingTarget:
-            if self.goalViewing:
-                self.currentTarget = self.Space.FindObjectByName("EndGoal")
-            else:
-                self.currentTarget = self.targetObject
+            self.currentTarget = self.targetObject
         else:
             self.currentTarget = self.startingTarget
             
@@ -56,9 +42,6 @@ class CameraController:
         
     #end Initialize()
     
-    def onLevelStart(self, lEvent):
-        pass
-    
     def changeTarget(self, newTarget = None):
         if newTarget == None and self.targetObject:
             self.currentTarget = self.targetObject
@@ -66,7 +49,7 @@ class CameraController:
             self.currentTarget = newTarget
         
         target = self.Owner.Transform
-        tTransl = self.currentTarget.Transform.Translation + self.Offset
+        tTransl = self.currentTarget.Transform.Translation
         end = VectorMath.Vec3(tTransl.x, tTransl.y, self.ZValue)
         self.travelling = True
         
@@ -78,7 +61,7 @@ class CameraController:
     def onLogicUpdate(self, UpdateEvent):
         if not self.Freeze and not self.travelling:
             currentTranslation = self.Owner.Transform.Translation
-            targetTranslation = self.currentTarget.Transform.WorldTranslation + self.Offset
+            targetTranslation = self.currentTarget.Transform.WorldTranslation
             
             if self.DebugMode:
                 print("CameraController.onLogicUpdate():")
@@ -87,48 +70,11 @@ class CameraController:
                 print("\t Target Translation:", self.currentTarget.Transform.Translation)
                 print("\t CurrentTranslation:", self.Owner.Transform.Translation)
             
-            distanceToTarget = math.fabs(targetTranslation.x - currentTranslation.x)
-            tweenDistance = 10.0
-            
-            if False:#self.tweening:
-                self.tweenTimer += UpdateEvent.Dt
-                step = self.tweenTimer / self.tweenTime
-                
-                newTranslation = self.Owner.Transform.Translation.lerp(targetTranslation, step)
-                
-                if self.tweenTimer >= self.tweenTime or tweenDistance <= 2:
-                    self.tweening = False
-            if False:#distanceToTarget >= tweenDistance:
-                self.tweenTimer = 0
-                self.tweening = True
-                newTranslation = VectorMath.Vec3(targetTranslation.x, currentTranslation.y, self.ZValue)
-            else:
                 #New Camera Keeps it's y and z values, if i care about y movement then i can change to targetTranslation.y
-                newTranslation = VectorMath.Vec3(targetTranslation.x, targetTranslation.y, self.ZValue)
+            newTranslation = VectorMath.Vec3(targetTranslation.x, targetTranslation.y, self.ZValue)
             
             self.Owner.Transform.Translation = newTranslation
-            #print("CameraPos:",self.Owner.Transform.Translation)
     #end onLogicUpdate()
-    
-    def updateY(self):
-        #if self.tweening:
-        #    return
-        
-        currentTranslation = self.Owner.Transform.Translation
-        targetTranslation = self.currentTarget.Transform.WorldTranslation# + self.Offset
-        newTranslation = VectorMath.Vec3(currentTranslation.x, targetTranslation.y, self.ZValue)
-        time = math.fabs(currentTranslation.y - targetTranslation.y)/50
-        
-        #self.Owner.Transform.Translation = VectorMath.Vec3(currentTranslation.x, targetTranslation.y, self.ZValue)
-        
-        #self.tweening = True
-        
-        #seq = Action.Group(self.Owner)
-        #Action.Property(seq, self.Owner.Transform, "Translation", targetTranslation, time, Action.Ease.Linear)
-        #Action.Call(seq, self.tweenDone)
-    
-    def tweenDone(self):
-        self.tweening = False
     
     def FreezeCamera(self, isFrozen = None):
         if isFrozen == None:
@@ -143,13 +89,10 @@ class CameraController:
     def unfreezeplayer(self):
         player = self.Space.FindObjectByName("MainCharacter")
         
-        #player.GamepadController.enable()
+        player.GamepadController.enable()
         
-        if player.HUDEventDispatcher:
-            lEvent = Zero.ScriptEvent()
-            player.HUDEventDispatcher.DispatchHUDEvent("LevelBegin", lEvent)
-        #endif
-    #enddef
+        lEvent = Zero.ScriptEvent()
+        player.HUDEventDispatcher.DispatchHUDEvent("LevelBegin", lEvent)
     
     def onGamepad(self, gEvent):
         if(gEvent.Button == Zero.Buttons.DpadUp or gEvent.Button == Zero.Buttons.DpadDown
@@ -164,16 +107,6 @@ class CameraController:
         self.seq.Cancel()
         
         Zero.Disconnect(self.Space, "myGamepadEvent", self.onGamepad)
-    
-    def onKeyboard(self, gEvent):
-        self.currentTarget = self.targetObject
-        
-        self.notTravelling()
-        self.unfreezeplayer()
-        
-        self.seq.Cancel()
-        Zero.Disconnect(self.Space, Events.KeyDown, self.onKeyboard)
-    
 #end class CameraController
 
 Zero.RegisterComponent("CameraController", CameraController)

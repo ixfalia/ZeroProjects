@@ -6,7 +6,7 @@ Cog =
 	},
 	Named = 
 	{
-		string Name = "Camera",
+		string Name = "myCamera",
 	},
 	Archetyped = 
 	{
@@ -34,7 +34,6 @@ Cog =
 		bool Freeze = false,
 		uint targetObject = 2,
 		uint startingTarget = 3,
-		Vec3 Offset = [0, 0, 0],
 		float ZValue = 40,
 		bool goalViewing = true,
 		float viewtime = 1.5,
@@ -59,7 +58,7 @@ Cog =
 		uint Layer = 0,
 		bool Active = true,
 		bool Blocking = false,
-		uint Renderer = 4294967293,
+		uint Renderer = 4,
 		uint Camera = 1,
 	},
 },

@@ -17,7 +17,7 @@ class SpriteFlipper:
         Zero.Connect(self.Space, Events.LogicUpdate, self.onUpdate)
     
     def onUpdate(self, updateEvent):
-        self.checkSpriteFlip()
+        checkSpriteFlip()
     
     def checkSpriteFlip(self):
         change = self.isFlipped

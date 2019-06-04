@@ -14,7 +14,7 @@ Cog =
 	},
 	Transform = 
 	{
-		Vec3 Translation = [2.24447, 7.4215, -1.59232],
+		Vec3 Translation = [-31.4379, 5.64671, 2.1],
 		Vec3 Scale = [2, 2, 3],
 		Quat Rotation = [0, 0, 0, 1],
 	},
@@ -22,7 +22,7 @@ Cog =
 	{
 		SpriteGeometryMode GeometryMode = ZPlane,
 		TextPositionMode Position = Centered,
-		string FontName = "532d39e2c8207931:Kingthings Petrock",
+		string FontName = "52d462359819619c:Trinigan",
 		uint FontSize = 32,
 		Vec4 Color = [1, 1, 1, 1],
 		bool Visible = true,
@@ -107,7 +107,7 @@ Cog =
 			},
 			Transform = 
 			{
-				Vec3 Translation = [0.0215054, -0.0286739, -0.01],
+				Vec3 Translation = [0.0215054, -0.0286739, 0],
 				Vec3 Scale = [4.5, 0.8, 0.333333],
 				Quat Rotation = [0, 0, 0, 1],
 			},

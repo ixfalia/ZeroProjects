@@ -20,7 +20,7 @@ class QuestUI:
         
         self.Label = "Quests"
         self.Back = None
-        self.QuestOpen = False
+        self.QuestOpen = True
         
         self.StartingPosition = Vec3(-5,3.5,0)
         
@@ -91,22 +91,15 @@ class QuestUI:
             self.enableSlots()
         else:
             self.fadeOut()
-            self.disableSlots()
-        
-        #print("QuestUI: ", self.QuestOpen)
     
     def createQuest(self):
         self.Back = self.Space.CreateAtPosition("MenuBack", Vec3(0, 0, -1))
         b = self.Back.FindChildByName("Title")
         self.QuestCompletion = self.Back.FindChildByName("usefulTextR")
-        
         b.SpriteText.Text = self.Label
-        
         self.Back.ColorNexus.BaseColor = self.BackColor
         self.updateQuestCompletion()
-        
-        if self.QuestOpen:
-            self.Back.Fader.FadeIn()
+        self.Back.Fader.FadeIn()
         
         position = self.StartingPosition
         x = 0
@@ -148,9 +141,9 @@ class QuestUI:
                 slot = self.slots[i]
                 
                 if Completed[name]:
-                    slot.UIEntry.setData(data.name, "check", Color.ForestGreen, data.entry.Text, self.Owner)
+                    slot.UIEntry.setData(data.name, "check", Color.ForestGreen, data.entry.Text)
                 else:
-                    slot.UIEntry.setData(data.name, "bang", iconColor, data.entry.Text, self.Owner)
+                    slot.UIEntry.setData(data.name, "bang", iconColor, data.entry.Text)
                 
                 slot.Reactive.Active = True
                 i += 1
@@ -172,11 +165,10 @@ class QuestUI:
             item.Fader.FadeIn()
     
     def onClose(self, e):
-        if self.Back:
-            #self.Back.Fader.FadeOut()
-            self.QuestOpen = False
+        if self.QuestOpen and self.Back:
+            self.Back.Fader.FadeOut()
             self.fadeOut()
-            
+            self.QuestOpen = False
     
     def wipeSlots(self):
         for obj in self.slots:
@@ -215,11 +207,9 @@ class QuestUI:
         #print("\t[[ QuestUI Available Quests: {} / {} ]]".format(complete, len(AvailableQuests)))
         
         if not self.QuestCompletion:
-            self.QuestOpen = False
-            #self.createQuest()
-            #self.fadeOut()
-            
-            #self.QuestCompletion = self.Back.FindChildByName("usefulTextR")
+            self.createQuest()
+            self.fadeOut()
+            self.QuestCompletion = self.Back.FindChildByName("usefulTextR")
         
         if complete >= len(AvailableQuests):
             self.Celebrate()

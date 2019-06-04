@@ -14,7 +14,7 @@ class Item:
         self.name = name
         self.amount = 0
         self.type = None
-        self.color = Color.White
+        self.color = None
         self.sprite = None
         
         if not limit:
@@ -59,8 +59,6 @@ class Inventory:
     
     def addItem(self, itemName, amount = 1):
         print("\t[[{0}|Inventory]]".format(self.Owner.Name), itemName, "added to inventory.")
-        if not itemName:
-            raise
         if not itemName in self.items:
             self.items[itemName] = 0
             self.sendJournalEvent(itemName)
@@ -86,19 +84,15 @@ class Inventory:
             print("// Inventory.CheckItem()")
             print("\tCurrent Inventory:", self.items)
         
-        #if not itemName in self.items and not itemName in KeyItems:
-        #    self.items[itemName] = False
-        #elif not itemName in self.items:
-        #    self.items[itemName] = 0
+        if not itemName in self.items and not itemName in KeyItems:
+            self.items[itemName] = False
+        elif not itemName in self.items:
+            self.items[itemName] = 0
         
         if self.Debug:
             print("\tcheck inventory result:", self.items[itemName])
             print("==========================")
-        
-        if not itemName in self.items:
-            return False
-        else:
-            return self.items[itemName]
+        return self.items[itemName]
     
     def onItemRemove(self, e):
         self.removeItem(e.Name, e.Amount)
@@ -161,18 +155,8 @@ class Inventory:
         label = "Inventory"
         message = "Obtained {} x{}.".format(name, amount)
         
-        if name in self.itemData:
-            data = self.itemData[name]
-        else:
-            data = self.itemData["Default"]
-        
+        data = self.itemData[name]
         noti = Zero.Game.NotificationManager.CreatePushMessage(label, message, data.sprite, data.color, "ItemGet", amount)
         noti.PushMessage.Item = name
-    
-    def getData(self, name):
-        if name in self.itemData:
-            return self.itemData[name]
-        else:
-            return self.itemData["Default"]
 
 Zero.RegisterComponent("Inventory", Inventory)

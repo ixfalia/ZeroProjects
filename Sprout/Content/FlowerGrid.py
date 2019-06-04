@@ -60,7 +60,7 @@ class FlowerGrid:
             element = self.Space.Create("GridManipulator")
             element.GridManipulator.set(self.Owner.GridManager)
             element.GridManipulator.row = row
-            element.Transform.RotateByAngles(Vec3(0,0,-1.57))
+            element.Transform.RotateAnglesWorld(Vec3(0,0,-1.57))
             self.setPositionBasedOnGrid(row, -1, element)
         #ednfor
         
@@ -68,7 +68,7 @@ class FlowerGrid:
             element = self.Space.Create("GridManipulator")
             element.GridManipulator.set(self.Owner.GridManager)
             element.GridManipulator.col = col
-            element.Transform.RotateByAngles(Vec3(0,0,3.14))
+            element.Transform.RotateAnglesWorld(Vec3(0,0,3.14))
             self.setPositionBasedOnGrid(-1, col, element)
         #dnfor
     #enddef

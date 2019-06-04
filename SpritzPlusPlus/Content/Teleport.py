@@ -77,8 +77,6 @@ class Teleport:
             self.Owner.Transform.Translation = place
             self.Owner.RigidBody.Velocity = VectorMath.Vec3(0,0,0)
             
-            offset = VectorMath.Vec3(0,3,0.5)
-            self.Space.CreateAtPosition("WaterEffect", self.Owner.Transform.Translation + offset)
     def setCheckpoint(self, place):
         if self.DebugMode:
             print("Checkpoint set to:", place)

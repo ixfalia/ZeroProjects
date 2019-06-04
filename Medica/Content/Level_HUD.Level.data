@@ -58,7 +58,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-1.1776, 8.15779, 48.4077],
+			Vec3 Translation = [2.3074, -0.69971, 48.4077],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [-0, -1.09278e-008, 0, 1],
 		},
@@ -70,7 +70,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
-			float Size = 22,
+			float Size = 28,
 		},
 		EditorCameraController = 
 		{
@@ -78,7 +78,7 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
-			Vec3 LookTarget = [-1.1776, 8.15779, -1.59232],
+			Vec3 LookTarget = [2.3074, -0.69971, -1.59232],
 		},
 		EditorRenderer = 
 		{
@@ -216,8 +216,8 @@ Level =
 			Vec4 hoverColor = [0.175, 0.175, 0.175, 1],
 			Vec4 downColor = [0, 0, 0, 1],
 			float defaultOpacity = 1,
-			string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
-			string downSound = "532389ce8033c884:PopUp",
+			string hoverSound = "5322c1b5ae2649ac:QuestComplete",
+			string downSound = "4e1bd44008b4dc2a:DefaultCue",
 		},
 		InventoryUI = 
 		{
@@ -303,8 +303,8 @@ Level =
 			Vec4 hoverColor = [0.215, 0.0774, 0.0774, 1],
 			Vec4 downColor = [0, 0, 0, 1],
 			float defaultOpacity = 1,
-			string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
-			string downSound = "532389ce8033c884:PopUp",
+			string hoverSound = "5322c1b5ae2649ac:QuestComplete",
+			string downSound = "4e1bd44008b4dc2a:DefaultCue",
 		},
 		JournalUI = 
 		{
@@ -398,7 +398,7 @@ Level =
 		},
 		SoundEmitter = 
 		{
-			bool StartPlaying = false,
+			bool StartPlaying = true,
 			int ExtraPriority = 0,
 			string CueName = "52dbcc51feed1c62:BGM_Forest",
 			float Volume = 1,
@@ -477,7 +477,7 @@ Level =
 			Vec4 downColor = [0.06, 0.06, 0.06, 1],
 			float defaultOpacity = 1,
 			string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
-			string downSound = "532389ce8033c884:PopUp",
+			string downSound = "4e1bd44008b4dc2a:DefaultCue",
 		},
 		CraftingUI = 
 		{
@@ -599,8 +599,8 @@ Level =
 			Vec4 hoverColor = [0.215, 0.0774, 0.0774, 1],
 			Vec4 downColor = [0, 0, 0, 1],
 			float defaultOpacity = 1,
-			string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
-			string downSound = "532389ce8033c884:PopUp",
+			string hoverSound = "5322c1b5ae2649ac:QuestComplete",
+			string downSound = "4e1bd44008b4dc2a:DefaultCue",
 		},
 		QuestUI = 
 		{
@@ -631,7 +631,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [9, 8.34767, 1],
+			Vec3 Translation = [9, 9, 1],
 			Vec3 Scale = [9, 1, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -682,216 +682,6 @@ Level =
 			float Volume = 0.75,
 			float Pitch = 1,
 			bool Positional = false,
-		},
-	},
-	Cog = 
-	{
-		LinkId = 
-		{
-			uint Id = 13,
-		},
-		Named = 
-		{
-			string Name = "Transform",
-		},
-		Transform = 
-		{
-			Vec3 Translation = [-13.7653, 8.91285, -1.59232],
-			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-		SpriteText = 
-		{
-			SpriteGeometryMode GeometryMode = ZPlane,
-			TextPositionMode Position = UpperLeft,
-			string FontName = "532d3dfe2a58d2c8:Prociono",
-			uint FontSize = 32,
-			Vec4 Color = [1, 1, 1, 1],
-			bool Visible = true,
-			string Text = "Town Repairs:",
-			bool OnTop = false,
-			BlendMode BlendMode = Alpha,
-			Vec2 Size = [0, 0],
-			TextAlign Align = Left,
-			float PixelsPerUnit = 64,
-			bool Smoothing = true,
-		},
-	},
-	Cog = 
-	{
-		LinkId = 
-		{
-			uint Id = 14,
-		},
-		Named = 
-		{
-			string Name = "Transform",
-		},
-		Transform = 
-		{
-			Vec3 Translation = [-13.7653, 7.96662, -1.59232],
-			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-		SpriteText = 
-		{
-			SpriteGeometryMode GeometryMode = ZPlane,
-			TextPositionMode Position = UpperLeft,
-			string FontName = "532d3dfe2a58d2c8:Prociono",
-			uint FontSize = 32,
-			Vec4 Color = [1, 1, 1, 1],
-			bool Visible = true,
-			string Text = "CurrentTime:",
-			bool OnTop = false,
-			BlendMode BlendMode = Alpha,
-			Vec2 Size = [0, 0],
-			TextAlign Align = Left,
-			float PixelsPerUnit = 64,
-			bool Smoothing = true,
-		},
-	},
-	Cog = 
-	{
-		LinkId = 
-		{
-			uint Id = 15,
-		},
-		Named = 
-		{
-			string Name = "Transform",
-		},
-		Transform = 
-		{
-			Vec3 Translation = [-13.7653, 7.16375, -1.59232],
-			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-		SpriteText = 
-		{
-			SpriteGeometryMode GeometryMode = ZPlane,
-			TextPositionMode Position = UpperLeft,
-			string FontName = "532d3dfe2a58d2c8:Prociono",
-			uint FontSize = 32,
-			Vec4 Color = [1, 1, 1, 1],
-			bool Visible = true,
-			string Text = "Days Remaining:",
-			bool OnTop = false,
-			BlendMode BlendMode = Alpha,
-			Vec2 Size = [0, 0],
-			TextAlign Align = Left,
-			float PixelsPerUnit = 64,
-			bool Smoothing = true,
-		},
-	},
-	Cog = 
-	{
-		LinkId = 
-		{
-			uint Id = 16,
-		},
-		Named = 
-		{
-			string Name = "Transform",
-		},
-		Transform = 
-		{
-			Vec3 Translation = [-10.3531, 8.91285, -1.59232],
-			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-		SpriteText = 
-		{
-			SpriteGeometryMode GeometryMode = ZPlane,
-			TextPositionMode Position = UpperLeft,
-			string FontName = "532d3dfe2a58d2c8:Prociono",
-			uint FontSize = 32,
-			Vec4 Color = [1, 1, 1, 1],
-			bool Visible = true,
-			string Text = "0 / 0",
-			bool OnTop = false,
-			BlendMode BlendMode = Alpha,
-			Vec2 Size = [0, 0],
-			TextAlign Align = Left,
-			float PixelsPerUnit = 64,
-			bool Smoothing = true,
-		},
-		HUDData = 
-		{
-			string Name = "Repairs",
-		},
-	},
-	Cog = 
-	{
-		LinkId = 
-		{
-			uint Id = 17,
-		},
-		Named = 
-		{
-			string Name = "Transform",
-		},
-		Transform = 
-		{
-			Vec3 Translation = [-10.7043, 7.96662, -1.59232],
-			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-		SpriteText = 
-		{
-			SpriteGeometryMode GeometryMode = ZPlane,
-			TextPositionMode Position = UpperLeft,
-			string FontName = "532d3dfe2a58d2c8:Prociono",
-			uint FontSize = 32,
-			Vec4 Color = [1, 1, 1, 1],
-			bool Visible = true,
-			string Text = "6AM on Day 3",
-			bool OnTop = false,
-			BlendMode BlendMode = Alpha,
-			Vec2 Size = [0, 0],
-			TextAlign Align = Left,
-			float PixelsPerUnit = 64,
-			bool Smoothing = true,
-		},
-		HUDData = 
-		{
-			string Name = "CurrentTime",
-		},
-	},
-	Cog = 
-	{
-		LinkId = 
-		{
-			uint Id = 18,
-		},
-		Named = 
-		{
-			string Name = "Transform",
-		},
-		Transform = 
-		{
-			Vec3 Translation = [-10.0018, 7.16375, -1.59232],
-			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-		SpriteText = 
-		{
-			SpriteGeometryMode GeometryMode = ZPlane,
-			TextPositionMode Position = UpperLeft,
-			string FontName = "532d3dfe2a58d2c8:Prociono",
-			uint FontSize = 32,
-			Vec4 Color = [1, 1, 1, 1],
-			bool Visible = true,
-			string Text = "5 Days remaining",
-			bool OnTop = false,
-			BlendMode BlendMode = Alpha,
-			Vec2 Size = [0, 0],
-			TextAlign Align = Left,
-			float PixelsPerUnit = 64,
-			bool Smoothing = true,
-		},
-		HUDData = 
-		{
-			string Name = "DaysRemaining",
 		},
 	},
 },

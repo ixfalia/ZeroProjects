@@ -98,8 +98,6 @@ class Fader:
         seq = Action.Group(self.Owner)
         Action.Property(seq, target, "Color",end=endColor, duration=time)
         
-        self.sendEvent(self.Owner, "FadeOutEvent")
-        
     def FadeIn(self, time = None):
         if not self.Owner:
             return
@@ -143,8 +141,6 @@ class Fader:
         seq = Action.Group(self.Owner)
         
         Action.Property( seq, target, property="Color",end=endColor,duration=time )
-        
-        self.sendEvent(self.Owner, "FadeInEvent")
     
     def FadeInHierarchy(self, time = None):
         if not time:
@@ -234,9 +230,5 @@ class Fader:
     
     def Destroy(self):
         self.Owner.Destroy()
-    
-    def sendEvent(self, object, EventName):
-        e = Zero.ScriptEvent()
-        object.DispatchEvent(EventName, e)
 
 Zero.RegisterComponent("Fader", Fader)

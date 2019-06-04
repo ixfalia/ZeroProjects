@@ -15,7 +15,7 @@ class UIEntry:
         self.questData = None
         self.Active = False
     
-    def setData(self, name, sprite, color, textBody, creator):
+    def setData(self, name, sprite, color, textBody):
         text = self.Owner.FindChildByName("entryText")
         icon = self.Owner.FindChildByName("entryIcon")
         
@@ -26,17 +26,14 @@ class UIEntry:
         self.EntryName =  name
         self.Entry = textBody
         self.Active = True
-        self.Creator = creator
         
         if self.EntryName in Zero.Game.Journal.QuestEntries:
             self.questData = Zero.Game.Journal.QuestEntries[self.EntryName]
     
     def onActivate(self, e):
-        #ui = self.Space.FindObjectByName("journalButton")
-        ui = self.Creator
+        ui = self.Space.FindObjectByName("journalButton")
         
         eBox = self.Space.CreateAtPosition("EntryBox", self.Offset)
-        eBox.PromptBox.Creator = ui
         text = "~{}~\n\n\t {}".format(self.EntryName, self.Entry)
         
         if self.questData:

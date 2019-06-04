@@ -19,18 +19,18 @@ Level =
 			bool Active = true,
 			bool WakeUpOnChange = false,
 			bool LocalSpaceDirection = true,
-			float Strength = 12,
+			float Strength = 10,
 			Vec3 Direction = [0, -1, 0],
 		},
 		DragEffect = 
 		{
 			bool Active = true,
 			bool WakeUpOnChange = false,
-			float Drag = 0.6,
+			float Drag = 0.55,
 		},
 		ForwardRenderer = 
 		{
-			Vec4 ClearColor = [0.258725, 0.405347, 0.655, 1],
+			Vec4 ClearColor = [0.278431, 0.278431, 0.278431, 1],
 		},
 		HUDMaker = 
 		{
@@ -61,7 +61,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [80.7605, 0.306301, 90],
+			Vec3 Translation = [161.525, -8.21969, 50],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [0, -0, -0, 1],
 		},
@@ -73,7 +73,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
-			float Size = 47,
+			float Size = 56,
 		},
 		EditorCameraController = 
 		{
@@ -81,7 +81,7 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
-			Vec3 LookTarget = [80.7605, 0.306301, 40],
+			Vec3 LookTarget = [161.525, -8.21969, 7.81958e-006],
 		},
 		EditorRenderer = 
 		{
@@ -106,9 +106,6 @@ Level =
 		},
 		MultiSprite = 
 		{
-			Vec4 Color = [1, 1, 1, 1],
-			bool Visible = true,
-			BlendMode BlendMode = Alpha,
 		},
 		TileMap = 
 		{
@@ -179,7 +176,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-2.8223, -1.78308, 0],
+			Vec3 Translation = [-2.8223, -1.39778, 0],
 			Vec3 Scale = [2.5, 2.5, 2.5],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -197,7 +194,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-0.84739, -1.78308, 0],
+			Vec3 Translation = [-0.84739, -1.39778, 0],
 			Vec3 Scale = [2.5, 2.5, 2.5],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -215,7 +212,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [1.14723, -1.78308, 0],
+			Vec3 Translation = [1.14723, -1.39778, 0],
 			Vec3 Scale = [2.5, 2.5, 2.5],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -413,7 +410,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [38.6508, 4.57534, 0],
+			Vec3 Translation = [38.6508, 4.76889, 0],
 			Vec3 Scale = [2.5, 2.5, 2.5],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -431,7 +428,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [36.4554, 4.57534, 0],
+			Vec3 Translation = [36.4554, 4.76889, 0],
 			Vec3 Scale = [2.5, 2.5, 2.5],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -456,7 +453,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [3.19024, -1.78308, 0],
+			Vec3 Translation = [3.19024, -1.39778, 0],
 			Vec3 Scale = [2.5, 2.5, 2.5],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -874,20 +871,20 @@ Level =
 	},
 	ArchetypeInstance = 
 	{
-		string Name = "5263fe2871297871:Coin",
+		string Name = "526c149858829e9a:CheckpointEffect",
 		LinkId = 
 		{
 			uint Id = 29,
 		},
 		Transform = 
 		{
-			Vec3 Translation = [88.4751, -2.65763, 0],
-			Vec3 Scale = [2.5, 2.5, 2.5],
+			Vec3 Translation = [51.61, 1.76734, 2.69905e-006],
+			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
 		Named = 
 		{
-			string Name = "Collectible",
+			string Name = "CheckpointEffects",
 		},
 	},
 	ArchetypeInstance = 
@@ -899,7 +896,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [92.6651, -2.65763, 0],
+			Vec3 Translation = [88.4751, -1.88702, 0],
 			Vec3 Scale = [2.5, 2.5, 2.5],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -917,7 +914,25 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [90.4697, -2.65763, 0],
+			Vec3 Translation = [92.6651, -1.88702, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 32,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [90.4697, -1.88702, 0],
 			Vec3 Scale = [2.5, 2.5, 2.5],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -930,7 +945,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 32,
+			uint Id = 33,
 		},
 		Named = 
 		{
@@ -984,7 +999,7 @@ Level =
 			string EventType = "",
 			string MenuType = "52733e2f11a2edf4:Menu_SprayObjects",
 			string SpriteMenu = "52733e78e60ab699:HelpSpritzDaisy",
-			Vec3 MenuOffset = [0, 4.5, 1],
+			Vec3 MenuOffset = [0, 3, 1],
 		},
 		HoverSprite = 
 		{
@@ -1005,7 +1020,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 33,
+			uint Id = 34,
 		},
 		Named = 
 		{
@@ -1094,7 +1109,6 @@ Level =
 			bool DebugMode = true,
 			Vec4 NewColor = [0.52608, 0.0704, 0.64, 1],
 			bool RandomColor = true,
-			bool RandomColorAtStart = false,
 			bool ColorShifting = false,
 			float ShiftTime = 1,
 			string AnotherSprite = "520eff6b8d44e453:FlowerFace",
@@ -1145,7 +1159,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 34,
+			uint Id = 35,
 		},
 		Named = 
 		{
@@ -1227,7 +1241,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 35,
+			uint Id = 36,
 		},
 		Named = 
 		{
@@ -1330,7 +1344,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 36,
+			uint Id = 37,
 		},
 		Named = 
 		{
@@ -1433,7 +1447,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 37,
+			uint Id = 38,
 		},
 		Named = 
 		{
@@ -1536,7 +1550,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 38,
+			uint Id = 39,
 		},
 		Named = 
 		{
@@ -1590,7 +1604,7 @@ Level =
 			string EventType = "",
 			string MenuType = "52733e2f11a2edf4:Menu_SprayObjects",
 			string SpriteMenu = "5273574deaa40a16:HelpDehydratedFlower2",
-			Vec3 MenuOffset = [0, 4.5, 1],
+			Vec3 MenuOffset = [0, 3, 1],
 		},
 		HoverSprite = 
 		{
@@ -1611,7 +1625,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 39,
+			uint Id = 40,
 		},
 		Named = 
 		{
@@ -1687,7 +1701,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 40,
+			uint Id = 41,
 		},
 		Transform = 
 		{
@@ -1705,7 +1719,7 @@ Level =
 		string Name = "527356ebf96c6929:SubtleSign",
 		LinkId = 
 		{
-			uint Id = 41,
+			uint Id = 42,
 		},
 		Transform = 
 		{
@@ -1723,11 +1737,11 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 42,
+			uint Id = 43,
 		},
 		Transform = 
 		{
-			Vec3 Translation = [34.4608, 4.57534, 0],
+			Vec3 Translation = [34.4608, 4.76889, 0],
 			Vec3 Scale = [2.5, 2.5, 2.5],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -1740,7 +1754,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 43,
+			uint Id = 44,
 		},
 		Named = 
 		{
@@ -1794,7 +1808,7 @@ Level =
 			string EventType = "",
 			string MenuType = "52733e2f11a2edf4:Menu_SprayObjects",
 			string SpriteMenu = "5273574deaae3993:HelpDehydratedFlower1",
-			Vec3 MenuOffset = [0, 4.5, 1],
+			Vec3 MenuOffset = [0, 3, 1],
 		},
 		HoverSprite = 
 		{
@@ -1815,7 +1829,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 44,
+			uint Id = 45,
 		},
 		Named = 
 		{
@@ -1918,7 +1932,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 45,
+			uint Id = 46,
 		},
 		Named = 
 		{
@@ -2021,7 +2035,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 46,
+			uint Id = 47,
 		},
 		Named = 
 		{
@@ -2104,7 +2118,7 @@ Level =
 		string Name = "5216d863499fe905:WaterWheel",
 		LinkId = 
 		{
-			uint Id = 47,
+			uint Id = 48,
 		},
 		Transform = 
 		{
@@ -2122,7 +2136,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 48,
+			uint Id = 49,
 		},
 		Transform = 
 		{
@@ -2140,7 +2154,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 49,
+			uint Id = 50,
 		},
 		Transform = 
 		{
@@ -2158,7 +2172,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 50,
+			uint Id = 51,
 		},
 		Transform = 
 		{
@@ -2176,7 +2190,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 51,
+			uint Id = 52,
 		},
 		Transform = 
 		{
@@ -2194,7 +2208,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 52,
+			uint Id = 53,
 		},
 		Transform = 
 		{
@@ -2212,7 +2226,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 53,
+			uint Id = 54,
 		},
 		Transform = 
 		{
@@ -2230,7 +2244,7 @@ Level =
 		string Name = "521dc79222fed2fb:Fountain",
 		LinkId = 
 		{
-			uint Id = 54,
+			uint Id = 55,
 		},
 		Transform = 
 		{
@@ -2247,7 +2261,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 55,
+			uint Id = 56,
 		},
 		Named = 
 		{
@@ -2287,7 +2301,7 @@ Level =
 		},
 		Model = 
 		{
-			string MaterialName = "528755ab98e4fad8:Platform",
+			string MaterialName = "527316cedd8b8264:Grass",
 			string MeshName = "4de0354322b345ae:Cube",
 			Vec4 Color = [1, 1, 1, 1],
 			bool Visible = true,
@@ -2310,7 +2324,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 56,
+			uint Id = 57,
 		},
 		Named = 
 		{
@@ -2371,7 +2385,7 @@ Level =
 		string Name = "521dc79222fed2fb:Fountain",
 		LinkId = 
 		{
-			uint Id = 57,
+			uint Id = 58,
 		},
 		Transform = 
 		{
@@ -2389,7 +2403,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 58,
+			uint Id = 59,
 		},
 		Transform = 
 		{
@@ -2407,7 +2421,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 59,
+			uint Id = 60,
 		},
 		Transform = 
 		{
@@ -2425,7 +2439,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 60,
+			uint Id = 61,
 		},
 		Transform = 
 		{
@@ -2443,7 +2457,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 61,
+			uint Id = 62,
 		},
 		Transform = 
 		{
@@ -2461,7 +2475,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 62,
+			uint Id = 63,
 		},
 		Transform = 
 		{
@@ -2479,7 +2493,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 63,
+			uint Id = 64,
 		},
 		Transform = 
 		{
@@ -2497,7 +2511,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 64,
+			uint Id = 65,
 		},
 		Transform = 
 		{
@@ -2515,7 +2529,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 65,
+			uint Id = 66,
 		},
 		Transform = 
 		{
@@ -2533,7 +2547,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 66,
+			uint Id = 67,
 		},
 		Transform = 
 		{
@@ -2551,7 +2565,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 67,
+			uint Id = 68,
 		},
 		Transform = 
 		{
@@ -2569,7 +2583,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 68,
+			uint Id = 69,
 		},
 		Transform = 
 		{
@@ -2587,7 +2601,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 69,
+			uint Id = 70,
 		},
 		Transform = 
 		{
@@ -2604,7 +2618,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 70,
+			uint Id = 71,
 		},
 		Named = 
 		{
@@ -2617,12 +2631,12 @@ Level =
 		Transform = 
 		{
 			Vec3 Translation = [174.651, 1.61835, 0],
-			Vec3 Scale = [1, 1, 1],
+			Vec3 Scale = [2.5, 2.5, 2.5],
 			Quat Rotation = [0, 0, 0, 1],
 		},
 		Sprite = 
 		{
-			string SpriteSource = "52876cce0bb0ff2e:bubblesprite",
+			string SpriteSource = "527372ca9c4ed583:MoonCollectible",
 			bool FlipX = false,
 			bool FlipY = false,
 			Vec4 Color = [1, 1, 1, 0.8],
@@ -2642,7 +2656,7 @@ Level =
 			string MaterialName = "4faa6050b8692851:HardMaterial",
 			string SerializedGroupName = "5217ab7799116ab9:Collectible",
 			Vec3 Offset = [0, 0, 0],
-			float Radius = 0.5,
+			float Radius = 0.2,
 		},
 		RigidBody = 
 		{
@@ -2661,7 +2675,7 @@ Level =
 			bool DebugMode = false,
 			string Type = "replenish",
 			float PrizeStrength = 0.25,
-			float Timing = 5,
+			float Timing = 6,
 			float Lifetime = 0,
 			bool Blinking = false,
 			float BlinkDuration = 1.5,
@@ -2697,12 +2711,12 @@ Level =
 		string Name = "52737503a396ba82:BlueCoin",
 		LinkId = 
 		{
-			uint Id = 71,
+			uint Id = 72,
 		},
 		Transform = 
 		{
 			Vec3 Translation = [175.517, 2.97857, 0],
-			Vec3 Scale = [1, 1, 1],
+			Vec3 Scale = [2.5, 2.5, 2.5],
 			Quat Rotation = [0, 0, 0, 1],
 		},
 		Named = 
@@ -2715,7 +2729,7 @@ Level =
 		string Name = "521dc79222fed2fb:Fountain",
 		LinkId = 
 		{
-			uint Id = 72,
+			uint Id = 73,
 		},
 		Transform = 
 		{
@@ -2732,7 +2746,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 73,
+			uint Id = 74,
 		},
 		Named = 
 		{
@@ -2786,7 +2800,7 @@ Level =
 			string EventType = "",
 			string MenuType = "52733e2f11a2edf4:Menu_SprayObjects",
 			string SpriteMenu = "52728d8b950aaadf:HelpJumpBoost",
-			Vec3 MenuOffset = [0, 4.5, 1],
+			Vec3 MenuOffset = [0, 3, 1],
 		},
 		HoverSprite = 
 		{
@@ -2808,7 +2822,7 @@ Level =
 		string Name = "521dc79222fed2fb:Fountain",
 		LinkId = 
 		{
-			uint Id = 74,
+			uint Id = 75,
 		},
 		Transform = 
 		{
@@ -2826,7 +2840,7 @@ Level =
 		string Name = "5216d863499fe905:WaterWheel",
 		LinkId = 
 		{
-			uint Id = 75,
+			uint Id = 76,
 		},
 		Transform = 
 		{
@@ -2844,7 +2858,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 76,
+			uint Id = 77,
 		},
 		Transform = 
 		{
@@ -2862,7 +2876,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 77,
+			uint Id = 78,
 		},
 		Transform = 
 		{
@@ -2875,22 +2889,96 @@ Level =
 			string Name = "Collectible",
 		},
 	},
-	ArchetypeInstance = 
+	Cog = 
 	{
-		string Name = "52737503a396ba82:BlueCoin",
 		LinkId = 
 		{
-			uint Id = 78,
-		},
-		Transform = 
-		{
-			Vec3 Translation = [203.841, 1.61835, 0],
-			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
+			uint Id = 79,
 		},
 		Named = 
 		{
 			string Name = "Collectible",
+		},
+		Archetyped = 
+		{
+			string Name = "52737503a396ba82:BlueCoin",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [203.535, 1.61835, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "527372ca9c4ed583:MoonCollectible",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 0.8],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217ab7799116ab9:Collectible",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 0.2,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Collectible = 
+		{
+			bool DebugMode = false,
+			string Type = "replenish",
+			float PrizeStrength = 0.25,
+			float Timing = 8,
+			float Lifetime = 0,
+			bool Blinking = false,
+			float BlinkDuration = 1.5,
+			uint BlinkNumber = 4,
+			string respawnOnEvent = "",
+		},
+		Rotator = 
+		{
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 1.3,
+			bool Sway = false,
+			float SwayPeriod = 1.5,
+		},
+		HUDEventDispatcher = 
+		{
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216b2fc72880ba3:Coin",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
 		},
 	},
 	ArchetypeInstance = 
@@ -2898,7 +2986,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 79,
+			uint Id = 80,
 		},
 		Transform = 
 		{
@@ -2911,22 +2999,96 @@ Level =
 			string Name = "Collectible",
 		},
 	},
-	ArchetypeInstance = 
+	Cog = 
 	{
-		string Name = "52737503a396ba82:BlueCoin",
 		LinkId = 
 		{
-			uint Id = 80,
-		},
-		Transform = 
-		{
-			Vec3 Translation = [205.028, 2.59685, 0],
-			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
+			uint Id = 81,
 		},
 		Named = 
 		{
 			string Name = "Collectible",
+		},
+		Archetyped = 
+		{
+			string Name = "5263fe2871297871:Coin",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [205.164, 2.59685, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "527372ca9c4ed583:MoonCollectible",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 0.8],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217ab7799116ab9:Collectible",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 0.2,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Collectible = 
+		{
+			bool DebugMode = false,
+			string Type = "replenish",
+			float PrizeStrength = 0.25,
+			float Timing = 5,
+			float Lifetime = 0,
+			bool Blinking = false,
+			float BlinkDuration = 1.5,
+			uint BlinkNumber = 4,
+			string respawnOnEvent = "",
+		},
+		Rotator = 
+		{
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 1.3,
+			bool Sway = false,
+			float SwayPeriod = 1.5,
+		},
+		HUDEventDispatcher = 
+		{
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216b2fc72880ba3:Coin",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
 		},
 	},
 	ArchetypeInstance = 
@@ -2934,7 +3096,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 81,
+			uint Id = 82,
 		},
 		Transform = 
 		{
@@ -2952,7 +3114,7 @@ Level =
 		string Name = "5216d863499fe905:WaterWheel",
 		LinkId = 
 		{
-			uint Id = 82,
+			uint Id = 83,
 		},
 		Transform = 
 		{
@@ -2970,7 +3132,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 83,
+			uint Id = 84,
 		},
 		Transform = 
 		{
@@ -2988,7 +3150,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 84,
+			uint Id = 85,
 		},
 		Transform = 
 		{
@@ -3005,7 +3167,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 85,
+			uint Id = 86,
 		},
 		Named = 
 		{
@@ -3108,7 +3270,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 86,
+			uint Id = 87,
 		},
 		Named = 
 		{
@@ -3211,7 +3373,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 87,
+			uint Id = 88,
 		},
 		Named = 
 		{
@@ -3314,7 +3476,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 88,
+			uint Id = 89,
 		},
 		Named = 
 		{
@@ -3417,7 +3579,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 89,
+			uint Id = 90,
 		},
 		Named = 
 		{
@@ -3521,7 +3683,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 90,
+			uint Id = 91,
 		},
 		Transform = 
 		{
@@ -3539,7 +3701,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 91,
+			uint Id = 92,
 		},
 		Transform = 
 		{
@@ -3557,7 +3719,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 92,
+			uint Id = 93,
 		},
 		Transform = 
 		{
@@ -3575,7 +3737,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 93,
+			uint Id = 94,
 		},
 		Transform = 
 		{
@@ -3593,7 +3755,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 94,
+			uint Id = 95,
 		},
 		Transform = 
 		{
@@ -3611,7 +3773,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 95,
+			uint Id = 96,
 		},
 		Transform = 
 		{
@@ -3629,7 +3791,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 96,
+			uint Id = 97,
 		},
 		Transform = 
 		{
@@ -3647,7 +3809,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 97,
+			uint Id = 98,
 		},
 		Transform = 
 		{
@@ -3665,7 +3827,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 98,
+			uint Id = 99,
 		},
 		Transform = 
 		{
@@ -3683,7 +3845,7 @@ Level =
 		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
-			uint Id = 99,
+			uint Id = 100,
 		},
 		Transform = 
 		{
@@ -3701,7 +3863,7 @@ Level =
 		string Name = "521dc79222fed2fb:Fountain",
 		LinkId = 
 		{
-			uint Id = 100,
+			uint Id = 101,
 		},
 		Transform = 
 		{
@@ -3718,7 +3880,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 101,
+			uint Id = 102,
 		},
 		Named = 
 		{
@@ -3821,7 +3983,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 102,
+			uint Id = 103,
 		},
 		Named = 
 		{
@@ -3924,7 +4086,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 103,
+			uint Id = 104,
 		},
 		Named = 
 		{
@@ -4027,7 +4189,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 104,
+			uint Id = 105,
 		},
 		Named = 
 		{
@@ -4116,7 +4278,6 @@ Level =
 			bool DebugMode = true,
 			Vec4 NewColor = [0.52608, 0.0704, 0.64, 1],
 			bool RandomColor = true,
-			bool RandomColorAtStart = false,
 			bool ColorShifting = false,
 			float ShiftTime = 1,
 			string AnotherSprite = "520eff6b8d44e453:FlowerFace",
@@ -4168,29 +4329,11 @@ Level =
 		string Name = "521dc79222fed2fb:Fountain",
 		LinkId = 
 		{
-			uint Id = 105,
-		},
-		Transform = 
-		{
-			Vec3 Translation = [242.146, -9.73775, 0],
-			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-		Named = 
-		{
-			string Name = "Fountain",
-		},
-	},
-	ArchetypeInstance = 
-	{
-		string Name = "521dc79222fed2fb:Fountain",
-		LinkId = 
-		{
 			uint Id = 106,
 		},
 		Transform = 
 		{
-			Vec3 Translation = [239.263, -9.73775, 0],
+			Vec3 Translation = [242.146, -9.92055, 0],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -4208,7 +4351,25 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [245.299, -9.73775, 0],
+			Vec3 Translation = [239.263, -9.92055, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Fountain",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521dc79222fed2fb:Fountain",
+		LinkId = 
+		{
+			uint Id = 108,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [245.299, -9.92055, 0],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -4221,7 +4382,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 108,
+			uint Id = 109,
 		},
 		Named = 
 		{
@@ -4303,7 +4464,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 109,
+			uint Id = 110,
 		},
 		Named = 
 		{
@@ -4389,7 +4550,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "Camera",
+			string Name = "myCamera",
 		},
 		Archetyped = 
 		{
@@ -4397,7 +4558,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [242.058, -0.449819, 40],
+			Vec3 Translation = [241.563, 1.3638, 40],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -4417,7 +4578,6 @@ Level =
 			bool Freeze = false,
 			uint targetObject = 6,
 			uint startingTarget = 5,
-			Vec3 Offset = [0, 0, 0],
 			float ZValue = 40,
 			bool goalViewing = true,
 			float viewtime = 1.5,
@@ -4450,7 +4610,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 110,
+			uint Id = 111,
 		},
 		Named = 
 		{
@@ -4528,58 +4688,187 @@ Level =
 			Vec3 Size = [6, 12.5, 1.5],
 		},
 	},
-	ArchetypeInstance = 
+	Cog = 
 	{
-		string Name = "5215fd450f0a3bd9:Checkpoint",
-		LinkId = 
-		{
-			uint Id = 111,
-		},
-		Transform = 
-		{
-			Vec3 Translation = [47.2626, -0.316094, -0.1],
-			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-		Named = 
-		{
-			string Name = "Checkpoint",
-		},
-	},
-	ArchetypeInstance = 
-	{
-		string Name = "5215fd450f0a3bd9:Checkpoint",
 		LinkId = 
 		{
 			uint Id = 112,
 		},
-		Transform = 
-		{
-			Vec3 Translation = [107.209, -0.316094, -0.1],
-			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
 		Named = 
 		{
 			string Name = "Checkpoint",
 		},
+		Archetyped = 
+		{
+			string Name = "5215fd450f0a3bd9:Checkpoint",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [47.7644, -0.717528, -0.1],
+			Vec3 Scale = [0.5, 0.5, 0.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520eff6c8d5a619c:CheckpointUnused",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		Checkpoint = 
+		{
+			bool DebugMode = true,
+			uint ID = 2,
+			Vec2 Position = [0, 0],
+			bool isUsed = false,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217aaa5614a18de:Checkpoint",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [2, 6, 2],
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216e5d72aa0229b:Flower",
+			float Volume = 0.65,
+			float Pitch = 2,
+			bool Positional = true,
+		},
 	},
-	ArchetypeInstance = 
+	Cog = 
 	{
-		string Name = "5215fd450f0a3bd9:Checkpoint",
 		LinkId = 
 		{
 			uint Id = 113,
 		},
+		Named = 
+		{
+			string Name = "Checkpoint",
+		},
+		Archetyped = 
+		{
+			string Name = "5215fd450f0a3bd9:Checkpoint",
+		},
 		Transform = 
 		{
-			Vec3 Translation = [193.693, -4.33401, -0.1],
-			Vec3 Scale = [1, 1, 1],
+			Vec3 Translation = [105.904, -0.717528, -0.1],
+			Vec3 Scale = [0.5, 0.5, 0.5],
 			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520eff6c8d5a619c:CheckpointUnused",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		Checkpoint = 
+		{
+			bool DebugMode = true,
+			uint ID = 3,
+			Vec2 Position = [0, 0],
+			bool isUsed = false,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217aaa5614a18de:Checkpoint",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [2, 6, 2],
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216e5d72aa0229b:Flower",
+			float Volume = 0.65,
+			float Pitch = 2,
+			bool Positional = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 114,
 		},
 		Named = 
 		{
 			string Name = "Checkpoint",
+		},
+		Archetyped = 
+		{
+			string Name = "5215fd450f0a3bd9:Checkpoint",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [193.693, -4.53473, -0.1],
+			Vec3 Scale = [0.5, 0.5, 0.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520eff6c8d5a619c:CheckpointUnused",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		Checkpoint = 
+		{
+			bool DebugMode = true,
+			uint ID = 4,
+			Vec2 Position = [0, 0],
+			bool isUsed = false,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217aaa5614a18de:Checkpoint",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [2, 6, 2],
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216e5d72aa0229b:Flower",
+			float Volume = 0.65,
+			float Pitch = 2,
+			bool Positional = true,
 		},
 	},
 	ArchetypeInstance = 
@@ -4587,12 +4876,12 @@ Level =
 		string Name = "526d00aa1afdff2c:StartingPoint",
 		LinkId = 
 		{
-			uint Id = 114,
+			uint Id = 115,
 		},
 		Transform = 
 		{
 			Vec3 Translation = [-17.1675, -0.316093, -0.1],
-			Vec3 Scale = [1, 1, 1],
+			Vec3 Scale = [0.5, 0.5, 0.5],
 			Quat Rotation = [0, 0, 0, 1],
 		},
 		Named = 
@@ -4604,7 +4893,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 115,
+			uint Id = 116,
 		},
 		Named = 
 		{
@@ -4658,7 +4947,7 @@ Level =
 			string EventType = "",
 			string MenuType = "52733e2f11a2edf4:Menu_SprayObjects",
 			string SpriteMenu = "5271905b6bd74e67:HelpControls",
-			Vec3 MenuOffset = [0, 4.5, 1],
+			Vec3 MenuOffset = [0, 2.5, 1],
 		},
 		HoverSprite = 
 		{

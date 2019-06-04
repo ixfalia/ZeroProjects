@@ -20,6 +20,7 @@ class MouseResponse:
     hoverSound = Property.SoundCue()
     downSound = Property.SoundCue()
     
+    
     def Initialize(self, initializer):
         Zero.Connect(self.Owner, Events.MouseEnter, self.setHover)
         Zero.Connect(self.Owner, Events.MouseExit, self.onExit)

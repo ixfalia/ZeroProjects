@@ -12,7 +12,7 @@ class HUDMaker:
         #Zero.Connect(self.Space, Events.LevelStarted, self.onLevelStarted)
         #Zero.Connect(self.Space, "HUDCreate", self.onHUDCreate)
         
-        self.HUDSpace = Zero.Game.CreateNamedSpace( "HUDSpace", "Space")
+        self.HUDSpace = self.GameSession.CreateNamedSpace( "HUDSpace", "Space")
         self.HUDSpace.LoadLevel(self.HUDLevel)
         
         pEvent = Zero.ScriptEvent()
@@ -32,7 +32,7 @@ class HUDMaker:
     #end def
     
     def onLevelStarted(self, GameEvent):
-        self.HUDSpace = Zero.Game.CreateNamedSpace("HUDSpace", "Space")
+        self.HUDSpace = self.GameSession.CreateNamedSpace("HUDSpace", "Space")
         self.HUDSpace.LoadLevel("HUD")
         camera = self.HUDSpace.FindObjectByName("HUDCamera")
         GameEvent.Viewport.AddLayer(self.HUDSpace, camera)

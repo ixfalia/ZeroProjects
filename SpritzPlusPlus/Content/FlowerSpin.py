@@ -143,7 +143,6 @@ class FlowerSpin:
         
         print("flowerget")
         FlowerEvent = Zero.ScriptEvent()
-        #FlowerEvent.Level = Zero.Ga
         
             #this function is used to edit the behavior of the flower spin remotely
         def myFunc(otherSelf):
@@ -171,7 +170,6 @@ class FlowerSpin:
                 player.HUDEventDispatcher.DispatchHUDEvent("FlowerGet", FlowerEvent)
         self.Owner.DispatchEvent("FlowerGet", FlowerEvent)
         self.Space.DispatchEvent("FlowerGet", FlowerEvent)
-        #Zero.Game.DispatchEvent("FlowerGet", FlowerEvent)
         #endfor
     #enddef()
 #end class

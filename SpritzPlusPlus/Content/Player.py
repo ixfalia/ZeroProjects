@@ -18,7 +18,7 @@ class Player:
         
         self.deathTimer = 0
         self.inDeath = False
-        self.DeathFallStrength = 16
+        self.DeathFallStrength = 10
     #def initialize()
     
     def onUpdate(self, uEvent):
@@ -55,8 +55,6 @@ class Player:
             self.inDeath = True
             #self.deathTimer = 0.0
             #raise
-            settings = self.getLevelSettings()
-            settings.DragEffect.Active = False
             self.Owner.GamepadController.disable()
             self.disableCamera()
             self.Owner.SoundManager.Play("Death")
@@ -64,12 +62,10 @@ class Player:
             self.Owner.RigidBody.Velocity = VectorMath.Vec3()
             self.Owner.RigidBody.ApplyLinearVelocity(VectorMath.Vec3(0,15,0))
             self.Owner.GravityEffect.Strength = self.DeathFallStrength
-            self.Owner.GravityEffect.Active = True
             self.Owner.Sprite.SpriteSource = "DennisDeath"
             
             deathEvent = Zero.ScriptEvent()
             self.Space.DispatchEvent("DeathEvent", deathEvent)
-            Zero.Game.DispatchEvent("DeathEvent", deathEvent)
             
             transl = self.Owner.Transform.Translation
             self.Owner.Transform.Translation = VectorMath.Vec3(transl.x,transl.y, 0.1)
@@ -83,26 +79,23 @@ class Player:
     #end onDeath()
     
     def disableCamera(self):
-        camera = self.Space.FindObjectByName("Camera")
+        camera = self.Space.FindObjectByName("myCamera")
         
         camera.CameraController.FreezeCamera(True)
     
     def enableCamera(self):
-        camera = self.Space.FindObjectByName("Camera")
+        camera = self.Space.FindObjectByName("myCamera")
         
         camera.CameraController.FreezeCamera(False)
     
     def onRespawn(self):
         print("Player.onRespawn(): Player Respawned")
         self.Owner.CapsuleCollider.Ghost = False
-        settings = self.getLevelSettings()
-        settings.DragEffect.Active = True
         self.enableCamera()
         self.Owner.GamepadController.enable()
         self.Owner.GravityEffect.Strength = 1
         self.Owner.Sprite.SpriteSource = "MainCharacter"
         self.inDeath = False
-        self.Owner.GravityEffect.Active = False
         
         if self.Owner.WaterTank:
             TankSet = self.Owner.WaterTank.MaximumWater * 0.35
@@ -121,8 +114,5 @@ class Player:
     
     def onLevelEnd(self, lEvent):
         pass
-    
-    def getLevelSettings(self):
-        return self.Space.FindObjectByName("LevelSettings")
 
 Zero.RegisterComponent("Player", Player)

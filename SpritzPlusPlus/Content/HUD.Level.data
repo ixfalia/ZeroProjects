@@ -41,7 +41,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [5.9475, 1.805, 90],
+			Vec3 Translation = [5.9825, 1.7125, 90],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [0, -2.38419e-008, -0, 1],
 		},
@@ -53,7 +53,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
-			float Size = 23,
+			float Size = 21,
 		},
 		EditorCameraController = 
 		{
@@ -61,7 +61,7 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
-			Vec3 LookTarget = [5.9475, 1.805, 40],
+			Vec3 LookTarget = [5.9825, 1.7125, 40],
 		},
 		EditorRenderer = 
 		{
@@ -167,7 +167,6 @@ Level =
 			Vec2 Size = [0, 0],
 			TextAlign Align = Left,
 			float PixelsPerUnit = 64,
-			bool Smoothing = true,
 		},
 		HUDPointsText = 
 		{
@@ -395,7 +394,6 @@ Level =
 			Vec2 Size = [0, 0],
 			TextAlign Align = Left,
 			float PixelsPerUnit = 64,
-			bool Smoothing = true,
 		},
 		HUDFlowerText = 
 		{
@@ -538,7 +536,6 @@ Level =
 			Vec2 Size = [0, 0],
 			TextAlign Align = Left,
 			float PixelsPerUnit = 64,
-			bool Smoothing = true,
 		},
 		LevelProgressTracker = 
 		{
@@ -574,7 +571,6 @@ Level =
 			Vec2 Size = [0, 0],
 			TextAlign Align = Left,
 			float PixelsPerUnit = 64,
-			bool Smoothing = true,
 		},
 	},
 	Cog = 
@@ -607,7 +603,6 @@ Level =
 			Vec2 Size = [0, 0],
 			TextAlign Align = Left,
 			float PixelsPerUnit = 64,
-			bool Smoothing = true,
 		},
 		PathFollower = 
 		{
@@ -800,7 +795,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [6.39538, 0, 0],
+			Vec3 Translation = [4.54054, 0, 0],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -864,7 +859,6 @@ Level =
 			Vec2 Size = [0, 0],
 			TextAlign Align = Left,
 			float PixelsPerUnit = 64,
-			bool Smoothing = true,
 		},
 		Toggler = 
 		{
@@ -902,15 +896,11 @@ Level =
 			Vec2 Size = [0, 0],
 			TextAlign Align = Left,
 			float PixelsPerUnit = 64,
-			bool Smoothing = true,
 		},
 		GamepadDispatcher = 
 		{
 			bool DebugMode = false,
 			bool DisableControl = false,
-			bool DetectControlEvents = true,
-			bool spaceEvents = true,
-			bool ownerEvents = false,
 			float deadzone = 0.8,
 		},
 		GamePauser = 
@@ -955,23 +945,6 @@ Level =
 			uint StartFrame = 0,
 			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
-		},
-	},
-	Cog = 
-	{
-		LinkId = 
-		{
-			uint Id = 21,
-		},
-		Named = 
-		{
-			string Name = "Transform",
-		},
-		Transform = 
-		{
-			Vec3 Translation = [11.7556, -0.755, 40],
-			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
 		},
 	},
 },

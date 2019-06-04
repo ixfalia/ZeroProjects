@@ -2,7 +2,6 @@ import Zero
 import Events
 import Property
 import VectorMath
-import Action
 
 class GamePauser:
     def Initialize(self, initializer):
@@ -23,17 +22,6 @@ class GamePauser:
             self.togglePause()
             
             self.Owner.SoundEmitter.PlayCue("Pause")
-        
-        if self.Paused:
-            if gEvent.Button == Zero.Buttons.Back:
-                self.togglePause()
-                Zero.Game.LevelManager.loadLevelSelect()
-                return
-                EndEvent = Zero.ScriptEvent()
-                self.Space.DispatchEvent("LevelEnd", EndEvent)
-                seq = Action.Sequence(self.Owner)
-                Action.Delay(seq, 1)
-                Action.Call(seq, Zero.Game.LevelManager.loadLevelSelect)
     
     def onLevel(self, lEvent):
         self.Active = True

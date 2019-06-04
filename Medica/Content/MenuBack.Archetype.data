@@ -14,7 +14,7 @@ Cog =
 	},
 	Transform = 
 	{
-		Vec3 Translation = [0, 0, 0],
+		Vec3 Translation = [-27.1612, 1.43674, -1.59232],
 		Vec3 Scale = [18, 13, 1],
 		Quat Rotation = [0, 0, 0, 1],
 	},
@@ -53,9 +53,6 @@ Cog =
 	ColorNexus = 
 	{
 		Vec4 BaseColor = [1, 1, 1, 1],
-	},
-	PauseOnFade = 
-	{
 	},
 	Hierarchy = 
 	{

@@ -14,9 +14,9 @@ class LevelManager:
     def onGameStart(self, gEvent):
         
         self.gSpace = self.Owner.CreateSpace("GameSpace")
-        #self.gSpace = Zero.Game.FindSpaceByName("GameSpace")
+        #self.gSpace =self.GameSession.FindSpaceByName("GameSpace")
         self.gSpace.DestroyAll()
-        space = Zero.Game.FindSpaceByName("Space")
+        space = self.GameSession.FindSpaceByName("Space")
         
         if not self.OverrideLevel.Name == "DefaultLevel":
             self.gSpace.LoadLevel(self.OverrideLevel)
@@ -78,7 +78,7 @@ class LevelManager:
     #end loadPreviousLevel()
     def getGameSpace(self):
         if not self.gSpace:
-            self.gSpace = Zero.Game.FindSpaceByName("GameSpace")
+            self.gSpace = self.GameSession.FindSpaceByName("GameSpace")
             
             if not self.gSpace:
                 return

@@ -13,8 +13,8 @@ class Lifetime:
     sendToOwner = Property.Bool(default = False)
     
     def Initialize(self, initializer):
-        self.HUDSpace = Zero.Game.FindSpaceByName("HUDSpace")
-        self.GameSpace = Zero.Game.LevelManager.getGameSpace()
+        self.HUDSpace = self.GameSession.FindSpaceByName("HUDSpace")
+        self.GameSpace = self.GameSession.LevelManager.getGameSpace()
         
         Zero.Connect(self.Space, Events.LogicUpdate, self.onUpdate)
         
@@ -62,11 +62,11 @@ class Lifetime:
         e = Zero.ScriptEvent()
         
         if self.sendToGameSpace:
-            self.GameSpace = Zero.Game.LevelManager.getGameSpace()
+            self.GameSpace = self.GameSession.LevelManager.getGameSpace()
             self.GameSpace.DispatchEvent(self.SendEvent, e)
         
         if self.sendToHUDSpace:
-            self.HUDSpace = Zero.Game.FindSpaceByName("HUDSpace")
+            self.HUDSpace = self.GameSession.FindSpaceByName("HUDSpace")
             if not self.HUDSpace:
                 return
             

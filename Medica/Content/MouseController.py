@@ -44,6 +44,7 @@ class MouseController:
     
     def onDisable(self, e):
         self.disable()
+        raise
     
     def onEnble(self, e):
         self.enable()

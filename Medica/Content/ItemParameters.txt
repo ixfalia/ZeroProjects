@@ -9,7 +9,3 @@ Serenian Water:Bottle, DeepSkyBlue
 Purgidine Ore:Mineral, Firebrick
 Linjee Mushroom:Fungal, DarkOrange
 Riverside Seal:Entry, CadetBlue
-Murky Water:Bottle, SaddleBrown
-Nattle Wood:Bag, Cornsilk
-Eternal Happiness:Mystery, Gold
-Default:Mystery, Red

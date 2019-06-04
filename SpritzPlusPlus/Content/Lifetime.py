@@ -7,10 +7,6 @@ import Action
 
 class Lifetime:
     Duration = Property.Float(default = 4)
-    SendEvent = Property.String(default="")
-    sendToHUDSpace = Property.Bool(default = True)
-    sendToGameSpace = Property.Bool(default = False)
-    sendToOwner = Property.Bool(default = False)
     
     def Initialize(self, initializer):
         Zero.Connect(self.Space, Events.LogicUpdate, self.onUpdate)
@@ -24,52 +20,12 @@ class Lifetime:
             return
         
         if self.timer >= self.Duration:
-            if self.Owner.SpriteParticleSystem and self.Owner.Fader:
+            if self.Owner.Fader:
                 self.Owner.Fader.FadeOut()
                 seq = Action.Sequence(self.Owner)
                 Action.Delay(seq, self.Owner.Fader.FadeOutDuration)
-                Action.Delay(seq, self.Owner.SphericalParticleEmitter.Lifetime)
-                Action.Call(seq, self.sendEvent)
-                Action.Call(seq, self.Owner.Destroy)
-            elif self.Owner.SpriteParticleSystem:
-                seq = Action.Sequence(self.Owner)
-                #Action.Delay(seq, self.Duration)
-                Action.Call(seq, self.deactivateParticles)
-                Action.Delay(seq, self.Owner.SphericalParticleEmitter.Lifetime)
-                Action.Call(seq, self.sendEvent)
-                Action.Call(seq, self.Owner.Destroy)
-            elif self.Owner.Fader:
-                self.Owner.Fader.FadeOut()
-                seq = Action.Sequence(self.Owner)
-                Action.Delay(seq, self.Owner.Fader.FadeOutDuration)
-                Action.Call(seq, self.sendEvent)
                 Action.Call(seq, self.Owner.Destroy)
             else:
-                self.sendEvent()
-                self.Owner.Destroy()
-    
-    def deactivateParticles(self):
-        if self.Owner.SpriteParticleSystem:
-            self.Owner.SphericalParticleEmitter.Active = False
-    
-    def sendEvent(self):
-        if self.SendEvent == "":
-            return
-            
-        e = Zero.ScriptEvent()
-        
-        if self.sendToGameSpace:
-            self.GameSpace = Zero.Game.LevelManager.getGameSpace()
-            self.GameSpace.DispatchEvent(self.SendEvent, e)
-        
-        if self.sendToHUDSpace:
-            self.HUDSpace = Zero.Game.FindSpaceByName("HUDSpace")
-            if not self.HUDSpace:
-                return
-            
-            self.HUDSpace.DispatchEvent(self.SendEvent, e)
-        
-        if self.sendToOwner:
-            self.Owner.DispatchEvent(self.SendEvent, e)
+                self.Destroy()
 
 Zero.RegisterComponent("Lifetime", Lifetime)

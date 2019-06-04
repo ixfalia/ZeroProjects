@@ -17,18 +17,18 @@ LevelSettings =
 		bool Active = true,
 		bool WakeUpOnChange = false,
 		bool LocalSpaceDirection = true,
-		float Strength = 12,
+		float Strength = 10,
 		Vec3 Direction = [0, -1, 0],
 	},
 	DragEffect = 
 	{
 		bool Active = true,
 		bool WakeUpOnChange = false,
-		float Drag = 0.6,
+		float Drag = 0.7,
 	},
 	ForwardRenderer = 
 	{
-		Vec4 ClearColor = [0.258725, 0.405347, 0.655, 1],
+		Vec4 ClearColor = [0.278431, 0.278431, 0.278431, 1],
 	},
 	HUDMaker = 
 	{

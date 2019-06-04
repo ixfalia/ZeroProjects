@@ -5,7 +5,7 @@ import VectorMath
 
 class HUDClear:
     def Initialize(self, initializer):
-        space = Zero.Game.FindSpaceByName("HUDSpace")
+        space = self.GameSession.FindSpaceByName("HUDSpace")
         if space:
             space.Destroy()
 

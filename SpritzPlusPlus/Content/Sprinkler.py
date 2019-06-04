@@ -73,12 +73,12 @@ class Sprinkler:
         spritz.RigidBody.Velocity = Rightstick * 15
         
         if(self.Owner.MovementController):
-            VelocityLimit = 6
+            VelocityLimit = 5
                 #if the right stick is pointed down apply some sort of pushing force
             if(Rightstick.y < -self.Owner.GamepadController.deadzone and not self.Owner.WaterTank.isEmpty()):
                 if(self.Owner.RigidBody.Velocity.y < VelocityLimit):
                     v = self.Owner.RigidBody.Velocity
-                    self.Owner.RigidBody.Velocity = Vec3(v.x, min( v.y + Rightstick.y * -0.64, VelocityLimit ), v.z )
+                    self.Owner.RigidBody.Velocity = Vec3(v.x, min( v.y + Rightstick.y * -0.55, VelocityLimit ), v.z )
                     #self.Owner.RigidBody.ApplyLinearVelocity( Vec3(0, Rightstick.y * -0.55, 0) )
                     self.Owner.MovementController.Flutter(Rightstick.y * 0.1)
             else:

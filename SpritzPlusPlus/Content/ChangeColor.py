@@ -14,7 +14,6 @@ class ChangeColor:
     
     NewColor = Property.Color()
     RandomColor = Property.Bool(default = False)
-    RandomColorAtStart = Property.Bool(default = False)
     ColorShifting = Property.Bool(default = False)
     ShiftTime = Property.Float(default = 1.0)
     AnotherSprite = Property.SpriteSource() #a total hack need to have both modules listen for message in Body space
@@ -24,9 +23,6 @@ class ChangeColor:
     
     def Initialize(self, initializer):
         #print("ChangeOnActivation.Init()")
-        if self.RandomColor and self.RandomColorAtStart:
-            self.Owner.Sprite.Color = self.RandomHue(self.NewColor)
-        
         self.StartingColor = self.Owner.Sprite.Color
         random.seed(time.clock())
         

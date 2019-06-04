@@ -14,7 +14,7 @@ Cog =
 	},
 	Transform = 
 	{
-		Vec3 Translation = [-119.623, 51.9939, 2.1],
+		Vec3 Translation = [0, 0, 0],
 		Vec3 Scale = [12, 1, 1],
 		Quat Rotation = [0, 0, 0, 1],
 	},
@@ -64,8 +64,6 @@ Cog =
 		Vec4 hoverColor = [0.034925, 0.382968, 0.635, 1],
 		Vec4 downColor = [0.0261, 0.063162, 0.09, 1],
 		float defaultOpacity = 0.85,
-		string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
-		string downSound = "4e1bd44008b4dc2a:DefaultCue",
 	},
 	MouseBox = 
 	{
@@ -84,7 +82,7 @@ Cog =
 		bool Asleep = false,
 		bool Kinematic = false,
 		bool RotationLocked = true,
-		bool Mode2D = true,
+		bool Mode2D = false,
 		bool AllowSleep = true,
 		bool Inherit2DMode = true,
 		Vec3 Velocity = [0, 0, 0],
@@ -163,7 +161,7 @@ Cog =
 			SpriteParticleSystem = 
 			{
 				SystemChildMode ChildMode = Independent,
-				SystemSpace SystemSpace = CameraSpace,
+				SystemSpace SystemSpace = WorldSpace,
 				uint DrawOrder = 0,
 				ParticleGeometry GeometryMode = Beam,
 				ParticleRenderMode RenderMode = Additive,
@@ -240,7 +238,7 @@ Cog =
 			},
 			Transform = 
 			{
-				Vec3 Translation = [-0.369074, 0.433895, 0],
+				Vec3 Translation = [-0.381021, 0.433895, 0],
 				Vec3 Scale = [0.075, 1, 1],
 				Quat Rotation = [0, 0, 0, 1],
 			},
@@ -249,7 +247,7 @@ Cog =
 				SpriteGeometryMode GeometryMode = ZPlane,
 				TextPositionMode Position = UpperLeft,
 				string FontName = "52d4637f84d54c64:DoulosSILR",
-				uint FontSize = 36,
+				uint FontSize = 40,
 				Vec4 Color = [1, 1, 1, 1],
 				bool Visible = true,
 				string Text = "Entry:",

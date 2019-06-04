@@ -1,4 +1,3 @@
-Default: Unfortunately the text for this entry was not set.
 Salvia Leaf: An herbalist's go to cure for minor cuts and abrasions. Salvia's cooling leaves are known to help speed up the healing of open wounds.;
 Kapur Sap: Creates a warming sensation.;
 Manil Sap: Used to suspend medicines into a cream form.;
@@ -18,4 +17,3 @@ Saiga Flax: The tiny seeds of the Saiga bush are spread through watery mires of 
     As more seeds gather they form a sticky paste that hardens when the weather becomes drier.;
 Gooey Concoction: It's really sticky! When dry it becomes a hard and clear resin. Looks like it would be great for small repairs.;
 Riverside Seal: The Serenian Riverside Journal Enthusiast's seal of approval. Any collector worth their mettle should be honored to receive one of these.;
-Nattle Wood: This fragrant aromatic wood is sturdy and resistant to most wear and tear. Not only is it useful in construction, young parts of the wood can be used in medicine.

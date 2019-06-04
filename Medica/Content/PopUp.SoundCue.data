@@ -3,7 +3,7 @@ SoundCue =
 	PlayMode PlayMode = Single,
 	float Volume = 1,
 	float VolumeVariation = 0,
-	float Pitch = -0.1,
+	float Pitch = 0,
 	float PitchVariation = 0,
 	float MinDistance = 10,
 	float MaxDistance = 10000,
@@ -14,7 +14,7 @@ SoundCue =
 	Array Sounds = 
 	[
 		{
-			string SoundName = "53238e92376e5b69:Slide",
+			string SoundName = "532389c68747c842:sweepUp",
 			float Weight = 1,
 		},
 	],

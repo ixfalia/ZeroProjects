@@ -48,8 +48,6 @@ class InventoryUI:
         else:
             self.fadeOut()
             self.InventoryOpen = False
-        
-        self.updatePauseState()
     
     def onLevel(self, e):
         #self.createInventory()
@@ -170,8 +168,5 @@ class InventoryUI:
         for obj in self.slots:
             obj.UIItem.resetData()
     
-    def updatePauseState(self):
-        if self.InventoryOpen:
-            pass
 
 Zero.RegisterComponent("InventoryUI", InventoryUI)

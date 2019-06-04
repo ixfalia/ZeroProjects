@@ -14,7 +14,7 @@ Cog =
 	},
 	Transform = 
 	{
-		Vec3 Translation = [0, 0, 0],
+		Vec3 Translation = [-26.0197, 0.745051, -1.59232],
 		Vec3 Scale = [1, 1, 1],
 		Quat Rotation = [0, 0, 0, 1],
 	},
@@ -22,8 +22,8 @@ Cog =
 	{
 		SpriteGeometryMode GeometryMode = ZPlane,
 		TextPositionMode Position = Centered,
-		string FontName = "532d3dfe2a58d2c8:Prociono",
-		uint FontSize = 28,
+		string FontName = "52d4637f84d54c64:DoulosSILR",
+		uint FontSize = 32,
 		Vec4 Color = [0.045, 0.045, 0.045, 1],
 		bool Visible = true,
 		string Text = "Undefined String",
@@ -61,9 +61,6 @@ Cog =
 		float Pitch = 1,
 		bool Positional = true,
 	},
-	TextParser = 
-	{
-	},
 	Hierarchy = 
 	{
 		Cog = 
@@ -97,19 +94,12 @@ Cog =
 				SpriteGeometryMode GeometryMode = ZPlane,
 			},
 		},
-		Cog = 
+		ArchetypeInstance = 
 		{
+			string Name = "52ca5590fba48b8a:GenericButton",
 			LinkId = 
 			{
 				uint Id = 3,
-			},
-			Named = 
-			{
-				string Name = "acceptText",
-			},
-			Archetyped = 
-			{
-				string Name = "52ca5590fba48b8a:GenericButton",
 			},
 			Transform = 
 			{
@@ -117,109 +107,16 @@ Cog =
 				Vec3 Scale = [1, 1, 1],
 				Quat Rotation = [0, 0, 0, 1],
 			},
-			SpriteText = 
+			Named = 
 			{
-				SpriteGeometryMode GeometryMode = ZPlane,
-				TextPositionMode Position = Centered,
-				string FontName = "532d3dfe2a58d2c8:Prociono",
-				uint FontSize = 32,
-				Vec4 Color = [1, 1, 1, 1],
-				bool Visible = true,
-				string Text = "Accept",
-				bool OnTop = true,
-				BlendMode BlendMode = Alpha,
-				Vec2 Size = [0, 0],
-				TextAlign Align = Left,
-				float PixelsPerUnit = 64,
-				bool Smoothing = true,
-			},
-			Hierarchy = 
-			{
-				Cog = 
-				{
-					LinkId = 
-					{
-						uint Id = 4,
-					},
-					Named = 
-					{
-						string Name = "ButtonBack",
-					},
-					Transform = 
-					{
-						Vec3 Translation = [0, 0.0304661, 0],
-						Vec3 Scale = [4, 1, 1],
-						Quat Rotation = [0, 0, 0, 1],
-					},
-					Sprite = 
-					{
-						string SpriteSource = "52d0dc199ab33c97:FillTile",
-						bool FlipX = false,
-						bool FlipY = false,
-						Vec4 Color = [0.02135, 0.305, 0.151829, 1],
-						bool Visible = true,
-						bool OnTop = false,
-						bool AnimationActive = true,
-						float AnimationSpeed = 1,
-						uint StartFrame = 0,
-						BlendMode BlendMode = Alpha,
-						SpriteGeometryMode GeometryMode = ZPlane,
-					},
-					BoxCollider = 
-					{
-						bool Ghost = false,
-						bool SendsMessages = true,
-						bool Seamless = false,
-						string MaterialName = "4faa6050b8692851:HardMaterial",
-						string SerializedGroupName = "4e740859314e5515:DefaultGroup",
-						Vec3 Offset = [0, 0, 0],
-						Vec3 Size = [0.5, 0.5, 0.5],
-					},
-					MouseResponse = 
-					{
-						bool SimpleDarken = false,
-						bool MergeColors = true,
-						float ergePercent = 0.75,
-						Vec2 ouseSlide = [0, 0],
-						Vec4 hoverColor = [0.04365, 0.485, 0.193709, 1],
-						Vec4 downColor = [0.088536, 0.105, 0.0756, 1],
-						float defaultOpacity = 1,
-						string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
-						string downSound = "4e1bd44008b4dc2a:DefaultCue",
-					},
-					Reactive = 
-					{
-						bool Active = true,
-						bool CaptureMouse = false,
-					},
-					BroadcastButton = 
-					{
-						string EventName = "AcceptEvent",
-						bool spaceEvent = false,
-						bool ownerEvent = true,
-						bool hudEvent = false,
-						bool gameEvent = false,
-						bool parentEvent = false,
-						bool allParentsEvent = true,
-						bool childrenEvent = false,
-						bool allChildrenEvent = false,
-					},
-					MouseBox = 
-					{
-						string EventName = "MouseActivateEvent",
-						bool DetectLeftClick = true,
-						bool DetectRightClick = false,
-						bool DetectMiddleClick = false,
-						bool sendReactiveEvent = true,
-					},
-				},
+				string Name = "acceptText",
 			},
 		},
 		Cog = 
 		{
 			LinkId = 
 			{
-				uint Id = 5,
+				uint Id = 4,
 			},
 			Named = 
 			{
@@ -239,7 +136,7 @@ Cog =
 			{
 				SpriteGeometryMode GeometryMode = ZPlane,
 				TextPositionMode Position = Centered,
-				string FontName = "532d3dfe2a58d2c8:Prociono",
+				string FontName = "52d4637f84d54c64:DoulosSILR",
 				uint FontSize = 32,
 				Vec4 Color = [1, 1, 1, 1],
 				bool Visible = true,
@@ -257,7 +154,7 @@ Cog =
 				{
 					LinkId = 
 					{
-						uint Id = 6,
+						uint Id = 5,
 					},
 					Named = 
 					{
@@ -302,8 +199,6 @@ Cog =
 						Vec4 hoverColor = [0.54, 0.027, 0.0273077, 1],
 						Vec4 downColor = [0.255, 0.0102, 0.0102, 1],
 						float defaultOpacity = 1,
-						string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
-						string downSound = "4e1bd44008b4dc2a:DefaultCue",
 					},
 					Reactive = 
 					{
@@ -337,7 +232,7 @@ Cog =
 		{
 			LinkId = 
 			{
-				uint Id = 7,
+				uint Id = 6,
 			},
 			Named = 
 			{
@@ -407,15 +302,13 @@ Cog =
 				Vec4 hoverColor = [1, 0.96, 0, 1],
 				Vec4 downColor = [0.3, 0.20514, 0.021, 1],
 				float defaultOpacity = 1,
-				string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
-				string downSound = "4e1bd44008b4dc2a:DefaultCue",
 			},
 		},
 		Cog = 
 		{
 			LinkId = 
 			{
-				uint Id = 8,
+				uint Id = 7,
 			},
 			Named = 
 			{
@@ -477,8 +370,6 @@ Cog =
 				Vec4 hoverColor = [0.98, 0.926492, 0.2156, 1],
 				Vec4 downColor = [0.405, 0.405, 0.405, 1],
 				float defaultOpacity = 1,
-				string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
-				string downSound = "4e1bd44008b4dc2a:DefaultCue",
 			},
 			MouseBox = 
 			{
@@ -487,39 +378,6 @@ Cog =
 				bool DetectRightClick = false,
 				bool DetectMiddleClick = false,
 				bool sendReactiveEvent = false,
-			},
-		},
-		Cog = 
-		{
-			LinkId = 
-			{
-				uint Id = 9,
-			},
-			Named = 
-			{
-				string Name = "pagenumber",
-			},
-			Transform = 
-			{
-				Vec3 Translation = [3.145, -4.131, 0.01],
-				Vec3 Scale = [1, 1, 1],
-				Quat Rotation = [0, 0, 0, 1],
-			},
-			SpriteText = 
-			{
-				SpriteGeometryMode GeometryMode = ZPlane,
-				TextPositionMode Position = UpperLeft,
-				string FontName = "532d3dfe2a58d2c8:Prociono",
-				uint FontSize = 36,
-				Vec4 Color = [0, 0, 0, 1],
-				bool Visible = true,
-				string Text = "25 / 31",
-				bool OnTop = false,
-				BlendMode BlendMode = Alpha,
-				Vec2 Size = [0, 0],
-				TextAlign Align = Left,
-				float PixelsPerUnit = 64,
-				bool Smoothing = true,
 			},
 		},
 	},

@@ -15,7 +15,7 @@ Level =
 			bool Active = true,
 			bool WakeUpOnChange = false,
 			bool LocalSpaceDirection = true,
-			float Strength = 12,
+			float Strength = 10,
 			Vec3 Direction = [0, -1, 0],
 		},
 		DragEffect = 
@@ -37,7 +37,7 @@ Level =
 		},
 		ForwardRenderer = 
 		{
-			Vec4 ClearColor = [0.46056, 0.505, 0.366125, 1],
+			Vec4 ClearColor = [0.278431, 0.278431, 0.278431, 1],
 		},
 		HUDMaker = 
 		{
@@ -57,9 +57,9 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [4.55319, 4.08675, 50],
+			Vec3 Translation = [42.1582, 4.80674, 50],
 			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, -2.38419e-008, -0, 1],
+			Quat Rotation = [0, -3.8147e-008, -0, 1],
 		},
 		Camera = 
 		{
@@ -69,7 +69,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
-			float Size = 29,
+			float Size = 17,
 		},
 		EditorCameraController = 
 		{
@@ -77,7 +77,7 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
-			Vec3 LookTarget = [4.55319, 4.08675, -1.22393e-006],
+			Vec3 LookTarget = [42.1582, 4.80674, 4.19838e-007],
 		},
 		EditorRenderer = 
 		{
@@ -166,9 +166,6 @@ Level =
 		},
 		MultiSprite = 
 		{
-			Vec4 Color = [1, 1, 1, 1],
-			bool Visible = true,
-			BlendMode BlendMode = Alpha,
 		},
 		TileMap = 
 		{
@@ -247,24 +244,42 @@ Level =
 			string Name = "MainCharacter",
 		},
 	},
-	Cog = 
+	ArchetypeInstance = 
 	{
+		string Name = "526d00aa1afdff2c:StartingPoint",
 		LinkId = 
 		{
 			uint Id = 8,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-6.9534, 0.887455, 3.97555e-007],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
 		},
 		Named = 
 		{
 			string Name = "Start_Undo",
 		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 9,
+		},
+		Named = 
+		{
+			string Name = "Checkpoint",
+		},
 		Archetyped = 
 		{
-			string Name = "526d00aa1afdff2c:StartingPoint",
+			string Name = "5215fd450f0a3bd9:Checkpoint",
 		},
 		Transform = 
 		{
-			Vec3 Translation = [-6.06989, 0.887455, 3.97555e-007],
-			Vec3 Scale = [0.5, 0.5, 1],
+			Vec3 Translation = [16.8154, -0.54086, 3.97555e-007],
+			Vec3 Scale = [0.5, 0.5, 0.5],
 			Quat Rotation = [0, 0, 0, 1],
 		},
 		Sprite = 
@@ -273,7 +288,7 @@ Level =
 			bool FlipX = false,
 			bool FlipY = false,
 			Vec4 Color = [1, 1, 1, 1],
-			bool Visible = false,
+			bool Visible = true,
 			bool OnTop = false,
 			bool AnimationActive = true,
 			float AnimationSpeed = 1,
@@ -284,9 +299,24 @@ Level =
 		Checkpoint = 
 		{
 			bool DebugMode = true,
-			uint ID = 4294967295,
+			uint ID = 1,
 			Vec2 Position = [0, 0],
 			bool isUsed = false,
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = UpperLeft,
+			string FontName = "4e7bac697bec55c5:Verdana",
+			uint FontSize = 24,
+			Vec4 Color = [0.97, 0, 0, 1],
+			bool Visible = true,
+			string Text = "",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
 		},
 		BoxCollider = 
 		{
@@ -302,28 +332,10 @@ Level =
 		{
 			bool StartPlaying = false,
 			int ExtraPriority = 0,
-			string CueName = "5216e5d72aa0229b:Flower",
-			float Volume = 0.65,
-			float Pitch = 2,
+			string CueName = "5216b1fe59111c88:PodDrop",
+			float Volume = 1,
+			float Pitch = 1,
 			bool Positional = true,
-		},
-	},
-	ArchetypeInstance = 
-	{
-		string Name = "5215fd450f0a3bd9:Checkpoint",
-		LinkId = 
-		{
-			uint Id = 9,
-		},
-		Transform = 
-		{
-			Vec3 Translation = [16.8154, -0.54086, 3.97555e-007],
-			Vec3 Scale = [0.5, 0.5, 0.5],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-		Named = 
-		{
-			string Name = "Checkpoint",
 		},
 	},
 	ArchetypeInstance = 
@@ -784,19 +796,12 @@ Level =
 			Vec3 AngularVelocity = [0, 0, 0],
 		},
 	},
-	Cog = 
+	ArchetypeInstance = 
 	{
+		string Name = "5263fe2871297871:Coin",
 		LinkId = 
 		{
 			uint Id = 17,
-		},
-		Named = 
-		{
-			string Name = "Collectible",
-		},
-		Archetyped = 
-		{
-			string Name = "5263fe2871297871:Coin",
 		},
 		Transform = 
 		{
@@ -804,67 +809,9 @@ Level =
 			Vec3 Scale = [2.5, 2.5, 2.5],
 			Quat Rotation = [0, 0, 0, 1],
 		},
-		Sprite = 
+		Named = 
 		{
-			string SpriteSource = "520eff698ed511db:SunCollectibleFull",
-			bool FlipX = false,
-			bool FlipY = false,
-			Vec4 Color = [1, 1, 1, 0.8],
-			bool Visible = true,
-			bool OnTop = false,
-			bool AnimationActive = true,
-			float AnimationSpeed = 1,
-			uint StartFrame = 0,
-			BlendMode BlendMode = Alpha,
-			SpriteGeometryMode GeometryMode = ZPlane,
-		},
-		SphereCollider = 
-		{
-			bool Ghost = true,
-			bool SendsMessages = true,
-			bool Seamless = false,
-			string MaterialName = "4faa6050b8692851:HardMaterial",
-			string SerializedGroupName = "5217ab7799116ab9:Collectible",
-			Vec3 Offset = [0, 0, 0],
-			float Radius = 0.2,
-		},
-		RigidBody = 
-		{
-			bool Static = false,
-			bool Asleep = false,
-			bool Kinematic = false,
-			bool RotationLocked = false,
-			bool Mode2D = true,
-			bool AllowSleep = true,
-			bool Inherit2DMode = true,
-			Vec3 Velocity = [0, 0, 0],
-			Vec3 AngularVelocity = [0, 0, 0],
-		},
-		Collectible = 
-		{
-			bool DebugMode = false,
-			string Type = "twinkle",
-			float PrizeStrength = 10,
-			float Timing = 2,
-			float Lifetime = 0,
-			bool Blinking = false,
-			float BlinkDuration = 1.5,
-			uint BlinkNumber = 4,
-			string respawnOnEvent = "",
-		},
-		Rotator = 
-		{
-			bool RotateX = false,
-			float RotatorX = 0,
-			bool RotateY = false,
-			float RotatorY = 0,
-			bool RotateZ = true,
-			float RotatorZ = 1.3,
-			bool Sway = false,
-			float SwayPeriod = 1.5,
-		},
-		HUDEventDispatcher = 
-		{
+			string Name = "Collectible",
 		},
 	},
 	ArchetypeInstance = 
@@ -1078,65 +1025,22 @@ Level =
 			bool ChubbyFlower = false,
 		},
 	},
-	Cog = 
+	ArchetypeInstance = 
 	{
+		string Name = "526d00aa1afdff2c:StartingPoint",
 		LinkId = 
 		{
 			uint Id = 23,
 		},
-		Named = 
-		{
-			string Name = "Start",
-		},
-		Archetyped = 
-		{
-			string Name = "526d00aa1afdff2c:StartingPoint",
-		},
 		Transform = 
 		{
 			Vec3 Translation = [-8.05912, 1.12043, 3.97555e-007],
-			Vec3 Scale = [0.5, 0.5, 1],
+			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
-		Sprite = 
+		Named = 
 		{
-			string SpriteSource = "520eff6c8d5a619c:CheckpointUnused",
-			bool FlipX = false,
-			bool FlipY = false,
-			Vec4 Color = [1, 1, 1, 1],
-			bool Visible = false,
-			bool OnTop = false,
-			bool AnimationActive = true,
-			float AnimationSpeed = 1,
-			uint StartFrame = 0,
-			BlendMode BlendMode = Alpha,
-			SpriteGeometryMode GeometryMode = ZPlane,
-		},
-		Checkpoint = 
-		{
-			bool DebugMode = true,
-			uint ID = 0,
-			Vec2 Position = [0, 0],
-			bool isUsed = false,
-		},
-		BoxCollider = 
-		{
-			bool Ghost = false,
-			bool SendsMessages = true,
-			bool Seamless = false,
-			string MaterialName = "4faa6050b8692851:HardMaterial",
-			string SerializedGroupName = "5217aaa5614a18de:Checkpoint",
-			Vec3 Offset = [0, 0, 0],
-			Vec3 Size = [2, 6, 2],
-		},
-		SoundEmitter = 
-		{
-			bool StartPlaying = false,
-			int ExtraPriority = 0,
-			string CueName = "5216e5d72aa0229b:Flower",
-			float Volume = 0.65,
-			float Pitch = 2,
-			bool Positional = true,
+			string Name = "Start",
 		},
 	},
 	ArchetypeInstance = 
@@ -1212,7 +1116,6 @@ Level =
 			Vec2 Size = [0, 0],
 			TextAlign Align = Left,
 			float PixelsPerUnit = 64,
-			bool Smoothing = true,
 		},
 		BoxCollider = 
 		{
@@ -1632,24 +1535,6 @@ Level =
 			bool uteWindingSound = false,
 			bool isUsed = false,
 			bool ChubbyFlower = false,
-		},
-	},
-	ArchetypeInstance = 
-	{
-		string Name = "52b1650e3b2deb8d:CoinEffect",
-		LinkId = 
-		{
-			uint Id = 31,
-		},
-		Transform = 
-		{
-			Vec3 Translation = [-1.34961, 8.55276, -0.00100417],
-			Vec3 Scale = [2, 2, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-		Named = 
-		{
-			string Name = "coineffect",
 		},
 	},
 },

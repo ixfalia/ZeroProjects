@@ -12,7 +12,6 @@ class GamepadController:
     Paused = Property.Bool(default = False)
     deadzone = Property.Float(default = 0.2)
     disableControlPad = Property.Bool(default = False)
-    detectEvents = Property.Bool(default = True)
     
     Timer = 0
     soundTimer = 0
@@ -20,10 +19,6 @@ class GamepadController:
     
     def Initialize(self, initializer):
         Zero.Connect(self.Space, Events.LogicUpdate, self.onLogicUpdate)
-        
-        if self.detectEvents:
-            Zero.Connect(self.Space, "DisableControl", self.disable)
-            Zero.Connect(self.Space, "EnableControl", self.enable)
         
         for i in range(0,3):
             self.Gamepad = Zero.Gamepads.GetGamePad(i)
@@ -47,24 +42,6 @@ class GamepadController:
         
         self.inputOctopus(UpdateEvent.Dt)
     #end def OnLogicUpdate
-    
-    def enableEventDetection(self):
-        if self.detectEvents:
-            return
-        
-        self.detectEvents = True
-        
-        Zero.Connect(self.Space, "DisableControl", self.disable)
-        Zero.Connect(self.Space, "EnableControl", self.enable)
-    
-    def disableEventDetection(self):
-        if not self.detectEvents:
-            return
-        
-        self.detectEvents = False
-        
-        Zero.Disconnect(self.Space, "DisableControl", self.disable)
-        Zero.Disconnect(self.Space, "EnableControl", self.enable)
     
     def grabPlayerInput(self, DT):
         #Movement set

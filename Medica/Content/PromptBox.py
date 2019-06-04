@@ -52,8 +52,6 @@ class PromptBox:
         
         if self.Owner.SoundEmitter:
             self.Owner.SoundEmitter.PlayCue("PopUp")
-        
-        
     
     def setData(self, creator):
         self.KeyItems = None
@@ -69,20 +67,14 @@ class PromptBox:
         
         self.Creator = creator
         
-        textParser = self.Owner.TextParser.StringToParameterLists
-        
         if self.CheckKeyItems:
-            #self.KeyItems = self.parseItems(self.CheckKeyItems)
-            self.KeyItems = textParser(self.CheckKeyItems)
+            self.KeyItems = self.parseString(self.CheckKeyItems)
         if self.CheckItems:
-            #self.Items = self.parseItems(self.CheckItems)
-            self.Items = textParser(self.CheckItems)
+            self.Items = self.parseItems(self.CheckItems)
         if self.CheckFlags:
-            #self.Flags = self.parseItems(self.CheckFlags)
-            self.Flags = textParser(self.CheckFlags)
+            self.Flags = self.parseString(self.CheckFlags)
         if self.Rewards:
-            #self.ItemRewards = self.parseItems(self.Rewards)
-            self.ItemRewards = textParser(self.Rewards)
+            self.ItemRewards = self.parseItems(self.Rewards)
         
         if self.Text.Name == "DefaultTextBlock":
             self.Text = None
@@ -118,30 +110,29 @@ class PromptBox:
     
     
     def onSubmit(self, sEvent):
-        if not self.Items and not self.KeyItems and not self.Flags:
+        if not self.Items:
+            self.closeBox()
+            return
+        if len(self.Items) <= 0:
             self.closeBox()
             return
         
         result = self.doYouHaveWhatIWant()
         
-        #obj = Zero.Game.HUDFactory.createHUDObject("PushMessage", VectorMath.Vec3(9,0,1))
-        
+        obj = Zero.Game.HUDFactory.createHUDObject("PushMessage", VectorMath.Vec3(9,0,1))
         backColor = Color.DarkGoldenrod.lerp(Color.Black, 0.75)
         iconColor = VectorMath.Vec4(0.71,1,0,1)
         name = self.Creator.Prompter.PromptName
-        
-        Zero.Game.NotificationManager.CreatePushMessage("Quest", "'{}' Completed!".format(name), "bang", iconColor, "QuestGet")
-        #obj.PushMessage.setData("Quest", "Completed!", "bang", iconColor)
+        obj.PushMessage.setData("Quest", "Completed!", "bang", iconColor)
         
         if result:
             print("[[{0}|PromptBox]]:".format(self.Owner.Name), "Required items found in inventory")
-            if self.Items:
-                self.takeItems()
+            self.takeItems()
             
             if self.ItemRewards:
                 self.GiveItems()
             
-            if self.Creator.Prompter:
+            if self.Creator:
                 e = Zero.ScriptEvent()
                 self.Creator.DispatchEvent("UsedEvent", e)
                 e.Quest = self.PromptName
@@ -149,9 +140,7 @@ class PromptBox:
             
             e = Zero.ScriptEvent()
             Zero.Game.DispatchEvent("QuestCompleteEvent", e)
-            Zero.Game.Journal.setFlagState(self.PromptName, True)
             
-            #print(Zero.Game.Journal.DataFlags)
             self.closeBox()
     
     def onDecline(self, e):
@@ -162,8 +151,7 @@ class PromptBox:
         self.closeBox()
     
     def AddJournalEntry(self):
-        Zero.Game.Journal.addEntry(self.PromptName, "Quest", False)
-        Zero.Game.Journal.setFlagState(self.PromptName, False)
+        Zero.Game.Journal.addEntry(self.PromptName, "Quest")
     
     def createPushMessage(self):
         eh = Zero.ScriptEvent()
@@ -186,6 +174,54 @@ class PromptBox:
             list[element.strip()] = 0
         
         return list
+    
+    def parseItems(self, parseMe):
+        someString = str(parseMe)
+        splitStrings = someString.split(",")
+        
+        list = {}
+        
+        for element in splitStrings:
+            splited = element.split(":")
+            
+            name = splited[0]
+            amount = None
+            
+            if len(splited) > 1:
+                amount = splited[1]
+            
+            if amount:
+                if isinstance(amount, int):
+                    if amount <= 0:
+                        amount = 1
+                elif amount.isdigit():
+                    myValue = int(amount.strip())
+                    
+                    if myValue <= 0:
+                        myValue = 1
+                    
+                    amount = myValue
+                else:
+                    compare = amount.capitalize()
+                    if compare == "False" or compare == "True":
+                        amount = bool(compare)
+                    else:
+                        amount = compare
+            else:
+                amount = 1
+        #endfor
+            
+            list[name.strip()] = amount
+        
+        return list
+    
+    def testSplit(self):
+        aString = "Saffron:2, Clover Night:True"
+        bString = "Opened Dungeon, Found Thanalk"
+        
+        print(aString.split(","))
+        print(bString.split(":"))
+        raise
     
     def populateDictionary(self, list, dictionary):
         for element in list:
@@ -215,40 +251,15 @@ class PromptBox:
     
     
     def doYouHaveWhatIWant(self):
-        if not self.Items and not self.KeyItems and not self.Flags:
+        if not self.Items:
             return True #Quests with no requirements exist!
         
-        if self.Items and not len(self.Items) <= 0:
-            for item in self.Items:
-                    #check if the item is in the inventory
-                result = Zero.Game.Inventory.checkItem(item)
-                #print("Doyouhavewhatiwant", item, result, self.Items)
-                if not result or result < self.Items[item]:
-                    return False
-        
-        if self.KeyItems and not len(self.KeyItems) <= 0:
-            for item in self.KeyItems:
-                    #check if the item is in the inventory
-                result = Zero.Game.Inventory.checkItem(item)
-                #print("Doyouhavewhatiwant", item, result, self.KeyItems)
-                if not result or result < self.KeyItems[item]:
-                    return False
-        
-        if self.Flags and not len(self.Flags) <= 0:
-            gameFlags = Zero.Game.Journal.DataFlags
-            
-            for flag in self.Flags.keys():
-                if not flag in gameFlags:
-                    return False
-                elif self.Flags[flag] == gameFlags[flag]:
-                    return True
-                elif self.Flags[flag] == "Complete" or self.Flags[flag] == "Obtained":
-                    if gameFlags[flag] == True:
-                        return True
-                elif self.Flags[flag] == "Active":
-                    if flag in gameFlags:
-                        return True
-            return False
+        for item in self.Items:
+                #check if the item is in the inventory
+            result = Zero.Game.Inventory.checkItem(item)
+            print("Doyouhavewhatiwant", item, result, self.Items)
+            if not result or result < self.Items[item]:
+                return False
         
         return True
     
@@ -257,47 +268,25 @@ class PromptBox:
             return
         
         for item in self.ItemRewards.keys():
-            Name = item
-            Amount = self.ItemRewards[item]
-            #print(Name, Amount, type(Amount))
+            e = Zero.ScriptEvent()
+            e.Name = item
+            e.Amount = self.ItemRewards[item]
             
-            if isinstance(Amount, bool):
-                Zero.Game.Journal.setFlagState(Name, Amount)
-            elif Amount == "Set":
-                Zero.Game.Journal.setFlagState(Name, True)
-            elif Amount > 0:
-                e = Zero.ScriptEvent()
-                e.Name = Name
-                e.Amount = Amount
-                
-                Zero.Game.DispatchEvent("ItemGetEvent", e)
-            elif Amount <= 0:
-                Amount = 1
-                e = Zero.ScriptEvent()
-                e.Name = Name
-                e.Amount = Amount
-                
-                Zero.Game.DispatchEvent("ItemGetEvent", e)
+            Zero.Game.DispatchEvent("ItemGetEvent", e)
+    
+    def stringToBool(self, _string):
+        return _string.capitalize() in ["True", "T", "Y"]
     
     def setText(self):
-        #print("PromptBox:",self.Items, self.KeyItems, self.ItemRewards)
-        
         #Change Me Later
         if self.Text:
             if self.Owner.ArchetypeName == "EntryBox":
-                pass
-            else:
-                self.PromptText += "~{}~".format(self.PromptName) + "\n\n"
-            
-            splitted = self.Text.Text.split("|")
-            first = False
-            
-            for page in splitted:
-                if not first:
-                    page = self.PromptText + page
-                    first = True
+                splitted = self.Text.Text.split(";")
                 
-                self.TextPages.append(page)
+                for page in splitted:
+                    self.TextPages.append(page)
+                return
+            self.PromptText += "~{}~".format(self.PromptName) + "\n\n" + self.Text.Text + "\n"
         
         self.PromptDetails += "Quest Requirements: \n"
         
@@ -305,35 +294,15 @@ class PromptBox:
             for key in self.Items.keys():
                 self.PromptDetails += "    * {0}: x{1} \n".format(key, self.Items[key])
         
-        if self.KeyItems:
-            for key in self.KeyItems.keys():
-                self.PromptDetails += "    * Obtained: {0} \n".format(key)
-                #print (self.PromptDetails)
-        
-        if self.Flags:
-            for key in self.Flags.keys():
-                if self.Flags[key] == "Complete":
-                    self.PromptDetails += "    * Completed Quest: {}\n".format(key)
-                elif self.Flags[key] == "Obtained":
-                    self.PromptDetails += "    * Obtained: {}\n".format(key)
-        
         if self.Rewards:
-            pushString = ""
+            self.PromptDetails += "\nReward: \n"
             
             for key in self.ItemRewards.keys():
-                #print("Rewards:", self.ItemRewards[key])
-                reward = self.ItemRewards[key]
-                
-                if isinstance(reward, int) and not isinstance(reward, bool):
-                    pushString += "    * {0}: x{1} \n".format(key, reward)
-                elif reward == "Set":
-                    pushString += "    * Gain: \"{}\"\n".format(key)
-            
-            if not pushString == "":
-                self.PromptDetails += "\nReward: \n"
-                self.PromptDetails += pushString
+                self.PromptDetails += "\t* {0}: x{1} \n".format(key, self.ItemRewards[key])
         
-        if self.Items or self.KeyItems or self.Flags:
+        if self.Text:
+            self.TextPages.append(self.PromptText)
+        if self.Items:
             self.TextPages.append(self.PromptDetails)
         
         self.Owner.SpriteText.Text = self.PromptText
@@ -349,7 +318,6 @@ class PromptBox:
             self.CurrentPage = TotalPages-1
         
         self.updateText()
-        #self.updatePageNumber(TotalPages)
     
     def onPrev(self, e):
         TotalPages = len(self.TextPages)
@@ -360,18 +328,6 @@ class PromptBox:
             self.CurrentPage = 0
         
         self.updateText()
-        #self.updatePageNumber(TotalPages)
-    
-    def updatePageNumber(self, total = None):
-        if not total:
-            total = len(self.TextPages)
-        
-        text = self.Owner.FindChildByName("pagenumber")
-        
-        if total <= 1:
-            text.SpriteText.Text = ""
-        else:
-            text.SpriteText.Text = "{} /{}".format(self.CurrentPage+1, total)
     
     def updateText(self, text = None):
         if not text and self.TextPages:
@@ -393,7 +349,6 @@ class PromptBox:
             self.Owner.SpriteText.Text = "Text not specified"
         
         self.checkPages()
-        self.updatePageNumber()
     
     def checkPages(self):
         left = self.Owner.FindChildByName("PreviousButton")

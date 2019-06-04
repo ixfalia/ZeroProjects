@@ -4,7 +4,6 @@ import Property
 import VectorMath
 
 import Action
-import Color
 
 boxTypes = ["PromptBox", "QuestBox", "EntryBox"]
 BoxTypes = Property.DeclareEnum("BoxTypes", boxTypes)
@@ -45,8 +44,6 @@ class Prompter:
         Zero.Connect(self.Owner, "DeactivateEvent", self.onDeactivate)
         Zero.Connect(self.Owner, "ReactivateEvent", self.onReactivate)
         Zero.Connect(self.Owner, "QuestComplete", self.onQuestComplete)
-        Zero.Connect(Zero.Game, "DataFlagEvent", self.onFlag)
-        #Zero.Connect(self.Space, Events.LogicUpdate, self.onUpdate)
         #Zero.Connect(self.Space, "FlagUpdateEvent", self.onFlagUpdate) #for quests that require certain flags.
         
         self.Created = None
@@ -54,82 +51,28 @@ class Prompter:
         
         self.QuestMark = None
         self.bang = None
-        #self.bangCreated = False
-        self.otherbang = None
-        self.Requirements = None
         
         self.BroadcastQuestAvailability()
         
-        self.setData()
-        
-        if self.checkRequirements() and (not self.used or self.unlimitedUse):
+        if not self.used or self.unlimitedUse:
             self.createQuestMarker()
             self.onReactivate(None)
             pass
-    
-    def setData(self):
-        self.Requirements = None
-        
-        if self.RequireFlags:
-            #self.Requirements = self.parseItems(self.RequireFlags)
-            self.Requirements = Zero.Game.TextParser.StringToParameterLists(self.RequireFlags)
-        
-        if not self.checkRequirements():
-            self.Owner.Reactive.Active = False
-    
-    def checkRequirements(self):
-        if self.RequireFlags and not len(self.RequireFlags) <= 0:
-            gameFlags = Zero.Game.Journal.DataFlags
-            
-            for flag in self.Requirements.keys():
-                if not flag in gameFlags:
-                    return False
-                elif self.Requirements[flag] == gameFlags[flag]:
-                    raise
-                    return True
-                elif self.Requirements[flag] == "Complete":
-                    raise
-                    if gameFlags[flag] == True:
-                        return True
-                elif self.Requirements[flag] == "Active":
-                    return flag in gameFlags
-            raise
-            return False
-        return True
-    
-    def onFlag(self, fEvent):
-        name = fEvent.FlagName
-        set = fEvent.Set
-        gameFlags = Zero.Game.Journal.DataFlags
-        
-        
-        if not self.Requirements or not name in self.Requirements:
-            return
-        
-        #print(self.Owner.Name, self.Requirements, gameFlags)
-        
-        check = self.Requirements[name]
-        
-        if check == "Complete":
-            check = True
-        
-        #if name in gameFlags:
-        #if gameFlags[name] == check:
-        if self.checkRequirements():
-            self.activateQuest()
     
     def onActivate(self, e):
         if self.deactivated:
             return
         
-        self.destroyBang()
+        if self.bang:
+            self.bang.Destroy()
         
         if not self.used or self.unlimitedUse or self.QuestActive:
             self.popUpPrompt()
         self.Freeze()
     
     def onUsed(self, e):
-        self.destroyBang()
+        if self.bang:
+            self.bang.Destroy()
         
         if self.unlimitedUse:
             self.deactivated = True
@@ -163,9 +106,9 @@ class Prompter:
         
         #self.Created = HUD.CreateAtPosition("PromptBox", VectorMath.Vec3())
         if self.QuestActive:
-            self.Created = HUDFactory.createHUDObject("QuestBox", VectorMath.Vec3(), True)
+            self.Created = HUDFactory.createHUDObject("QuestBox", VectorMath.Vec3())
         else:
-            self.Created = HUDFactory.createHUDObject("PromptBox", VectorMath.Vec3(), True)
+            self.Created = HUDFactory.createHUDObject("PromptBox", VectorMath.Vec3())
         
         newGuy = self.Created
         
@@ -184,12 +127,10 @@ class Prompter:
     def createQuestMarker(self):
         if self.QuestActive:
             return
-        
         pos = self.Owner.Transform.Translation + VectorMath.Vec3(0, 3, 2)
         self.bang = self.Space.CreateAtPosition("QuestMarker", pos)
         
         self.bang.AttachToRelative(self.Owner)
-        
     
     def onQuestComplete(self, e):
         if e.Quest == self.PromptName:
@@ -209,12 +150,8 @@ class Prompter:
         self.QuestMark.AttachToRelative(self.Owner)
     
     def onQuestTaken(self):
-        print("WHoody",self.bang)
-        self.destroyBang()
-        
-        if self.QuestMark:
-            self.QuestMark.Destroy()
-        
+        if self.bang:
+            self.bang.Destroy()
         self.popActiveMarker()
         self.QuestActive = True
     
@@ -247,33 +184,5 @@ class Prompter:
         newGuy.PromptBox.PromptName = self.PromptName
         
         newGuy.PromptBox.setData(self.Owner)
-    
-    def activateQuest(self):
-        self.Owner.Reactive.Active = True
-        
-        if self.checkRequirements() and (not self.used or self.unlimitedUse):
-            self.onReactivate(None)
-            self.createQuestMarker()
-            
-            print("activateQuest():", self.bang)
-            self.otherbang = self.bang
-            
-    
-    def destroyBang(self):
-        e = Zero.ScriptEvent()
-        if self.bang:
-            self.bang.Destroy()
-            #self.bang.DispatchEvent("QuestMarkBangDestroy", e)
-            #self.bang.Sprite.Visible = False
-        if self.otherbang:
-            print("DestroyBang", self.bang, self.otherbang)
-            self.otherbang.Destroy()
-            #self.otherbang.DispatchEvent("QuestMarkBangDestroy", e)
-            #self.otherbang.Sprite.Color = Color.Red
-        
-        mark = self.Owner.FindChildByName("questmark")
-        if mark:
-            mark.Destroy()
-    
 
 Zero.RegisterComponent("Prompter", Prompter)

@@ -37,7 +37,7 @@ class TurnManager:
             
             seq = Action.Sequence(self.Owner)
             Action.Delay(seq, 4)
-            Action.Call(seq, Zero.Game.LevelManager.loadLevelIndex,(0))
+            Action.Call(seq, self.GameSession.LevelManager.loadLevelIndex,(0))
             
             bgm = self.Space.FindObjectByName("MasterGrid").SoundEmitter
             bgm.Stop()

@@ -14,7 +14,7 @@ Cog =
 	},
 	Transform = 
 	{
-		Vec3 Translation = [272.327, 1.97529, 0],
+		Vec3 Translation = [2.2828, 0.405928, 3.63724e-006],
 		Vec3 Scale = [1, 1, 1],
 		Quat Rotation = [0, 0, 0, 1],
 	},
@@ -84,7 +84,7 @@ Cog =
 		bool Seamless = false,
 		string MaterialName = "4faa6050b8692851:HardMaterial",
 		string SerializedGroupName = "4e740859314e5515:DefaultGroup",
-		Vec3 Offset = [0, 1.7, 0],
+		Vec3 Offset = [0, 2, 0],
 		Vec3 Size = [1, 2, 1],
 	},
 	Fountain = 

@@ -40,9 +40,6 @@ class MovementController:
         if self.OnGround:
             self.Owner.DragEffect.Active = False
             self.Owner.GravityEffect.Strength = 0
-            
-            camera = self.Space.FindObjectByName("Camera")
-            camera.CameraController.updateY()
         else:
             self.Owner.DragEffect.Active = True
             
@@ -82,7 +79,6 @@ class MovementController:
             else:
                 self.Owner.RigidBody.ApplyLinearImpulse(VectorMath.Vec3(0,1,0) * self.JumpStrength)
             
-            self.OnGround = False
             self.PlayCue("Jump")
         #endif
         
@@ -133,6 +129,7 @@ class MovementController:
                 self.OnGround = True
                 self.Ground = 0.0
                 #self.Owner.GravityEffect.Strength = 0
+                
                 return
             #endif
             return

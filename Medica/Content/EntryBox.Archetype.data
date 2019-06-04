@@ -14,7 +14,7 @@ Cog =
 	},
 	Transform = 
 	{
-		Vec3 Translation = [0, 0, 0],
+		Vec3 Translation = [-18.5233, -53.0914, -0.000137329],
 		Vec3 Scale = [1, 1, 1],
 		Quat Rotation = [0, 0, 0, 1],
 	},
@@ -22,8 +22,8 @@ Cog =
 	{
 		SpriteGeometryMode GeometryMode = ZPlane,
 		TextPositionMode Position = Centered,
-		string FontName = "532d3dfe2a58d2c8:Prociono",
-		uint FontSize = 28,
+		string FontName = "52d4637f84d54c64:DoulosSILR",
+		uint FontSize = 32,
 		Vec4 Color = [0.045, 0.045, 0.045, 1],
 		bool Visible = true,
 		string Text = "Undefined String",
@@ -51,9 +51,6 @@ Cog =
 		string SetFlags = "",
 		string Text = "4f122516b2da6f17:DefaultTextBlock",
 		string PromptName = "",
-	},
-	TextParser = 
-	{
 	},
 	Hierarchy = 
 	{
@@ -112,7 +109,7 @@ Cog =
 			{
 				SpriteGeometryMode GeometryMode = ZPlane,
 				TextPositionMode Position = Centered,
-				string FontName = "532d3dfe2a58d2c8:Prociono",
+				string FontName = "52d4637f84d54c64:DoulosSILR",
 				uint FontSize = 32,
 				Vec4 Color = [1, 1, 1, 1],
 				bool Visible = true,
@@ -175,8 +172,6 @@ Cog =
 						Vec4 hoverColor = [0.048, 0.48416, 0.8, 1],
 						Vec4 downColor = [0.0102, 0.136442, 0.17, 1],
 						float defaultOpacity = 1,
-						string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
-						string downSound = "4e1bd44008b4dc2a:DefaultCue",
 					},
 					Reactive = 
 					{
@@ -280,8 +275,6 @@ Cog =
 				Vec4 hoverColor = [0.914732, 0.925, 0.411625, 1],
 				Vec4 downColor = [0.37, 0.3441, 0, 1],
 				float defaultOpacity = 1,
-				string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
-				string downSound = "4e1bd44008b4dc2a:DefaultCue",
 			},
 			ColorNexus = 
 			{
@@ -354,8 +347,6 @@ Cog =
 				Vec4 hoverColor = [0.98, 0.926492, 0.2156, 1],
 				Vec4 downColor = [0.33, 0.2277, 0, 1],
 				float defaultOpacity = 1,
-				string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
-				string downSound = "4e1bd44008b4dc2a:DefaultCue",
 			},
 			MouseBox = 
 			{
@@ -368,39 +359,6 @@ Cog =
 			ColorNexus = 
 			{
 				Vec4 BaseColor = [1, 1, 1, 1],
-			},
-		},
-		Cog = 
-		{
-			LinkId = 
-			{
-				uint Id = 7,
-			},
-			Named = 
-			{
-				string Name = "pagenumber",
-			},
-			Transform = 
-			{
-				Vec3 Translation = [3.14541, -4.13115, 0.01],
-				Vec3 Scale = [1, 1, 1],
-				Quat Rotation = [0, 0, 0, 1],
-			},
-			SpriteText = 
-			{
-				SpriteGeometryMode GeometryMode = ZPlane,
-				TextPositionMode Position = UpperLeft,
-				string FontName = "532d3dfe2a58d2c8:Prociono",
-				uint FontSize = 36,
-				Vec4 Color = [0, 0, 0, 1],
-				bool Visible = true,
-				string Text = "25 / 31",
-				bool OnTop = false,
-				BlendMode BlendMode = Alpha,
-				Vec2 Size = [0, 0],
-				TextAlign Align = Left,
-				float PixelsPerUnit = 64,
-				bool Smoothing = true,
 			},
 		},
 	},

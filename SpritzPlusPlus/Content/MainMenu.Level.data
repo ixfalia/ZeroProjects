@@ -52,9 +52,9 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [14.2227, -2.87612, 50],
+			Vec3 Translation = [4.30274, -0.78862, 50],
 			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, -1.90735e-008, -0, 1],
+			Quat Rotation = [0, -2.38419e-008, -0, 1],
 		},
 		Camera = 
 		{
@@ -64,7 +64,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
-			float Size = 18,
+			float Size = 25,
 		},
 		EditorCameraController = 
 		{
@@ -72,7 +72,7 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
-			Vec3 LookTarget = [14.2227, -2.87612, 7.02551e-007],
+			Vec3 LookTarget = [4.30274, -0.78862, 2.68934e-007],
 		},
 		EditorRenderer = 
 		{
@@ -158,9 +158,6 @@ Level =
 		{
 			bool DebugMode = false,
 			bool DisableControl = false,
-			bool DetectControlEvents = true,
-			bool spaceEvents = true,
-			bool ownerEvents = false,
 			float deadzone = 0.8,
 		},
 		MainMenu = 
@@ -622,9 +619,8 @@ Level =
 		LevelChangeButton = 
 		{
 			bool DebugMode = false,
-			string LevelChange = "4faa6050b86892a8:DefaultLevel",
+			string LevelChange = "520effafaf8bd46f:Sandbox",
 			bool useLevelTable = true,
-			bool loadNextLevel = true,
 		},
 		SpriteText = 
 		{
@@ -640,7 +636,6 @@ Level =
 			Vec2 Size = [0, 0],
 			TextAlign Align = Left,
 			float PixelsPerUnit = 64,
-			bool Smoothing = true,
 		},
 		SoundEmitter = 
 		{
@@ -701,9 +696,6 @@ Level =
 		},
 		MultiSprite = 
 		{
-			Vec4 Color = [1, 1, 1, 1],
-			bool Visible = true,
-			BlendMode BlendMode = Alpha,
 		},
 		TileMap = 
 		{
@@ -741,7 +733,6 @@ Level =
 			Vec2 Size = [0, 0],
 			TextAlign Align = Left,
 			float PixelsPerUnit = 64,
-			bool Smoothing = true,
 		},
 	},
 },

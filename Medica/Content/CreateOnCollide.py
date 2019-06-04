@@ -42,7 +42,6 @@ class CreateOnCollide:
             Zero.Connect(detect, Events.CollisionEnded, self.onCollision)
         
         Zero.Connect(self.Owner, Events.CollisionEnded, self.onCollisionEnd)
-        Zero.Connect(self.Space, self.listeningfor, self.onListening)
     
     def onCollision(self, e):
         other = e.OtherObject
@@ -83,8 +82,5 @@ class CreateOnCollide:
         if self.object:
             if self.object.Fader:
                 self.object.Fader.FadeDestroy()
-    
-    def onListening(self, e):
-        self.chatText = self.changeTo
 
 Zero.RegisterComponent("CreateOnCollide", CreateOnCollide)

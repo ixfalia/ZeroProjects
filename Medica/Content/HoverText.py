@@ -9,7 +9,7 @@ class HoverText:
     Text = Property.String()
     Archetype = Property.Archetype()
     BackColor = Property.Color(default = Color.White)
-    HoverSize = Property.Float(default = 1.25)
+    Size = Property.Float(default = 1)
     
     Offset = Property.Vector3(VectorMath.Vec3(0,2,0))
     
@@ -48,7 +48,7 @@ class HoverText:
         else:
             self.Created = self.Space.CreateAtPosition(self.Archetype, position+self.Offset)
         
-        self.Created.Transform.Scale = VectorMath.Vec3(self.HoverSize, self.HoverSize, self.HoverSize)
+        self.Created.Transform.Scale = VectorMath.Vec3(self.Size, self.Size, self.Size)
         e = Zero.ScriptEvent()
         
         e.Name = self.Text

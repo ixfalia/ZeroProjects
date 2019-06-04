@@ -22,8 +22,8 @@ Cog =
 	{
 		SpriteGeometryMode GeometryMode = ZPlane,
 		TextPositionMode Position = Centered,
-		string FontName = "532d3dfe2a58d2c8:Prociono",
-		uint FontSize = 28,
+		string FontName = "52d4637f84d54c64:DoulosSILR",
+		uint FontSize = 32,
 		Vec4 Color = [0.045, 0.045, 0.045, 1],
 		bool Visible = true,
 		string Text = "Undefined String",
@@ -60,9 +60,6 @@ Cog =
 		float Volume = 1,
 		float Pitch = 1,
 		bool Positional = true,
-	},
-	TextParser = 
-	{
 	},
 	Hierarchy = 
 	{
@@ -117,7 +114,7 @@ Cog =
 			{
 				SpriteGeometryMode GeometryMode = ZPlane,
 				TextPositionMode Position = Centered,
-				string FontName = "532d3dfe2a58d2c8:Prociono",
+				string FontName = "52d4637f84d54c64:DoulosSILR",
 				uint FontSize = 32,
 				Vec4 Color = [1, 1, 1, 1],
 				bool Visible = true,
@@ -180,8 +177,6 @@ Cog =
 						Vec4 hoverColor = [0.04365, 0.0877851, 0.485, 1],
 						Vec4 downColor = [0.077952, 0.0756, 0.105, 1],
 						float defaultOpacity = 1,
-						string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
-						string downSound = "4e1bd44008b4dc2a:DefaultCue",
 					},
 					Reactive = 
 					{
@@ -235,11 +230,11 @@ Cog =
 			{
 				SpriteGeometryMode GeometryMode = ZPlane,
 				TextPositionMode Position = Centered,
-				string FontName = "532d3dfe2a58d2c8:Prociono",
+				string FontName = "52d4637f84d54c64:DoulosSILR",
 				uint FontSize = 32,
 				Vec4 Color = [1, 1, 1, 1],
 				bool Visible = true,
-				string Text = "Cancel",
+				string Text = "Decline",
 				bool OnTop = true,
 				BlendMode BlendMode = Alpha,
 				Vec2 Size = [0, 0],
@@ -298,8 +293,6 @@ Cog =
 						Vec4 hoverColor = [0.54, 0.027, 0.0273077, 1],
 						Vec4 downColor = [0.255, 0.0102, 0.0102, 1],
 						float defaultOpacity = 1,
-						string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
-						string downSound = "4e1bd44008b4dc2a:DefaultCue",
 					},
 					Reactive = 
 					{
@@ -403,8 +396,6 @@ Cog =
 				Vec4 hoverColor = [0.43, 0.43, 0.43, 1],
 				Vec4 downColor = [0.26, 0.26, 0.26, 1],
 				float defaultOpacity = 1,
-				string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
-				string downSound = "4e1bd44008b4dc2a:DefaultCue",
 			},
 		},
 		Cog = 
@@ -473,8 +464,6 @@ Cog =
 				Vec4 hoverColor = [0.98, 0.926492, 0.2156, 1],
 				Vec4 downColor = [0.405, 0.405, 0.405, 1],
 				float defaultOpacity = 1,
-				string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
-				string downSound = "4e1bd44008b4dc2a:DefaultCue",
 			},
 			MouseBox = 
 			{
@@ -483,39 +472,6 @@ Cog =
 				bool DetectRightClick = false,
 				bool DetectMiddleClick = false,
 				bool sendReactiveEvent = false,
-			},
-		},
-		Cog = 
-		{
-			LinkId = 
-			{
-				uint Id = 9,
-			},
-			Named = 
-			{
-				string Name = "pagenumber",
-			},
-			Transform = 
-			{
-				Vec3 Translation = [3.145, -4.131, 0.00999999],
-				Vec3 Scale = [1, 1, 1],
-				Quat Rotation = [0, 0, 0, 1],
-			},
-			SpriteText = 
-			{
-				SpriteGeometryMode GeometryMode = ZPlane,
-				TextPositionMode Position = UpperLeft,
-				string FontName = "532d3dfe2a58d2c8:Prociono",
-				uint FontSize = 36,
-				Vec4 Color = [0, 0, 0, 1],
-				bool Visible = true,
-				string Text = "25 / 31",
-				bool OnTop = false,
-				BlendMode BlendMode = Alpha,
-				Vec2 Size = [0, 0],
-				TextAlign Align = Left,
-				float PixelsPerUnit = 64,
-				bool Smoothing = true,
 			},
 		},
 	},

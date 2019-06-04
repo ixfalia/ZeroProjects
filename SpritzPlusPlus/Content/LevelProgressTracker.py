@@ -8,6 +8,6 @@ class LevelProgressTracker:
         TotalLevels = Zero.Game.LevelManager.getLevelCount()
         CurrentLevel =  Zero.Game.LevelManager.getCurrentLevelIndex()
         
-        self.Owner.SpriteText.Text = "Levels: %d / %d" %(CurrentLevel-2, TotalLevels-4)
+        self.Owner.SpriteText.Text = "Levels: %d / %d" %(CurrentLevel-1, TotalLevels-3)
 
 Zero.RegisterComponent("LevelProgressTracker", LevelProgressTracker)

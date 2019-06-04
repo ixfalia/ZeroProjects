@@ -22,7 +22,7 @@ Cog =
 	{
 		SpriteGeometryMode GeometryMode = ZPlane,
 		TextPositionMode Position = Centered,
-		string FontName = "532d3dfe2a58d2c8:Prociono",
+		string FontName = "52d4637f84d54c64:DoulosSILR",
 		uint FontSize = 32,
 		Vec4 Color = [1, 1, 1, 1],
 		bool Visible = true,
@@ -85,8 +85,6 @@ Cog =
 				Vec4 hoverColor = [0.04365, 0.485, 0.193709, 1],
 				Vec4 downColor = [0.088536, 0.105, 0.0756, 1],
 				float defaultOpacity = 1,
-				string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
-				string downSound = "4e1bd44008b4dc2a:DefaultCue",
 			},
 			Reactive = 
 			{

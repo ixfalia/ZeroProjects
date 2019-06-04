@@ -20,7 +20,7 @@ class PointsCounter:
         
         PointsEvent = Zero.ScriptEvent()
         
-        PointsEvent.Points = int(self.Points)
+        PointsEvent.Points = self.Points
         
         #player = self.Space.FindObjectByName("MainCharacter")
         
@@ -28,7 +28,6 @@ class PointsCounter:
         #    player.HUDEventDispatcher.SendtoHUD("PointsEvent", PointsEvent)
         
         self.Owner.HUDEventDispatcher.DispatchHUDEvent("PointsEvent", PointsEvent)
-        Zero.Game.DispatchEvent("PointsEvent", PointsEvent)
         
         if self.DebugMode:
             print("Points At: ", self.Points)

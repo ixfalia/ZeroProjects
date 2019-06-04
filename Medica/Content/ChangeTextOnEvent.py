@@ -16,9 +16,6 @@ class ChangeTextOnEvent:
             Zero.Connect(self.Space, self.ListenFor, self.onListened)
     
     def onListened(self, e):
-        if not e.Text ==  None:
-            self.Owner.SpriteText.Text = e.Text
-        else:
-            self.Owner.SpriteText.Text = self.ChangeTextTo
+        self.Owner.SpriteText.Text = self.ChangeTextTo
 
 Zero.RegisterComponent("ChangeTextOnEvent", ChangeTextOnEvent)

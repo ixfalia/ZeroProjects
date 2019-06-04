@@ -14,7 +14,7 @@ Cog =
 	},
 	Transform = 
 	{
-		Vec3 Translation = [242.153, -3.88375, 0],
+		Vec3 Translation = [78.3605, 8.42366, 0],
 		Vec3 Scale = [1, 1, 1],
 		Quat Rotation = [0, 0, 0, 1],
 	},
@@ -68,7 +68,7 @@ Cog =
 		string CueName = "4e1bd44008b4dc2a:DefaultCue",
 		float Volume = 1,
 		float Pitch = 1,
-		bool Positional = true,
+		bool Positional = false,
 	},
 	DragEffect = 
 	{
@@ -81,7 +81,6 @@ Cog =
 		bool DebugMode = false,
 		Vec4 NewColor = [0.945, 0.080325, 0.0808437, 1],
 		bool RandomColor = false,
-		bool RandomColorAtStart = false,
 		bool ColorShifting = false,
 		float ShiftTime = 1.5,
 		string AnotherSprite = "4e07948c35993095:DefaultSprite",
@@ -126,6 +125,6 @@ Cog =
 		string DetectEvent = "FlowerGet",
 		bool OwnerEvent = true,
 		bool SpaceEvent = false,
-		float LevelTransitionDelay = 5.5,
+		float LevelTransitionDelay = 7.5,
 	},
 },
