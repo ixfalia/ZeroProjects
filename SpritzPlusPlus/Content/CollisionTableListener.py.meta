@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "CollisionTableListener",
+		uint64 ResourceId = 520eff3c86d42400,
+	},
+},

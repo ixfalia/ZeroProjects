@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "MouseResponse",
+		uint64 ResourceId = 54118c7eb2508418,
+	},
+},

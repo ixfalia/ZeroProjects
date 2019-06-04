@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "LockedPath",
+		uint64 ResourceId = 526cd0f2c99e9347,
+	},
+},

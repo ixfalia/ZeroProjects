@@ -1,0 +1,15 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "Start",
+		uint64 ResourceId = 51657811c0b30303,
+		uint FrameSizeX = 0,
+		uint FrameSizeY = 0,
+		uint FrameCount = 0,
+		float FrameDelay = 0.0333333,
+		float Scale = 1,
+		float OriginX = 209,
+		float OriginY = 45,
+	},
+},

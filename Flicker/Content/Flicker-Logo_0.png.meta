@@ -1,0 +1,15 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "Flicker-Logo_0",
+		uint64 ResourceId = 5165043447d0c293,
+		uint FrameSizeX = 0,
+		uint FrameSizeY = 0,
+		uint FrameCount = 0,
+		float FrameDelay = 0.0333333,
+		float Scale = 1,
+		float OriginX = 556,
+		float OriginY = 122,
+	},
+},

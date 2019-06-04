@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Deactivator",
+		uint64 ResourceId = 52d45c7d5abbe87c,
+	},
+},

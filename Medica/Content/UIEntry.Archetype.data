@@ -1,0 +1,152 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "entryBack",
+	},
+	Archetyped = 
+	{
+		string Name = "52e04dcddd73a6c7:UIEntry",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-17.7988, -1.97606, 19.999],
+		Vec3 Scale = [9, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "52d0dc199ab33c97:FillTile",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [0.17, 0, 0, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	Fader = 
+	{
+		bool DebugMode = false,
+		float FadeInDuration = 0.1,
+		float FadeOutDuration = 0.1,
+		bool FadeInOnCreation = false,
+		bool InvisibleOnCreation = false,
+	},
+	BoxCollider = 
+	{
+		bool Ghost = false,
+		bool SendsMessages = true,
+		bool Seamless = false,
+		string MaterialName = "4faa6050b8692851:HardMaterial",
+		string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+		Vec3 Offset = [0, 0, 0],
+		Vec3 Size = [0.5, 0.5, 0.5],
+	},
+	Reactive = 
+	{
+		bool Active = true,
+		bool CaptureMouse = false,
+	},
+	MouseResponse = 
+	{
+		bool SimpleDarken = false,
+		bool MergeColors = true,
+		float ergePercent = 0.25,
+		Vec2 ouseSlide = [0, 0],
+		Vec4 hoverColor = [0.525, 0.01575, 0.01575, 1],
+		Vec4 downColor = [0.09, 0.0261, 0.0261, 1],
+		float defaultOpacity = 1,
+	},
+	MouseBox = 
+	{
+		string EventName = "MouseActivateEvent",
+		bool DetectLeftClick = true,
+		bool DetectRightClick = false,
+		bool DetectMiddleClick = false,
+		bool sendReactiveEvent = true,
+	},
+	UIEntry = 
+	{
+		string EntryName = "",
+		string Entry = "",
+		Vec3 Offset = [0, 0, 2],
+	},
+	Hierarchy = 
+	{
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 2,
+			},
+			Named = 
+			{
+				string Name = "entryText",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [-0.331802, 0.299486, 0],
+				Vec3 Scale = [0.1, 1, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			SpriteText = 
+			{
+				SpriteGeometryMode GeometryMode = ZPlane,
+				TextPositionMode Position = UpperLeft,
+				string FontName = "52d4637f84d54c64:DoulosSILR",
+				uint FontSize = 32,
+				Vec4 Color = [1, 1, 1, 1],
+				bool Visible = true,
+				string Text = "Entry:",
+				bool OnTop = false,
+				BlendMode BlendMode = Alpha,
+				Vec2 Size = [0, 0],
+				TextAlign Align = Left,
+				float PixelsPerUnit = 64,
+				bool Smoothing = true,
+			},
+			Hierarchy = 
+			{
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 3,
+			},
+			Named = 
+			{
+				string Name = "entryIcon",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [-0.417503, 0.0128472, 0.1],
+				Vec3 Scale = [0.05, 0.5, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				string SpriteSource = "52d178a7019f3701:BlankTile",
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [1, 1, 1, 1],
+				bool Visible = true,
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+			},
+		},
+	},
+},

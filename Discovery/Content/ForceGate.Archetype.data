@@ -1,0 +1,77 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "ForceDoor",
+	},
+	Archetyped = 
+	{
+		string Name = "5471954e19fdc013:ForceGate",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-4.09452, 12.1846, -0.000999453],
+		Vec3 Scale = [7.70228, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Model = 
+	{
+		string MaterialName = "54474892e723fe8f:ForceField",
+		string MeshName = "4de0354322b345ae:Cube",
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+	},
+	RigidBody = 
+	{
+		bool Static = true,
+		bool Asleep = false,
+		bool Kinematic = false,
+		bool RotationLocked = false,
+		bool Mode2D = true,
+		bool AllowSleep = true,
+		bool Inherit2DMode = true,
+		Vec3 Velocity = [0, 0, 0],
+		Vec3 AngularVelocity = [0, 0, 0],
+	},
+	BoxCollider = 
+	{
+		bool Ghost = false,
+		bool SendsMessages = true,
+		bool Seamless = true,
+		string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+		string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+		Vec3 Offset = [0, 0, 0],
+		Vec3 Size = [0.5, 0.5, 0.5],
+	},
+	BasicDoor = 
+	{
+		bool Active = true,
+		bool StartsPowered = false,
+	},
+	TextParser = 
+	{
+	},
+	Rotator = 
+	{
+		bool Active = true,
+		bool RotateX = true,
+		float RotatorX = 1,
+		bool RotateY = false,
+		float RotatorY = 0,
+		bool RotateZ = false,
+		float RotatorZ = 0,
+		bool Sway = false,
+		float SwayPeriod = 1.5,
+	},
+	ParameterLock = 
+	{
+		string ListenFor = "TutorialDoor:False",
+		int LockID = 0,
+		bool isLocked = true,
+		bool isListening = true,
+	},
+},

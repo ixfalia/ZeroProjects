@@ -1,0 +1,11 @@
+DataContent = 
+{
+	DataBuilder = 
+	{
+		string Name = "Medica",
+		uint64 ResourceId = 532505571f3b73ca,
+		string LoaderType = "CollisionTable",
+		uint Version = 0,
+		bool ShowInEditor = true,
+	},
+},

@@ -1,0 +1,95 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "testberry",
+	},
+	Archetyped = 
+	{
+		string Name = "546d9a4ef8c17960:TestBerry",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [9.17895, -2.77599, 0],
+		Vec3 Scale = [0.7, 0.7, 0.7],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "546c62d484e65c67:icon_berry",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [0.650565, 0.526125, 0.915, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+		string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+	},
+	Reactive = 
+	{
+		bool Active = true,
+		bool CaptureMouse = false,
+	},
+	GravityEffect = 
+	{
+		bool Active = true,
+		bool WakeUpOnChange = true,
+		bool LocalSpaceDirection = false,
+		float Strength = 10,
+		Vec3 Direction = [0, -1, 0],
+	},
+	SphereCollider = 
+	{
+		bool Ghost = false,
+		bool SendsMessages = true,
+		bool Seamless = true,
+		string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+		string SerializedGroupName = "546c27dbe03e27b9:Food",
+		Vec3 Offset = [0, -0.5, 0],
+		float Radius = 1.5,
+	},
+	RigidBody = 
+	{
+		bool Static = false,
+		bool Asleep = false,
+		bool Kinematic = false,
+		bool RotationLocked = true,
+		bool Mode2D = true,
+		bool AllowSleep = true,
+		bool Inherit2DMode = true,
+		Vec3 Velocity = [0, 0, 0],
+		Vec3 AngularVelocity = [0, 0, 0],
+	},
+	MouseGrab = 
+	{
+		bool Debug = true,
+		Vec3 Offset = [0, 0, 0],
+		float FollowingDistance = 2,
+		float MoveSpeed = 5,
+	},
+	Food = 
+	{
+		bool RandomColor = true,
+		uint HealthMod = 0,
+		float FullnessMod = 0.25,
+		float PhysicalMod = 0,
+		float SpecialMod = 0,
+		float DefenseMod = 0,
+		float ResistanceMod = 0,
+		float SpeedMod = 0,
+		float MaxHealthMod = 0,
+		float MaxStaminaMod = 0,
+		float TimeToEat = 2,
+	},
+	Hierarchy = 
+	{
+	},
+},

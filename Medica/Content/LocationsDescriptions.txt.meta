@@ -1,0 +1,8 @@
+TextContent = 
+{
+	TextBuilder = 
+	{
+		string Name = "LocationsDescriptions",
+		uint64 ResourceId = 532d2e92c395ab16,
+	},
+},

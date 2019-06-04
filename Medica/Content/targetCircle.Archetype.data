@@ -1,0 +1,59 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "targetcircle",
+	},
+	Archetyped = 
+	{
+		string Name = "52fbd16b7613d2ed:targetCircle",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, 0, 0],
+		Vec3 Scale = [1.25, 1.25, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "5274db4c2e7c11f9:Circle",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [0.4048, 0.92, 0, 0.585],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	Lifetime = 
+	{
+		float Duration = 0.35,
+		string SendEvent = "",
+		bool sendToHUDSpace = true,
+		bool sendToGameSpace = false,
+		bool sendToOwner = false,
+	},
+	Fader = 
+	{
+		bool DebugMode = false,
+		float FadeInDuration = 1,
+		float FadeOutDuration = 0.75,
+		bool FadeInOnCreation = false,
+		bool InvisibleOnCreation = false,
+	},
+	ScaleUp = 
+	{
+		bool Active = true,
+		float UniformScale = 0.8,
+		float ScaleX = 0,
+		float ScaleY = 0,
+		float Duration = 1,
+	},
+},

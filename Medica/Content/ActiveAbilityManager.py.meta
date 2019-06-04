@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "ActiveAbilityManager",
+		uint64 ResourceId = 52eca245439cdc99,
+	},
+},

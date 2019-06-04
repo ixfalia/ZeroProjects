@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "ReactiveTransformation",
+		uint64 ResourceId = 5247e9eca398ba3c,
+	},
+},

@@ -1,0 +1,37 @@
+GameSession = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Archetyped = 
+	{
+		string Name = "545ec47a10e2113a:Game",
+	},
+	Viewports = 
+	{
+	},
+	DefaultGameSetup = 
+	{
+		string StartingSpaceName = "545ec47a10e23bc7:Space",
+		string StartingLevelName = "545ec47a10e226db:Level",
+	},
+	PlayerTracker = 
+	{
+	},
+	CollectionBook = 
+	{
+		string CollectionResource = "547afaba5a8ac335:Discoveries",
+	},
+	TimeWaitManager = 
+	{
+		bool Debug = true,
+		bool DebugExtreme = false,
+		float TotalTime = 0,
+	},
+	DebugManager = 
+	{
+		bool DebugMode = false,
+		bool DebugExtreme = false,
+	},
+},

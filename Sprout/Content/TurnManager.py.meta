@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "TurnManager",
+		uint64 ResourceId = 524d12df8d27f24c,
+	},
+},

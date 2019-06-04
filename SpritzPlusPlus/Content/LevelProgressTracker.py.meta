@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "LevelProgressTracker",
+		uint64 ResourceId = 526d1c461e7f6c57,
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "GameSpaceCreator",
+		uint64 ResourceId = 52eca2087b562169,
+	},
+},

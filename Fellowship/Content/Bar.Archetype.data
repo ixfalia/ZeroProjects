@@ -1,0 +1,51 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "bar",
+	},
+	Archetyped = 
+	{
+		string Name = "541f8acf1cb03168:Bar",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [2.28135, -0.0236788, 1],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "541e4f76a4873c13:FillBar",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+		string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+	},
+	Area = 
+	{
+		Vec2 Size = [4, 0.35],
+		Location Origin = CenterLeft,
+	},
+	BarController = 
+	{
+		float CurrentValue = 0.01,
+		float MaxLength = 4,
+		float OtherAxisSize = 0.35,
+		bool ApplyOnYAxisInstead = false,
+		bool ApplyColorModification = false,
+		Vec4 LowColor = [0.725, 0.2175, 0, 1],
+		Vec4 HighColor = [0, 0.48125, 0.875, 1],
+	},
+},

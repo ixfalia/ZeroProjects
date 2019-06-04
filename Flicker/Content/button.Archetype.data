@@ -1,0 +1,36 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "testbutton1",
+	},
+	Archetyped = 
+	{
+		string Name = "5165786dc38fde94:button",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, -3.30262, 0],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "51657811c0b30303:Start",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+	},
+	ButtonLogic = 
+	{
+	},
+},

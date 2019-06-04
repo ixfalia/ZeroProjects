@@ -1,0 +1,38 @@
+ResourceTable = 
+{
+	string ResourceType = "String",
+	Array EntryList = 
+	[
+		{
+			string Name = "Menu",
+			string Value = "MainMenu",
+			float Weight = 1,
+		},
+		{
+			string Name = "Level",
+			string Value = "Level",
+			float Weight = 1,
+		},
+		{
+			string Name = "Forest Adventure",
+			string Value = "AdventureForest",
+			float Weight = 1,
+		},
+		{
+			string Name = "HUD",
+			string Value = "HUD",
+			float Weight = 1,
+		},
+		{
+			string Name = "Rock Paper Scissors",
+			string Value = "Playing",
+			float Weight = 1,
+		},
+		{
+			string Name = "Training",
+			string Value = "Training",
+			float Weight = 1,
+		},
+	],
+	float MaxWeight = 1,
+},

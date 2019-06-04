@@ -1,0 +1,18 @@
+ResourceTable = 
+{
+	string ResourceType = "GeometryMaterial",
+	Array EntryList = 
+	[
+		{
+			string Name = "Wall",
+			string Value = "547180f16279b333:PaintedWall",
+			float Weight = 1,
+		},
+		{
+			string Name = "Force",
+			string Value = "5471833c505edfa0:PaintedForce",
+			float Weight = 1,
+		},
+	],
+	float MaxWeight = 1,
+},

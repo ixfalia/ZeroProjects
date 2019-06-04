@@ -1,0 +1,103 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "Sprite",
+	},
+	Archetyped = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [74.3236, 0.635039, 3.8147e-006],
+		Vec3 Scale = [0.35, 0.35, 0.35],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "520eff698d3749f6:SprayFlower",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	Prizebox = 
+	{
+		bool DebugMode = true,
+		string PrizeType = "twinkle",
+		float VelocityY = 1,
+		uint PrizeAmount = 1,
+		string SoundCue = "4e1bd44008b4dc2a:DefaultCue",
+		bool isUsed = false,
+		bool playSound = false,
+	},
+	ChangeSpriteOnActivation = 
+	{
+		string MainSprite = "520eff698d33fb7e:SprayFlowerEmpty",
+		string AnotherSprite = "4e07948c35993095:DefaultSprite",
+		string DetectEventType = "ActivateEvent",
+		bool SpaceEvent = false,
+		bool OwnerEvent = true,
+		bool EventFunction = false,
+	},
+	SoundEmitter = 
+	{
+		bool StartPlaying = false,
+		int ExtraPriority = 0,
+		string CueName = "5216b1fe59111c88:PodDrop",
+		float Volume = 0.5,
+		float Pitch = 1,
+		bool Positional = true,
+	},
+	SphereCollider = 
+	{
+		bool Ghost = false,
+		bool SendsMessages = true,
+		bool Seamless = false,
+		string MaterialName = "4faa6050b8692851:HardMaterial",
+		string SerializedGroupName = "52179520c7990ff8:WaterColliding",
+		Vec3 Offset = [0, 0, 0],
+		float Radius = 1.75,
+	},
+	RigidBody = 
+	{
+		bool Static = true,
+		bool Asleep = false,
+		bool Kinematic = false,
+		bool RotationLocked = false,
+		bool Mode2D = true,
+		bool AllowSleep = true,
+		bool Inherit2DMode = true,
+		Vec3 Velocity = [0, 0, 0],
+		Vec3 AngularVelocity = [0, 0, 0],
+	},
+	SpritzFlower = 
+	{
+		bool isUsed = false,
+	},
+	Rotator = 
+	{
+		bool RotateX = false,
+		float RotatorX = 0,
+		bool RotateY = false,
+		float RotatorY = 0,
+		bool RotateZ = true,
+		float RotatorZ = 0.4,
+		bool Sway = true,
+		float SwayPeriod = 0.8,
+	},
+	HUDEventDispatcher = 
+	{
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "KeyboardDispatcher",
+		uint64 ResourceId = 5247f5ba7698380a,
+	},
+},

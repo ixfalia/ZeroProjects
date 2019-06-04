@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "CollisionCaster",
+		uint64 ResourceId = 52fbd74002ea0801,
+	},
+},

@@ -1,0 +1,15 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "Ship",
+		uint64 ResourceId = 5165287923a743ec,
+		uint FrameSizeX = 0,
+		uint FrameSizeY = 0,
+		uint FrameCount = 0,
+		float FrameDelay = 0.0333333,
+		float Scale = 1,
+		float OriginX = 100,
+		float OriginY = 133,
+	},
+},

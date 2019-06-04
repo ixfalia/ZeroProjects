@@ -1,0 +1,19 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "moveStick",
+		uint64 ResourceId = 5273204692312524,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 222,
+		uint FrameSizeY = 225,
+		uint FrameCount = 4,
+		float FrameDelay = 0.333333,
+		float OriginX = 111,
+		float OriginY = 112,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+	},
+},

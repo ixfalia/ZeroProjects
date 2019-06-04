@@ -1,0 +1,15 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "twinkle",
+		uint64 ResourceId = 510d688f7862b40c,
+		uint FrameSizeX = 0,
+		uint FrameSizeY = 0,
+		uint FrameCount = 0,
+		float FrameDelay = 0.0333333,
+		float Scale = 1,
+		float OriginX = 6,
+		float OriginY = 6,
+	},
+},

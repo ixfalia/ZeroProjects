@@ -1,0 +1,407 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "entryText",
+	},
+	Archetyped = 
+	{
+		string Name = "52e07c653e968cc5:EntryBox",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, 0, 0],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	SpriteText = 
+	{
+		SpriteGeometryMode GeometryMode = ZPlane,
+		TextPositionMode Position = Centered,
+		string FontName = "532d3dfe2a58d2c8:Prociono",
+		uint FontSize = 28,
+		Vec4 Color = [0.045, 0.045, 0.045, 1],
+		bool Visible = true,
+		string Text = "Undefined String",
+		bool OnTop = false,
+		BlendMode BlendMode = Alpha,
+		Vec2 Size = [8, 9],
+		TextAlign Align = Left,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+	},
+	Fader = 
+	{
+		bool DebugMode = false,
+		float FadeInDuration = 0.35,
+		float FadeOutDuration = 0.4,
+		bool FadeInOnCreation = true,
+		bool InvisibleOnCreation = false,
+	},
+	PromptBox = 
+	{
+		string CheckKeyItems = "",
+		string CheckItems = "",
+		string CheckFlags = "",
+		string Rewards = "",
+		string SetFlags = "",
+		string Text = "4f122516b2da6f17:DefaultTextBlock",
+		string PromptName = "",
+	},
+	TextParser = 
+	{
+	},
+	Hierarchy = 
+	{
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 2,
+			},
+			Named = 
+			{
+				string Name = "PromptBack",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [0, 0, 0],
+				Vec3 Scale = [9, 10, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				string SpriteSource = "52d0dc199ab33c97:FillTile",
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [0.865, 0.795281, 0.6401, 1],
+				bool Visible = true,
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 3,
+			},
+			Named = 
+			{
+				string Name = "buttonText",
+			},
+			Archetyped = 
+			{
+				string Name = "52ca5590fba48b8a:GenericButton",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [0, -5.87993, 0],
+				Vec3 Scale = [1, 1, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			SpriteText = 
+			{
+				SpriteGeometryMode GeometryMode = ZPlane,
+				TextPositionMode Position = Centered,
+				string FontName = "532d3dfe2a58d2c8:Prociono",
+				uint FontSize = 32,
+				Vec4 Color = [1, 1, 1, 1],
+				bool Visible = true,
+				string Text = "Okay",
+				bool OnTop = true,
+				BlendMode BlendMode = Alpha,
+				Vec2 Size = [0, 0],
+				TextAlign Align = Left,
+				float PixelsPerUnit = 64,
+				bool Smoothing = true,
+			},
+			Hierarchy = 
+			{
+				Cog = 
+				{
+					LinkId = 
+					{
+						uint Id = 4,
+					},
+					Named = 
+					{
+						string Name = "ButtonBack",
+					},
+					Transform = 
+					{
+						Vec3 Translation = [0, 0.0304661, 0],
+						Vec3 Scale = [4, 1, 1],
+						Quat Rotation = [0, 0, 0, 1],
+					},
+					Sprite = 
+					{
+						string SpriteSource = "52d0dc199ab33c97:FillTile",
+						bool FlipX = false,
+						bool FlipY = false,
+						Vec4 Color = [0.02135, 0.185867, 0.305, 1],
+						bool Visible = true,
+						bool OnTop = false,
+						bool AnimationActive = true,
+						float AnimationSpeed = 1,
+						uint StartFrame = 0,
+						BlendMode BlendMode = Alpha,
+						SpriteGeometryMode GeometryMode = ZPlane,
+					},
+					BoxCollider = 
+					{
+						bool Ghost = false,
+						bool SendsMessages = true,
+						bool Seamless = false,
+						string MaterialName = "4faa6050b8692851:HardMaterial",
+						string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+						Vec3 Offset = [0, 0, 0],
+						Vec3 Size = [0.5, 0.5, 0.5],
+					},
+					MouseResponse = 
+					{
+						bool SimpleDarken = false,
+						bool MergeColors = true,
+						float ergePercent = 0.75,
+						Vec2 ouseSlide = [0, 0],
+						Vec4 hoverColor = [0.048, 0.48416, 0.8, 1],
+						Vec4 downColor = [0.0102, 0.136442, 0.17, 1],
+						float defaultOpacity = 1,
+						string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
+						string downSound = "4e1bd44008b4dc2a:DefaultCue",
+					},
+					Reactive = 
+					{
+						bool Active = true,
+						bool CaptureMouse = false,
+					},
+					BroadcastButton = 
+					{
+						string EventName = "CancelEvent",
+						bool spaceEvent = false,
+						bool ownerEvent = true,
+						bool hudEvent = false,
+						bool gameEvent = false,
+						bool parentEvent = false,
+						bool allParentsEvent = true,
+						bool childrenEvent = false,
+						bool allChildrenEvent = false,
+					},
+					MouseBox = 
+					{
+						string EventName = "MouseActivateEvent",
+						bool DetectLeftClick = true,
+						bool DetectRightClick = false,
+						bool DetectMiddleClick = false,
+						bool sendReactiveEvent = true,
+					},
+				},
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 5,
+			},
+			Named = 
+			{
+				string Name = "NextButton",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [4.92294, 0.370967, 0.1],
+				Vec3 Scale = [0.75, 0.75, 0.85],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				string SpriteSource = "52d178a6018cfd4a:next",
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [0.91, 0.819, 0, 1],
+				bool Visible = true,
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+			},
+			SphereCollider = 
+			{
+				bool Ghost = false,
+				bool SendsMessages = true,
+				bool Seamless = false,
+				string MaterialName = "4faa6050b8692851:HardMaterial",
+				string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+				Vec3 Offset = [0, 0, 0],
+				float Radius = 0.5,
+			},
+			Reactive = 
+			{
+				bool Active = true,
+				bool CaptureMouse = false,
+			},
+			BroadcastButton = 
+			{
+				string EventName = "NextEvent",
+				bool spaceEvent = false,
+				bool ownerEvent = true,
+				bool hudEvent = false,
+				bool gameEvent = false,
+				bool parentEvent = true,
+				bool allParentsEvent = true,
+				bool childrenEvent = false,
+				bool allChildrenEvent = false,
+			},
+			MouseBox = 
+			{
+				string EventName = "MouseActivateEvent",
+				bool DetectLeftClick = true,
+				bool DetectRightClick = false,
+				bool DetectMiddleClick = false,
+				bool sendReactiveEvent = true,
+			},
+			MouseResponse = 
+			{
+				bool SimpleDarken = false,
+				bool MergeColors = true,
+				float ergePercent = 0.75,
+				Vec2 ouseSlide = [0.25, 0],
+				Vec4 hoverColor = [0.914732, 0.925, 0.411625, 1],
+				Vec4 downColor = [0.37, 0.3441, 0, 1],
+				float defaultOpacity = 1,
+				string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
+				string downSound = "4e1bd44008b4dc2a:DefaultCue",
+			},
+			ColorNexus = 
+			{
+				Vec4 BaseColor = [1, 1, 1, 1],
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 6,
+			},
+			Named = 
+			{
+				string Name = "PreviousButton",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [-4.88351, 0.370967, 0.1],
+				Vec3 Scale = [0.75, 0.75, 0.75],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				string SpriteSource = "52d178a6018cfd4a:next",
+				bool FlipX = true,
+				bool FlipY = false,
+				Vec4 Color = [0.91, 0.819, 0, 1],
+				bool Visible = true,
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+			},
+			SphereCollider = 
+			{
+				bool Ghost = false,
+				bool SendsMessages = true,
+				bool Seamless = false,
+				string MaterialName = "4faa6050b8692851:HardMaterial",
+				string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+				Vec3 Offset = [0, 0, 0],
+				float Radius = 0.5,
+			},
+			Reactive = 
+			{
+				bool Active = true,
+				bool CaptureMouse = false,
+			},
+			BroadcastButton = 
+			{
+				string EventName = "PreviousEvent",
+				bool spaceEvent = false,
+				bool ownerEvent = true,
+				bool hudEvent = false,
+				bool gameEvent = false,
+				bool parentEvent = true,
+				bool allParentsEvent = true,
+				bool childrenEvent = false,
+				bool allChildrenEvent = false,
+			},
+			MouseResponse = 
+			{
+				bool SimpleDarken = false,
+				bool MergeColors = true,
+				float ergePercent = 0.75,
+				Vec2 ouseSlide = [-0.25, 0],
+				Vec4 hoverColor = [0.98, 0.926492, 0.2156, 1],
+				Vec4 downColor = [0.33, 0.2277, 0, 1],
+				float defaultOpacity = 1,
+				string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
+				string downSound = "4e1bd44008b4dc2a:DefaultCue",
+			},
+			MouseBox = 
+			{
+				string EventName = "MouseActivateEvent",
+				bool DetectLeftClick = true,
+				bool DetectRightClick = false,
+				bool DetectMiddleClick = false,
+				bool sendReactiveEvent = false,
+			},
+			ColorNexus = 
+			{
+				Vec4 BaseColor = [1, 1, 1, 1],
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 7,
+			},
+			Named = 
+			{
+				string Name = "pagenumber",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [3.14541, -4.13115, 0.01],
+				Vec3 Scale = [1, 1, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			SpriteText = 
+			{
+				SpriteGeometryMode GeometryMode = ZPlane,
+				TextPositionMode Position = UpperLeft,
+				string FontName = "532d3dfe2a58d2c8:Prociono",
+				uint FontSize = 36,
+				Vec4 Color = [0, 0, 0, 1],
+				bool Visible = true,
+				string Text = "25 / 31",
+				bool OnTop = false,
+				BlendMode BlendMode = Alpha,
+				Vec2 Size = [0, 0],
+				TextAlign Align = Left,
+				float PixelsPerUnit = 64,
+				bool Smoothing = true,
+			},
+		},
+	},
+},

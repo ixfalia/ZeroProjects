@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "FollowTarget",
+		uint64 ResourceId = 546c2eb161541200,
+	},
+},

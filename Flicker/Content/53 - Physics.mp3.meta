@@ -1,0 +1,11 @@
+AudioContent = 
+{
+	SoundBuilder = 
+	{
+		string Name = "53 - Physics",
+		uint64 ResourceId = 5165ccf5965a8d43,
+		bool Compressed = true,
+		uint Quality = 100,
+		SoundLoadType LoadType = Streamed,
+	},
+},

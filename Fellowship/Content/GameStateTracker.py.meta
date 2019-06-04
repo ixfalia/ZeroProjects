@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "GameStateTracker",
+		uint64 ResourceId = 540d312dd3533c35,
+	},
+},

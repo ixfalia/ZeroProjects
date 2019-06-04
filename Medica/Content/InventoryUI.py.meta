@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "InventoryUI",
+		uint64 ResourceId = 52ccd53228e0cab6,
+	},
+},

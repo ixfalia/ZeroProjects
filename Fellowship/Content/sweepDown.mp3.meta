@@ -1,0 +1,11 @@
+AudioContent = 
+{
+	SoundBuilder = 
+	{
+		string Name = "sweepDown",
+		uint64 ResourceId = 543049788d1c6f74,
+		bool Compressed = true,
+		uint Quality = 100,
+		SoundLoadType LoadType = Streamed,
+	},
+},

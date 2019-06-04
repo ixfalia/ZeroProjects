@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "MouseBox",
+		uint64 ResourceId = 52c345faf063f30c,
+	},
+},

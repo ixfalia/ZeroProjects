@@ -1,0 +1,10 @@
+Material = 
+{
+	Lambert = 
+	{
+	},
+	ColorDiffuse = 
+	{
+		Vec4 DiffuseColor = [0.305, 0, 0, 1],
+	},
+},

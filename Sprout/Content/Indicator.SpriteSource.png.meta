@@ -1,0 +1,19 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "Indicator",
+		uint64 ResourceId = 52a0c1ed952f0f79,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 502,
+		uint FrameSizeY = 64,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333,
+		float OriginX = 251,
+		float OriginY = 32,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+	},
+},

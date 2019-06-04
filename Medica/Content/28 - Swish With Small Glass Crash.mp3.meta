@@ -1,0 +1,11 @@
+AudioContent = 
+{
+	SoundBuilder = 
+	{
+		string Name = "28 - Swish With Small Glass Crash",
+		uint64 ResourceId = 52dc6f002d840c79,
+		bool Compressed = true,
+		uint Quality = 100,
+		SoundLoadType LoadType = Streamed,
+	},
+},

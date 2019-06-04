@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "LockAspect",
+		uint64 ResourceId = 51145ee1939f1836,
+	},
+},

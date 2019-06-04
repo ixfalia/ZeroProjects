@@ -1,0 +1,69 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "Spray",
+	},
+	Archetyped = 
+	{
+		string Name = "50d598559d4623a5:WaterSpray",
+	},
+	Transform = 
+	{
+		float[] Translation = [3.29507, -0.0300546, 0],
+		float[] Scale = [0.2, 0.2, 0.2],
+		float[] Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "5124ab955fb64bd0:Texture-Spray",
+		bool FlipX = false,
+		bool FlipY = false,
+		float[] Color = [0.646, 0.79496, 0.95, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = false,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+	},
+	SphereCollider = 
+	{
+		bool Ghost = true,
+		bool SendsMessages = true,
+		bool Seamless = false,
+		string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+		string SerializedGroupName = "50db095ac722660c:Water",
+		float[] Offset = [0, 0, 0],
+		float Radius = 1,
+	},
+	GravityEffect = 
+	{
+		bool Active = true,
+		bool WakeUpOnChange = false,
+		bool PointGravity = false,
+		bool LocalGravity = false,
+		float GravityStrength = 0,
+		float[] CenterOffset = [0, 0, 0],
+		float[] DirectionalGravity = [0, -9.81, 0],
+	},
+	RigidBody = 
+	{
+		bool Static = false,
+		bool Asleep = false,
+		bool Kinematic = false,
+		bool RotationLocked = false,
+		bool Mode2D = true,
+		bool AllowSleep = true,
+		bool Inherit2DMode = true,
+		float[] Velocity = [0, 0, 0],
+		float[] AngularVelocity = [0, 0, 0],
+	},
+	Water = 
+	{
+		float Lifelimit = 1,
+	},
+},

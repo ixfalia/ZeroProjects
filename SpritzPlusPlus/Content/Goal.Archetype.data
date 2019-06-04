@@ -1,0 +1,131 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "EndGoal",
+	},
+	Archetyped = 
+	{
+		string Name = "526d00eaeccb78f2:Goal",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [242.153, -3.88375, 0],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "526de86b0ee88401:ChubbyPetal",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [0.575, 0.355062, 0.31625, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	SphereCollider = 
+	{
+		bool Ghost = false,
+		bool SendsMessages = true,
+		bool Seamless = false,
+		string MaterialName = "4faa6050b8692851:HardMaterial",
+		string SerializedGroupName = "521795dfc42d362e:WaterActivated",
+		Vec3 Offset = [0, 0, 0],
+		float Radius = 2,
+	},
+	RigidBody = 
+	{
+		bool Static = false,
+		bool Asleep = false,
+		bool Kinematic = false,
+		bool RotationLocked = false,
+		bool Mode2D = true,
+		bool AllowSleep = true,
+		bool Inherit2DMode = false,
+		Vec3 Velocity = [0, 0, 0],
+		Vec3 AngularVelocity = [0, 0, 0],
+	},
+	PutAnotherSprite = 
+	{
+		bool DebugMode = false,
+		string SpriteSource = "526de86b0ee6b849:ChubbyFaceAngry",
+		Vec3 Offset = [0, 0, 0.001],
+		float Size = 1.24,
+	},
+	SoundEmitter = 
+	{
+		bool StartPlaying = false,
+		int ExtraPriority = 1,
+		string CueName = "4e1bd44008b4dc2a:DefaultCue",
+		float Volume = 1,
+		float Pitch = 1,
+		bool Positional = true,
+	},
+	DragEffect = 
+	{
+		bool Active = true,
+		bool WakeUpOnChange = false,
+		float Drag = 0.1,
+	},
+	ChangeColor = 
+	{
+		bool DebugMode = false,
+		Vec4 NewColor = [0.945, 0.080325, 0.0808437, 1],
+		bool RandomColor = false,
+		bool RandomColorAtStart = false,
+		bool ColorShifting = false,
+		float ShiftTime = 1.5,
+		string AnotherSprite = "4e07948c35993095:DefaultSprite",
+		string DetectEventType = "",
+		bool SpaceEvent = false,
+		bool OwnerEvent = true,
+	},
+	Rotator = 
+	{
+		bool RotateX = false,
+		float RotatorX = 0,
+		bool RotateY = false,
+		float RotatorY = 0,
+		bool RotateZ = true,
+		float RotatorZ = 1,
+		bool Sway = true,
+		float SwayPeriod = 0.2,
+	},
+	ChangeSpriteOnActivation = 
+	{
+		string MainSprite = "526de86b0ee88401:ChubbyPetal",
+		string AnotherSprite = "526de86b0eed9659:ChubbyFaceHappy",
+		string DetectEventType = "FlowerGet",
+		bool SpaceEvent = false,
+		bool OwnerEvent = true,
+		bool EventFunction = false,
+	},
+	FlowerSpin = 
+	{
+		bool DebugMode = false,
+		float AngularVelocity = 0.75,
+		float SpinCount = 0,
+		float SpinLimit = 2,
+		bool Windback = false,
+		string SoundCue = "5216b1fe59111c88:PodDrop",
+		bool uteWindingSound = false,
+		bool isUsed = false,
+		bool ChubbyFlower = true,
+	},
+	EndGoal = 
+	{
+		string DetectEvent = "FlowerGet",
+		bool OwnerEvent = true,
+		bool SpaceEvent = false,
+		float LevelTransitionDelay = 5.5,
+	},
+},

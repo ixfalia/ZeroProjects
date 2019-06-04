@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Beacon",
+		uint64 ResourceId = 51145874d93ce759,
+	},
+},

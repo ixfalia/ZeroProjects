@@ -1,0 +1,42 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "pointer",
+	},
+	Archetyped = 
+	{
+		string Name = "51657952e256b9da:MenuPointer",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, -5.76976, 0],
+		Vec3 Scale = [4, 4, 4],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "510d68967af44e91:blank",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+	},
+	Rotator = 
+	{
+		bool RotateX = false,
+		float RotatorX = 0,
+		bool RotateY = false,
+		float RotatorY = 0,
+		bool RotateZ = true,
+		float RotatorZ = 10,
+	},
+},

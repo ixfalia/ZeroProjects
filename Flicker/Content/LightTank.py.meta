@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "LightTank",
+		uint64 ResourceId = 510c1b6da1473508,
+	},
+},

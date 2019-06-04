@@ -1,0 +1,11 @@
+DataContent = 
+{
+	DataBuilder = 
+	{
+		string Name = "GeoBlueMulti",
+		uint64 ResourceId = 52d17c7340456eb0,
+		string LoaderType = "MultiMaterial",
+		uint Version = 0,
+		bool ShowInEditor = true,
+	},
+},

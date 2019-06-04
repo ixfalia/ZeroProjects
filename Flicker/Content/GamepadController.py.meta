@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "GamepadController",
+		uint64 ResourceId = 510ef0e945a59256,
+	},
+},

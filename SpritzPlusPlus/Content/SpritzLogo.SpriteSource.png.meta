@@ -1,0 +1,19 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "SpritzLogo",
+		uint64 ResourceId = 520e06a3cd4a927f,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 460,
+		uint FrameSizeY = 194,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333,
+		float OriginX = 230,
+		float OriginY = 97,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+	},
+},

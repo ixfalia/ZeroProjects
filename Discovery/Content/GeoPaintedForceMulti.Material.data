@@ -1,0 +1,15 @@
+MultiMaterial = 
+{
+	MultiMaterialBlock = 
+	{
+		Array Materials = 
+		[
+			{
+				string MaterialName = "54474892e723fe8f:ForceField",
+			},
+			{
+				string MaterialName = "54474892e723fe8f:ForceField",
+			},
+		],
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	TextBuilder = 
+	{
+		string Name = "Tutorial2LongChains",
+		uint64 ResourceId = 52a7b24973d502da,
+	},
+},

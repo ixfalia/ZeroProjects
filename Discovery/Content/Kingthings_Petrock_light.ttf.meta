@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "Kingthings_Petrock_light",
+		uint64 ResourceId = 547fa33d59f48f12,
+	},
+},

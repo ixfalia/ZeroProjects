@@ -1,0 +1,11 @@
+DataContent = 
+{
+	DataBuilder = 
+	{
+		string Name = "PaintedCrystal",
+		uint64 ResourceId = 549fa7de40e8d12f,
+		string LoaderType = "GeometryMaterial",
+		uint Version = 0,
+		bool ShowInEditor = true,
+	},
+},

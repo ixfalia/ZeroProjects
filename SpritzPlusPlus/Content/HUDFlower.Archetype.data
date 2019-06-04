@@ -1,0 +1,115 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "Wheel",
+	},
+	Archetyped = 
+	{
+		string Name = "526dd06a49f8a754:HUDFlower",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [5.87403, 8.48616, -0.01],
+		Vec3 Scale = [0.7, 0.7, 0.7],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "5216ecf650e1dbd2:FlowerPetal",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [0.416148, 0.054625, 0.475, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	SphereCollider = 
+	{
+		bool Ghost = false,
+		bool SendsMessages = true,
+		bool Seamless = false,
+		string MaterialName = "4faa6050b8692851:HardMaterial",
+		string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+		Vec3 Offset = [0, 0, 0],
+		float Radius = 1.5,
+	},
+	RigidBody = 
+	{
+		bool Static = false,
+		bool Asleep = false,
+		bool Kinematic = false,
+		bool RotationLocked = false,
+		bool Mode2D = true,
+		bool AllowSleep = true,
+		bool Inherit2DMode = false,
+		Vec3 Velocity = [0, 0, 0],
+		Vec3 AngularVelocity = [0, 0, 0],
+	},
+	Prizebox = 
+	{
+		bool DebugMode = true,
+		string PrizeType = "twinkle",
+		float VelocityY = 10,
+		uint PrizeAmount = 8,
+		string SoundCue = "5216e5d72aa0229b:Flower",
+		bool isUsed = false,
+		bool playSound = false,
+	},
+	PutAnotherSprite = 
+	{
+		bool DebugMode = true,
+		string SpriteSource = "520eff6b8d44e453:FlowerFace",
+		Vec3 Offset = [0, 0, 0.1],
+		float Size = 0.8,
+	},
+	SoundEmitter = 
+	{
+		bool StartPlaying = false,
+		int ExtraPriority = 1,
+		string CueName = "4e1bd44008b4dc2a:DefaultCue",
+		float Volume = 1,
+		float Pitch = 1,
+		bool Positional = false,
+	},
+	Rotator = 
+	{
+		bool RotateX = false,
+		float RotatorX = 0,
+		bool RotateY = false,
+		float RotatorY = 0,
+		bool RotateZ = true,
+		float RotatorZ = 2,
+		bool Sway = false,
+		float SwayPeriod = 1.5,
+	},
+	ChangeColor = 
+	{
+		bool DebugMode = false,
+		Vec4 NewColor = [0.98, 0.0588, 0.0588, 1],
+		bool RandomColor = false,
+		bool ColorShifting = true,
+		float ShiftTime = 2,
+		string AnotherSprite = "4e07948c35993095:DefaultSprite",
+		string DetectEventType = "",
+		bool SpaceEvent = false,
+		bool OwnerEvent = true,
+	},
+	ChangeSpriteOnActivation = 
+	{
+		string MainSprite = "4e07948c35993095:DefaultSprite",
+		string AnotherSprite = "520eff6b8d739234:FullFlowerHappy",
+		string DetectEventType = "AllFlowers",
+		bool SpaceEvent = false,
+		bool OwnerEvent = true,
+		bool EventFunction = false,
+	},
+},

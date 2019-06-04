@@ -1,0 +1,55 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "questmark",
+	},
+	Archetyped = 
+	{
+		string Name = "52de6f54638174fa:QuestMarker",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, 0, 0],
+		Vec3 Scale = [0.75, 0.75, 0.75],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "52d178a70192e14a:bang",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [0.71, 1, 0, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	Rotator = 
+	{
+		bool RotateX = false,
+		float RotatorX = 0,
+		bool RotateY = false,
+		float RotatorY = 0,
+		bool RotateZ = true,
+		float RotatorZ = 2,
+		bool Sway = true,
+		float SwayPeriod = 0.25,
+	},
+	PrintOnCreation = 
+	{
+		string Message = "my name is",
+	},
+	DestroyOnEvent = 
+	{
+		string EventToDetect = "QuestMarkBangDestroy",
+		bool Active = true,
+	},
+},

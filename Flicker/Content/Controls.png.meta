@@ -1,0 +1,15 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "Controls",
+		uint64 ResourceId = 51657e639101fadc,
+		uint FrameSizeX = 0,
+		uint FrameSizeY = 0,
+		uint FrameCount = 0,
+		float FrameDelay = 0.0333333,
+		float Scale = 1,
+		float OriginX = 209,
+		float OriginY = 35,
+	},
+},

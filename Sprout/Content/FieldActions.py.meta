@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "FieldActions",
+		uint64 ResourceId = 524705f5f077939a,
+	},
+},

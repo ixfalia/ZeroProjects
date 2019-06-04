@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "PromptBox",
+		uint64 ResourceId = 52ca7e924a6e5d66,
+	},
+},

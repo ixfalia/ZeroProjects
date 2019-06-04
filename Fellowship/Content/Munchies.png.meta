@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "Munchies",
+		uint64 ResourceId = 546d997799f718b2,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 205,
+		uint FrameSizeY = 205,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333,
+		float OriginX = 102,
+		float OriginY = 102,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

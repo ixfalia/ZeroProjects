@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "HoverSprite",
+		uint64 ResourceId = 52732789660b58ca,
+	},
+},

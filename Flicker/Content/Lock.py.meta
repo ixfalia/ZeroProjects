@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Lock",
+		uint64 ResourceId = 5166f539de0db486,
+	},
+},

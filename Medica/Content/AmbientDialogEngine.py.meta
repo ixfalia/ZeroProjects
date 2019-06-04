@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "AmbientDialogEngine",
+		uint64 ResourceId = 52c21e4233b7942d,
+	},
+},

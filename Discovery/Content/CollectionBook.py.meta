@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "CollectionBook",
+		uint64 ResourceId = 547c7db7d6a6d335,
+	},
+},

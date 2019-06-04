@@ -1,0 +1,19 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "GroundPlot",
+		uint64 ResourceId = 525ccc94eec5f3b0,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 393,
+		uint FrameSizeY = 392,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333,
+		float OriginX = 196,
+		float OriginY = 196,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+	},
+},

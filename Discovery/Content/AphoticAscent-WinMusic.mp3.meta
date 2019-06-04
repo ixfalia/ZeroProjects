@@ -1,0 +1,11 @@
+AudioContent = 
+{
+	SoundBuilder = 
+	{
+		string Name = "AphoticAscent-WinMusic",
+		uint64 ResourceId = 54127462f29c8aeb,
+		bool Compressed = true,
+		uint Quality = 100,
+		SoundLoadType LoadType = Streamed,
+	},
+},

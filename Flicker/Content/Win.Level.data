@@ -1,0 +1,123 @@
+Level = 
+{
+	LevelSettings = 
+	{
+		LinkId = 
+		{
+			uint Id = 1,
+		},
+		Named = 
+		{
+			string Name = "LevelSettings",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 2,
+		},
+		Named = 
+		{
+			string Name = "EditorCamera",
+		},
+		Archetyped = 
+		{
+			string Name = "4de020863e840530:EditorCamera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0.832582, 19.8982, 34.6896],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [-0.257382, 0.0115936, 0.00308826, 0.966235],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Perspective,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 500,
+			float Size = 20,
+		},
+		EditorCameraController = 
+		{
+			ControlMode ControlMode = Orbit,
+			float LookDistance = 40,
+			float LookAngle = 1.5628,
+			float LookRotation = 1.5468,
+			Vec3 LookTarget = [0, 0, 0],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 3,
+		},
+		Named = 
+		{
+			string Name = "myCamera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 4.70398],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 200,
+			float Size = 20,
+		},
+		DefaultCamera = 
+		{
+			bool Active = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 4,
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "4e07948c35993095:DefaultSprite",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = false,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = Centered,
+			string FontName = "4e7bac697bec55c5:Verdana",
+			uint FontSize = 128,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			string Text = "Wave Complete!",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+		},
+	},
+},

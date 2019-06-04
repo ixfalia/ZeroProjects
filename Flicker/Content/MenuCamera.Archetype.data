@@ -1,0 +1,29 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "MainCamera",
+	},
+	Archetyped = 
+	{
+		string Name = "5165023e52fa7879:MenuCamera",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, 0, 4.02858],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Camera = 
+	{
+		ProjectionMode ProjectionMode = Orthographic,
+		float FieldOfView = 45,
+		float NearPlane = 0.5,
+		float FarPlane = 200,
+		float Size = 20,
+	},
+},

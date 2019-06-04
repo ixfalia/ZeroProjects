@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "PauseOnFade",
+		uint64 ResourceId = 53347439b60ce35b,
+	},
+},

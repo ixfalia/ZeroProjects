@@ -1,0 +1,132 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "menuBack",
+	},
+	Archetyped = 
+	{
+		string Name = "52d4561542c49b10:MenuBack",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, 0, 0],
+		Vec3 Scale = [18, 13, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "52d0dc199ab33c97:FillTile",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [0.069125, 0.101946, 0.175, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	BoxCollider = 
+	{
+		bool Ghost = true,
+		bool SendsMessages = true,
+		bool Seamless = false,
+		string MaterialName = "4faa6050b8692851:HardMaterial",
+		string SerializedGroupName = "532505751388fc9f:Inventory",
+		Vec3 Offset = [0, 0, 0],
+		Vec3 Size = [0.5, 0.5, 0.5],
+	},
+	Fader = 
+	{
+		bool DebugMode = false,
+		float FadeInDuration = 0.15,
+		float FadeOutDuration = 0.15,
+		bool FadeInOnCreation = false,
+		bool InvisibleOnCreation = false,
+	},
+	ColorNexus = 
+	{
+		Vec4 BaseColor = [1, 1, 1, 1],
+	},
+	PauseOnFade = 
+	{
+	},
+	Hierarchy = 
+	{
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 2,
+			},
+			Named = 
+			{
+				string Name = "Title",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [0, 0.4, 1.02494e-006],
+				Vec3 Scale = [0.166667, 0.230769, 3],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			SpriteText = 
+			{
+				SpriteGeometryMode GeometryMode = ZPlane,
+				TextPositionMode Position = Centered,
+				string FontName = "52d462359819619c:Trinigan",
+				uint FontSize = 36,
+				Vec4 Color = [1, 1, 1, 1],
+				bool Visible = true,
+				string Text = "Inventory",
+				bool OnTop = false,
+				BlendMode BlendMode = Alpha,
+				Vec2 Size = [0, 0],
+				TextAlign Align = Left,
+				float PixelsPerUnit = 64,
+				bool Smoothing = true,
+			},
+		},
+		ArchetypeInstance = 
+		{
+			string Name = "532b943bf4ef639d:SimpleHUDText",
+			LinkId = 
+			{
+				uint Id = 3,
+			},
+			Transform = 
+			{
+				Vec3 Translation = [0.172943, 0.472697, -1.19209e-006],
+				Vec3 Scale = [0.0555556, 0.0769231, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Named = 
+			{
+				string Name = "usefulTextR",
+			},
+		},
+		ArchetypeInstance = 
+		{
+			string Name = "532b943bf4ef639d:SimpleHUDText",
+			LinkId = 
+			{
+				uint Id = 4,
+			},
+			Transform = 
+			{
+				Vec3 Translation = [-0.474208, 0.472697, -4.76837e-007],
+				Vec3 Scale = [0.0555556, 0.0769231, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Named = 
+			{
+				string Name = "usefulTextL",
+			},
+		},
+	},
+},

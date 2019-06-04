@@ -1,0 +1,8 @@
+TextContent = 
+{
+	TextBuilder = 
+	{
+		string Name = "Tutorial_FirstQuest",
+		uint64 ResourceId = 532bd53c359366cd,
+	},
+},

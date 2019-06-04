@@ -1,0 +1,123 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "text",
+	},
+	Archetyped = 
+	{
+		string Name = "532b1097d6755e29:LevelButton",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, -2.49462, 9.9662e-008],
+		Vec3 Scale = [2, 2, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	SpriteText = 
+	{
+		SpriteGeometryMode GeometryMode = ZPlane,
+		TextPositionMode Position = Centered,
+		string FontName = "52d4637f84d54c64:DoulosSILR",
+		uint FontSize = 24,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		string Text = "Start Game",
+		bool OnTop = false,
+		BlendMode BlendMode = Alpha,
+		Vec2 Size = [0, 0],
+		TextAlign Align = Left,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+	},
+	SoundEmitter = 
+	{
+		bool StartPlaying = false,
+		int ExtraPriority = 0,
+		string CueName = "532b07e107a69ada:JournalComplete",
+		float Volume = 1,
+		float Pitch = 1,
+		bool Positional = false,
+	},
+	Hierarchy = 
+	{
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 2,
+			},
+			Named = 
+			{
+				string Name = "buttonBack",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [0, 0.043011, 0],
+				Vec3 Scale = [3, 0.75, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				string SpriteSource = "52d0dc199ab33c97:FillTile",
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [0.0705882, 0.172549, 0.239216, 1],
+				bool Visible = true,
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+			},
+			BoxCollider = 
+			{
+				bool Ghost = false,
+				bool SendsMessages = true,
+				bool Seamless = false,
+				string MaterialName = "4faa6050b8692851:HardMaterial",
+				string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+				Vec3 Offset = [0, 0, 0],
+				Vec3 Size = [0.5, 0.5, 0.5],
+			},
+			Reactive = 
+			{
+				bool Active = true,
+				bool CaptureMouse = false,
+			},
+			MouseResponse = 
+			{
+				bool SimpleDarken = false,
+				bool MergeColors = true,
+				float ergePercent = 0.75,
+				Vec2 ouseSlide = [0, 0.08],
+				Vec4 hoverColor = [0.0462, 0.220836, 0.84, 1],
+				Vec4 downColor = [0.00787501, 0.0997938, 0.175, 1],
+				float defaultOpacity = 1,
+				string hoverSound = "5322c1b5ae2649ac:QuestComplete",
+				string downSound = "532b1f39ca956f56:StartGame",
+			},
+			MouseBox = 
+			{
+				string EventName = "MouseActivateEvent",
+				bool DetectLeftClick = true,
+				bool DetectRightClick = true,
+				bool DetectMiddleClick = false,
+				bool sendReactiveEvent = true,
+			},
+			LevelChangeButton = 
+			{
+				bool DebugMode = false,
+				string LevelChange = "52edbcb6eaa24541:Level_Town",
+				bool useLevelTable = false,
+				bool loadNextLevel = false,
+				float ChangeDelay = 2.5,
+			},
+		},
+	},
+},

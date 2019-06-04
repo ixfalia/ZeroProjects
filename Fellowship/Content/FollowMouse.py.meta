@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "FollowMouse",
+		uint64 ResourceId = 546c2eb1615694e2,
+	},
+},

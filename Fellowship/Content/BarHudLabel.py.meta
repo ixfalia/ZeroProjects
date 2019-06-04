@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "BarHudLabel",
+		uint64 ResourceId = 541f8eb95e61e7f5,
+	},
+},

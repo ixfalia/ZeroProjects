@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "HUDPointsText",
+		uint64 ResourceId = 5215e38b4003470c,
+	},
+},

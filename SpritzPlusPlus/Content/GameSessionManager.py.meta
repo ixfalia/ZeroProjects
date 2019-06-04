@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "GameSessionManager",
+		uint64 ResourceId = 526ddbab3f90f713,
+	},
+},

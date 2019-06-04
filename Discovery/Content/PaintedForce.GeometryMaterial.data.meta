@@ -1,0 +1,11 @@
+DataContent = 
+{
+	DataBuilder = 
+	{
+		string Name = "PaintedForce",
+		uint64 ResourceId = 5471833c505edfa0,
+		string LoaderType = "GeometryMaterial",
+		uint Version = 0,
+		bool ShowInEditor = true,
+	},
+},

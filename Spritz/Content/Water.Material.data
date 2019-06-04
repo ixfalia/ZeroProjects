@@ -1,0 +1,28 @@
+Material = 
+{
+	Lambert = 
+	{
+	},
+	AlphaTest = 
+	{
+		float Value = 0.3,
+	},
+	EmissiveMapping = 
+	{
+		float EmissiveScale = 0.1,
+		string EmissiveMapTexture = "5216c0b8b256f9b7:LavaDiffuse",
+		Vec2 EmissiveScroll = [0.1, 0.1],
+		Vec2 EmissiveTiling = [1, 1],
+		Vec2 EmissiveOffset = [0, 0],
+	},
+	Refractivity = 
+	{
+	},
+	TextureDiffuse = 
+	{
+		string DiffuseTexture = "5216c0028fb019af:Texture-Water_0",
+		Vec2 DiffuseScroll = [0, 0.2],
+		Vec2 DiffuseTiling = [1, 1],
+		Vec2 DiffuseOffset = [0, 0],
+	},
+},

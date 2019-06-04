@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "BasicEnemyLogic",
+		uint64 ResourceId = 521d074b2fbeda1f,
+	},
+},

@@ -1,0 +1,48 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "marvel",
+	},
+	Archetyped = 
+	{
+		string Name = "5412241956fb00cf:MarvelGet",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-4, 4, -15],
+		Vec3 Scale = [2, 2, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	SpriteText = 
+	{
+		SpriteGeometryMode GeometryMode = ZPlane,
+		TextPositionMode Position = UpperLeft,
+		string FontName = "547fa33d59f53516:Kingthings_Petrock",
+		uint FontSize = 18,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		string Text = "New Marvel Found!",
+		bool OnTop = true,
+		BlendMode BlendMode = Alpha,
+		Vec2 Size = [0, 0],
+		TextAlign Align = Left,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+	},
+	Celebration = 
+	{
+		bool Active = false,
+		float Duration = 4,
+		bool Move = true,
+		float MoveDuration = 0.75,
+		Vec3 MoveOffset = [10, 0, 0],
+		string ActivationEvent = """MarvelGet""",
+		string SendEndingEvent = "",
+	},
+},

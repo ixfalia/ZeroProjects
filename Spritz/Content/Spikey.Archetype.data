@@ -1,0 +1,112 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "Flower",
+	},
+	Archetyped = 
+	{
+		string Name = "521acfd9ff85c7e2:Spikey",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [32.6258, 8.82893, 0],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "521ac8601bcb514a:SpikeySpikes",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	SphereCollider = 
+	{
+		bool Ghost = false,
+		bool SendsMessages = true,
+		bool Seamless = false,
+		string MaterialName = "4faa6050b8692851:HardMaterial",
+		string SerializedGroupName = "5217ab7e9bfb2092:DeathCausing",
+		Vec3 Offset = [0, 0, 0.5],
+		float Radius = 2.5,
+	},
+	RigidBody = 
+	{
+		bool Static = false,
+		bool Asleep = false,
+		bool Kinematic = true,
+		bool RotationLocked = false,
+		bool Mode2D = true,
+		bool AllowSleep = true,
+		bool Inherit2DMode = false,
+		Vec3 Velocity = [0, 0, 0],
+		Vec3 AngularVelocity = [0, 0, 0],
+	},
+	SoundEmitter = 
+	{
+		bool StartPlaying = false,
+		int ExtraPriority = 1,
+		string CueName = "4e1bd44008b4dc2a:DefaultCue",
+		float Volume = 1,
+		float Pitch = 1,
+		bool Positional = false,
+	},
+	ChangeColor = 
+	{
+		bool DebugMode = true,
+		Vec4 NewColor = [0.52608, 0.0704, 0.64, 1],
+		bool RandomColor = true,
+		bool ColorShifting = false,
+		float ShiftTime = 1,
+		string AnotherSprite = "520eff6b8d44e453:FlowerFace",
+		string DetectEventType = "FlowerGet",
+		bool SpaceEvent = false,
+		bool OwnerEvent = true,
+	},
+	Rotator = 
+	{
+		bool RotateX = false,
+		float RotatorX = 0,
+		bool RotateY = false,
+		float RotatorY = 0,
+		bool RotateZ = true,
+		float RotatorZ = 3,
+		bool Sway = true,
+		float SwayPeriod = 0.051,
+	},
+	PutAnotherSprite = 
+	{
+		bool DebugMode = false,
+		string SpriteSource = "521ac80b1e3ba2be:SpikeyFace",
+		Vec3 Offset = [0, 0, 0.1],
+		float Size = 1,
+	},
+	PathFollower = 
+	{
+		string PathResourceName = "521de1fd95c78f40:Floating",
+		float TimeToTake = 2,
+		Vec3 LocalFollowPoint = [0, 0, 0],
+		EndCondition EndCondition = Reverse,
+		Positioning Positioning = Absolute,
+		bool Paused = false,
+		bool StartAtBeginning = true,
+	},
+	Spikey = 
+	{
+		string FaceSprite = "521ac80b1e3ba2be:SpikeyFace",
+		string AngrySprite = "521db94d3f675725:SpikeyFaceAngry",
+		float WaterPauseTime = 1.5,
+	},
+},

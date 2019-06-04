@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "EffectManagerTracker",
+		uint64 ResourceId = 525d2a1c8f88ad1c,
+	},
+},

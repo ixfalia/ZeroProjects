@@ -1,0 +1,11 @@
+DataContent = 
+{
+	DataBuilder = 
+	{
+		string Name = "HiddenVertical",
+		uint64 ResourceId = 5271be30613dd5c8,
+		string LoaderType = "Path",
+		uint Version = 0,
+		bool ShowInEditor = true,
+	},
+},

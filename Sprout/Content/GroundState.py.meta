@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "GroundState",
+		uint64 ResourceId = 52a2112c4ef7f4f0,
+	},
+},

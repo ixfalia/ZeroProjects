@@ -1,0 +1,96 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "dialog",
+	},
+	Archetyped = 
+	{
+		string Name = "533b648f768303f1:DialogBox",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, -4.3, 0],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Hierarchy = 
+	{
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 2,
+			},
+			Named = 
+			{
+				string Name = "back",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [0, 0, -1.59232],
+				Vec3 Scale = [17, 5, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				string SpriteSource = "52d0dc199ab33c97:FillTile",
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [0.866667, 0.796079, 0.639216, 1],
+				bool Visible = true,
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 3,
+			},
+			Named = 
+			{
+				string Name = "text",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [-7.99666, 1.91902, -1.59232],
+				Vec3 Scale = [1, 1, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			SpriteText = 
+			{
+				SpriteGeometryMode GeometryMode = ZPlane,
+				TextPositionMode Position = UpperLeft,
+				string FontName = "532d3dfe2a58d2c8:Prociono",
+				uint FontSize = 42,
+				Vec4 Color = [0, 0, 0, 1],
+				bool Visible = true,
+				string Text = """Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+				bool OnTop = false,
+				BlendMode BlendMode = Alpha,
+				Vec2 Size = [16, 4],
+				TextAlign Align = Left,
+				float PixelsPerUnit = 64,
+				bool Smoothing = true,
+			},
+			Fader = 
+			{
+				bool DebugMode = false,
+				float FadeInDuration = 1,
+				float FadeOutDuration = 1,
+				bool FadeInOnCreation = false,
+				bool InvisibleOnCreation = false,
+			},
+		},
+	},
+},

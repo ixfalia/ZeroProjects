@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "myCustomEnums",
+		uint64 ResourceId = 524733856ad7b52a,
+	},
+},

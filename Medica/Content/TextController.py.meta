@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "TextController",
+		uint64 ResourceId = 5302fdb7cc10e0ce,
+	},
+},

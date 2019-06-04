@@ -1,0 +1,43 @@
+ResourceTable = 
+{
+	string ResourceType = "Level",
+	Array EntryList = 
+	[
+		{
+			string Name = "Sandbox",
+			string Value = "527262c15d349a4c:CheckGamepad",
+			float Weight = 1,
+		},
+		{
+			string Name = "Main Menu",
+			string Value = "526dc427214cc913:MainMenu",
+			float Weight = 1,
+		},
+		{
+			string Name = "Level Selection",
+			string Value = "526dc4d02080dcdf:LevelSelect",
+			float Weight = 1,
+		},
+		{
+			string Name = "Welcome to the Jungle!",
+			string Value = "526dcc8c9f806033:TutorialLevel",
+			float Weight = 5,
+		},
+		{
+			string Name = "The Bramble Patch",
+			string Value = "5272a78eb723fe12:Level_1",
+			float Weight = 6,
+		},
+		{
+			string Name = "Surviving the Spikey's Ire",
+			string Value = "5286d93562262712:Level_2",
+			float Weight = 8,
+		},
+		{
+			string Name = "End",
+			string Value = "5271d23bfd421c3b:GameWon",
+			float Weight = 1,
+		},
+	],
+	float MaxWeight = 20,
+},

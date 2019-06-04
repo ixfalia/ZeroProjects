@@ -1,0 +1,977 @@
+Level = 
+{
+	LevelSettings = 
+	{
+		LinkId = 
+		{
+			uint Id = 1,
+		},
+		Named = 
+		{
+			string Name = "LevelSettings",
+		},
+		GravityEffect = 
+		{
+			bool Active = false,
+			bool WakeUpOnChange = false,
+			bool LocalSpaceDirection = true,
+			float Strength = 10,
+			Vec3 Direction = [0, -1, 0],
+		},
+		DragEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			float Drag = 0.7,
+		},
+		ForwardRenderer = 
+		{
+			Vec4 ClearColor = [0.278431, 0.278431, 0.278431, 1],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 2,
+		},
+		Named = 
+		{
+			string Name = "EditorCamera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [5.9475, 1.805, 90],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, -2.38419e-008, -0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			SpriteSort SpriteSort = ZDepth,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 500,
+			float Size = 23,
+		},
+		EditorCameraController = 
+		{
+			ControlMode ControlMode = ZPlane,
+			float LookDistance = 50,
+			float VerticalAngle = 0,
+			float HorizontalAngle = 0,
+			Vec3 LookTarget = [5.9475, 1.805, 40],
+		},
+		EditorRenderer = 
+		{
+			Vec4 ClearColor = [0.278431, 0.278431, 0.278431, 1],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 3,
+		},
+		Named = 
+		{
+			string Name = "HUDCamera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 40],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			SpriteSort SpriteSort = ZDepth,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 200,
+			float Size = 20,
+		},
+		CameraViewport = 
+		{
+			bool Background = false,
+			Vec2 Offset = [0, 0],
+			Vec2 Size = [1, 1],
+			uint Layer = 2,
+			bool Active = true,
+			bool Blocking = true,
+			uint Renderer = 1,
+			uint Camera = 3,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 4,
+		},
+		Named = 
+		{
+			string Name = "HUDAreaBackground",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-6.34409, 8.4552, -1],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520eff6b8d674c02:HUDPoints",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 5,
+		},
+		Named = 
+		{
+			string Name = "TextPointCount",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-4.83871, 9.02868, 1],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = UpperLeft,
+			string FontName = "4e7bac697bec55c5:Verdana",
+			uint FontSize = 55,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			string Text = "00000",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+		HUDPointsText = 
+		{
+			bool DebugMode = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 6,
+		},
+		Named = 
+		{
+			string Name = "TankBack",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-5.41057, -8.37401, 0],
+			Vec3 Scale = [2, 2, 1],
+			Quat Rotation = [0, 0, 0.707107, 0.707107],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520eff688ed8939f:Texture-Backplate",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 7,
+		},
+		Named = 
+		{
+			string Name = "CameraScope",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, -24],
+			Vec3 Scale = [19.8746, 19.8746, 465.065],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5275aa4d802dd6dc:Square",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.22, 0.2068, 0.2068, 1],
+			bool Visible = false,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 8,
+		},
+		Named = 
+		{
+			string Name = "UITank",
+		},
+		Archetyped = 
+		{
+			string Name = "5216c068950a7f02:WaterTank",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-5.44566, -8.39498, 2],
+			Vec3 Scale = [1, 7, 1],
+			Quat Rotation = [0, 0, 0.707107, 0.707107],
+		},
+		Model = 
+		{
+			string MaterialName = "5216c11fa27b6737:Water",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+		},
+		Rotator = 
+		{
+			bool RotateX = true,
+			float RotatorX = 4,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = false,
+			float RotatorZ = 0,
+			bool Sway = false,
+			float SwayPeriod = 1.5,
+		},
+		HUDWater = 
+		{
+			bool DebugMode = false,
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "527374d1833429b9:TankReplenished",
+			float Volume = 0.75,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+		SpriteParticleSystem = 
+		{
+			SystemChildMode ChildMode = Independent,
+			SystemSpace SystemSpace = WorldSpace,
+			uint DrawOrder = 0,
+			ParticleGeometry GeometryMode = Billboarded,
+			ParticleRenderMode RenderMode = Additive,
+			ParticleSortMode SortMode = None,
+			string Texture = "521dbf91ebf6ba2f:Texture-Bubble_0",
+			Vec4 Tint = [1, 1, 1, 1],
+			float VelocityScale = 0.15,
+			float LengthScale = 0,
+			float MaxParticleSize = 100,
+			Vec3 SystemSize = [2, 2, 2],
+		},
+		BoxParticleEmitter = 
+		{
+			bool Active = false,
+			uint EmitCount = 0,
+			float EmitRate = 50,
+			float EmitVariance = 5,
+			float Size = 0.1,
+			float SizeVariance = 0.25,
+			float Lifetime = 1,
+			float LifetimeVariance = 0,
+			float Spin = 0,
+			float SpinVariance = 0,
+			bool RandomSpin = false,
+			float Fill = 1,
+			float EmitterVelocityPercent = 0,
+			Vec3 StartVelocity = [0, 0, 0],
+			Vec3 RandomVelocity = [3, 0, 2],
+			Vec3 TangentVelocity = [0, 0, 0],
+			Vec3 EmitterSize = [1, 1, 1],
+			bool FastMovingEmitter = false,
+		},
+		LinearParticleAnimator = 
+		{
+			Vec3 Force = [0, 0, 0],
+			Vec3 RandomForce = [0, 0, 0],
+			float Torque = 0,
+			float Growth = 0,
+			float Dampening = 0,
+			Vec3 Twist = [5, 0, 0],
+		},
+		ParticleWander = 
+		{
+			float WanderAngle = 1,
+			float WanderAngleVariance = 1,
+			float WanderStrength = 5,
+		},
+		ParticleColorAnimator = 
+		{
+			Vec4 Color0 = [1, 1, 1, 1],
+			Vec4 Color1 = [0.784, 0, 0.98, 1],
+			Vec4 Color2 = [0.26825, 0, 0.925, 1],
+			Vec4 Color3 = [0.021177, 0.39, 0.01365, 1],
+			Vec4 Color4 = [1, 1, 1, 1],
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "526dd06a49f8a754:HUDFlower",
+		LinkId = 
+		{
+			uint Id = 9,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [5.87403, 8.48616, -0.01],
+			Vec3 Scale = [0.7, 0.7, 0.7],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Wheel",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 10,
+		},
+		Named = 
+		{
+			string Name = "TextFlowerCount",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [7.43011, 9.02868, 1],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = UpperLeft,
+			string FontName = "4e7bac697bec55c5:Verdana",
+			uint FontSize = 55,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			string Text = "00000",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+		HUDFlowerText = 
+		{
+		},
+		PointsCounter = 
+		{
+			bool DebugMode = false,
+			uint Points = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 11,
+		},
+		Named = 
+		{
+			string Name = "Celebration",
+		},
+		Archetyped = 
+		{
+			string Name = "526df6d307c0e7af:Celebration",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 4.94976, 2],
+			Vec3 Scale = [2, 2, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteParticleSystem = 
+		{
+			SystemChildMode ChildMode = Independent,
+			SystemSpace SystemSpace = WorldSpace,
+			uint DrawOrder = 0,
+			ParticleGeometry GeometryMode = Beam,
+			ParticleRenderMode RenderMode = Additive,
+			ParticleSortMode SortMode = None,
+			string Texture = "526defef1981b222:Shine",
+			Vec4 Tint = [1, 0.956, 0.725, 0.6],
+			float VelocityScale = 0,
+			float LengthScale = 1,
+			float MaxParticleSize = 100,
+			Vec3 SystemSize = [4, 4, 4],
+		},
+		SphericalParticleEmitter = 
+		{
+			bool Active = true,
+			uint EmitCount = 0,
+			float EmitRate = 50,
+			float EmitVariance = 2,
+			float Size = 0.25,
+			float SizeVariance = 0.5,
+			float Lifetime = 4,
+			float LifetimeVariance = 2,
+			float Spin = 0,
+			float SpinVariance = 0,
+			bool RandomSpin = true,
+			float Fill = 1,
+			float EmitterVelocityPercent = 0,
+			Vec3 StartVelocity = [0, 5, 0],
+			Vec3 RandomVelocity = [10, 10, 10],
+			Vec3 TangentVelocity = [0, 0, 0],
+			Vec3 EmitterSize = [4, 4, 4],
+			bool FastMovingEmitter = true,
+		},
+		LinearParticleAnimator = 
+		{
+			Vec3 Force = [0, -3, 0],
+			Vec3 RandomForce = [0, 0, 0],
+			float Torque = 0,
+			float Growth = 0,
+			float Dampening = 0,
+			Vec3 Twist = [0, 0, 0],
+		},
+		ParticleWander = 
+		{
+			float WanderAngle = 1,
+			float WanderAngleVariance = 1,
+			float WanderStrength = 5,
+		},
+		ParticleColorAnimator = 
+		{
+			Vec4 Color0 = [1, 1, 1, 1],
+			Vec4 Color1 = [0.294, 0.63014, 0.98, 1],
+			Vec4 Color2 = [1, 0.962, 0.05, 1],
+			Vec4 Color3 = [0.0875, 0.625, 0, 1],
+			Vec4 Color4 = [0.02485, 0.206432, 0.355, 1],
+		},
+		CelebrationMessage = 
+		{
+			string EventType = "AllFlowers",
+			bool OwnerEvent = false,
+			bool SpaceEvent = true,
+			float Duration = 3.75,
+			string Message = "You got all the Flowers!",
+		},
+		Sprite = 
+		{
+			string SpriteSource = "527361c0c1c208a1:AllFlowers",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = false,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 12,
+		},
+		Named = 
+		{
+			string Name = "TextFlowerCount",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [6.00896, -8.51612, 1],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = Centered,
+			string FontName = "4e7bac697bec55c5:Verdana",
+			uint FontSize = 55,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			string Text = "00000",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+		LevelProgressTracker = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 13,
+		},
+		Named = 
+		{
+			string Name = "TextFlowerCount",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-7.31362, -7.42472, 1],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = Centered,
+			string FontName = "4e7bac697bec55c5:Verdana",
+			uint FontSize = 32,
+			Vec4 Color = [1, 0.84, 0, 1],
+			bool Visible = true,
+			string Text = "Water Tank",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 14,
+		},
+		Named = 
+		{
+			string Name = "LevelCompleteText",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [14.3208, 1.04868, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = UpperLeft,
+			string FontName = "4e7bac697bec55c5:Verdana",
+			uint FontSize = 64,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = false,
+			string Text = "Level Complete!",
+			bool OnTop = false,
+			BlendMode BlendMode = Additive,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+		PathFollower = 
+		{
+			string PathResourceName = "5272872b8a44fb0b:HUDHorizontal",
+			float TimeToTake = 1.5,
+			Vec3 LocalFollowPoint = [0, 0, 0],
+			EndCondition EndCondition = Stop,
+			Positioning Positioning = Absolute,
+			bool Paused = true,
+			bool StartAtBeginning = true,
+		},
+		LockedPath = 
+		{
+			string EventListened = "ActivateEvent",
+			bool SpaceEvent = false,
+			bool OwnerEvent = true,
+		},
+		Toggler = 
+		{
+			string onEvent = "LevelEnd",
+			float Duration = 6.5,
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "52729ff047a1722e:Victory",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 15,
+		},
+		Named = 
+		{
+			string Name = "Path",
+		},
+		Archetyped = 
+		{
+			string Name = "526c509c183b3991:HorizontalPath",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [18.5438, -1.91386, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5275aa4d802dd6dc:Square",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 0.84, 0, 1],
+			bool Visible = false,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SpacePath = 
+		{
+			bool DebugDraw = false,
+			bool ProxyObjects = false,
+			bool TransformProxies = true,
+			bool Closed = false,
+			Array ControlPoints = 
+			[
+				{
+					Vec3 Position = [0, 0, 0],
+					bool IsProxy = true,
+					uint ControlPointId = 4294967293,
+				},
+				{
+					Vec3 Position = [-15, 0, 0],
+					bool IsProxy = true,
+					uint ControlPointId = 4294967293,
+				},
+			],
+			uint Resolution = 10,
+			string PathResource = "5272872b8a44fb0b:HUDHorizontal",
+		},
+		Hierarchy = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 16,
+		},
+		Named = 
+		{
+			string Name = "FlowerCelebration",
+		},
+		Archetyped = 
+		{
+			string Name = "526df6d307c0e7af:Celebration",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [5.80612, 8.46231, 2],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteParticleSystem = 
+		{
+			SystemChildMode ChildMode = Independent,
+			SystemSpace SystemSpace = WorldSpace,
+			uint DrawOrder = 0,
+			ParticleGeometry GeometryMode = Beam,
+			ParticleRenderMode RenderMode = Additive,
+			ParticleSortMode SortMode = None,
+			string Texture = "526defef1981b222:Shine",
+			Vec4 Tint = [1, 0.956, 0.725, 0.6],
+			float VelocityScale = 0,
+			float LengthScale = 1,
+			float MaxParticleSize = 100,
+			Vec3 SystemSize = [4, 4, 4],
+		},
+		SphericalParticleEmitter = 
+		{
+			bool Active = true,
+			uint EmitCount = 0,
+			float EmitRate = 45,
+			float EmitVariance = 3,
+			float Size = 0.25,
+			float SizeVariance = 0.5,
+			float Lifetime = 0.5,
+			float LifetimeVariance = 0.5,
+			float Spin = 0,
+			float SpinVariance = 0,
+			bool RandomSpin = true,
+			float Fill = 1,
+			float EmitterVelocityPercent = 0,
+			Vec3 StartVelocity = [0, 0, 0],
+			Vec3 RandomVelocity = [10, 10, 10],
+			Vec3 TangentVelocity = [0, 0, 0],
+			Vec3 EmitterSize = [1, 1, 1],
+			bool FastMovingEmitter = true,
+		},
+		LinearParticleAnimator = 
+		{
+			Vec3 Force = [0, -15, 0],
+			Vec3 RandomForce = [0, -10, 0],
+			float Torque = 0,
+			float Growth = 0,
+			float Dampening = 0,
+			Vec3 Twist = [0, 0, 0],
+		},
+		ParticleWander = 
+		{
+			float WanderAngle = 1,
+			float WanderAngleVariance = 1,
+			float WanderStrength = 5,
+		},
+		ParticleColorAnimator = 
+		{
+			Vec4 Color0 = [1, 1, 1, 1],
+			Vec4 Color1 = [0.294, 0.63014, 0.98, 1],
+			Vec4 Color2 = [0.5537, 0, 0.565, 1],
+			Vec4 Color3 = [0.0875, 0.625, 0, 1],
+			Vec4 Color4 = [0.02485, 0.206432, 0.355, 1],
+		},
+		CelebrationMessage = 
+		{
+			string EventType = "FlowerGet",
+			bool OwnerEvent = false,
+			bool SpaceEvent = true,
+			float Duration = 1,
+			string Message = "You got all the Flowers!",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 17,
+		},
+		Named = 
+		{
+			string Name = "musicBox",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [6.39538, 0, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5273176bc5c3b932:FillTile",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.153619, 0.14155, 0.745, 1],
+			bool Visible = false,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SoundManager = 
+		{
+			bool DebugMode = true,
+			int MaxSoundLimit = 50,
+			float SoundLimit = 0.5,
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = true,
+			int ExtraPriority = 0,
+			string CueName = "5216b1d0268f87fd:BGM_MagicHat",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 18,
+		},
+		Named = 
+		{
+			string Name = "CheatModeIcon",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 7.1809, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = Centered,
+			string FontName = "4e7bac697bec55c5:Verdana",
+			uint FontSize = 32,
+			Vec4 Color = [0.44, 0, 1, 1],
+			bool Visible = false,
+			string Text = "CHEAT MODE ACTIVE",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+		Toggler = 
+		{
+			string onEvent = "CheatEvent",
+			float Duration = -1,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 19,
+		},
+		Named = 
+		{
+			string Name = "PausedIcon",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, -3.39437, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = Centered,
+			string FontName = "52725258b386131d:Cookies",
+			uint FontSize = 56,
+			Vec4 Color = [0.44, 0, 1, 1],
+			bool Visible = false,
+			string Text = "~Paused~",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+		GamepadDispatcher = 
+		{
+			bool DebugMode = false,
+			bool DisableControl = false,
+			bool DetectControlEvents = true,
+			bool spaceEvents = true,
+			bool ownerEvents = false,
+			float deadzone = 0.8,
+		},
+		GamePauser = 
+		{
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "527190948b1d4e5e:Pause",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 20,
+		},
+		Named = 
+		{
+			string Name = "HowToPlay",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 2.23938, 0],
+			Vec3 Scale = [1.25, 1.25, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5271905b6bd74e67:HelpControls",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = false,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 21,
+		},
+		Named = 
+		{
+			string Name = "Transform",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [11.7556, -0.755, 40],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "PetLogic",
+		uint64 ResourceId = 541563a76b5feafc,
+	},
+},

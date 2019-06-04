@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "Journal",
+		uint64 ResourceId = 52d178a601803272,
+		uint64 AtlasId = 0000000000000000,
+		uint FrameSizeX = 0,
+		uint FrameSizeY = 0,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333,
+		float OriginX = 139,
+		float OriginY = 186,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

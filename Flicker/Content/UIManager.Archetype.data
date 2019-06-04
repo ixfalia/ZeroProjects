@@ -1,0 +1,53 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "UIManager",
+	},
+	Archetyped = 
+	{
+		string Name = "510d68eb46e7732a:UIManager",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, 8.68782, 0],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "4e07948c35993095:DefaultSprite",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = false,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+	},
+	GamepadDispatcher = 
+	{
+		bool DebugMode = false,
+		bool DisableControl = false,
+		bool UIDispatcher = true,
+		float deadzone = 0.8,
+	},
+	SoundEmitter = 
+	{
+		bool StartPlaying = true,
+		int ExtraPriority = 0,
+		string CueName = "5165038999257d31:BGM",
+		float Volume = 1,
+		float Pitch = 1,
+		bool Positional = false,
+	},
+	UIManager = 
+	{
+		bool DebugMode = true,
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "BasicDoor",
+		uint64 ResourceId = 544742fed774fa88,
+	},
+},

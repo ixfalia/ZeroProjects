@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "RockPaperScissorsController",
+		uint64 ResourceId = 54eadbbd7b5b4211,
+	},
+},

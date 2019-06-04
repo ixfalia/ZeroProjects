@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "GamepadButton",
+		uint64 ResourceId = 52bf82a3ea7bd424,
+	},
+},

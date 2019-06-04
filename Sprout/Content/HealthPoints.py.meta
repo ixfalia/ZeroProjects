@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "HealthPoints",
+		uint64 ResourceId = 5247361a88869744,
+	},
+},

@@ -1,0 +1,11 @@
+AudioContent = 
+{
+	SoundBuilder = 
+	{
+		string Name = "45 - Wind Dance",
+		uint64 ResourceId = 52d4608c58e91bfa,
+		bool Compressed = true,
+		uint Quality = 100,
+		SoundLoadType LoadType = Streamed,
+	},
+},

@@ -1,0 +1,19 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "BButton",
+		uint64 ResourceId = 5273499d087eb5db,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 129,
+		uint FrameSizeY = 129,
+		uint FrameCount = 2,
+		float FrameDelay = 0.333333,
+		float OriginX = 64,
+		float OriginY = 64,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+	},
+},

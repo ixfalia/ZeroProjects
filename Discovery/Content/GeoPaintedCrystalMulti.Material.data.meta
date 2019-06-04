@@ -1,0 +1,11 @@
+DataContent = 
+{
+	DataBuilder = 
+	{
+		string Name = "GeoPaintedCrystalMulti",
+		uint64 ResourceId = 549fa7dd401f61a1,
+		string LoaderType = "MultiMaterial",
+		uint Version = 0,
+		bool ShowInEditor = true,
+	},
+},

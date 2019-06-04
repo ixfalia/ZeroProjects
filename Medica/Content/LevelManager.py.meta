@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "LevelManager",
+		uint64 ResourceId = 52dd07a9ab91bc6c,
+	},
+},

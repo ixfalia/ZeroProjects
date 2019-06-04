@@ -1,0 +1,19 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "DemoFlower",
+		uint64 ResourceId = 5240d35599781974,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 471,
+		uint FrameSizeY = 471,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333,
+		float OriginX = 235,
+		float OriginY = 235,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+	},
+},

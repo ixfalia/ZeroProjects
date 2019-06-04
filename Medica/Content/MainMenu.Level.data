@@ -1,0 +1,262 @@
+Level = 
+{
+	LevelSettings = 
+	{
+		LinkId = 
+		{
+			uint Id = 1,
+		},
+		Named = 
+		{
+			string Name = "LevelSettings",
+		},
+		GravityEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			bool LocalSpaceDirection = true,
+			float Strength = 10,
+			Vec3 Direction = [0, -1, 0],
+		},
+		DragEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			float Drag = 0.7,
+		},
+		CameraViewport = 
+		{
+			bool Background = true,
+			Vec2 Offset = [0, 0],
+			Vec2 Size = [1, 1],
+			int Layer = 0,
+			bool Active = true,
+			bool Blocking = true,
+			uint Renderer = 1,
+			uint Camera = 2,
+			ViewportScaling Scaling = Fill,
+			Vec2 Resolution = [1280, 720],
+			Vec4 MarginColor = [0, 0, 0, 1],
+		},
+		ForwardRenderer = 
+		{
+			Vec4 ClearColor = [0.278431, 0.278431, 0.278431, 1],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 3,
+		},
+		Named = 
+		{
+			string Name = "EditorCamera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [2.28, -1.02, 50],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [-0, -1.09278e-008, 0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			SpriteSort SpriteSort = ZDepth,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 500,
+			float Size = 24,
+		},
+		EditorCameraController = 
+		{
+			ControlMode ControlMode = ZPlane,
+			float LookDistance = 50,
+			float VerticalAngle = 0,
+			float HorizontalAngle = 0,
+			Vec3 LookTarget = [2.28, -1.02, 9.9662e-008],
+		},
+		EditorRenderer = 
+		{
+			Vec4 ClearColor = [0.278431, 0.278431, 0.278431, 1],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 2,
+		},
+		Named = 
+		{
+			string Name = "Camera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 40],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			SpriteSort SpriteSort = ZDepth,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 200,
+			float Size = 20,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 4,
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 2.02151, 9.9662e-008],
+			Vec3 Scale = [2, 2, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "52dbed21317c63e5:Logo",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SpriteParticleSystem = 
+		{
+			SystemChildMode ChildMode = Independent,
+			SystemSpace SystemSpace = WorldSpace,
+			uint DrawOrder = 0,
+			ParticleGeometry GeometryMode = Beam,
+			ParticleRenderMode RenderMode = Additive,
+			ParticleSortMode SortMode = None,
+			string Texture = "52d1787ee2335267:FillTile",
+			Vec4 Tint = [1, 1, 1, 0.385],
+			float VelocityScale = 0.5,
+			float LengthScale = 0,
+			float MaxParticleSize = 100,
+			Vec3 SystemSize = [2, 2, 2],
+		},
+		BoxParticleEmitter = 
+		{
+			bool Active = true,
+			uint EmitCount = 0,
+			float EmitRate = 10,
+			float EmitVariance = 0,
+			float Size = 0.25,
+			float SizeVariance = 0,
+			float Lifetime = 2,
+			float LifetimeVariance = 0.5,
+			float Spin = 0,
+			float SpinVariance = 1,
+			bool RandomSpin = true,
+			float Fill = 1,
+			float EmitterVelocityPercent = 0,
+			Vec3 StartVelocity = [0, 1, 0],
+			Vec3 RandomVelocity = [0, 0, 0],
+			Vec3 TangentVelocity = [0, 0, 0],
+			Vec3 EmitterSize = [10, 1, 1],
+			bool FastMovingEmitter = false,
+		},
+		LinearParticleAnimator = 
+		{
+			Vec3 Force = [0, 0, 0],
+			Vec3 RandomForce = [0, 0, 0],
+			float Torque = 0,
+			float Growth = 0,
+			float Dampening = 0,
+			Vec3 Twist = [0, 0, 0],
+		},
+		ParticleWander = 
+		{
+			float WanderAngle = 1,
+			float WanderAngleVariance = 1,
+			float WanderStrength = 1,
+		},
+		ParticleColorAnimator = 
+		{
+			Vec4 Color0 = [0.0705882, 0.172549, 0.239216, 1],
+			Vec4 Color1 = [0.1524, 0.205367, 0.24, 1],
+			Vec4 Color2 = [0.0705882, 0.172549, 0.239216, 1],
+			Vec4 Color3 = [0.278431, 0.278431, 0.278431, 1],
+			Vec4 Color4 = [1, 1, 1, 1],
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "532b1097d6755e29:LevelButton",
+		LinkId = 
+		{
+			uint Id = 5,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, -2.49462, 9.9662e-008],
+			Vec3 Scale = [2, 2, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "text",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 6,
+		},
+		Named = 
+		{
+			string Name = "Transform",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, -6.62366, 9.9662e-008],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = Centered,
+			string FontName = "4e7bac697bec55c5:Verdana",
+			uint FontSize = 32,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			string Text = "All content (c) 2014 DigiPen (USA) Corporation. All rights reserved",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = true,
+			int ExtraPriority = 0,
+			string CueName = "52dbccdee23062f3:BGM_Town",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = true,
+		},
+	},
+},

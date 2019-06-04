@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "PrintOnCreation",
+		uint64 ResourceId = 530dc06dee4e415a,
+	},
+},

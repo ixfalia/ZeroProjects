@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "GamePauser",
+		uint64 ResourceId = 527193dae0a5a37b,
+	},
+},

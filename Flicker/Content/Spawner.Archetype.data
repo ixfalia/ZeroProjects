@@ -1,0 +1,64 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "SpawnerTop",
+	},
+	Archetyped = 
+	{
+		string Name = "511578a0a0795258:Spawner",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, 38, 0],
+		Vec3 Scale = [2, 2, 2],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Model = 
+	{
+		string MaterialName = "511b995ae146c754:Red",
+		string MeshName = "4de0354322b345ae:Cube",
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+	},
+	RigidBody = 
+	{
+		bool Static = true,
+		bool Asleep = false,
+		bool Kinematic = false,
+		bool RotationLocked = false,
+		bool Mode2D = false,
+		bool AllowSleep = true,
+		bool Inherit2DMode = true,
+		Vec3 Velocity = [0, 0, 0],
+		Vec3 AngularVelocity = [0, 0, 0],
+	},
+	BoxCollider = 
+	{
+		bool Ghost = false,
+		bool SendsMessages = true,
+		bool Seamless = true,
+		string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+		string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+		Vec3 Offset = [0, 0, 0],
+		Vec3 Size = [0.5, 0.5, 0.5],
+	},
+	Timer = 
+	{
+		bool DebugMode = false,
+	},
+	Spawner = 
+	{
+		bool DebugMode = false,
+		float SpawnSpeed = 5,
+		int SpawnLimit = 2,
+		bool isActive = true,
+	},
+	WaveSpawner = 
+	{
+	},
+},

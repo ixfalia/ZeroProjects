@@ -1,0 +1,11 @@
+Cog = 
+{
+	Project = 
+	{
+		string ProjectName = "Topdown_Flicker",
+		string ProjectOwner = "",
+		string DefaultLevel = "Level",
+		string ProjectSpace = "Space",
+		uint ProjectEngineRevision = 6197,
+	},
+},

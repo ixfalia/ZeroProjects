@@ -1,0 +1,59 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "dinkdink",
+	},
+	Archetyped = 
+	{
+		string Name = "541229034e0df9eb:Dink",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-3.56301, 20.6698, 1],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	SpriteParticleSystem = 
+	{
+		SystemChildMode ChildMode = Independent,
+		SystemSpace SystemSpace = WorldSpace,
+		uint DrawOrder = 0,
+		float WarmUpTime = 0,
+		ParticleGeometry GeometryMode = Billboarded,
+		ParticleRenderMode RenderMode = Blended,
+		ParticleSortMode SortMode = Youngest,
+		ParticleAnimation ParticleAnimation = Single,
+		string Texture = "547040dc59eaf35c:Thorns",
+		Vec4 Tint = [1, 1, 1, 1],
+		float VelocityScale = 0.1,
+		float LengthScale = 1,
+		float MaxParticleSize = 100,
+		Vec3 SystemSize = [4, 4, 4],
+	},
+	SphericalParticleEmitter = 
+	{
+		bool Active = true,
+		uint EmitCount = 0,
+		float EmitRate = 10,
+		float EmitVariance = 0,
+		float Size = 0.15,
+		float SizeVariance = 0.05,
+		float Lifetime = 0.4,
+		float LifetimeVariance = 0.1,
+		float Spin = 2,
+		float SpinVariance = 50,
+		bool RandomSpin = true,
+		float Fill = 1,
+		float EmitterVelocityPercent = 0,
+		Vec3 StartVelocity = [0, 0, 0],
+		Vec3 RandomVelocity = [2, 2, 2],
+		Vec3 TangentVelocity = [0, 0, 0],
+		Vec3 EmitterSize = [0, 0, 0],
+		bool FastMovingEmitter = false,
+	},
+},

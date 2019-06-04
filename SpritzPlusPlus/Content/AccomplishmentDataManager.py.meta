@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "AccomplishmentDataManager",
+		uint64 ResourceId = 52b16ea385738f5a,
+	},
+},

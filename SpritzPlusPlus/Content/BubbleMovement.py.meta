@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "BubbleMovement",
+		uint64 ResourceId = 520eff3d85312e3c,
+	},
+},

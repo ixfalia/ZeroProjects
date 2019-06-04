@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "ChatBubble",
+		uint64 ResourceId = 52dd30ca4038884e,
+	},
+},

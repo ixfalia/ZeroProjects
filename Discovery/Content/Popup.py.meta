@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Popup",
+		uint64 ResourceId = 5412391fccf8d19f,
+	},
+},

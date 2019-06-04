@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "COMICNEUE-ANGULAR-BOLD-OBLIQUE",
+		uint64 ResourceId = 5430ab76ad13f469,
+	},
+},

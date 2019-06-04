@@ -1,0 +1,287 @@
+Level = 
+{
+	LevelSettings = 
+	{
+		LinkId = 
+		{
+			uint Id = 1,
+		},
+		Named = 
+		{
+			string Name = "LevelSettings",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 2,
+		},
+		Named = 
+		{
+			string Name = "EditorCamera",
+		},
+		Archetyped = 
+		{
+			string Name = "4de020863e840530:EditorCamera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-3.18736, 0.299601, 47.1457],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [-0.0284331, -0.0493595, -0.00140573, 0.998375],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Perspective,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 500,
+			float Size = 20,
+		},
+		EditorCameraController = 
+		{
+			ControlMode ControlMode = Orbit,
+			float LookDistance = 47,
+			float LookAngle = 0.178796,
+			float LookRotation = -4.61359,
+			Vec3 LookTarget = [1.44114, -2.37529, 0.450704],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 3,
+		},
+		Named = 
+		{
+			string Name = "MainCamera",
+		},
+		Archetyped = 
+		{
+			string Name = "5165023e52fa7879:MenuCamera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 4.02858],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 200,
+			float Size = 20,
+		},
+		DefaultCamera = 
+		{
+			bool Active = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 4,
+		},
+		Named = 
+		{
+			string Name = "MainLogo",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "51651919c44a0e9a:Flicker-LogoALT",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+		},
+		MainMenu = 
+		{
+			bool DebugMode = true,
+		},
+		GamepadDispatcher = 
+		{
+			bool DebugMode = false,
+			bool DisableControl = false,
+			bool UIDispatcher = false,
+			float deadzone = 0.8,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 5,
+		},
+		Named = 
+		{
+			string Name = "White",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0.488292, -1.72665],
+			Vec3 Scale = [476.532, 7.7888, 7.7888],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "510d68967af44e91:blank",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 6,
+		},
+		Named = 
+		{
+			string Name = "Spectrum",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 1.23408, -1.37753],
+			Vec3 Scale = [74.5098, 0.716737, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Model = 
+		{
+			string MaterialName = "51651ae40132151c:SpectrumScroll",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = false,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 7,
+		},
+		Named = 
+		{
+			string Name = "testbutton1",
+		},
+		Archetyped = 
+		{
+			string Name = "5165786dc38fde94:button",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, -3.30262, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "51657811c0b30303:Start",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+		},
+		ButtonLogic = 
+		{
+			string screen = "",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 8,
+		},
+		Named = 
+		{
+			string Name = "testbutton2",
+		},
+		Archetyped = 
+		{
+			string Name = "5165786dc38fde94:button",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-4.44438, -5.38827, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "51657e639101fadc:Controls",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+		},
+		ButtonLogic = 
+		{
+			string screen = "",
+		},
+		Sign = 
+		{
+			bool DebugMode = false,
+			bool TypeTrigger = false,
+			bool TypeControlDown = false,
+			bool TypeControlA = false,
+			bool TypeAuto = false,
+			bool TypeOnGameStart = false,
+			bool TypeOnSpaceEvent = false,
+			bool TypeOnOwnerEvent = true,
+			uint EventType = 4294967295,
+			string MenuType = "twinkle",
+			Vec3 MenuOffset = [0, 2, -1],
+		},
+	},
+},

@@ -1,0 +1,137 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "red",
+	},
+	Archetyped = 
+	{
+		string Name = "5240e0c5bc4f4b51:redFlower",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, 0, 0],
+		Vec3 Scale = [0.5, 0.5, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "525ccc94eec16fb5:mysteryseed",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 0, 0, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	Sprout = 
+	{
+		string Type = "blank",
+		string Effect = "sunny",
+		Vec2 gridPosition = [0, 0],
+		bool bloomed = false,
+		int GrowthTime = 3,
+	},
+	SphereCollider = 
+	{
+		bool Ghost = false,
+		bool SendsMessages = true,
+		bool Seamless = false,
+		string MaterialName = "4faa6050b8692851:HardMaterial",
+		string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+		Vec3 Offset = [0, 0, 0],
+		float Radius = 1.8,
+	},
+	Reactive = 
+	{
+		bool Active = true,
+		bool CaptureMouse = true,
+	},
+	Rotator = 
+	{
+		bool Disabled = false,
+		bool RotateX = false,
+		float RotatorX = 0,
+		bool RotateY = false,
+		float RotatorY = 0,
+		bool RotateZ = true,
+		float RotatorZ = 0.5,
+		bool Sway = true,
+		float SwayPeriod = 0.75,
+	},
+	ReactiveColor = 
+	{
+		bool disableMouseEvents = false,
+		Vec4 DefaultColor = [1, 1, 1, 1],
+		Vec4 HoverColor = [0.8, 0.8, 0.8, 1],
+		Vec4 DownColor = [0.45, 0.45, 0.45, 1],
+		string hoverEvent = "UIState_Hover",
+		string resetEvent = "UIState_Default",
+		string activateEvent = "UIState_Activate",
+	},
+	sproutSunflower = 
+	{
+	},
+	HealthPoints = 
+	{
+		int HealthMax = 3,
+		int CurrentHealth = 2,
+	},
+	Scalarator = 
+	{
+		bool Active = false,
+		float Delay = 0.1,
+		float Duration = 0.35,
+		float ScaleX = 0.01,
+		float ScaleY = 0.08,
+	},
+	UIButton = 
+	{
+		bool Active = true,
+		string enterState = "MouseEnter",
+		string defaultEvent = "UIState_Default",
+		string hoverEvent = "UIState_Hover",
+		string activateEvent = "UIState_Activate",
+		string rightClickEvent = "UIState_RClick",
+		string iddleClickEvent = "UIState_MClick",
+		string State = "",
+	},
+	SoundEmitter = 
+	{
+		bool StartPlaying = false,
+		int ExtraPriority = 0,
+		string CueName = "525cc47084717901:Combo",
+		float Volume = 0.75,
+		float Pitch = 1,
+		bool Positional = true,
+	},
+	ColorShifting = 
+	{
+		bool Debug = false,
+		bool Active = false,
+		float ShiftTime = 0.5,
+	},
+	SpriteText = 
+	{
+		SpriteGeometryMode GeometryMode = ZPlane,
+		TextPositionMode Position = Centered,
+		string FontName = "52a203d5383863c8:Orbitron Bold",
+		uint FontSize = 150,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		string Text = "0",
+		bool OnTop = true,
+		BlendMode BlendMode = Alpha,
+		Vec2 Size = [0, 0],
+		TextAlign Align = Left,
+		float PixelsPerUnit = 64,
+	},
+},

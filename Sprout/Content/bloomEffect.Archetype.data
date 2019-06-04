@@ -1,0 +1,83 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "bloomEffect",
+	},
+	Archetyped = 
+	{
+		string Name = "524b1a6697aabc8f:bloomEffect",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, 0, 0],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	SpriteParticleSystem = 
+	{
+		SystemChildMode ChildMode = Independent,
+		SystemSpace SystemSpace = WorldSpace,
+		uint DrawOrder = 3,
+		ParticleGeometry GeometryMode = Beam,
+		ParticleRenderMode RenderMode = Additive,
+		ParticleSortMode SortMode = None,
+		string Texture = "4fab71e8bcb7a8ce:DefaultTexture",
+		Vec4 Tint = [1, 1, 1, 1],
+		float VelocityScale = 0.1,
+		float LengthScale = 0,
+		float MaxParticleSize = 100,
+		Vec3 SystemSize = [2, 2, 2],
+	},
+	SphericalParticleEmitter = 
+	{
+		bool Active = true,
+		uint EmitCount = 0,
+		float EmitRate = 50,
+		float EmitVariance = 0,
+		float Size = 0.25,
+		float SizeVariance = 0.3,
+		float Lifetime = 1.5,
+		float LifetimeVariance = 0.5,
+		float Spin = 1,
+		float SpinVariance = 0,
+		bool RandomSpin = false,
+		float Fill = 1,
+		float EmitterVelocityPercent = 0,
+		Vec3 StartVelocity = [0, 0, 0],
+		Vec3 RandomVelocity = [10, 10, 0],
+		Vec3 TangentVelocity = [0, 0, 0],
+		Vec3 EmitterSize = [1, 1, 1],
+		bool FastMovingEmitter = false,
+	},
+	LinearParticleAnimator = 
+	{
+		Vec3 Force = [0, 0, 0],
+		Vec3 RandomForce = [0, 0, 0],
+		float Torque = 0,
+		float Growth = 0,
+		float Dampening = 0,
+		Vec3 Twist = [0, 0, 0],
+	},
+	ParticleWander = 
+	{
+		float WanderAngle = 1,
+		float WanderAngleVariance = 1,
+		float WanderStrength = 10,
+	},
+	ParticleTwister = 
+	{
+		Vec3 Axis = [0, 0, 3],
+		float Strength = 1,
+		float MinDistance = 0,
+		float MaxDistance = 100,
+	},
+	Lifetime = 
+	{
+		float Duration = 0.25,
+	},
+},

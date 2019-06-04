@@ -1,0 +1,19 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "Fade",
+		uint64 ResourceId = 52a0c47faae09073,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 126,
+		uint FrameSizeY = 461,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333,
+		float OriginX = 63,
+		float OriginY = 230,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+	},
+},

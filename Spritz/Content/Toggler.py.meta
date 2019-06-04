@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Toggler",
+		uint64 ResourceId = 526c537a7bc2b8ee,
+	},
+},

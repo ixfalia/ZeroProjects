@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "COMICNEUE-ANGULAR-LIGHT",
+		uint64 ResourceId = 5430ab76ad1208f0,
+	},
+},

@@ -1,0 +1,11 @@
+BinaryContent = 
+{
+	BinaryBuilder = 
+	{
+		string Name = "Level1",
+		uint64 ResourceId = 521517521f5ed0c6,
+		string LoaderType = "TilePaletteSource",
+		uint Version = 0,
+		string FilterTag = "",
+	},
+},

@@ -1,0 +1,48 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "scanned",
+	},
+	Archetyped = 
+	{
+		string Name = "54123ccb0670a880:AlreadyScanned",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, 0, 0],
+		Vec3 Scale = [2, 2, 2],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	SpriteText = 
+	{
+		SpriteGeometryMode GeometryMode = ZPlane,
+		TextPositionMode Position = UpperLeft,
+		string FontName = "547fa33d59f53516:Kingthings_Petrock",
+		uint FontSize = 16,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		string Text = "Already Scanned!",
+		bool OnTop = true,
+		BlendMode BlendMode = Alpha,
+		Vec2 Size = [0, 0],
+		TextAlign Align = Left,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+	},
+	Celebration = 
+	{
+		bool Active = true,
+		float Duration = 0.75,
+		bool Move = true,
+		float MoveDuration = 0.35,
+		Vec3 MoveOffset = [0, 0.5, 0],
+		string ActivationEvent = "",
+		string SendEndingEvent = "",
+	},
+},

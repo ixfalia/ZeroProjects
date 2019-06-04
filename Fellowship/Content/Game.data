@@ -1,0 +1,39 @@
+GameSession = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Archetyped = 
+	{
+		string Name = "546c12c841bce0fa:Game",
+	},
+	Viewports = 
+	{
+	},
+	DefaultGameSetup = 
+	{
+		string StartingSpaceName = "546c12c841bcff9b:Space",
+		string StartingLevelName = "5430b7cd5a32e959:MainMenu",
+	},
+	Statistics = 
+	{
+		uint Level = 1,
+		float Health = 1,
+		float Stamina = 1,
+		uint MaxHealth = 100,
+		uint MaxStamina = 50,
+		float Physical = 0.1,
+		float Special = 0.1,
+		float Defense = 0.1,
+		float Resistance = 0.1,
+		float Speed = 0.1,
+		uint MaxStat = 255,
+		uint Age = 0,
+		float Fullness = 0.25,
+		float Hunger = 0.25,
+		float Happiness = 0.01,
+		float Energy = 1,
+		bool isSick = false,
+	},
+},

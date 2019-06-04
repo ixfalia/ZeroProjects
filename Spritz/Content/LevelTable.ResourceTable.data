@@ -1,0 +1,33 @@
+ResourceTable = 
+{
+	string ResourceType = "Level",
+	Array EntryList = 
+	[
+		{
+			string Name = "Sandbox",
+			string Value = "527262c15d349a4c:CheckGamepad",
+			float Weight = 1,
+		},
+		{
+			string Name = "Name2",
+			string Value = "526dc427214cc913:MainMenu",
+			float Weight = 1,
+		},
+		{
+			string Name = "Name3",
+			string Value = "526dcc8c9f806033:TutorialLevel",
+			float Weight = 1,
+		},
+		{
+			string Name = "Name4",
+			string Value = "5272a78eb723fe12:Level_1",
+			float Weight = 1,
+		},
+		{
+			string Name = "Name5",
+			string Value = "5271d23bfd421c3b:GameWon",
+			float Weight = 1,
+		},
+	],
+	float MaxWeight = 1,
+},

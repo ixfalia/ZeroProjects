@@ -1,0 +1,14 @@
+Path = 
+{
+	Vec3 Scale = [1, 1, 1],
+	Quat Rotation = [0, 0, 0, 1],
+	Vec3 Origin = [57.3775, 6.59001, 2.50805e-006],
+	Array ControlPoints = 
+	[
+[0, 0, 0],
+[0, 5, 0],
+	],
+	bool Closed = false,
+	PathType PathType = Linear,
+	uint Resolution = 10,
+},

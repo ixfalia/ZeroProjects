@@ -1,0 +1,102 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "Fountain",
+	},
+	Archetyped = 
+	{
+		string Name = "521dc79222fed2fb:Fountain",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [2.2828, 0.405928, 3.63724e-006],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	SpriteParticleSystem = 
+	{
+		SystemChildMode ChildMode = Independent,
+		SystemSpace SystemSpace = WorldSpace,
+		uint DrawOrder = 0,
+		ParticleGeometry GeometryMode = Billboarded,
+		ParticleRenderMode RenderMode = Additive,
+		ParticleSortMode SortMode = None,
+		string Texture = "521dbf91ebf6ba2f:Texture-Bubble_0",
+		Vec4 Tint = [0.134125, 0.450475, 0.925, 1],
+		float VelocityScale = 2,
+		float LengthScale = 1,
+		float MaxParticleSize = 100,
+		Vec3 SystemSize = [2, 2, 2],
+	},
+	SphericalParticleEmitter = 
+	{
+		bool Active = true,
+		uint EmitCount = 0,
+		float EmitRate = 10,
+		float EmitVariance = 0,
+		float Size = 0.2,
+		float SizeVariance = 0.5,
+		float Lifetime = 3,
+		float LifetimeVariance = 1,
+		float Spin = 1,
+		float SpinVariance = 0,
+		bool RandomSpin = false,
+		float Fill = 1,
+		float EmitterVelocityPercent = 1,
+		Vec3 StartVelocity = [0, 1, 0],
+		Vec3 RandomVelocity = [0, 0, 0],
+		Vec3 TangentVelocity = [0, 0, 0],
+		Vec3 EmitterSize = [0.5, 0.5, 1],
+		bool FastMovingEmitter = false,
+	},
+	LinearParticleAnimator = 
+	{
+		Vec3 Force = [0, 0, 0],
+		Vec3 RandomForce = [3, 0, 0],
+		float Torque = 0,
+		float Growth = 0,
+		float Dampening = 0,
+		Vec3 Twist = [0, 0, 0],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "4e07948c35993095:DefaultSprite",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [0.52, 0.091, 0.091, 1],
+		bool Visible = false,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	BoxCollider = 
+	{
+		bool Ghost = true,
+		bool SendsMessages = true,
+		bool Seamless = false,
+		string MaterialName = "4faa6050b8692851:HardMaterial",
+		string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+		Vec3 Offset = [0, 2, 0],
+		Vec3 Size = [1, 2, 1],
+	},
+	Fountain = 
+	{
+	},
+	SoundEmitter = 
+	{
+		bool StartPlaying = false,
+		int ExtraPriority = 0,
+		string CueName = "5216b19e5c6b683b:Replenish",
+		float Volume = 1,
+		float Pitch = 1.8,
+		bool Positional = true,
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Cheater",
+		uint64 ResourceId = 52736b164093c882,
+	},
+},

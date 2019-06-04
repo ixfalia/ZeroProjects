@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "GamepadCheck",
+		uint64 ResourceId = 5272622924d235f5,
+	},
+},

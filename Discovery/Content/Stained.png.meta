@@ -1,0 +1,13 @@
+ImageContent = 
+{
+	TextureBuilder = 
+	{
+		string Name = "Stained",
+		uint64 ResourceId = 54706fda7cbf0d6e,
+		OutputTextureFormat Format = PNG,
+		FixPowerOf2 FixPowerOf2 = Auto,
+		ImageFilter ResizeFilter = Cubic,
+		bool GenerateMipMaps = true,
+		ImageFilter MipFilter = Cubic,
+	},
+},

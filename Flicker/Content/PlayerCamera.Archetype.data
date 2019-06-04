@@ -1,0 +1,48 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "MainCamera",
+	},
+	Archetyped = 
+	{
+		string Name = "510a465138773516:PlayerCamera",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, 26.2141, -1.90706e-006],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [-0.707107, 0, 0, 0.707107],
+	},
+	Camera = 
+	{
+		ProjectionMode ProjectionMode = Perspective,
+		float FieldOfView = 45,
+		float NearPlane = 0.5,
+		float FarPlane = 200,
+		float Size = 20,
+	},
+	CameraGroupFocuser = 
+	{
+		Vec3 PlaneNormal = [-0, -0, -1],
+		float PlaneDistanceScalar = 5,
+		float PlaneDistanceConstant = 10,
+		float MinDistance = 20,
+		float Smoothness = 0.6,
+		float TranslationSmoothness = 0.1,
+		Vec3 PositionOffset = [0, 0, 0],
+		bool ControlsOrientation = true,
+	},
+	DefaultCamera = 
+	{
+		bool Active = true,
+	},
+	CameraController = 
+	{
+		bool DebugMode = false,
+	},
+},

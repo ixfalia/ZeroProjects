@@ -1,0 +1,3150 @@
+Level = 
+{
+	LevelSettings = 
+	{
+		LinkId = 
+		{
+			uint Id = 1,
+		},
+		Named = 
+		{
+			string Name = "LevelSettings",
+		},
+		GravityEffect = 
+		{
+			bool Active = false,
+			bool WakeUpOnChange = false,
+			bool LocalSpaceDirection = true,
+			float Strength = 10,
+			Vec3 Direction = [0, -1, 0],
+		},
+		DragEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			float Drag = 0.7,
+		},
+		CameraViewport = 
+		{
+			bool Background = true,
+			Vec2 Offset = [0, 0],
+			Vec2 Size = [1, 1],
+			int Layer = 0,
+			bool Active = true,
+			bool Blocking = false,
+			uint Renderer = 1,
+			uint Camera = 2,
+			ViewportScaling Scaling = Fill,
+			Vec2 Resolution = [1280, 720],
+			Vec4 MarginColor = [0, 0, 0, 1],
+		},
+		DeferredRenderer = 
+		{
+			Vec4 ClearColor = [0, 0, 0, 1],
+			bool Hdr = true,
+			bool Glow = true,
+			bool RenderMasks = false,
+			bool ToneMapping = false,
+			float BrightThreshold = 1,
+			float Exposure = 0.5,
+			bool Refraction = true,
+			bool Shadows = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 3,
+		},
+		Named = 
+		{
+			string Name = "EditorCamera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-4.57728, 55.743, 10.099],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [-0, -1.09278e-008, 0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			CameraTransparentSort TransparentSort = InheritFromSpace,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 500,
+			float Size = 16.5299,
+		},
+		EditorCameraController = 
+		{
+			ControlMode ControlMode = ZPlane,
+			float LookDistance = 0.1,
+			float VerticalAngle = 0,
+			float HorizontalAngle = 0,
+			Vec3 LookTarget = [-4.57728, 55.743, 9.999],
+			float MoveSensitivity = 1,
+		},
+		EditorRenderer = 
+		{
+			Vec4 ClearColor = [0.155, 0.155, 0.155, 1],
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "4de020863e84941e:Transform",
+		LinkId = 
+		{
+			uint Id = 4,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "LevelGeometry",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 2,
+		},
+		Named = 
+		{
+			string Name = "Camera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 20],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Perspective,
+			Facing Facing = NegativeZ,
+			CameraTransparentSort TransparentSort = InheritFromSpace,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 200,
+			float Size = 20,
+		},
+		CameraController = 
+		{
+			uint Target = 0,
+			Vec3 Offset = [0, 0, 0],
+		},
+		Hierarchy = 
+		{
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 5,
+				},
+				Named = 
+				{
+					string Name = "marvel",
+				},
+				Archetyped = 
+				{
+					string Name = "5412241956fb00cf:MarvelGet",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-4, 4, -15],
+					Vec3 Scale = [2, 2, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				SpriteText = 
+				{
+					bool Visible = false,
+					bool VisibilityCulling = true,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					TextPositionMode Position = UpperLeft,
+					string FontName = "547fa33d59f53516:Kingthings_Petrock",
+					uint FontSize = 18,
+					Vec4 Color = [1, 1, 1, 1],
+					string Text = "New Marvel Found!",
+					bool OnTop = true,
+					BlendMode BlendMode = Alpha,
+					Vec2 Size = [0, 0],
+					TextAlign Align = Left,
+					float PixelsPerUnit = 64,
+					bool Smoothing = true,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+				},
+				Celebration = 
+				{
+					bool Active = false,
+					float Duration = 4,
+					bool Move = true,
+					float MoveDuration = 0.75,
+					Vec3 MoveOffset = [10, 0, 0],
+					string ActivationEvent = """MarvelGet""",
+					string SendEndingEvent = "",
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 6,
+				},
+				Named = 
+				{
+					string Name = "SoundNode_Base",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0, 0, -15],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				SoundEmitter = 
+				{
+					bool StartPlaying = true,
+					int ExtraPriority = 0,
+					string CueName = "54118b00dde87ebf:BGM_Base",
+					float Volume = 0.3,
+					float Pitch = 1,
+					bool Positional = false,
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 7,
+				},
+				Named = 
+				{
+					string Name = "SoundNode_Rising",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0, 0, -15],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				SoundEmitter = 
+				{
+					bool StartPlaying = true,
+					int ExtraPriority = 0,
+					string CueName = "54118aa1acdda371:BGM_Rising",
+					float Volume = 0,
+					float Pitch = 1,
+					bool Positional = false,
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 8,
+				},
+				Named = 
+				{
+					string Name = "SoundNode_Critical",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0, 0, -15],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				SoundEmitter = 
+				{
+					bool StartPlaying = true,
+					int ExtraPriority = 0,
+					string CueName = "54118bc7ca8717f8:BGM_Critical",
+					float Volume = 0,
+					float Pitch = 1,
+					bool Positional = false,
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 9,
+				},
+				Named = 
+				{
+					string Name = "BlackOut",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0, 0, -12],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = false,
+					bool VisibilityCulling = true,
+					string SpriteSource = "547040dc59ecc7a0:FillTile",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					Vec4 Color = [0, 0, 0, 1],
+					bool OnTop = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+				},
+				Area = 
+				{
+					Vec2 Size = [20, 20],
+					Location Origin = Center,
+				},
+				ColorBase = 
+				{
+					bool useSpriteColor = false,
+					Vec4 Color = [1, 1, 1, 1],
+				},
+			},
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 10,
+		},
+		Named = 
+		{
+			string Name = "Moo",
+		},
+		Archetyped = 
+		{
+			string Name = "54707e16b69b3fb5:OrbHolder",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0.349508, 11.1054, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Model = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			string MaterialName = "54474892e723fe8f:ForceField",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [1, 1, 1, 1],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "545e022a8a30eefe:KeyNode",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = true,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Light = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			LightType LightType = Point,
+			float Range = 12,
+			float MinRange = 2,
+			float Angle = 45,
+			float Intensity = 2.01,
+			Vec4 Color = [1, 1, 1, 1],
+			float MinRange = 2,
+			float Size = 1,
+			bool Baked = false,
+		},
+		Inventory = 
+		{
+			string StartingInventory = "Keyorb: 1",
+			int ItemMax = 1,
+			int MaxCapacity = 1,
+			string Accepts = "",
+		},
+		TextParser = 
+		{
+			bool Debug = false,
+		},
+		Shadow = 
+		{
+			Quality Quality = HighQuality,
+			ShadowType ShadowType = Esm,
+			bool SoftShadows = true,
+			float Size = 2,
+			uint Splits = 1,
+			uint CurrentSplit = 0,
+			float PaddingScaler = 0.3,
+			Vec4 Color = [0, 0, 0, 1],
+			bool Active = true,
+		},
+		KeyNode = 
+		{
+			bool Active = true,
+			string KeyName = "TutorialDoor",
+		},
+		LightPulse = 
+		{
+			bool Active = true,
+			float LightOn = 0.5,
+			float LightOff = 0.5,
+			float FadeTime = 0.5,
+			float defaultIntensity = -1,
+			bool StartsOn = true,
+		},
+		Key = 
+		{
+			bool DebugMode = true,
+			int KeyID = 0,
+			string KeyName = "",
+			bool isMultiuse = true,
+			bool isUsed = false,
+			string BroadCastOnEvent = "TurnOn",
+			bool SpaceEvent = true,
+			bool OwnerEvent = false,
+			bool BroadcastToHUD = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 11,
+		},
+		Named = 
+		{
+			string Name = "DirectionalLight",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [4.17, 1.37, -0.000999817],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Light = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			LightType LightType = Directional,
+			float Range = 50,
+			float MinRange = 2,
+			float Angle = 10,
+			float Intensity = 0.25,
+			Vec4 Color = [1, 1, 1, 1],
+			float MinRange = 2,
+			float Size = 20,
+			bool Baked = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 12,
+		},
+		Named = 
+		{
+			string Name = "Player",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0.227027, -5.47999, 0.1],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			string SpriteSource = "5274db4c2e7c11f9:Circle",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.68, 0.4862, 0.4862, 1],
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+		},
+		PlayerLogic = 
+		{
+		},
+		MovementController = 
+		{
+			bool Active = true,
+			bool UseDelta = true,
+			float MovementScalar = 10,
+		},
+		KeyboardController = 
+		{
+			bool Active = true,
+			bool Debug = false,
+		},
+		GamepadController = 
+		{
+			bool Active = true,
+		},
+		Inventory = 
+		{
+			string StartingInventory = "",
+			int ItemMax = 64,
+			int MaxCapacity = 1,
+			string Accepts = "",
+		},
+		SphereCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "545e02906c819580:Player",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 0.5,
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Light = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			LightType LightType = Point,
+			float Range = 1.75,
+			float MinRange = 2,
+			float Angle = 45,
+			float Intensity = 1.4,
+			Vec4 Color = [1, 1, 1, 1],
+			float MinRange = 2,
+			float Size = 20,
+			bool Baked = false,
+		},
+		Shadow = 
+		{
+			Quality Quality = HighQuality,
+			ShadowType ShadowType = Esm,
+			bool SoftShadows = true,
+			float Size = 2,
+			uint Splits = 1,
+			uint CurrentSplit = 0,
+			float PaddingScaler = 0.3,
+			Vec4 Color = [0, 0, 0, 1],
+			bool Active = true,
+		},
+		Microphone = 
+		{
+			bool Active = true,
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "4e1bd44008b4dc2a:DefaultCue",
+			float Volume = 0.45,
+			float Pitch = 1,
+			bool Positional = true,
+		},
+		SoundActivator = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 13,
+		},
+		Named = 
+		{
+			string Name = "Floor",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, -2],
+			Vec3 Scale = [25.418, 25.418, 2],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Model = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			string MaterialName = "544757a68ed51a92:Floor",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [1, 1, 1, 1],
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "54707598898b85ef:Floor",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 14,
+		},
+		Named = 
+		{
+			string Name = "Global Light",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0.473785, 0.508857, -0.000999453],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Light = 
+		{
+			bool Visible = false,
+			bool VisibilityCulling = true,
+			LightType LightType = Directional,
+			float Range = 50,
+			float MinRange = 2,
+			float Angle = 10,
+			float Intensity = 0.25,
+			Vec4 Color = [1, 1, 1, 1],
+			float MinRange = 2,
+			float Size = 20,
+			bool Baked = false,
+		},
+		GlobalLightController = 
+		{
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5471954e19fdc013:ForceGate",
+		LinkId = 
+		{
+			uint Id = 15,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-4.09452, 12.1846, -0.000999453],
+			Vec3 Scale = [7.4706, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "ForceDoor",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 16,
+		},
+		Named = 
+		{
+			string Name = "Floor",
+		},
+		EditorFlags = 
+		{
+			bool Locked = true,
+			bool Hidden = false,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 25.0805, -2],
+			Vec3 Scale = [25.418, 25.418, 2],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Model = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			string MaterialName = "544757a68ed51a92:Floor",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [1, 1, 1, 1],
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "54707598898b85ef:Floor",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		PoweredDoor = 
+		{
+			string ListeningFor = "",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 17,
+		},
+		Named = 
+		{
+			string Name = "Floor",
+		},
+		EditorFlags = 
+		{
+			bool Locked = true,
+			bool Hidden = false,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [25.3005, 25.1257, -2],
+			Vec3 Scale = [25.418, 25.418, 2],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Model = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			string MaterialName = "544757a68ed51a92:Floor",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [1, 1, 1, 1],
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "54707598898b85ef:Floor",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 18,
+		},
+		Named = 
+		{
+			string Name = "Floor",
+		},
+		EditorFlags = 
+		{
+			bool Locked = true,
+			bool Hidden = false,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-25.1803, 25.1257, -2],
+			Vec3 Scale = [25.418, 25.418, 2],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Model = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			string MaterialName = "544757a68ed51a92:Floor",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [1, 1, 1, 1],
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "54707598898b85ef:Floor",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 19,
+		},
+		Named = 
+		{
+			string Name = "Floor",
+		},
+		EditorFlags = 
+		{
+			bool Locked = true,
+			bool Hidden = false,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-0.103844, 50.4782, -2],
+			Vec3 Scale = [25.418, 25.418, 2],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Model = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			string MaterialName = "544757a68ed51a92:Floor",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [1, 1, 1, 1],
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "54707e35b0e35582:KeyNode",
+		LinkId = 
+		{
+			uint Id = 20,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [11.8741, 17.9723, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "RightDoor",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 21,
+		},
+		Named = 
+		{
+			string Name = "Door",
+		},
+		Archetyped = 
+		{
+			string Name = "5471957f24442587:Door",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [13.219, 21.1648, -0.00100031],
+			Vec3 Scale = [1, 5, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Model = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			string MaterialName = "54719258499bd491:Door",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [1, 1, 1, 1],
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = true,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		PoweredDoor = 
+		{
+			string ListeningFor = "RightDoor",
+		},
+		TextParser = 
+		{
+			bool Debug = false,
+		},
+		ParameterLock = 
+		{
+			bool Active = true,
+			bool Debug = false,
+			string ListenFor = "RightDoor:True",
+			int LockID = 0,
+			bool isListening = true,
+		},
+		BasicDoor = 
+		{
+			bool Active = true,
+			bool StartsPowered = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 22,
+		},
+		Named = 
+		{
+			string Name = "Door",
+		},
+		Archetyped = 
+		{
+			string Name = "5471957f24442587:Door",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-13.0488, 24.2304, -0.00100031],
+			Vec3 Scale = [1, 6, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Model = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			string MaterialName = "54719258499bd491:Door",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [1, 1, 1, 1],
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = true,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		TextParser = 
+		{
+			bool Debug = false,
+		},
+		BasicDoor = 
+		{
+			bool Active = true,
+			bool StartsPowered = false,
+		},
+		ParameterLock = 
+		{
+			bool Active = true,
+			bool Debug = false,
+			string ListenFor = "LeftDoor:True",
+			int LockID = 0,
+			bool isListening = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 23,
+		},
+		Named = 
+		{
+			string Name = "LeftDoor",
+		},
+		Archetyped = 
+		{
+			string Name = "54707e35b0e35582:KeyNode",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-11.3882, 27.701, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Model = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			string MaterialName = "54474892e723fe8f:ForceField",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [1, 1, 1, 1],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "545e022a8a30eefe:KeyNode",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = true,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Light = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			LightType LightType = Point,
+			float Range = 12,
+			float MinRange = 2,
+			float Angle = 45,
+			float Intensity = 1.5,
+			Vec4 Color = [1, 1, 1, 1],
+			float MinRange = 2,
+			float Size = 1,
+			bool Baked = false,
+		},
+		Inventory = 
+		{
+			string StartingInventory = "",
+			int ItemMax = 1,
+			int MaxCapacity = 1,
+			string Accepts = "",
+		},
+		TextParser = 
+		{
+			bool Debug = false,
+		},
+		Shadow = 
+		{
+			Quality Quality = HighQuality,
+			ShadowType ShadowType = Esm,
+			bool SoftShadows = true,
+			float Size = 2,
+			uint Splits = 1,
+			uint CurrentSplit = 0,
+			float PaddingScaler = 0.3,
+			Vec4 Color = [0, 0, 0, 1],
+			bool Active = true,
+		},
+		KeyNode = 
+		{
+			bool Active = true,
+			string KeyName = "",
+		},
+		LightPulse = 
+		{
+			bool Active = true,
+			float LightOn = 0.5,
+			float LightOff = 0.5,
+			float FadeTime = 0.5,
+			float defaultIntensity = -1,
+			bool StartsOn = true,
+		},
+		Key = 
+		{
+			bool DebugMode = true,
+			int KeyID = 0,
+			string KeyName = "",
+			bool isMultiuse = true,
+			bool isUsed = false,
+			string BroadCastOnEvent = "TurnOn",
+			bool SpaceEvent = true,
+			bool OwnerEvent = false,
+			bool BroadcastToHUD = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 24,
+		},
+		Named = 
+		{
+			string Name = "Door",
+		},
+		Archetyped = 
+		{
+			string Name = "5471957f24442587:Door",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0.175244, 37.5146, -0.00100031],
+			Vec3 Scale = [1, 6, 1],
+			Quat Rotation = [0, 0, 0.707107, 0.707107],
+		},
+		Model = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			string MaterialName = "54719258499bd491:Door",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [1, 1, 1, 1],
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = true,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		TextParser = 
+		{
+			bool Debug = false,
+		},
+		BasicDoor = 
+		{
+			bool Active = true,
+			bool StartsPowered = false,
+		},
+		ParameterLock = 
+		{
+			bool Active = true,
+			bool Debug = false,
+			string ListenFor = "TopDoor1:True",
+			int LockID = 0,
+			bool isListening = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 25,
+		},
+		Named = 
+		{
+			string Name = "Door",
+		},
+		Archetyped = 
+		{
+			string Name = "5471957f24442587:Door",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0.175244, 38.5365, -0.00100031],
+			Vec3 Scale = [1, 6, 1],
+			Quat Rotation = [0, 0, 0.707107, 0.707107],
+		},
+		Model = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			string MaterialName = "54719258499bd491:Door",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [1, 1, 1, 1],
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = true,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		TextParser = 
+		{
+			bool Debug = false,
+		},
+		BasicDoor = 
+		{
+			bool Active = true,
+			bool StartsPowered = false,
+		},
+		ParameterLock = 
+		{
+			bool Active = true,
+			bool Debug = false,
+			string ListenFor = "TopDoor2:True",
+			int LockID = 0,
+			bool isListening = true,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "54707e35b0e35582:KeyNode",
+		LinkId = 
+		{
+			uint Id = 26,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-3.75432, 36.0562, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "TopDoor1",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "54707e35b0e35582:KeyNode",
+		LinkId = 
+		{
+			uint Id = 27,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [4.72109, 36.0562, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "TopDoor2",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "54707e16b69b3fb5:OrbHolder",
+		LinkId = 
+		{
+			uint Id = 28,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-36.6177, 24.5699, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Holder",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "54707e16b69b3fb5:OrbHolder",
+		LinkId = 
+		{
+			uint Id = 29,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [35.8741, 24.5098, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Holder",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 30,
+		},
+		Named = 
+		{
+			string Name = "Glyph",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-0.1, 58, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			string SpriteSource = "547076291077fd03:GlyphMainRing",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.6144, 0.96, 0.939264, 0.75],
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+		},
+		SpriteParticleSystem = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			SystemChildMode ChildMode = Independent,
+			SystemSpace SystemSpace = WorldSpace,
+			uint DrawOrder = 0,
+			float WarmUpTime = 0,
+			ParticleGeometry GeometryMode = Billboarded,
+			ParticleRenderMode RenderMode = Additive,
+			ParticleSortMode SortMode = Youngest,
+			ParticleAnimation ParticleAnimation = Single,
+			string Texture = "5274db4c2e7c11f9:Circle",
+			Vec4 Tint = [0.5566, 0.92, 0.903041, 0.45],
+			float VelocityScale = 1,
+			float LengthScale = 1,
+			float MaxParticleSize = 100,
+			Vec3 SystemSize = [4, 4, 4],
+		},
+		SphericalParticleEmitter = 
+		{
+			bool Active = true,
+			uint EmitCount = 0,
+			float EmitRate = 10,
+			float EmitVariance = 0,
+			float Size = 0.15,
+			float SizeVariance = 0.15,
+			float Lifetime = 1.25,
+			float LifetimeVariance = 0.2,
+			float Spin = 0,
+			float SpinVariance = 50,
+			bool RandomSpin = true,
+			float Fill = 0.35,
+			float EmitterVelocityPercent = 0,
+			Vec3 StartVelocity = [0, 0, 0],
+			Vec3 RandomVelocity = [4, 4, 2],
+			Vec3 TangentVelocity = [0, 0, 0],
+			Vec3 EmitterSize = [0, 0, 0],
+			bool FastMovingEmitter = false,
+		},
+		LinearParticleAnimator = 
+		{
+			Vec3 Force = [0, 0, 0],
+			Vec3 RandomForce = [0, 0, 0],
+			float Torque = 0,
+			float Growth = 0,
+			float Dampening = 0,
+			Vec3 Twist = [0, 0, 0],
+		},
+		ParticleWander = 
+		{
+			float WanderAngle = 1,
+			float WanderAngleVariance = 1,
+			float WanderStrength = 10,
+		},
+		Light = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			LightType LightType = Point,
+			float Range = 12,
+			float MinRange = 2,
+			float Angle = 45,
+			float Intensity = 1,
+			Vec4 Color = [0.721025, 0.955, 0.942001, 1],
+			float MinRange = 2,
+			float Size = 20,
+			bool Baked = false,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "54706a35436f7859:Trigger",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 2.25,
+		},
+		ParticleColorAnimator = 
+		{
+			Vec4 Color0 = [1, 1, 1, 0],
+			Vec4 Color1 = [0, 0.76, 1, 1],
+			Vec4 Color2 = [0.64, 1, 0.9352, 1],
+			Vec4 Color3 = [0.495, 0.77275, 1, 1],
+			Vec4 Color4 = [1, 1, 1, 0],
+		},
+		TextParser = 
+		{
+			bool Debug = false,
+		},
+		WarpLogic = 
+		{
+			bool Active = false,
+			uint WarpTo = 0,
+		},
+		ParameterLock = 
+		{
+			bool Active = true,
+			bool Debug = false,
+			string ListenFor = "WarpNode:True, WarpNode2: True",
+			int LockID = 0,
+			bool isListening = true,
+		},
+		Warp = 
+		{
+			bool ToPosition = false,
+			Vec2 Position = [0, 0],
+			bool ToObject = true,
+			uint Object = 31,
+			Vec2 Offset = [0, -3],
+		},
+		Hierarchy = 
+		{
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 32,
+				},
+				Named = 
+				{
+					string Name = "BottomGlyph",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0, 0, -0.099],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					string SpriteSource = "5470762910781434:GlyphBottomRing",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					Vec4 Color = [0.72, 1, 0.981333, 1],
+					bool OnTop = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+				},
+				Rotator = 
+				{
+					bool Active = true,
+					bool RotateX = false,
+					float RotatorX = 0,
+					bool RotateY = false,
+					float RotatorY = 0,
+					bool RotateZ = true,
+					float RotatorZ = 0.35,
+					bool Sway = false,
+					float SwayPeriod = 1.5,
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 33,
+				},
+				Named = 
+				{
+					string Name = "UpperGlyph",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0, 0, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					string SpriteSource = "547076291074623f:GlyphUpperRing",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					Vec4 Color = [1, 1, 1, 1],
+					bool OnTop = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+				},
+				Rotator = 
+				{
+					bool Active = true,
+					bool RotateX = false,
+					float RotatorX = 0,
+					bool RotateY = false,
+					float RotatorY = 0,
+					bool RotateZ = true,
+					float RotatorZ = 0.05,
+					bool Sway = false,
+					float SwayPeriod = 1.5,
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 34,
+				},
+				Named = 
+				{
+					string Name = "Cycle",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-0.005023, -0.00659943, 0.1],
+					Vec3 Scale = [3.5, 3.5, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = false,
+					bool VisibilityCulling = true,
+					string SpriteSource = "5274db4c2e7c11f9:Circle",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					Vec4 Color = [0.62865, 0.968319, 0.99, 0.25],
+					bool OnTop = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+					BlendMode BlendMode = Additive,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+				},
+				Scalerator = 
+				{
+					bool Active = false,
+					bool Once = false,
+					float Delay = 0.1,
+					float Duration = 0.1,
+					float ScaleX = 0.5,
+					float ScaleY = 0.5,
+				},
+				SpriteActivator = 
+				{
+				},
+			},
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 35,
+		},
+		Named = 
+		{
+			string Name = "Projector",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-6.28346, 0.300674, 5],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Light = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			LightType LightType = Spot,
+			float Range = 8,
+			float MinRange = 2,
+			float Angle = 90,
+			float Intensity = 1.67,
+			Vec4 Color = [1, 1, 1, 1],
+			float MinRange = 2,
+			float Size = 10,
+			bool Baked = false,
+		},
+		Projector = 
+		{
+			bool IsActive = true,
+			bool IsMask = true,
+			string Texture = "54706fda7cbf0d6e:Stained",
+		},
+		Rotator = 
+		{
+			bool Active = true,
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 0.25,
+			bool Sway = false,
+			float SwayPeriod = 1.5,
+		},
+		LightActivator = 
+		{
+			string ActivateEvent = "ActivateEvent",
+			string DeactivateEvent = "DeactivateEvent",
+			string ChangeEvent = "ChangeEvent",
+			bool LockEvent = true,
+		},
+		ParameterLock = 
+		{
+			bool Active = true,
+			bool Debug = true,
+			string ListenFor = "TutorialDoor:True",
+			int LockID = 1,
+			bool isListening = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 36,
+		},
+		Named = 
+		{
+			string Name = "WarpNode",
+		},
+		Archetyped = 
+		{
+			string Name = "54707e35b0e35582:KeyNode",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-4.97917, 54.2427, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Model = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			string MaterialName = "54474892e723fe8f:ForceField",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [1, 1, 1, 1],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "545e022a8a30eefe:KeyNode",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = true,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Light = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			LightType LightType = Point,
+			float Range = 12,
+			float MinRange = 2,
+			float Angle = 45,
+			float Intensity = 1.5,
+			Vec4 Color = [1, 1, 1, 1],
+			float MinRange = 2,
+			float Size = 1,
+			bool Baked = false,
+		},
+		Inventory = 
+		{
+			string StartingInventory = "",
+			int ItemMax = 1,
+			int MaxCapacity = 1,
+			string Accepts = "",
+		},
+		TextParser = 
+		{
+			bool Debug = false,
+		},
+		Shadow = 
+		{
+			Quality Quality = HighQuality,
+			ShadowType ShadowType = Esm,
+			bool SoftShadows = true,
+			float Size = 2,
+			uint Splits = 1,
+			uint CurrentSplit = 0,
+			float PaddingScaler = 0.3,
+			Vec4 Color = [0, 0, 0, 1],
+			bool Active = true,
+		},
+		KeyNode = 
+		{
+			bool Active = true,
+			string KeyName = "",
+		},
+		LightPulse = 
+		{
+			bool Active = false,
+			float LightOn = 0.5,
+			float LightOff = 0.5,
+			float FadeTime = 0.5,
+			float defaultIntensity = -1,
+			bool StartsOn = true,
+		},
+		Key = 
+		{
+			bool DebugMode = true,
+			int KeyID = 0,
+			string KeyName = "",
+			bool isMultiuse = true,
+			bool isUsed = false,
+			string BroadCastOnEvent = "TurnOn",
+			bool SpaceEvent = true,
+			bool OwnerEvent = false,
+			bool BroadcastToHUD = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 37,
+		},
+		Named = 
+		{
+			string Name = "Holder",
+		},
+		Archetyped = 
+		{
+			string Name = "54707e16b69b3fb5:OrbHolder",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-4.43463, 45.8131, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Model = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			string MaterialName = "54474892e723fe8f:ForceField",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [1, 1, 1, 1],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "545e022a8a30eefe:KeyNode",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = true,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Light = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			LightType LightType = Point,
+			float Range = 12,
+			float MinRange = 2,
+			float Angle = 45,
+			float Intensity = 2.01,
+			Vec4 Color = [1, 1, 1, 1],
+			float MinRange = 2,
+			float Size = 1,
+			bool Baked = false,
+		},
+		Inventory = 
+		{
+			string StartingInventory = "KeyOrb: 1",
+			int ItemMax = 1,
+			int MaxCapacity = 1,
+			string Accepts = "",
+		},
+		TextParser = 
+		{
+			bool Debug = false,
+		},
+		Shadow = 
+		{
+			Quality Quality = HighQuality,
+			ShadowType ShadowType = Esm,
+			bool SoftShadows = true,
+			float Size = 2,
+			uint Splits = 1,
+			uint CurrentSplit = 0,
+			float PaddingScaler = 0.3,
+			Vec4 Color = [0, 0, 0, 1],
+			bool Active = true,
+		},
+		KeyNode = 
+		{
+			bool Active = true,
+			string KeyName = "",
+		},
+		LightPulse = 
+		{
+			bool Active = true,
+			float LightOn = 0.5,
+			float LightOff = 0.5,
+			float FadeTime = 0.5,
+			float defaultIntensity = -1,
+			bool StartsOn = true,
+		},
+		Key = 
+		{
+			bool DebugMode = true,
+			int KeyID = 0,
+			string KeyName = "",
+			bool isMultiuse = true,
+			bool isUsed = false,
+			string BroadCastOnEvent = "TurnOn",
+			bool SpaceEvent = true,
+			bool OwnerEvent = false,
+			bool BroadcastToHUD = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 38,
+		},
+		Named = 
+		{
+			string Name = "LevelGeometry",
+		},
+		Archetyped = 
+		{
+			string Name = "4de020863e84941e:Transform",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		LevelGeometry = 
+		{
+			float LayerDepth = 1,
+		},
+		Hierarchy = 
+		{
+			ArchetypeInstance = 
+			{
+				string Name = "547180f1627b9f05:GeoPaintedWallArchetype",
+				LinkId = 
+				{
+					uint Id = 39,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0.37048, 24.732, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				GeometryMesh = 
+				{
+					int Layer = 0,
+					string GeometryMaterialName = "547180f16279b333:PaintedWall",
+					uint64 CachedGeometryId = 575df46aa469735b,
+					Shape2D Shape = 
+					{
+						Array Contours = 
+						[
+							{
+								Array Data = 
+								[
+[13.3, 38.024],
+[13.268, 38.611],
+[12.856, 38.953],
+[10.804, 39.088],
+[8.05, 39.089],
+[6.749, 39.022],
+[6.544, 38.885],
+[5.79, 38.885],
+[5.598, 39.225],
+[4.914, 39.294],
+[2.721, 39.294],
+[-1.937, 40.114],
+[-6.402, 40.114],
+[-8.047, 39.98],
+[-8.733, 39.571],
+[-9.47, 39.501],
+[-13.184, 39.502],
+[-14.486, 39.092],
+[-14.465, 35.79],
+[-15.17, 30.665],
+[-15.236, 29.432],
+[-15.229, 26.077],
+[-15.305, 23.887],
+[-15.311, 19.418],
+[-15.104, 18.39],
+[-15.104, 17.499],
+[-14.899, 15.855],
+[-14.784, 13.82],
+[-22.379, 13.553],
+[-24.502, 13.826],
+[-28.209, 13.828],
+[-29.432, 14.033],
+[-32.873, 14.035],
+[-34.707, 13.788],
+[-34.707, 13.895],
+[-36.707, 13.895],
+[-36.827, 13.827],
+[-38.693, 13.827],
+[-39.036, 13.553],
+[-39.103, 12.937],
+[-39.089, 11.019],
+[-39.585, 11.019],
+[-39.651, 9.786],
+[-39.651, 7.307],
+[-39.095, 7.101],
+[-39.515, 7.047],
+[-39.515, 3.966],
+[-39.857, 3.554],
+[-39.926, 3.075],
+[-39.926, 1.075],
+[-39.787, 0.253],
+[-39.308, -0.706],
+[-39.308, -1.441],
+[-39.446, -1.446],
+[-39.515, -3.432],
+[-39.651, -3.499],
+[-39.651, -5.499],
+[-39.582, -5.499],
+[-39.582, -7.35],
+[-39.239, -8.377],
+[-39.036, -11.048],
+[-39.036, -12.829],
+[-38.009, -13.514],
+[-37.53, -13.719],
+[-35.53, -13.719],
+[-34.502, -13.582],
+[-31.627, -12.829],
+[-28.134, -12.762],
+[-26.97, -12.555],
+[-26.3, -12.213],
+[-23.56, -12.692],
+[-22.327, -12.692],
+[-22.19, -12.828],
+[-20.546, -12.828],
+[-20.341, -12.898],
+[-18.273, -12.898],
+[-18.273, -12.829],
+[-15.602, -12.828],
+[-14.781, -12.623],
+[-14.337, -12.69],
+[-14.337, -16.882],
+[-14.198, -17.087],
+[-14.198, -23.525],
+[-14.062, -25.785],
+[-13.857, -27.429],
+[-13.857, -28.251],
+[-13.72, -28.662],
+[-13.736, -29.769],
+[-13.856, -29.949],
+[-13.993, -35.449],
+[-14.337, -35.497],
+[-14.335, -37.497],
+[-13.925, -37.84],
+[-13.309, -37.908],
+[-11.309, -37.908],
+[-10.637, -37.977],
+[-8.637, -37.977],
+[-8.637, -37.763],
+[-5.212, -37.75],
+[-3.925, -37.839],
+[-3.789, -38.249],
+[-2.077, -38.386],
+[-0.077, -38.386],
+[1.018, -38.181],
+[3.414, -38.113],
+[3.414, -37.975],
+[9.58, -37.974],
+[9.991, -37.768],
+[11.703, -37.768],
+[12.662, -37.563],
+[12.731, -36.468],
+[12.731, -34.331],
+[12.662, -34.335],
+[12.663, -32.769],
+[12.731, -32.565],
+[12.731, -30.989],
+[12.868, -30.92],
+[12.868, -30.167],
+[13.144, -28.453],
+[13.691, -26.809],
+[13.965, -25.166],
+[14.172, -20.371],
+[14.17, -17.55],
+[13.966, -17.55],
+[13.966, -16.453],
+[13.624, -13.92],
+[13.349, -12.434],
+[15.502, -12.433],
+[20.148, -12.227],
+[21.722, -12.434],
+[23.363, -12.777],
+[24.939, -12.777],
+[24.939, -12.846],
+[26.446, -12.846],
+[26.446, -12.982],
+[28.089, -12.982],
+[28.089, -13.05],
+[30.088, -13.05],
+[31.939, -12.775],
+[31.994, -12.845],
+[34.61, -12.845],
+[34.61, -12.708],
+[36.666, -12.708],
+[37.077, -12.639],
+[38.309, -12.161],
+[38.377, -11.887],
+[38.377, -9.887],
+[38.309, -8.6],
+[38.72, -5.929],
+[39.131, -5.929],
+[39.131, -4.628],
+[39.268, -4.491],
+[39.268, -3.052],
+[39.406, -2.367],
+[39.404, 1.892],
+[39.335, 3.125],
+[39.198, 3.33],
+[39.198, 4.974],
+[39.13, 5.728],
+[38.686, 7.679],
+[38.72, 10.371],
+[38.788, 11.126],
+[39.199, 11.538],
+[39.199, 13.538],
+[38.993, 13.606],
+[37.263, 13.606],
+[36.869, 14.086],
+[34.869, 14.086],
+[33.91, 14.017],
+[33.91, 13.606],
+[33.225, 13.468],
+[31.427, 13.469],
+[26.459, 13.81],
+[26.048, 13.947],
+[25.227, 13.947],
+[23.789, 14.084],
+[21.789, 14.084],
+[19.529, 13.81],
+[18.034, 13.81],
+[17.463, 13.957],
+[17.326, 14.217],
+[14.268, 14.221],
+[13.214, 14.289],
+[13.266, 15.171],
+[13.266, 17.706],
+[13.715, 19.309],
+[13.745, 23.252],
+[13.921, 23.762],
+[13.921, 25.831],
+[13.852, 25.831],
+[13.852, 27.942],
+[13.989, 29.858],
+[13.989, 30.68],
+[14.126, 30.886],
+[14.195, 33.078],
+[14.606, 36.024],
+[14.606, 38.024],
+								],
+							},
+							{
+								Array Data = 
+								[
+[-12.366, 31.467],
+[-12.244, 32.35],
+[-11.431, 35.189],
+[-10.798, 36.544],
+[-10.256, 36.796],
+[-8.854, 36.939],
+[-7.895, 36.954],
+[-6.56, 37.398],
+[-3.321, 36.748],
+[-2.431, 36.612],
+[-0.856, 36.543],
+[4.227, 36.544],
+[6.283, 36.679],
+[6.557, 36.816],
+[8.542, 36.884],
+[10.446, 37.022],
+[11.2, 36.556],
+[10.788, 35.322],
+[10.582, 34.226],
+[10.582, 32.022],
+[10.925, 28.8],
+[11.063, 28.526],
+[11.167, 24.804],
+[10.992, 23.745],
+[10.962, 22.749],
+[10.688, 21.516],
+[10.688, 19.516],
+[10.803, 19.241],
+[10.861, 17.095],
+[11.004, 16.26],
+[10.99, 14.162],
+[8.997, 13.752],
+[6.754, 13.82],
+[6.685, 13.957],
+[5.04, 13.957],
+[4.903, 14.027],
+[2.835, 14.027],
+[2.835, 12.027],
+[3.04, 11.957],
+[4.685, 11.957],
+[4.754, 11.82],
+[6.192, 11.82],
+[8.452, 11.683],
+[10.121, 11.706],
+[10.121, 10.711],
+[11.216, 9.438],
+[11.422, 8.7],
+[11.373, 7.357],
+[11.373, 5.238],
+[11.236, 4.413],
+[11.202, -0.672],
+[11.648, -1.08],
+[13.648, -1.08],
+[13.648, 0.989],
+[13.579, 0.987],
+[13.579, 4.882],
+[13.715, 6.248],
+[13.745, 7.423],
+[13.833, 7.423],
+[13.834, 9.971],
+[13.719, 10.301],
+[14.04, 10.37],
+[15.979, 11.866],
+[17.473, 11.741],
+[20.501, 11.742],
+[23.227, 11.947],
+[24.048, 11.947],
+[26.036, 11.741],
+[27.746, 11.399],
+[33.545, 11.4],
+[33.545, 9.957],
+[34.778, 9.204],
+[35.532, 9.027],
+[35.533, 7.219],
+[35.601, 6.466],
+[35.942, 5.37],
+[36.011, 4.137],
+[36.012, 1.739],
+[36.149, 1.67],
+[36.217, 0.526],
+[35.601, -1.878],
+[35.601, -4.015],
+[35.533, -4.069],
+[35.533, -6.069],
+[35.809, -7.585],
+[35.396, -9.002],
+[35.396, -9.529],
+[34.711, -9.551],
+[33.972, -9.878],
+[32.556, -9.749],
+[30.419, -9.749],
+[26.827, -10.228],
+[24.131, -10.16],
+[23.721, -10.023],
+[20.364, -10.023],
+[20.023, -9.954],
+[17.749, -9.955],
+[15.184, -10.075],
+[14.587, -9.758],
+[14.586, -8.249],
+[14.262, -8.043],
+[14.262, -6.41],
+[14.193, -5.999],
+[12.056, -5.999],
+[12.056, -6.739],
+[11.851, -7.779],
+[11.714, -7.779],
+[11.44, -8.806],
+[11.098, -9.628],
+[11.029, -11.076],
+[9.005, -11.138],
+[8.8, -11.275],
+[7.672, -11.084],
+[6.882, -11.344],
+[5.237, -11.344],
+[4.43, -11.481],
+[2.65, -11.481],
+[1.349, -11.344],
+[1.349, -11.207],
+[-0.72, -11.207],
+[-0.72, -13.207],
+[-0.446, -13.344],
+[0.58, -13.412],
+[0.717, -13.549],
+[1.745, -13.618],
+[5.867, -13.618],
+[7.908, -13.457],
+[10.013, -14.604],
+[10.658, -15.488],
+[10.707, -16.283],
+[11.437, -18.309],
+[11.778, -20.042],
+[11.761, -23.507],
+[11.691, -24.809],
+[11.144, -26.453],
+[10.868, -28.167],
+[10.868, -28.92],
+[10.731, -28.989],
+[10.731, -30.564],
+[10.663, -30.769],
+[10.663, -32.715],
+[9.975, -33.47],
+[8.124, -34.497],
+[6.756, -34.772],
+[5.864, -35.13],
+[-1.326, -35.182],
+[-2.901, -35.388],
+[-5.422, -35.252],
+[-7.066, -34.43],
+[-8.094, -34.155],
+[-8.779, -34.155],
+[-11.176, -33.812],
+[-11.767, -33.345],
+[-11.651, -31.128],
+[-11.651, -24.402],
+[-11.718, -24.402],
+[-11.719, -21.156],
+[-11.653, -21.156],
+[-11.653, -19.156],
+[-11.854, -18.253],
+[-11.814, -16.498],
+[-9.12, -14.579],
+[-8.92, -13.894],
+[-8.173, -13.549],
+[-8.173, -11.549],
+[-8.504, -11.482],
+[-10.317, -11.482],
+[-11.784, -10.586],
+[-11.921, -10.236],
+[-12.04, -8.569],
+[-12.496, -6.527],
+[-12.382, -6.527],
+[-12.38, -3.636],
+[-12.517, -3.362],
+[-14.517, -3.431],
+[-14.587, -3.979],
+[-14.587, -7.835],
+[-15.085, -7.835],
+[-15.153, -8.247],
+[-15.907, -9.274],
+[-15.907, -10.581],
+[-16.78, -10.623],
+[-17.602, -10.828],
+[-20.19, -10.828],
+[-20.327, -10.691],
+[-22.039, -10.624],
+[-24.437, -10.076],
+[-26.15, -10.007],
+[-28.148, -10.007],
+[-29.176, -10.555],
+[-29.998, -10.625],
+[-30.134, -10.761],
+[-32.395, -10.761],
+[-33.627, -10.829],
+[-34.723, -11.034],
+[-36.03, -11.424],
+[-37.036, -10.832],
+[-37.034, -7.815],
+[-37.239, -6.377],
+[-37.513, -5.402],
+[-37.446, -3.446],
+[-37.308, -3.377],
+[-37.308, -1.322],
+[-37.239, -0.706],
+[-37.239, 1.294],
+[-37.582, 1.982],
+[-37.241, 2.513],
+[-36.693, 3.815],
+[-36.624, 6.69],
+[-36.624, 8.69],
+[-36.762, 9.444],
+[-36.967, 9.717],
+[-36.967, 10.593],
+[-34.433, 10.593],
+[-33.336, 10.798],
+[-33.2, 10.935],
+[-31.97, 11.003],
+[-29.914, 11.004],
+[-29.709, 11.14],
+[-27.242, 11.141],
+[-26.352, 11.21],
+[-24.777, 11.453],
+[-23.282, 11.415],
+[-17.376, 11.412],
+[-16.386, 11.473],
+[-16.386, 10.232],
+[-14.499, 10.232],
+[-14.498, 8.705],
+[-14.224, 6.855],
+[-14.224, 2.951],
+[-14.154, 2.334],
+[-12.154, 2.334],
+[-12.154, 4.473],
+[-12.232, 9.493],
+[-10.071, 11.121],
+[-10.071, 11.48],
+[-7.63, 11.478],
+[-5.644, 11.752],
+[-3.177, 12.163],
+[-3.108, 12.299],
+[-3.108, 14.3],
+[-5.108, 14.3],
+[-6.342, 13.957],
+[-8.589, 13.644],
+[-8.657, 13.752],
+[-10.658, 13.752],
+[-10.795, 13.478],
+[-12.625, 13.547],
+[-12.758, 16.427],
+[-12.509, 19.521],
+[-12.707, 21.153],
+[-12.607, 25.94],
+[-12.827, 27.297],
+[-12.86, 29.12],
+[-12.949, 29.326],
+								],
+							},
+						],
+					},
+					bool Dynamic = false,
+					float MinEdgeLength = 0,
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 31,
+				},
+				Named = 
+				{
+					string Name = "DiscoveryCrystal",
+				},
+				Archetyped = 
+				{
+					string Name = "549fa7dd4008e80a:GeoPaintedCrystalArchetype",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0.280435, 27.0896, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Model = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					string MaterialName = "549fa7dd401f61a1:GeoPaintedCrystalMulti",
+					string MeshName = "",
+					Vec4 Color = [1, 0, 0, 1],
+				},
+				MeshCollider = 
+				{
+					bool Ghost = false,
+					bool SendsMessages = true,
+					bool Seamless = false,
+					string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+					string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+					Vec3 Offset = [0, 0, 0],
+					string PhysicsMeshName = "",
+					bool DrawEdges = true,
+					bool DrawFaces = false,
+					bool DrawFaceNormals = false,
+				},
+				GeometryMesh = 
+				{
+					int Layer = 0,
+					string GeometryMaterialName = "549fa7de40e8d12f:PaintedCrystal",
+					uint64 CachedGeometryId = 575df46aa4697c2a,
+					Shape2D Shape = 
+					{
+						Array Contours = 
+						[
+							{
+								Array Data = 
+								[
+[-2.518, -0.477582],
+[-2.077, -0.765582],
+[-1.549, -0.706582],
+[-1.351, -1.01058],
+[-1.81, -1.01058],
+[-2.06, -1.52958],
+[-1.81, -2.02958],
+[-1.31, -2.02958],
+[-1.06, -1.51058],
+[-1.289, -1.05158],
+[-0.83, -1.05158],
+[-0.219, -0.129582],
+[0.012, -0.589582],
+[0.531, -0.589582],
+[0.704, -0.245582],
+[0.934, -0.395582],
+[0.684, -0.894582],
+[0.934, -1.39458],
+[1.472, -1.39458],
+[1.722, -0.894582],
+[1.624, -0.648583],
+[2.162, -0.648583],
+[2.412, -0.148582],
+[2.157, 0.373418],
+[2.565, 0.388418],
+[2.815, 0.888418],
+[2.565, 1.38842],
+[2.027, 1.36942],
+[1.847, 1.00842],
+[1.568, 1.58042],
+[1.068, 1.58042],
+[0.877, 0.888418],
+[0.608, 1.40742],
+[0.095, 1.38042],
+[-0.14, 1.84842],
+[-0.678, 1.84842],
+[-0.889, 1.27342],
+[-1.139, 1.27342],
+[-1.425, 0.772418],
+[-1.925, 0.772418],
+[-2.018, 0.541418],
+[-2.518, 0.541418],
+[-2.768, 0.0224179],
+								],
+							},
+						],
+					},
+					bool Dynamic = false,
+					float MinEdgeLength = 0,
+				},
+				SpriteParticleSystem = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					SystemChildMode ChildMode = Independent,
+					SystemSpace SystemSpace = WorldSpace,
+					uint DrawOrder = 0,
+					float WarmUpTime = 0,
+					ParticleGeometry GeometryMode = Billboarded,
+					ParticleRenderMode RenderMode = Additive,
+					ParticleSortMode SortMode = Youngest,
+					ParticleAnimation ParticleAnimation = Single,
+					string Texture = "547b01e62dbc9dcd:Shine",
+					Vec4 Tint = [1, 1, 1, 0.25],
+					float VelocityScale = 1,
+					float LengthScale = 1,
+					float MaxParticleSize = 100,
+					Vec3 SystemSize = [4, 4, 4],
+				},
+				SphericalParticleEmitter = 
+				{
+					bool Active = true,
+					uint EmitCount = 0,
+					float EmitRate = 16,
+					float EmitVariance = 0,
+					float Size = 0.15,
+					float SizeVariance = 0.15,
+					float Lifetime = 1,
+					float LifetimeVariance = 0.2,
+					float Spin = 0,
+					float SpinVariance = 50,
+					bool RandomSpin = true,
+					float Fill = 1,
+					float EmitterVelocityPercent = 0,
+					Vec3 StartVelocity = [0, 0, 0],
+					Vec3 RandomVelocity = [0, 0, 0],
+					Vec3 TangentVelocity = [1, 1, 1],
+					Vec3 EmitterSize = [2, 2, 2],
+					bool FastMovingEmitter = false,
+				},
+				LinearParticleAnimator = 
+				{
+					Vec3 Force = [0, 0, 0],
+					Vec3 RandomForce = [0, 0, 0],
+					float Torque = 0,
+					float Growth = 0,
+					float Dampening = 0,
+					Vec3 Twist = [0, 0, 0],
+				},
+				ParticleWander = 
+				{
+					float WanderAngle = 1,
+					float WanderAngleVariance = 1,
+					float WanderStrength = 8,
+				},
+				ScanObject = 
+				{
+					string Resources = "5471b54c98967a5f:Material",
+					string MarvelName = "Glowing Crystals",
+					string TextBody = "547afae2557fa27e:GlowingCrystals",
+				},
+				MouseController = 
+				{
+					bool Debug = true,
+				},
+				Reactive = 
+				{
+					bool Active = true,
+					bool CaptureMouse = true,
+				},
+				Hierarchy = 
+				{
+					Cog = 
+					{
+						LinkId = 
+						{
+							uint Id = 40,
+						},
+						Named = 
+						{
+							string Name = "CrystalLight",
+						},
+						Transform = 
+						{
+							Vec3 Translation = [0.045116, 0.1005, 4],
+							Vec3 Scale = [1, 1, 1],
+							Quat Rotation = [0, 0, 0, 1],
+						},
+						Light = 
+						{
+							bool Visible = false,
+							bool VisibilityCulling = true,
+							LightType LightType = Spot,
+							float Range = 8,
+							float MinRange = 2,
+							float Angle = 90,
+							float Intensity = 0.35,
+							Vec4 Color = [0.856, 0.55, 1, 1],
+							float MinRange = 2,
+							float Size = 20,
+							bool Baked = false,
+						},
+						LightActivator = 
+						{
+							string ActivateEvent = "myMouseEnter",
+							string DeactivateEvent = "myMouseExit",
+							string ChangeEvent = "ChangeEvent",
+							bool LockEvent = true,
+						},
+					},
+				},
+			},
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 41,
+		},
+		Named = 
+		{
+			string Name = "WarpNode2",
+		},
+		Archetyped = 
+		{
+			string Name = "54707e35b0e35582:KeyNode",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [4.82625, 54.2586, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Model = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			string MaterialName = "54474892e723fe8f:ForceField",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [1, 1, 1, 1],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "545e022a8a30eefe:KeyNode",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = true,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Light = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			LightType LightType = Point,
+			float Range = 12,
+			float MinRange = 2,
+			float Angle = 45,
+			float Intensity = 1.5,
+			Vec4 Color = [1, 1, 1, 1],
+			float MinRange = 2,
+			float Size = 1,
+			bool Baked = false,
+		},
+		Inventory = 
+		{
+			string StartingInventory = "",
+			int ItemMax = 1,
+			int MaxCapacity = 1,
+			string Accepts = "",
+		},
+		TextParser = 
+		{
+			bool Debug = false,
+		},
+		Shadow = 
+		{
+			Quality Quality = HighQuality,
+			ShadowType ShadowType = Esm,
+			bool SoftShadows = true,
+			float Size = 2,
+			uint Splits = 1,
+			uint CurrentSplit = 0,
+			float PaddingScaler = 0.3,
+			Vec4 Color = [0, 0, 0, 1],
+			bool Active = true,
+		},
+		KeyNode = 
+		{
+			bool Active = true,
+			string KeyName = "",
+		},
+		LightPulse = 
+		{
+			bool Active = false,
+			float LightOn = 0.5,
+			float LightOff = 0.5,
+			float FadeTime = 0.5,
+			float defaultIntensity = -1,
+			bool StartsOn = true,
+		},
+		Key = 
+		{
+			bool DebugMode = true,
+			int KeyID = 0,
+			string KeyName = "",
+			bool isMultiuse = true,
+			bool isUsed = false,
+			string BroadCastOnEvent = "TurnOn",
+			bool SpaceEvent = true,
+			bool OwnerEvent = false,
+			bool BroadcastToHUD = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 42,
+		},
+		Named = 
+		{
+			string Name = "Holder",
+		},
+		Archetyped = 
+		{
+			string Name = "54707e16b69b3fb5:OrbHolder",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [4.63249, 46.3911, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Model = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			string MaterialName = "54474892e723fe8f:ForceField",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [1, 1, 1, 1],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "545e022a8a30eefe:KeyNode",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = true,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Light = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			LightType LightType = Point,
+			float Range = 12,
+			float MinRange = 2,
+			float Angle = 45,
+			float Intensity = 2.01,
+			Vec4 Color = [1, 1, 1, 1],
+			float MinRange = 2,
+			float Size = 1,
+			bool Baked = false,
+		},
+		Inventory = 
+		{
+			string StartingInventory = "KeyOrb: 1",
+			int ItemMax = 1,
+			int MaxCapacity = 1,
+			string Accepts = "",
+		},
+		TextParser = 
+		{
+			bool Debug = false,
+		},
+		Shadow = 
+		{
+			Quality Quality = HighQuality,
+			ShadowType ShadowType = Esm,
+			bool SoftShadows = true,
+			float Size = 2,
+			uint Splits = 1,
+			uint CurrentSplit = 0,
+			float PaddingScaler = 0.3,
+			Vec4 Color = [0, 0, 0, 1],
+			bool Active = true,
+		},
+		KeyNode = 
+		{
+			bool Active = true,
+			string KeyName = "",
+		},
+		LightPulse = 
+		{
+			bool Active = true,
+			float LightOn = 0.5,
+			float LightOff = 0.5,
+			float FadeTime = 0.5,
+			float defaultIntensity = -1,
+			bool StartsOn = true,
+		},
+		Key = 
+		{
+			bool DebugMode = true,
+			int KeyID = 0,
+			string KeyName = "",
+			bool isMultiuse = true,
+			bool isUsed = false,
+			string BroadCastOnEvent = "TurnOn",
+			bool SpaceEvent = true,
+			bool OwnerEvent = false,
+			bool BroadcastToHUD = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 43,
+		},
+		Named = 
+		{
+			string Name = "Mousebee",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [3.54536, 26.1905, 5],
+			Vec3 Scale = [0.5, 0.5, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = false,
+			bool VisibilityCulling = true,
+			string SpriteSource = "5275aa4d802dd6dc:Square",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+		},
+		FollowMouse = 
+		{
+			bool Active = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 44,
+		},
+		Named = 
+		{
+			string Name = "Glyph",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-0.1, 58, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			string SpriteSource = "547076291077fd03:GlyphMainRing",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.6144, 0.96, 0.939264, 0.75],
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+		},
+		TextParser = 
+		{
+			bool Debug = false,
+		},
+		ParameterLock = 
+		{
+			bool Active = true,
+			bool Debug = false,
+			string ListenFor = "WarpNode:True, WarpNode2:False",
+			int LockID = 0,
+			bool isListening = true,
+		},
+		Warp = 
+		{
+			bool ToPosition = false,
+			Vec2 Position = [0, 0],
+			bool ToObject = true,
+			uint Object = 0,
+			Vec2 Offset = [0, -3],
+		},
+		Hierarchy = 
+		{
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 45,
+				},
+				Named = 
+				{
+					string Name = "BottomGlyph",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0, 0, -0.099],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					string SpriteSource = "5470762910781434:GlyphBottomRing",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					Vec4 Color = [0.72, 1, 0.981333, 1],
+					bool OnTop = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+				},
+				Rotator = 
+				{
+					bool Active = true,
+					bool RotateX = false,
+					float RotatorX = 0,
+					bool RotateY = false,
+					float RotatorY = 0,
+					bool RotateZ = true,
+					float RotatorZ = 0.35,
+					bool Sway = false,
+					float SwayPeriod = 1.5,
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 46,
+				},
+				Named = 
+				{
+					string Name = "UpperGlyph",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0, 0, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = true,
+					bool VisibilityCulling = true,
+					string SpriteSource = "547076291074623f:GlyphUpperRing",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					Vec4 Color = [1, 1, 1, 1],
+					bool OnTop = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+				},
+				Rotator = 
+				{
+					bool Active = true,
+					bool RotateX = false,
+					float RotatorX = 0,
+					bool RotateY = false,
+					float RotatorY = 0,
+					bool RotateZ = true,
+					float RotatorZ = 0.05,
+					bool Sway = false,
+					float SwayPeriod = 1.5,
+				},
+			},
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 47,
+				},
+				Named = 
+				{
+					string Name = "Cycle",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-0.005023, -0.00659943, 0.1],
+					Vec3 Scale = [3.5, 3.5, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					bool Visible = false,
+					bool VisibilityCulling = true,
+					string SpriteSource = "5274db4c2e7c11f9:Circle",
+					bool RenderMask = false,
+					bool FlipX = false,
+					bool FlipY = false,
+					Vec4 Color = [0.62865, 0.968319, 0.99, 0.25],
+					bool OnTop = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+					BlendMode BlendMode = Additive,
+					SpriteGeometryMode GeometryMode = ZPlane,
+					string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+				},
+				Scalerator = 
+				{
+					bool Active = false,
+					bool Once = false,
+					float Delay = 0.1,
+					float Duration = 0.1,
+					float ScaleX = 0.5,
+					float ScaleY = 0.5,
+				},
+				SpriteActivator = 
+				{
+				},
+			},
+		},
+	},
+},

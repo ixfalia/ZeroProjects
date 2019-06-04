@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "SpriteActivator",
+		uint64 ResourceId = 547ac7f85476d09c,
+	},
+},

@@ -1,0 +1,81 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "manipulator",
+	},
+	Archetyped = 
+	{
+		string Name = "5247082f8dcf8f14:GridManipulator",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, 0, 0],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "52a0c597e85f3b3c:roundTriangleOutline",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 0.87, 0, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	BoxCollider = 
+	{
+		bool Ghost = false,
+		bool SendsMessages = true,
+		bool Seamless = false,
+		string MaterialName = "4faa6050b8692851:HardMaterial",
+		string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+		Vec3 Offset = [0, 0, 0],
+		Vec3 Size = [0.5, 0.5, 0.5],
+	},
+	Reactive = 
+	{
+		bool Active = true,
+		bool CaptureMouse = false,
+	},
+	UIButton = 
+	{
+		bool Active = true,
+		string enterState = "MouseEnter",
+		string defaultEvent = "UIState_Default",
+		string hoverEvent = "UIState_Hover",
+		string activateEvent = "UIState_Activate",
+		string rightClickEvent = "UIState_RClick",
+		string iddleClickEvent = "UIState_MClick",
+		string State = "",
+	},
+	GridManipulator = 
+	{
+		bool Debug = false,
+		int row = -1,
+		int col = -1,
+		string currentEffect = "sunny",
+	},
+	ChangeColor = 
+	{
+		bool DebugMode = false,
+		Vec4 NewColor = [1, 1, 1, 1],
+		bool RandomColor = false,
+		bool ColorShifting = false,
+		float ShiftTime = 1,
+		string AnotherSprite = "4e07948c35993095:DefaultSprite",
+		string DetectEventType = "",
+		bool SpaceEvent = false,
+		bool OwnerEvent = true,
+		bool ignoreChangeColor = false,
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "NotificationManager",
+		uint64 ResourceId = 532394ae37a0aa0a,
+	},
+},

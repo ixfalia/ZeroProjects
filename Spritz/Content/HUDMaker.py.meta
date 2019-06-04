@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "HUDMaker",
+		uint64 ResourceId = 520eff3a868d63a4,
+	},
+},

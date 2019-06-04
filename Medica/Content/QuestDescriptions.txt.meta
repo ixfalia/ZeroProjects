@@ -1,0 +1,8 @@
+TextContent = 
+{
+	TextBuilder = 
+	{
+		string Name = "QuestDescriptions",
+		uint64 ResourceId = 532d6a0666e089bd,
+	},
+},

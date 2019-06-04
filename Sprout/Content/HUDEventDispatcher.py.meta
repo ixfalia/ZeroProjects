@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "HUDEventDispatcher",
+		uint64 ResourceId = 524e6964ca8b6f68,
+	},
+},

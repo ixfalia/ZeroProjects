@@ -1,0 +1,12 @@
+MultiMaterial = 
+{
+	MultiMaterialBlock = 
+	{
+		Array Materials = 
+		[
+			{
+				string MaterialName = "54718bc8ca94e5f4:Wall",
+			},
+		],
+	},
+},

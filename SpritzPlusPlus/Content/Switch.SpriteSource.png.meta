@@ -1,0 +1,19 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "Switch",
+		uint64 ResourceId = 5273f2967915321f,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 283,
+		uint FrameSizeY = 283,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333,
+		float OriginX = 141,
+		float OriginY = 141,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+	},
+},

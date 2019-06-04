@@ -1,0 +1,11 @@
+DataContent = 
+{
+	DataBuilder = 
+	{
+		string Name = "Horizontal",
+		uint64 ResourceId = 526c5baaa5129320,
+		string LoaderType = "Path",
+		uint Version = 0,
+		bool ShowInEditor = true,
+	},
+},

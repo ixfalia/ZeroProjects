@@ -1,0 +1,1104 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "StatBack",
+	},
+	Archetyped = 
+	{
+		string Name = "54093249e8791429:StatTracker",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [14.1102, 9.70726, 2.60233],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Reactive = 
+	{
+		bool Active = true,
+		bool CaptureMouse = false,
+	},
+	Sprite = 
+	{
+		bool Visible = false,
+		bool VisibilityCulling = true,
+		string SpriteSource = "5275aa4d802dd6dc:Square",
+		bool RenderMask = false,
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [0.27, 0.27, 0.27, 0.85],
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+		string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+	},
+	BoxCollider = 
+	{
+		bool Ghost = true,
+		bool SendsMessages = true,
+		bool Seamless = true,
+		string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+		string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+		Vec3 Offset = [0, 0, 0],
+		Vec3 Size = [8, 8, 0.5],
+	},
+	Area = 
+	{
+		Vec2 Size = [16, 16],
+		Location Origin = Center,
+	},
+	HUDAttributeManager = 
+	{
+		bool isActivated = false,
+	},
+	Hierarchy = 
+	{
+		ArchetypeInstance = 
+		{
+			string Name = "54052464bd103535:AttributeTracker",
+			LinkId = 
+			{
+				uint Id = 2,
+			},
+			Transform = 
+			{
+				Vec3 Translation = [-6.81776, -5.9253, 1],
+				Vec3 Scale = [1, 1, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Area = 
+			{
+				Vec2 Size = [0.5, 0.5],
+				Location Origin = Center,
+			},
+			Named = 
+			{
+				string Name = "barLabel",
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 3,
+			},
+			Named = 
+			{
+				string Name = "barLabel",
+			},
+			Archetyped = 
+			{
+				string Name = "54052464bd103535:AttributeTracker",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [-6.81776, 4.89731, 1],
+				Vec3 Scale = [1, 1, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				bool Visible = false,
+				bool VisibilityCulling = true,
+				string SpriteSource = "541e4f0daf6e342f:FillTile",
+				bool RenderMask = false,
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [0.34, 0, 0, 1],
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+				string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			},
+			Area = 
+			{
+				Vec2 Size = [0.5, 0.5],
+				Location Origin = Center,
+			},
+			BarHudLabel = 
+			{
+				string LabelName = "",
+				float BarLevel = 0.01,
+				string StatName = "Defense",
+				Vec4 LowColor = [-1, -1, -1, -1],
+				Vec4 HighColor = [-1, -1, -1, -1],
+			},
+			Hierarchy = 
+			{
+				Cog = 
+				{
+					LinkId = 
+					{
+						uint Id = 4,
+					},
+					Named = 
+					{
+						string Name = "label",
+					},
+					Transform = 
+					{
+						Vec3 Translation = [-0.250066, 0.302715, 1],
+						Vec3 Scale = [1, 1, 1],
+						Quat Rotation = [0, 0, 0, 1],
+					},
+					SpriteText = 
+					{
+						bool Visible = true,
+						bool VisibilityCulling = true,
+						SpriteGeometryMode GeometryMode = ZPlane,
+						TextPositionMode Position = UpperLeft,
+						string FontName = "541f85c240127a8e:Overlock-Bold",
+						uint FontSize = 32,
+						Vec4 Color = [1, 1, 1, 1],
+						string Text = "...",
+						bool OnTop = false,
+						BlendMode BlendMode = Alpha,
+						Vec2 Size = [0, 0],
+						TextAlign Align = Left,
+						float PixelsPerUnit = 64,
+						bool Smoothing = true,
+						string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					},
+				},
+				Cog = 
+				{
+					LinkId = 
+					{
+						uint Id = 5,
+					},
+					Named = 
+					{
+						string Name = "bar",
+					},
+					Archetyped = 
+					{
+						string Name = "541f8acf1cb03168:Bar",
+					},
+					Transform = 
+					{
+						Vec3 Translation = [2.28135, -0.0236788, 1],
+						Vec3 Scale = [1, 1, 1],
+						Quat Rotation = [0, 0, 0, 1],
+					},
+					Sprite = 
+					{
+						bool Visible = true,
+						bool VisibilityCulling = true,
+						string SpriteSource = "541e4f76a4873c13:FillBar",
+						bool RenderMask = false,
+						bool FlipX = false,
+						bool FlipY = false,
+						Vec4 Color = [1, 1, 1, 1],
+						bool OnTop = false,
+						bool AnimationActive = true,
+						float AnimationSpeed = 1,
+						uint StartFrame = 0,
+						BlendMode BlendMode = Alpha,
+						SpriteGeometryMode GeometryMode = ZPlane,
+						string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					},
+					Area = 
+					{
+						Vec2 Size = [4, 0.35],
+						Location Origin = CenterLeft,
+					},
+					BarController = 
+					{
+						float CurrentValue = 0.01,
+						float MaxLength = 4,
+						float OtherAxisSize = 0.35,
+						bool ApplyOnYAxisInstead = false,
+						bool ApplyColorModification = false,
+						Vec4 LowColor = [0, 0.482353, 0.87451, 1],
+						Vec4 HighColor = [0.875, 0, 0.000524879, 1],
+					},
+				},
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 6,
+			},
+			Named = 
+			{
+				string Name = "barLabel",
+			},
+			Archetyped = 
+			{
+				string Name = "54052464bd103535:AttributeTracker",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [0.34192, 5.81593, 1],
+				Vec3 Scale = [1, 1, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				bool Visible = false,
+				bool VisibilityCulling = true,
+				string SpriteSource = "541e4f0daf6e342f:FillTile",
+				bool RenderMask = false,
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [0.34, 0, 0, 1],
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+				string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			},
+			Area = 
+			{
+				Vec2 Size = [0.5, 0.5],
+				Location Origin = Center,
+			},
+			BarHudLabel = 
+			{
+				string LabelName = "",
+				float BarLevel = 0.01,
+				string StatName = "Special",
+				Vec4 LowColor = [-1, -1, -1, -1],
+				Vec4 HighColor = [-1, -1, -1, -1],
+			},
+			Hierarchy = 
+			{
+				Cog = 
+				{
+					LinkId = 
+					{
+						uint Id = 7,
+					},
+					Named = 
+					{
+						string Name = "label",
+					},
+					Transform = 
+					{
+						Vec3 Translation = [-0.250066, 0.302715, 1],
+						Vec3 Scale = [1, 1, 1],
+						Quat Rotation = [0, 0, 0, 1],
+					},
+					SpriteText = 
+					{
+						bool Visible = true,
+						bool VisibilityCulling = true,
+						SpriteGeometryMode GeometryMode = ZPlane,
+						TextPositionMode Position = UpperLeft,
+						string FontName = "541f85c240127a8e:Overlock-Bold",
+						uint FontSize = 32,
+						Vec4 Color = [1, 1, 1, 1],
+						string Text = "...",
+						bool OnTop = false,
+						BlendMode BlendMode = Alpha,
+						Vec2 Size = [0, 0],
+						TextAlign Align = Left,
+						float PixelsPerUnit = 64,
+						bool Smoothing = true,
+						string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					},
+				},
+				ArchetypeInstance = 
+				{
+					string Name = "541f8acf1cb03168:Bar",
+					LinkId = 
+					{
+						uint Id = 8,
+					},
+					Transform = 
+					{
+						Vec3 Translation = [2.28135, -0.0236788, 1],
+						Vec3 Scale = [1, 1, 1],
+						Quat Rotation = [0, 0, 0, 1],
+					},
+					Area = 
+					{
+						Vec2 Size = [4, 0.35],
+						Location Origin = CenterLeft,
+					},
+					Named = 
+					{
+						string Name = "bar",
+					},
+				},
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 9,
+			},
+			Named = 
+			{
+				string Name = "barLabel",
+			},
+			Archetyped = 
+			{
+				string Name = "54052464bd103535:AttributeTracker",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [0.34192, 4.89731, 1],
+				Vec3 Scale = [1, 1, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				bool Visible = false,
+				bool VisibilityCulling = true,
+				string SpriteSource = "541e4f0daf6e342f:FillTile",
+				bool RenderMask = false,
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [0.34, 0, 0, 1],
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+				string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			},
+			Area = 
+			{
+				Vec2 Size = [0.5, 0.5],
+				Location Origin = Center,
+			},
+			BarHudLabel = 
+			{
+				string LabelName = "",
+				float BarLevel = 0.01,
+				string StatName = "Resistance",
+				Vec4 LowColor = [-1, -1, -1, -1],
+				Vec4 HighColor = [-1, -1, -1, -1],
+			},
+			Hierarchy = 
+			{
+				Cog = 
+				{
+					LinkId = 
+					{
+						uint Id = 10,
+					},
+					Named = 
+					{
+						string Name = "label",
+					},
+					Transform = 
+					{
+						Vec3 Translation = [-0.250066, 0.302715, 1],
+						Vec3 Scale = [1, 1, 1],
+						Quat Rotation = [0, 0, 0, 1],
+					},
+					SpriteText = 
+					{
+						bool Visible = true,
+						bool VisibilityCulling = true,
+						SpriteGeometryMode GeometryMode = ZPlane,
+						TextPositionMode Position = UpperLeft,
+						string FontName = "541f85c240127a8e:Overlock-Bold",
+						uint FontSize = 32,
+						Vec4 Color = [1, 1, 1, 1],
+						string Text = "...",
+						bool OnTop = false,
+						BlendMode BlendMode = Alpha,
+						Vec2 Size = [0, 0],
+						TextAlign Align = Left,
+						float PixelsPerUnit = 64,
+						bool Smoothing = true,
+						string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					},
+				},
+				Cog = 
+				{
+					LinkId = 
+					{
+						uint Id = 11,
+					},
+					Named = 
+					{
+						string Name = "bar",
+					},
+					Archetyped = 
+					{
+						string Name = "541f8acf1cb03168:Bar",
+					},
+					Transform = 
+					{
+						Vec3 Translation = [2.28135, -0.0236788, 1],
+						Vec3 Scale = [1, 1, 1],
+						Quat Rotation = [0, 0, 0, 1],
+					},
+					Sprite = 
+					{
+						bool Visible = true,
+						bool VisibilityCulling = true,
+						string SpriteSource = "541e4f76a4873c13:FillBar",
+						bool RenderMask = false,
+						bool FlipX = false,
+						bool FlipY = false,
+						Vec4 Color = [1, 1, 1, 1],
+						bool OnTop = false,
+						bool AnimationActive = true,
+						float AnimationSpeed = 1,
+						uint StartFrame = 0,
+						BlendMode BlendMode = Alpha,
+						SpriteGeometryMode GeometryMode = ZPlane,
+						string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					},
+					Area = 
+					{
+						Vec2 Size = [4, 0.35],
+						Location Origin = CenterLeft,
+					},
+					BarController = 
+					{
+						float CurrentValue = 0.01,
+						float MaxLength = 4,
+						float OtherAxisSize = 0.35,
+						bool ApplyOnYAxisInstead = false,
+						bool ApplyColorModification = false,
+						Vec4 LowColor = [0, 0.482353, 0.87451, 1],
+						Vec4 HighColor = [0.875, 0, 0.000524879, 1],
+					},
+				},
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 12,
+			},
+			Named = 
+			{
+				string Name = "barLabel",
+			},
+			Archetyped = 
+			{
+				string Name = "54052464bd103535:AttributeTracker",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [0.34192, 1.68264, 1],
+				Vec3 Scale = [1, 1, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				bool Visible = false,
+				bool VisibilityCulling = true,
+				string SpriteSource = "541e4f0daf6e342f:FillTile",
+				bool RenderMask = false,
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [0.34, 0, 0, 1],
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+				string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			},
+			Area = 
+			{
+				Vec2 Size = [0.5, 0.5],
+				Location Origin = Center,
+			},
+			BarHudLabel = 
+			{
+				string LabelName = "",
+				float BarLevel = 0.01,
+				string StatName = "Energy",
+				Vec4 LowColor = [-1, -1, -1, -1],
+				Vec4 HighColor = [-1, -1, -1, -1],
+			},
+			Hierarchy = 
+			{
+				Cog = 
+				{
+					LinkId = 
+					{
+						uint Id = 13,
+					},
+					Named = 
+					{
+						string Name = "label",
+					},
+					Transform = 
+					{
+						Vec3 Translation = [-0.250066, 0.302715, 1],
+						Vec3 Scale = [1, 1, 1],
+						Quat Rotation = [0, 0, 0, 1],
+					},
+					SpriteText = 
+					{
+						bool Visible = true,
+						bool VisibilityCulling = true,
+						SpriteGeometryMode GeometryMode = ZPlane,
+						TextPositionMode Position = UpperLeft,
+						string FontName = "541f85c240127a8e:Overlock-Bold",
+						uint FontSize = 32,
+						Vec4 Color = [1, 1, 1, 1],
+						string Text = "...",
+						bool OnTop = false,
+						BlendMode BlendMode = Alpha,
+						Vec2 Size = [0, 0],
+						TextAlign Align = Left,
+						float PixelsPerUnit = 64,
+						bool Smoothing = true,
+						string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					},
+				},
+				Cog = 
+				{
+					LinkId = 
+					{
+						uint Id = 14,
+					},
+					Named = 
+					{
+						string Name = "bar",
+					},
+					Archetyped = 
+					{
+						string Name = "541f8acf1cb03168:Bar",
+					},
+					Transform = 
+					{
+						Vec3 Translation = [2.28135, -0.0236788, 1],
+						Vec3 Scale = [1, 1, 1],
+						Quat Rotation = [0, 0, 0, 1],
+					},
+					Sprite = 
+					{
+						bool Visible = true,
+						bool VisibilityCulling = true,
+						string SpriteSource = "541e4f76a4873c13:FillBar",
+						bool RenderMask = false,
+						bool FlipX = false,
+						bool FlipY = false,
+						Vec4 Color = [1, 1, 1, 1],
+						bool OnTop = false,
+						bool AnimationActive = true,
+						float AnimationSpeed = 1,
+						uint StartFrame = 0,
+						BlendMode BlendMode = Alpha,
+						SpriteGeometryMode GeometryMode = ZPlane,
+						string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					},
+					Area = 
+					{
+						Vec2 Size = [4, 0.35],
+						Location Origin = CenterLeft,
+					},
+					BarController = 
+					{
+						float CurrentValue = 0.01,
+						float MaxLength = 4,
+						float OtherAxisSize = 0.35,
+						bool ApplyOnYAxisInstead = false,
+						bool ApplyColorModification = false,
+						Vec4 LowColor = [0.976471, 0.737255, 0, 1],
+						Vec4 HighColor = [0.976471, 0.737255, 0, 1],
+					},
+				},
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 15,
+			},
+			Named = 
+			{
+				string Name = "barLabel",
+			},
+			Archetyped = 
+			{
+				string Name = "54052464bd103535:AttributeTracker",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [-6.81776, 1.68264, 1],
+				Vec3 Scale = [1, 1, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				bool Visible = false,
+				bool VisibilityCulling = true,
+				string SpriteSource = "541e4f0daf6e342f:FillTile",
+				bool RenderMask = false,
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [0.34, 0, 0, 1],
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+				string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			},
+			Area = 
+			{
+				Vec2 Size = [0.5, 0.5],
+				Location Origin = Center,
+			},
+			BarHudLabel = 
+			{
+				string LabelName = "",
+				float BarLevel = 0.01,
+				string StatName = "Happiness",
+				Vec4 LowColor = [-1, -1, -1, -1],
+				Vec4 HighColor = [-1, -1, -1, -1],
+			},
+			Hierarchy = 
+			{
+				Cog = 
+				{
+					LinkId = 
+					{
+						uint Id = 16,
+					},
+					Named = 
+					{
+						string Name = "label",
+					},
+					Transform = 
+					{
+						Vec3 Translation = [-0.250066, 0.302715, 1],
+						Vec3 Scale = [1, 1, 1],
+						Quat Rotation = [0, 0, 0, 1],
+					},
+					SpriteText = 
+					{
+						bool Visible = true,
+						bool VisibilityCulling = true,
+						SpriteGeometryMode GeometryMode = ZPlane,
+						TextPositionMode Position = UpperLeft,
+						string FontName = "541f85c240127a8e:Overlock-Bold",
+						uint FontSize = 32,
+						Vec4 Color = [1, 1, 1, 1],
+						string Text = "...",
+						bool OnTop = false,
+						BlendMode BlendMode = Alpha,
+						Vec2 Size = [0, 0],
+						TextAlign Align = Left,
+						float PixelsPerUnit = 64,
+						bool Smoothing = true,
+						string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					},
+				},
+				ArchetypeInstance = 
+				{
+					string Name = "541f8acf1cb03168:Bar",
+					LinkId = 
+					{
+						uint Id = 17,
+					},
+					Transform = 
+					{
+						Vec3 Translation = [2.28135, -0.0236788, 1],
+						Vec3 Scale = [1, 1, 1],
+						Quat Rotation = [0, 0, 0, 1],
+					},
+					Area = 
+					{
+						Vec2 Size = [4, 0.35],
+						Location Origin = CenterLeft,
+					},
+					Named = 
+					{
+						string Name = "bar",
+					},
+				},
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 18,
+			},
+			Named = 
+			{
+				string Name = "barLabel",
+			},
+			Archetyped = 
+			{
+				string Name = "54052464bd103535:AttributeTracker",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [-6.81776, 5.81593, 1],
+				Vec3 Scale = [1, 1, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				bool Visible = false,
+				bool VisibilityCulling = true,
+				string SpriteSource = "541e4f0daf6e342f:FillTile",
+				bool RenderMask = false,
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [0.34, 0, 0, 1],
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+				string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			},
+			Area = 
+			{
+				Vec2 Size = [0.5, 0.5],
+				Location Origin = Center,
+			},
+			BarHudLabel = 
+			{
+				string LabelName = "",
+				float BarLevel = 0.01,
+				string StatName = "Physical",
+				Vec4 LowColor = [-1, -1, -1, -1],
+				Vec4 HighColor = [-1, -1, -1, -1],
+			},
+			Hierarchy = 
+			{
+				Cog = 
+				{
+					LinkId = 
+					{
+						uint Id = 19,
+					},
+					Named = 
+					{
+						string Name = "label",
+					},
+					Transform = 
+					{
+						Vec3 Translation = [-0.250066, 0.302715, 1],
+						Vec3 Scale = [1, 1, 1],
+						Quat Rotation = [0, 0, 0, 1],
+					},
+					SpriteText = 
+					{
+						bool Visible = true,
+						bool VisibilityCulling = true,
+						SpriteGeometryMode GeometryMode = ZPlane,
+						TextPositionMode Position = UpperLeft,
+						string FontName = "541f85c240127a8e:Overlock-Bold",
+						uint FontSize = 32,
+						Vec4 Color = [1, 1, 1, 1],
+						string Text = "...",
+						bool OnTop = false,
+						BlendMode BlendMode = Alpha,
+						Vec2 Size = [0, 0],
+						TextAlign Align = Left,
+						float PixelsPerUnit = 64,
+						bool Smoothing = true,
+						string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					},
+				},
+				ArchetypeInstance = 
+				{
+					string Name = "541f8acf1cb03168:Bar",
+					LinkId = 
+					{
+						uint Id = 20,
+					},
+					Transform = 
+					{
+						Vec3 Translation = [2.28135, -0.0236788, 1],
+						Vec3 Scale = [1, 1, 1],
+						Quat Rotation = [0, 0, 0, 1],
+					},
+					Area = 
+					{
+						Vec2 Size = [4, 0.35],
+						Location Origin = CenterLeft,
+					},
+					Named = 
+					{
+						string Name = "bar",
+					},
+				},
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 21,
+			},
+			Named = 
+			{
+				string Name = "barLabel",
+			},
+			Archetyped = 
+			{
+				string Name = "54052464bd103535:AttributeTracker",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [-6.81776, 3.94509, 1],
+				Vec3 Scale = [1, 1, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				bool Visible = false,
+				bool VisibilityCulling = true,
+				string SpriteSource = "541e4f0daf6e342f:FillTile",
+				bool RenderMask = false,
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [0.34, 0, 0, 1],
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+				string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			},
+			Area = 
+			{
+				Vec2 Size = [0.5, 0.5],
+				Location Origin = Center,
+			},
+			BarHudLabel = 
+			{
+				string LabelName = "",
+				float BarLevel = 0.01,
+				string StatName = "Speed",
+				Vec4 LowColor = [-1, -1, -1, -1],
+				Vec4 HighColor = [-1, -1, -1, -1],
+			},
+			Hierarchy = 
+			{
+				Cog = 
+				{
+					LinkId = 
+					{
+						uint Id = 22,
+					},
+					Named = 
+					{
+						string Name = "label",
+					},
+					Transform = 
+					{
+						Vec3 Translation = [-0.250066, 0.302715, 1],
+						Vec3 Scale = [1, 1, 1],
+						Quat Rotation = [0, 0, 0, 1],
+					},
+					SpriteText = 
+					{
+						bool Visible = true,
+						bool VisibilityCulling = true,
+						SpriteGeometryMode GeometryMode = ZPlane,
+						TextPositionMode Position = UpperLeft,
+						string FontName = "541f85c240127a8e:Overlock-Bold",
+						uint FontSize = 32,
+						Vec4 Color = [1, 1, 1, 1],
+						string Text = "...",
+						bool OnTop = false,
+						BlendMode BlendMode = Alpha,
+						Vec2 Size = [0, 0],
+						TextAlign Align = Left,
+						float PixelsPerUnit = 64,
+						bool Smoothing = true,
+						string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					},
+				},
+				Cog = 
+				{
+					LinkId = 
+					{
+						uint Id = 23,
+					},
+					Named = 
+					{
+						string Name = "bar",
+					},
+					Archetyped = 
+					{
+						string Name = "541f8acf1cb03168:Bar",
+					},
+					Transform = 
+					{
+						Vec3 Translation = [2.28135, -0.0236788, 1],
+						Vec3 Scale = [1, 1, 1],
+						Quat Rotation = [0, 0, 0, 1],
+					},
+					Sprite = 
+					{
+						bool Visible = true,
+						bool VisibilityCulling = true,
+						string SpriteSource = "541e4f76a4873c13:FillBar",
+						bool RenderMask = false,
+						bool FlipX = false,
+						bool FlipY = false,
+						Vec4 Color = [1, 1, 1, 1],
+						bool OnTop = false,
+						bool AnimationActive = true,
+						float AnimationSpeed = 1,
+						uint StartFrame = 0,
+						BlendMode BlendMode = Alpha,
+						SpriteGeometryMode GeometryMode = ZPlane,
+						string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					},
+					Area = 
+					{
+						Vec2 Size = [4, 0.35],
+						Location Origin = CenterLeft,
+					},
+					BarController = 
+					{
+						float CurrentValue = 0.01,
+						float MaxLength = 4,
+						float OtherAxisSize = 0.35,
+						bool ApplyOnYAxisInstead = false,
+						bool ApplyColorModification = false,
+						Vec4 LowColor = [0.725, 0.2175, 0, 1],
+						Vec4 HighColor = [0, 0.48125, 0.875, 1],
+					},
+				},
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 24,
+			},
+			Named = 
+			{
+				string Name = "barLabel",
+			},
+			Archetyped = 
+			{
+				string Name = "54052464bd103535:AttributeTracker",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [-6.81776, 6.7399, 1],
+				Vec3 Scale = [1, 1, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				bool Visible = false,
+				bool VisibilityCulling = true,
+				string SpriteSource = "541e4f0daf6e342f:FillTile",
+				bool RenderMask = false,
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [0.34, 0, 0, 1],
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+				string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			},
+			Area = 
+			{
+				Vec2 Size = [0.5, 0.5],
+				Location Origin = Center,
+			},
+			BarHudLabel = 
+			{
+				string LabelName = "",
+				float BarLevel = 0.01,
+				string StatName = "Health",
+				Vec4 LowColor = [0.645, 0.203175, 0.203175, 1],
+				Vec4 HighColor = [0.203175, 0.645, 0.260612, 1],
+			},
+			Hierarchy = 
+			{
+				Cog = 
+				{
+					LinkId = 
+					{
+						uint Id = 25,
+					},
+					Named = 
+					{
+						string Name = "label",
+					},
+					Transform = 
+					{
+						Vec3 Translation = [-0.250066, 0.302715, 1],
+						Vec3 Scale = [1, 1, 1],
+						Quat Rotation = [0, 0, 0, 1],
+					},
+					SpriteText = 
+					{
+						bool Visible = true,
+						bool VisibilityCulling = true,
+						SpriteGeometryMode GeometryMode = ZPlane,
+						TextPositionMode Position = UpperLeft,
+						string FontName = "541f85c240127a8e:Overlock-Bold",
+						uint FontSize = 32,
+						Vec4 Color = [1, 1, 1, 1],
+						string Text = "...",
+						bool OnTop = false,
+						BlendMode BlendMode = Alpha,
+						Vec2 Size = [0, 0],
+						TextAlign Align = Left,
+						float PixelsPerUnit = 64,
+						bool Smoothing = true,
+						string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+					},
+				},
+				ArchetypeInstance = 
+				{
+					string Name = "541f8acf1cb03168:Bar",
+					LinkId = 
+					{
+						uint Id = 26,
+					},
+					Transform = 
+					{
+						Vec3 Translation = [2.28135, -0.0236788, 1],
+						Vec3 Scale = [1, 1, 1],
+						Quat Rotation = [0, 0, 0, 1],
+					},
+					Area = 
+					{
+						Vec2 Size = [4, 0.35],
+						Location Origin = CenterLeft,
+					},
+					Named = 
+					{
+						string Name = "bar",
+					},
+				},
+			},
+		},
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Checkpoint",
+		uint64 ResourceId = 520eff3d852c255f,
+	},
+},

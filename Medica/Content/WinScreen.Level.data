@@ -1,0 +1,486 @@
+Level = 
+{
+	LevelSettings = 
+	{
+		LinkId = 
+		{
+			uint Id = 1,
+		},
+		Named = 
+		{
+			string Name = "LevelSettings",
+		},
+		GravityEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			bool LocalSpaceDirection = true,
+			float Strength = 10,
+			Vec3 Direction = [0, -1, 0],
+		},
+		DragEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			float Drag = 0.7,
+		},
+		CameraViewport = 
+		{
+			bool Background = true,
+			Vec2 Offset = [0, 0],
+			Vec2 Size = [1, 1],
+			int Layer = 0,
+			bool Active = true,
+			bool Blocking = true,
+			uint Renderer = 1,
+			uint Camera = 2,
+			ViewportScaling Scaling = Fill,
+			Vec2 Resolution = [1280, 720],
+			Vec4 MarginColor = [0, 0, 0, 1],
+		},
+		ForwardRenderer = 
+		{
+			Vec4 ClearColor = [0.278431, 0.278431, 0.278431, 1],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 3,
+		},
+		Named = 
+		{
+			string Name = "EditorCamera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0.85, -0.05, 50],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [-0, -1.09278e-008, 0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			SpriteSort SpriteSort = ZDepth,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 500,
+			float Size = 20,
+		},
+		EditorCameraController = 
+		{
+			ControlMode ControlMode = ZPlane,
+			float LookDistance = 50,
+			float VerticalAngle = 0,
+			float HorizontalAngle = 0,
+			Vec3 LookTarget = [0.85, -0.05, 3.71547e-008],
+		},
+		EditorRenderer = 
+		{
+			Vec4 ClearColor = [0.278431, 0.278431, 0.278431, 1],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 2,
+		},
+		Named = 
+		{
+			string Name = "Camera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 40],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			SpriteSort SpriteSort = ZDepth,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 200,
+			float Size = 20,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 4,
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "52dbd1251dba1022:Quest",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 5,
+		},
+		Named = 
+		{
+			string Name = "Transform",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0.133153, 4.89624, 3.71547e-008],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = Centered,
+			string FontName = "532b9b025a28a473:Cookies",
+			uint FontSize = 100,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			string Text = "You've Completed",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 6,
+		},
+		Named = 
+		{
+			string Name = "Celebration",
+		},
+		Archetyped = 
+		{
+			string Name = "526df6d307c0e7af:Celebration",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0.133156, -0.05, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteParticleSystem = 
+		{
+			SystemChildMode ChildMode = Independent,
+			SystemSpace SystemSpace = WorldSpace,
+			uint DrawOrder = 0,
+			ParticleGeometry GeometryMode = Beam,
+			ParticleRenderMode RenderMode = Additive,
+			ParticleSortMode SortMode = None,
+			string Texture = "52d1787ee2335267:FillTile",
+			Vec4 Tint = [1, 0.956, 0.725, 0.6],
+			float VelocityScale = 0,
+			float LengthScale = 1,
+			float MaxParticleSize = 100,
+			Vec3 SystemSize = [4, 4, 4],
+		},
+		SphericalParticleEmitter = 
+		{
+			bool Active = true,
+			uint EmitCount = 0,
+			float EmitRate = 50,
+			float EmitVariance = 2,
+			float Size = 0.25,
+			float SizeVariance = 0.25,
+			float Lifetime = 2,
+			float LifetimeVariance = 2,
+			float Spin = 0,
+			float SpinVariance = 0,
+			bool RandomSpin = true,
+			float Fill = 1,
+			float EmitterVelocityPercent = 0,
+			Vec3 StartVelocity = [0, 5, 0],
+			Vec3 RandomVelocity = [10, 10, 10],
+			Vec3 TangentVelocity = [0, 0, 0],
+			Vec3 EmitterSize = [4, 4, 4],
+			bool FastMovingEmitter = true,
+		},
+		LinearParticleAnimator = 
+		{
+			Vec3 Force = [0, -3, 0],
+			Vec3 RandomForce = [0, 0, 0],
+			float Torque = 0,
+			float Growth = 0,
+			float Dampening = 0,
+			Vec3 Twist = [0, 0, 0],
+		},
+		ParticleWander = 
+		{
+			float WanderAngle = 1,
+			float WanderAngleVariance = 1,
+			float WanderStrength = 5,
+		},
+		ParticleColorAnimator = 
+		{
+			Vec4 Color0 = [0.745, 0.0745, 0.0745, 1],
+			Vec4 Color1 = [0.97425, 1, 0.485, 1],
+			Vec4 Color2 = [0, 0.375, 0.1275, 1],
+			Vec4 Color3 = [0.0799999, 0, 1, 1],
+			Vec4 Color4 = [0, 0.55, 1, 1],
+		},
+		CelebrationMessage = 
+		{
+			string EventType = "LevelEnd",
+			bool OwnerEvent = false,
+			bool SpaceEvent = true,
+			float Duration = 4.5,
+			string Message = "",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 7,
+		},
+		Named = 
+		{
+			string Name = "Transform",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0.204838, 4.78871, -0.1],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = Centered,
+			string FontName = "532b9b025a28a473:Cookies",
+			uint FontSize = 100,
+			Vec4 Color = [0, 0, 0, 1],
+			bool Visible = true,
+			string Text = "You've Completed",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 8,
+		},
+		Named = 
+		{
+			string Name = "Transform",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0.312366, -4.70949, -0.1],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = Centered,
+			string FontName = "532b9b025a28a473:Cookies",
+			uint FontSize = 100,
+			Vec4 Color = [0, 0, 0, 1],
+			bool Visible = true,
+			string Text = "All the Quests!",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 9,
+		},
+		Named = 
+		{
+			string Name = "text",
+		},
+		Archetyped = 
+		{
+			string Name = "532b1097d6755e29:LevelButton",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, -7.2543, 0],
+			Vec3 Scale = [2, 2, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = Centered,
+			string FontName = "52d4637f84d54c64:DoulosSILR",
+			uint FontSize = 24,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			string Text = "Main Menu",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "532b07e107a69ada:JournalComplete",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+		Hierarchy = 
+		{
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 10,
+				},
+				Named = 
+				{
+					string Name = "buttonBack",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0, 0.043011, 0],
+					Vec3 Scale = [3, 0.75, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					string SpriteSource = "52d0dc199ab33c97:FillTile",
+					bool FlipX = false,
+					bool FlipY = false,
+					Vec4 Color = [0.045163, 0.095, 0.03705, 1],
+					bool Visible = true,
+					bool OnTop = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+				},
+				BoxCollider = 
+				{
+					bool Ghost = false,
+					bool SendsMessages = true,
+					bool Seamless = false,
+					string MaterialName = "4faa6050b8692851:HardMaterial",
+					string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+					Vec3 Offset = [0, 0, 0],
+					Vec3 Size = [0.5, 0.5, 0.5],
+				},
+				Reactive = 
+				{
+					bool Active = true,
+					bool CaptureMouse = false,
+				},
+				MouseResponse = 
+				{
+					bool SimpleDarken = false,
+					bool MergeColors = true,
+					float ergePercent = 0.75,
+					Vec2 ouseSlide = [0, 0.08],
+					Vec4 hoverColor = [0.2809, 0.53, 0, 1],
+					Vec4 downColor = [0.01779, 0.03, 0.00225, 1],
+					float defaultOpacity = 1,
+					string hoverSound = "5322c1b5ae2649ac:QuestComplete",
+					string downSound = "4e1bd44008b4dc2a:DefaultCue",
+				},
+				MouseBox = 
+				{
+					string EventName = "MouseActivateEvent",
+					bool DetectLeftClick = true,
+					bool DetectRightClick = true,
+					bool DetectMiddleClick = false,
+					bool sendReactiveEvent = true,
+				},
+				LevelChangeButton = 
+				{
+					bool DebugMode = false,
+					string LevelChange = "532b03b6d8699875:MainMenu",
+					bool useLevelTable = false,
+					bool loadNextLevel = false,
+					float ChangeDelay = 0.5,
+				},
+			},
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 11,
+		},
+		Named = 
+		{
+			string Name = "Transform",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0.240681, -4.60197, 3.71547e-008],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = Centered,
+			string FontName = "532b9b025a28a473:Cookies",
+			uint FontSize = 100,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			string Text = "All the Quests!",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+	},
+},

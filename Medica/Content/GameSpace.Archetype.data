@@ -1,0 +1,37 @@
+Space = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Archetyped = 
+	{
+		string Name = "52c9842927cd5b51:GameSpace",
+	},
+	TimeSpace = 
+	{
+		float TimeScale = 1,
+		float Framerate = 60,
+		float FramelossCap = 0.5,
+	},
+	GraphicsSpace = 
+	{
+	},
+	ActionSpace = 
+	{
+	},
+	PhysicsSpace = 
+	{
+		bool AllowSleep = true,
+		bool Mode2D = true,
+		bool Deterministic = false,
+		uint SubStepCount = 1,
+		string CollisionFilterName = "4e66a5c0b9dc59b9:DefaultCollisionTable",
+		uint IterationCount = 15,
+		uint StabilizationCount = 1,
+		float VelocityThreshold = 3,
+	},
+	SoundSpace = 
+	{
+	},
+},

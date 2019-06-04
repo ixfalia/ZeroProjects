@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "DestroyOnEvent",
+		uint64 ResourceId = 530defe131f88e5e,
+	},
+},

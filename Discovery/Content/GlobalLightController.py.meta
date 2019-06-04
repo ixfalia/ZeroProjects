@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "GlobalLightController",
+		uint64 ResourceId = 54477f07bdc0b2ad,
+	},
+},

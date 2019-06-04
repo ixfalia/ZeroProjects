@@ -1,0 +1,142 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "barLabel",
+	},
+	Archetyped = 
+	{
+		string Name = "54052464bd103535:AttributeTracker",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-6.81776, -5.9253, 1],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		bool Visible = false,
+		bool VisibilityCulling = true,
+		string SpriteSource = "541e4f0daf6e342f:FillTile",
+		bool RenderMask = false,
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [0.34, 0, 0, 1],
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+		string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+	},
+	Area = 
+	{
+		Vec2 Size = [0.5, 0.5],
+		Location Origin = Center,
+	},
+	BarHudLabel = 
+	{
+		string LabelName = "Stomach",
+		float BarLevel = 0.01,
+		string StatName = "Hunger",
+		Vec4 LowColor = [-1, -1, -1, -1],
+		Vec4 HighColor = [-1, -1, -1, -1],
+	},
+	Hierarchy = 
+	{
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 2,
+			},
+			Named = 
+			{
+				string Name = "label",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [-0.250066, 0.302715, 1],
+				Vec3 Scale = [1, 1, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			SpriteText = 
+			{
+				bool Visible = true,
+				bool VisibilityCulling = true,
+				SpriteGeometryMode GeometryMode = ZPlane,
+				TextPositionMode Position = UpperLeft,
+				string FontName = "541f85c240127a8e:Overlock-Bold",
+				uint FontSize = 32,
+				Vec4 Color = [1, 1, 1, 1],
+				string Text = "...",
+				bool OnTop = false,
+				BlendMode BlendMode = Alpha,
+				Vec2 Size = [0, 0],
+				TextAlign Align = Left,
+				float PixelsPerUnit = 64,
+				bool Smoothing = true,
+				string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 3,
+			},
+			Named = 
+			{
+				string Name = "bar",
+			},
+			Archetyped = 
+			{
+				string Name = "541f8acf1cb03168:Bar",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [2.28135, -0.0236788, 1],
+				Vec3 Scale = [1, 1, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				bool Visible = true,
+				bool VisibilityCulling = true,
+				string SpriteSource = "541e4f76a4873c13:FillBar",
+				bool RenderMask = false,
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [1, 1, 1, 1],
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+				string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			},
+			Area = 
+			{
+				Vec2 Size = [4, 0.35],
+				Location Origin = CenterLeft,
+			},
+			BarController = 
+			{
+				float CurrentValue = 0.01,
+				float MaxLength = 4,
+				float OtherAxisSize = 0.35,
+				bool ApplyOnYAxisInstead = false,
+				bool ApplyColorModification = false,
+				Vec4 LowColor = [0, 0.482353, 0.87451, 1],
+				Vec4 HighColor = [0.875, 0, 0.000524879, 1],
+			},
+		},
+	},
+},

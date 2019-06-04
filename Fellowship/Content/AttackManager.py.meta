@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "AttackManager",
+		uint64 ResourceId = 540cbda49104a2d7,
+	},
+},

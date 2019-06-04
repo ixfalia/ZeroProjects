@@ -1,0 +1,15 @@
+Salvia Leaf:Plant, LightSeaGreen
+Glacia Leaf:Plant, AliceBlue
+Glacia Berry:Berry, AliceBlue
+Whoober Tuber:Berry, Tan
+Saiga Flax:Seed, Firebrick
+Gooey Concoction:Bottle, BlanchedAlmond
+Frigid Concoction:Bottle, AliceBlue
+Serenian Water:Bottle, DeepSkyBlue
+Purgidine Ore:Mineral, Firebrick
+Linjee Mushroom:Fungal, DarkOrange
+Riverside Seal:Entry, CadetBlue
+Murky Water:Bottle, SaddleBrown
+Nattle Wood:Bag, Cornsilk
+Eternal Happiness:Mystery, Gold
+Default:Mystery, Red

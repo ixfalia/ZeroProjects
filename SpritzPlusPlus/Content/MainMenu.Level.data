@@ -1,0 +1,747 @@
+Level = 
+{
+	LevelSettings = 
+	{
+		LinkId = 
+		{
+			uint Id = 1,
+		},
+		Named = 
+		{
+			string Name = "LevelSettings",
+		},
+		GravityEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			bool LocalSpaceDirection = true,
+			float Strength = 10,
+			Vec3 Direction = [0, -1, 0],
+		},
+		DragEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			float Drag = 0.7,
+		},
+		CameraViewport = 
+		{
+			bool Background = true,
+			Vec2 Offset = [0, 0],
+			Vec2 Size = [1, 1],
+			uint Layer = 0,
+			bool Active = true,
+			bool Blocking = true,
+			uint Renderer = 1,
+			uint Camera = 2,
+		},
+		ForwardRenderer = 
+		{
+			Vec4 ClearColor = [0.278431, 0.278431, 0.278431, 1],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 3,
+		},
+		Named = 
+		{
+			string Name = "EditorCamera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [14.2227, -2.87612, 50],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, -1.90735e-008, -0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			SpriteSort SpriteSort = ZDepth,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 500,
+			float Size = 18,
+		},
+		EditorCameraController = 
+		{
+			ControlMode ControlMode = ZPlane,
+			float LookDistance = 50,
+			float VerticalAngle = 0,
+			float HorizontalAngle = 0,
+			Vec3 LookTarget = [14.2227, -2.87612, 7.02551e-007],
+		},
+		EditorRenderer = 
+		{
+			Vec4 ClearColor = [0.278431, 0.278431, 0.278431, 1],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 2,
+		},
+		Named = 
+		{
+			string Name = "Camera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 40],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			SpriteSort SpriteSort = ZDepth,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 200,
+			float Size = 20,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 4,
+		},
+		Named = 
+		{
+			string Name = "Menu",
+		},
+		Archetyped = 
+		{
+			string Name = "526de41326f81f66:MenuManager",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-8.06989, -1.05197, 0],
+			Vec3 Scale = [2.11111, 2.11111, 2.11111],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		WaterTank = 
+		{
+			bool DebugMode = false,
+			float Tank = 1,
+			float MinimumWater = 0.1,
+			float MaximumWater = 1,
+			bool Replenishing = true,
+			float ReplenishingLimit = 0.21,
+			bool UnlimitedWater = true,
+		},
+		Sprinkler = 
+		{
+			bool DebugMode = false,
+			float SpraySpeed = 0.015,
+			bool AutoSpray = false,
+			float SprayDuration = 0.5,
+			float SprayDelay = 1.5,
+			Vec2 SprayInDirection = [1, 1],
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "52729352be1d5ab9:FlowerWind",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = true,
+		},
+		GamepadDispatcher = 
+		{
+			bool DebugMode = false,
+			bool DisableControl = false,
+			bool DetectControlEvents = true,
+			bool spaceEvents = true,
+			bool ownerEvents = false,
+			float deadzone = 0.8,
+		},
+		MainMenu = 
+		{
+			bool DebugMode = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 5,
+		},
+		Named = 
+		{
+			string Name = "Flower",
+		},
+		Archetyped = 
+		{
+			string Name = "5216d863499fe905:WaterWheel",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-3.58781, 6.79749, 0],
+			Vec3 Scale = [0.747621, 0.747621, 0.747621],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5216ecf650e1dbd2:FlowerPetal",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.28, 0.252868, 0.2002, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "52179520c7990ff8:WaterColliding",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 1.5,
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = false,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		PutAnotherSprite = 
+		{
+			bool DebugMode = false,
+			string SpriteSource = "520eff6b8d4f1ef4:FlowerSadFace",
+			Vec3 Offset = [0, 0, 0.01],
+			float Size = 1.24,
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 1,
+			string CueName = "4e1bd44008b4dc2a:DefaultCue",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+		DragEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			float Drag = 0.1,
+		},
+		ChangeColor = 
+		{
+			bool DebugMode = true,
+			Vec4 NewColor = [0.52608, 0.0704, 0.64, 1],
+			bool RandomColor = true,
+			bool ColorShifting = false,
+			float ShiftTime = 1,
+			string AnotherSprite = "520eff6b8d44e453:FlowerFace",
+			string DetectEventType = "FlowerGet",
+			bool SpaceEvent = false,
+			bool OwnerEvent = true,
+		},
+		Rotator = 
+		{
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 1,
+			bool Sway = true,
+			float SwayPeriod = 0.2,
+		},
+		ChangeOnActivation = 
+		{
+			string DetectEventType = "",
+			bool SpaceEvent = false,
+			bool OwnerEvent = true,
+		},
+		ChangeSpriteOnActivation = 
+		{
+			string MainSprite = "5216ecf650e1dbd2:FlowerPetal",
+			string AnotherSprite = "520eff6b8d44e453:FlowerFace",
+			string DetectEventType = "FlowerGet",
+			bool SpaceEvent = false,
+			bool OwnerEvent = true,
+			bool EventFunction = false,
+		},
+		FlowerSpin = 
+		{
+			bool DebugMode = false,
+			float AngularVelocity = 0.75,
+			float SpinCount = 0,
+			float SpinLimit = 1.5,
+			bool Windback = false,
+			string SoundCue = "5216e5d72aa0229b:Flower",
+			bool uteWindingSound = true,
+			bool isUsed = false,
+			bool ChubbyFlower = false,
+		},
+		Prizebox = 
+		{
+			bool DebugMode = true,
+			string PrizeType = "twinkle",
+			float VelocityY = 10,
+			uint PrizeAmount = 8,
+			string SoundCue = "4e1bd44008b4dc2a:DefaultCue",
+			bool isUsed = true,
+			bool playSound = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 6,
+		},
+		Named = 
+		{
+			string Name = "Flower",
+		},
+		Archetyped = 
+		{
+			string Name = "5216d863499fe905:WaterWheel",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-0.455197, 4.95879, 0],
+			Vec3 Scale = [0.904073, 0.904073, 0.904073],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5216ecf650e1dbd2:FlowerPetal",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.28, 0.252868, 0.2002, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "52179520c7990ff8:WaterColliding",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 1.5,
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = false,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Prizebox = 
+		{
+			bool DebugMode = true,
+			string PrizeType = "twinkle",
+			float VelocityY = 10,
+			uint PrizeAmount = 8,
+			string SoundCue = "5216e5d72aa0229b:Flower",
+			bool isUsed = true,
+			bool playSound = true,
+		},
+		PutAnotherSprite = 
+		{
+			bool DebugMode = false,
+			string SpriteSource = "520eff6b8d4f1ef4:FlowerSadFace",
+			Vec3 Offset = [0, 0, 0.01],
+			float Size = 1.24,
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 1,
+			string CueName = "4e1bd44008b4dc2a:DefaultCue",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+		DragEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			float Drag = 0.1,
+		},
+		ChangeColor = 
+		{
+			bool DebugMode = true,
+			Vec4 NewColor = [0.52608, 0.0704, 0.64, 1],
+			bool RandomColor = true,
+			bool ColorShifting = false,
+			float ShiftTime = 1,
+			string AnotherSprite = "520eff6b8d44e453:FlowerFace",
+			string DetectEventType = "FlowerGet",
+			bool SpaceEvent = false,
+			bool OwnerEvent = true,
+		},
+		Rotator = 
+		{
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 1,
+			bool Sway = true,
+			float SwayPeriod = 0.2,
+		},
+		ChangeOnActivation = 
+		{
+			string DetectEventType = "",
+			bool SpaceEvent = false,
+			bool OwnerEvent = true,
+		},
+		ChangeSpriteOnActivation = 
+		{
+			string MainSprite = "5216ecf650e1dbd2:FlowerPetal",
+			string AnotherSprite = "520eff6b8d44e453:FlowerFace",
+			string DetectEventType = "FlowerGet",
+			bool SpaceEvent = false,
+			bool OwnerEvent = true,
+			bool EventFunction = false,
+		},
+		FlowerSpin = 
+		{
+			bool DebugMode = false,
+			float AngularVelocity = 0.75,
+			float SpinCount = 0,
+			float SpinLimit = 1.5,
+			bool Windback = false,
+			string SoundCue = "5216e5d72aa0229b:Flower",
+			bool uteWindingSound = true,
+			bool isUsed = false,
+			bool ChubbyFlower = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 7,
+		},
+		Named = 
+		{
+			string Name = "Flower",
+		},
+		Archetyped = 
+		{
+			string Name = "5216d863499fe905:WaterWheel",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-6.85663, 4.55018, 0],
+			Vec3 Scale = [1.25377, 1.25377, 1.25377],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5216ecf650e1dbd2:FlowerPetal",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.28, 0.252868, 0.2002, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "52179520c7990ff8:WaterColliding",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 1.5,
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = false,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		PutAnotherSprite = 
+		{
+			bool DebugMode = false,
+			string SpriteSource = "520eff6b8d4f1ef4:FlowerSadFace",
+			Vec3 Offset = [0, 0, 0.01],
+			float Size = 1.24,
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 1,
+			string CueName = "4e1bd44008b4dc2a:DefaultCue",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+		DragEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			float Drag = 0.1,
+		},
+		ChangeColor = 
+		{
+			bool DebugMode = true,
+			Vec4 NewColor = [0.52608, 0.0704, 0.64, 1],
+			bool RandomColor = true,
+			bool ColorShifting = false,
+			float ShiftTime = 1,
+			string AnotherSprite = "520eff6b8d44e453:FlowerFace",
+			string DetectEventType = "FlowerGet",
+			bool SpaceEvent = false,
+			bool OwnerEvent = true,
+		},
+		Rotator = 
+		{
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 1,
+			bool Sway = true,
+			float SwayPeriod = 0.2,
+		},
+		ChangeOnActivation = 
+		{
+			string DetectEventType = "",
+			bool SpaceEvent = false,
+			bool OwnerEvent = true,
+		},
+		ChangeSpriteOnActivation = 
+		{
+			string MainSprite = "5216ecf650e1dbd2:FlowerPetal",
+			string AnotherSprite = "520eff6b8d44e453:FlowerFace",
+			string DetectEventType = "FlowerGet",
+			bool SpaceEvent = false,
+			bool OwnerEvent = true,
+			bool EventFunction = false,
+		},
+		FlowerSpin = 
+		{
+			bool DebugMode = false,
+			float AngularVelocity = 0.75,
+			float SpinCount = 0,
+			float SpinLimit = 1.5,
+			bool Windback = true,
+			string SoundCue = "5216e5d72aa0229b:Flower",
+			bool uteWindingSound = true,
+			bool isUsed = false,
+			bool ChubbyFlower = false,
+		},
+		Prizebox = 
+		{
+			bool DebugMode = true,
+			string PrizeType = "twinkle",
+			float VelocityY = 10,
+			uint PrizeAmount = 8,
+			string SoundCue = "4e1bd44008b4dc2a:DefaultCue",
+			bool isUsed = true,
+			bool playSound = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 8,
+		},
+		Named = 
+		{
+			string Name = "TestButton",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-0.940857, -6.00717, -1],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "527250087e958693:Buttonback",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		ButtonLogic = 
+		{
+			string playSound = "52729ff047a1722e:Victory",
+		},
+		LevelChangeButton = 
+		{
+			bool DebugMode = false,
+			string LevelChange = "4faa6050b86892a8:DefaultLevel",
+			bool useLevelTable = true,
+			bool loadNextLevel = true,
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = Centered,
+			string FontName = "52725258b386131d:Cookies",
+			uint FontSize = 50,
+			Vec4 Color = [0.175, 0.1715, 0.1715, 1],
+			bool Visible = true,
+			string Text = "Start Game",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "52729ff047a1722e:Victory",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 9,
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, -2],
+			Vec3 Scale = [3, 3, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520e06a3cd4a927f:SpritzLogo",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 10,
+		},
+		Named = 
+		{
+			string Name = "TileMap",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		MultiSprite = 
+		{
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			BlendMode BlendMode = Alpha,
+		},
+		TileMap = 
+		{
+			string SourceName = "526d1a810b08e690:MainMenu_TileMap00",
+			float UnitsPerTile = 1,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 11,
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-0.565465, -8.45305, 2.03258e-008],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = Centered,
+			string FontName = "4e7bac697bec55c5:Verdana",
+			uint FontSize = 32,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			string Text = "All content © 2013 DigiPen (USA) Corporation, all rights reserved.",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+	},
+},

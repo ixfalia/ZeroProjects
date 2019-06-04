@@ -1,0 +1,251 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "MouseReticle",
+	},
+	Archetyped = 
+	{
+		string Name = "5412e8a928bc671e:Scanner",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, 0, 0],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "5275aa4d802dd6dc:Square",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = false,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+		string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+	},
+	FollowTarget = 
+	{
+		bool Active = false,
+		uint InitialTarget = 0,
+		bool FollowMouse = false,
+		float TargetRadius = 1,
+		float oveSpeed = 4,
+	},
+	DestructionTimer = 
+	{
+		bool Active = false,
+		float Duration = 0.25,
+	},
+	Fader = 
+	{
+		Vec4 DefaultColor = [-1, -1, -1, -1],
+		bool FadeChildren = true,
+	},
+	Hierarchy = 
+	{
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 2,
+			},
+			Named = 
+			{
+				string Name = "reticle",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [0, 0, 0],
+				Vec3 Scale = [0.5, 0.5, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				string SpriteSource = "547bfe433527b84d:Reticle",
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [1, 1, 1, 1],
+				bool Visible = true,
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+				string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			},
+			Scalerator = 
+			{
+				bool Active = false,
+				bool Once = false,
+				float Delay = 0.1,
+				float Duration = 0.5,
+				float ScaleX = -0.25,
+				float ScaleY = -0.5,
+			},
+			Hierarchy = 
+			{
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 3,
+			},
+			Named = 
+			{
+				string Name = "innerring",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [0, 0, 0.1],
+				Vec3 Scale = [0.72, 0.72, 1],
+				Quat Rotation = [0, 0, 0.707107, 0.707107],
+			},
+			Sprite = 
+			{
+				string SpriteSource = "547bfe4335245095:SpinnyDoodad",
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [0.1875, 0.375, 0.2625, 0.75],
+				bool Visible = true,
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+				string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			},
+			Rotator = 
+			{
+				bool Active = true,
+				bool RotateX = false,
+				float RotatorX = 0,
+				bool RotateY = false,
+				float RotatorY = 0,
+				bool RotateZ = true,
+				float RotatorZ = -2,
+				bool Sway = true,
+				float SwayPeriod = 1,
+			},
+			Scalerator = 
+			{
+				bool Active = true,
+				bool Once = true,
+				float Delay = 0.1,
+				float Duration = 1,
+				float ScaleX = -0.35,
+				float ScaleY = -0.35,
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 4,
+			},
+			Named = 
+			{
+				string Name = "outering",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [0, 0, 0.1],
+				Vec3 Scale = [0.75, 0.75, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				string SpriteSource = "547bfe4335245095:SpinnyDoodad",
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [0.28477, 0.505, 0.280275, 0.75],
+				bool Visible = true,
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+				string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			},
+			Rotator = 
+			{
+				bool Active = true,
+				bool RotateX = false,
+				float RotatorX = 0,
+				bool RotateY = false,
+				float RotatorY = 0,
+				bool RotateZ = true,
+				float RotatorZ = 2,
+				bool Sway = true,
+				float SwayPeriod = 1,
+			},
+			Scalerator = 
+			{
+				bool Active = true,
+				bool Once = true,
+				float Delay = 0.1,
+				float Duration = 0.5,
+				float ScaleX = -0.25,
+				float ScaleY = -0.25,
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 5,
+			},
+			Named = 
+			{
+				string Name = "centersquare",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [0, 0, -0.1],
+				Vec3 Scale = [0.45, 0.45, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				string SpriteSource = "5275aa4d802dd6dc:Square",
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [0.381799, 0.61, 0.34465, 1],
+				bool Visible = true,
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+				string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			},
+			Rotator = 
+			{
+				bool Active = true,
+				bool RotateX = false,
+				float RotatorX = 0,
+				bool RotateY = false,
+				float RotatorY = 0,
+				bool RotateZ = true,
+				float RotatorZ = 3,
+				bool Sway = true,
+				float SwayPeriod = 1.5,
+			},
+		},
+	},
+},

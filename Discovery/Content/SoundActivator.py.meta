@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "SoundActivator",
+		uint64 ResourceId = 54121844bf3029c6,
+	},
+},

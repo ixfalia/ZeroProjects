@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "NPC",
+		uint64 ResourceId = 532d3bdd0107c59f,
+	},
+},

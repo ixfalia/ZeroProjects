@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "LocationTrigger",
+		uint64 ResourceId = 532bc45568e57c6a,
+	},
+},

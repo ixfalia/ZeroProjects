@@ -1,0 +1,83 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "Collectible",
+	},
+	Archetyped = 
+	{
+		string Name = "5263fe2871297871:Coin",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-3.18478, 3.15401, 0],
+		Vec3 Scale = [2.5, 2.5, 2.5],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "520eff698ed511db:SunCollectibleFull",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 0.8],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	SphereCollider = 
+	{
+		bool Ghost = true,
+		bool SendsMessages = true,
+		bool Seamless = false,
+		string MaterialName = "4faa6050b8692851:HardMaterial",
+		string SerializedGroupName = "5217ab7799116ab9:Collectible",
+		Vec3 Offset = [0, 0, 0],
+		float Radius = 0.2,
+	},
+	RigidBody = 
+	{
+		bool Static = true,
+		bool Asleep = false,
+		bool Kinematic = false,
+		bool RotationLocked = false,
+		bool Mode2D = true,
+		bool AllowSleep = true,
+		bool Inherit2DMode = true,
+		Vec3 Velocity = [0, 0, 0],
+		Vec3 AngularVelocity = [0, 0, 0],
+	},
+	Collectible = 
+	{
+		bool DebugMode = false,
+		string Type = "twinkle",
+		float PrizeStrength = 10,
+		float Timing = 2,
+		float Lifetime = 0,
+		bool Blinking = false,
+		float BlinkDuration = 1.5,
+		uint BlinkNumber = 4,
+		string respawnOnEvent = "",
+	},
+	Rotator = 
+	{
+		bool RotateX = false,
+		float RotatorX = 0,
+		bool RotateY = false,
+		float RotatorY = 0,
+		bool RotateZ = true,
+		float RotatorZ = 1.3,
+		bool Sway = false,
+		float SwayPeriod = 1.5,
+	},
+	HUDEventDispatcher = 
+	{
+	},
+},

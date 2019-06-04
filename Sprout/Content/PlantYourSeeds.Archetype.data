@@ -1,0 +1,110 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "shineeffect",
+	},
+	Archetyped = 
+	{
+		string Name = "52a3046eb9bacef1:PlantYourSeeds",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, 0, 0],
+		Vec3 Scale = [2.5, 2.5, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	SpriteParticleSystem = 
+	{
+		SystemChildMode ChildMode = Independent,
+		SystemSpace SystemSpace = WorldSpace,
+		uint DrawOrder = 3,
+		ParticleGeometry GeometryMode = Beam,
+		ParticleRenderMode RenderMode = Additive,
+		ParticleSortMode SortMode = None,
+		string Texture = "52a31be394b2d8d9:Shine_0",
+		Vec4 Tint = [1, 1, 1, 0.695],
+		float VelocityScale = 0.15,
+		float LengthScale = 0,
+		float MaxParticleSize = 100,
+		Vec3 SystemSize = [2, 2, 2],
+	},
+	SphericalParticleEmitter = 
+	{
+		bool Active = true,
+		uint EmitCount = 0,
+		float EmitRate = 50,
+		float EmitVariance = 0,
+		float Size = 0.25,
+		float SizeVariance = 0.3,
+		float Lifetime = 0.75,
+		float LifetimeVariance = 0.5,
+		float Spin = 1,
+		float SpinVariance = 0,
+		bool RandomSpin = false,
+		float Fill = 1,
+		float EmitterVelocityPercent = 0,
+		Vec3 StartVelocity = [0, 0, 0],
+		Vec3 RandomVelocity = [8, 8, 0],
+		Vec3 TangentVelocity = [0, 0, 0],
+		Vec3 EmitterSize = [1, 1, 1],
+		bool FastMovingEmitter = false,
+	},
+	LinearParticleAnimator = 
+	{
+		Vec3 Force = [0, 0, 0],
+		Vec3 RandomForce = [0, 0, 0],
+		float Torque = 0,
+		float Growth = 0,
+		float Dampening = 0,
+		Vec3 Twist = [0, 0, 0],
+	},
+	ParticleWander = 
+	{
+		float WanderAngle = 1,
+		float WanderAngleVariance = 1,
+		float WanderStrength = 10,
+	},
+	Lifetime = 
+	{
+		float Duration = 1,
+		string SendEvent = "ReactivateEvent",
+		bool sendToHUDSpace = false,
+		bool sendToGameSpace = true,
+		bool sendToOwner = false,
+	},
+	ParticleColorAnimator = 
+	{
+		Vec4 Color0 = [1, 0.84, 0, 0.375],
+		Vec4 Color1 = [0.07, 1, 0.2746, 0.225],
+		Vec4 Color2 = [0.9396, 1, 0.245, 0.9999],
+		Vec4 Color3 = [0.3069, 0.99, 0.969507, 1],
+		Vec4 Color4 = [0.600637, 0.79, 0.3871, 0.23],
+	},
+	Fader = 
+	{
+		bool DebugMode = false,
+		float defaultOpacity = 1,
+		float FadeInDuration = 0.5,
+		float FadeOutDuration = 0.5,
+		bool FadeInOnCreation = true,
+	},
+	Sprite = 
+	{
+		string SpriteSource = "52a30439b21f6c04:PlantYourSeeds",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = false,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+},

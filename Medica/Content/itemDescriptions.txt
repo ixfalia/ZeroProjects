@@ -1,0 +1,21 @@
+Default: Unfortunately the text for this entry was not set.
+Salvia Leaf: An herbalist's go to cure for minor cuts and abrasions. Salvia's cooling leaves are known to help speed up the healing of open wounds.;
+Kapur Sap: Creates a warming sensation.;
+Manil Sap: Used to suspend medicines into a cream form.;
+Glacia Berry: A miraculous berry that is covered in frost even in the midst of summer. Glacia berries are known for their cooling properties and can be applied topically to alleviate burns, swelling, and inflamation. The consumption of raw glacia berries is not recommended as the extracts within the berry are too strong to be digested comfortably.;
+Glacia Leaf: The glacia leaf always looks as if it is touched by the first frost of autumn. Glacia leaves are renowned for their qualities as digestive aids and relaxants.;
+Ginoga Root: Rare and prized, the ginoga root is highly sought out for its ability to increase focus, energy, and alertness when consumed. All parts of the ginoga plant have this property but the roots are known to be the most potent and effective.;
+Linjee Mushroom: Linjee Mushrooms are prized for their healing properties. They are incredibly rare and only appear during certain times of the year. Linjee Mushrooms are most famous for their purported ability to extend people's lifetimes.;
+Purgidine Ore: A very reliable disinfectant when dissolved in water.;
+Harodron Crystal:;
+Distilled Water: Water free of any purities. It is completely sterile and useful for many medical applications the require caution against impurities and bacteria that may be in other water sources.;
+Serenian Water: The clean and refreshing water of the Serenia Region is well known for its refreshing properties. The rivers and streams of this region flow through mountain rocks and clay, which purify the water and minerals to the waters.;
+Murky Water: This water is cloudy. It doesn't look very safe to use.;
+Purple Clay: Purple clay is great at drawing out and absorbing impurities. It can be applied to the skin to leave it feeling fresh and invigorated, but it is more commonly used to purify water. By mixing some purple clay into some water, impurities that may make the water unsafe for consumption are drawn to the bottom as the clay settles.;
+Barogan Horn: Horns harvested from Barogans during their youths grow back. Barogan horns are obtained for their rare ability to work as an anti-venom. They are able to draw out poisons from a persons system.;
+Whoober Tuber: The starchy root of the Whoober plant. When dried, the root can be ground into a fine powder that can be used as a gelling agent in liquids.;
+Saiga Flax: The tiny seeds of the Saiga bush are spread through watery mires of swamps. The seeds balloon in the rain, eventually falling off the bush into the nearby swamps. 
+    As more seeds gather they form a sticky paste that hardens when the weather becomes drier.;
+Gooey Concoction: It's really sticky! When dry it becomes a hard and clear resin. Looks like it would be great for small repairs.;
+Riverside Seal: The Serenian Riverside Journal Enthusiast's seal of approval. Any collector worth their mettle should be honored to receive one of these.;
+Nattle Wood: This fragrant aromatic wood is sturdy and resistant to most wear and tear. Not only is it useful in construction, young parts of the wood can be used in medicine.

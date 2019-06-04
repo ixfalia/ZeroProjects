@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "DebugManager",
+		uint64 ResourceId = 543b94939f6442c2,
+	},
+},

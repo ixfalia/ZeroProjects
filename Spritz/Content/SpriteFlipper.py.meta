@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "SpriteFlipper",
+		uint64 ResourceId = 520d2e76d1a87e57,
+	},
+},

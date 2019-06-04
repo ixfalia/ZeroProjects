@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "TimeWaitManager",
+		uint64 ResourceId = 543b9b88d1d8edd0,
+	},
+},

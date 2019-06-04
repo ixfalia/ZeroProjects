@@ -1,0 +1,87 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "bloomEffect",
+	},
+	Archetyped = 
+	{
+		string Name = "52a2db8bc29c353e:poisonEffect",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [12.971, 3.47283, 40],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	SpriteParticleSystem = 
+	{
+		SystemChildMode ChildMode = Independent,
+		SystemSpace SystemSpace = WorldSpace,
+		uint DrawOrder = 3,
+		ParticleGeometry GeometryMode = Billboarded,
+		ParticleRenderMode RenderMode = Additive,
+		ParticleSortMode SortMode = Sorted,
+		string Texture = "52a31be394b2d8d9:Shine_0",
+		Vec4 Tint = [0.7052, 0, 0.82, 1],
+		float VelocityScale = 0.12,
+		float LengthScale = 0,
+		float MaxParticleSize = 100,
+		Vec3 SystemSize = [4, 4, 4],
+	},
+	SphericalParticleEmitter = 
+	{
+		bool Active = true,
+		uint EmitCount = 0,
+		float EmitRate = 6,
+		float EmitVariance = 4,
+		float Size = 0.25,
+		float SizeVariance = 0.3,
+		float Lifetime = 1,
+		float LifetimeVariance = 0.5,
+		float Spin = 1,
+		float SpinVariance = 0,
+		bool RandomSpin = false,
+		float Fill = 1,
+		float EmitterVelocityPercent = 0,
+		Vec3 StartVelocity = [0, 0, 0],
+		Vec3 RandomVelocity = [0, 0, 0],
+		Vec3 TangentVelocity = [0, 0, 0],
+		Vec3 EmitterSize = [2, 2, 1],
+		bool FastMovingEmitter = false,
+	},
+	LinearParticleAnimator = 
+	{
+		Vec3 Force = [0, 0, 0],
+		Vec3 RandomForce = [5, 5, 0],
+		float Torque = 0,
+		float Growth = 0,
+		float Dampening = 0,
+		Vec3 Twist = [0, 0, 0],
+	},
+	ParticleWander = 
+	{
+		float WanderAngle = 1,
+		float WanderAngleVariance = 1,
+		float WanderStrength = 10,
+	},
+	ParticleTwister = 
+	{
+		Vec3 Axis = [0, 0, 1],
+		float Strength = 2,
+		float MinDistance = 0,
+		float MaxDistance = 100,
+	},
+	ParticleColorAnimator = 
+	{
+		Vec4 Color0 = [0.791, 0.45, 1, 1],
+		Vec4 Color1 = [0.65, 0, 1, 0.945],
+		Vec4 Color2 = [0.553945, 0.0735, 0.98, 0.85],
+		Vec4 Color3 = [0.239243, 0.023625, 0.315, 0.795],
+		Vec4 Color4 = [0.15, 0.15, 0.15, 0.59],
+	},
+},

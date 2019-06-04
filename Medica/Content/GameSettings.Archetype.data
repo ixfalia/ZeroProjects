@@ -1,0 +1,59 @@
+LevelSettings = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "LevelSettings",
+	},
+	Archetyped = 
+	{
+		string Name = "533b7b132b79776e:GameSettings",
+	},
+	GravityEffect = 
+	{
+		bool Active = false,
+		bool WakeUpOnChange = false,
+		bool LocalSpaceDirection = true,
+		float Strength = 10,
+		Vec3 Direction = [0, -1, 0],
+	},
+	DragEffect = 
+	{
+		bool Active = true,
+		bool WakeUpOnChange = false,
+		float Drag = 0.7,
+	},
+	CameraViewport = 
+	{
+		bool Background = true,
+		Vec2 Offset = [0, 0],
+		Vec2 Size = [1, 1],
+		int Layer = 0,
+		bool Active = true,
+		bool Blocking = true,
+		uint Renderer = 1,
+		uint Camera = 2,
+		ViewportScaling Scaling = Fill,
+		Vec2 Resolution = [1280, 720],
+		Vec4 MarginColor = [0, 0, 0, 1],
+	},
+	ForwardRenderer = 
+	{
+		Vec4 ClearColor = [0.189384, 0.24, 0.1068, 1],
+	},
+	HUDMaker = 
+	{
+		bool DebugMode = true,
+		string HUDLevel = "52edbeda2b0f5d37:Level_HUD",
+	},
+	HUDEventDispatcher = 
+	{
+		bool Debug = true,
+	},
+	GameSpaceEventDispatcher = 
+	{
+	},
+},

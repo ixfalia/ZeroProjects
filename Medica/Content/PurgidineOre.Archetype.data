@@ -1,0 +1,76 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "rock",
+	},
+	Archetyped = 
+	{
+		string Name = "52d0918410a924c6:PurgidineOre",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-2.3603, 12.7059, 0],
+		Vec3 Scale = [0.5, 0.5, 0.5],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "52d09bab805d5275:rock",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 0.84, 0, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	Reactive = 
+	{
+		bool Active = true,
+		bool CaptureMouse = false,
+	},
+	MouseBox = 
+	{
+		string EventName = "MouseActivateEvent",
+		bool DetectLeftClick = false,
+		bool DetectRightClick = true,
+		bool DetectMiddleClick = false,
+		bool sendReactiveEvent = true,
+	},
+	ItemBox = 
+	{
+		bool Debug = true,
+		string ItemName = "Purgidine Ore",
+		bool isUsed = false,
+		uint AmountGiven = 2,
+		int Limit = 2,
+		Vec4 Color = [1, 1, 1, 1],
+		float RespawnDuration = 30,
+		float RespawnVariance = 10,
+	},
+	SphereCollider = 
+	{
+		bool Ghost = false,
+		bool SendsMessages = true,
+		bool Seamless = false,
+		string MaterialName = "4faa6050b8692851:HardMaterial",
+		string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+		Vec3 Offset = [0, 0, 0],
+		float Radius = 1.5,
+	},
+	Fader = 
+	{
+		bool DebugMode = false,
+		float FadeInDuration = 1,
+		float FadeOutDuration = 1,
+		bool FadeInOnCreation = false,
+	},
+},

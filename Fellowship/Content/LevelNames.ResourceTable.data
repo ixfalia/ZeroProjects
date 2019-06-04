@@ -1,0 +1,23 @@
+ResourceTable = 
+{
+	string ResourceType = "String",
+	Array EntryList = 
+	[
+		{
+			string Name = "Forest Adventure",
+			string Value = "AdventureForest",
+			float Weight = 1,
+		},
+		{
+			string Name = "Playing",
+			string Value = "Rock Paper Scissors",
+			float Weight = 1,
+		},
+		{
+			string Name = "Training",
+			string Value = "Training",
+			float Weight = 1,
+		},
+	],
+	float MaxWeight = 1,
+},

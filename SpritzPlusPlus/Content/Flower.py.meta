@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Flower",
+		uint64 ResourceId = 5215afa2f38d7cf5,
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "LevelChangeOnEvent",
+		uint64 ResourceId = 532b1250e6c2aad1,
+	},
+},

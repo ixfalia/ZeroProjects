@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "AnimationController",
+		uint64 ResourceId = 546c52de4592ec89,
+	},
+},

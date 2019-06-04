@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "QuestText",
+		uint64 ResourceId = 52c3358b77d32140,
+	},
+},

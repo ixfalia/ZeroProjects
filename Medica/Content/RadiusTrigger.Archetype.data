@@ -1,0 +1,56 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "chatter",
+	},
+	Archetyped = 
+	{
+		string Name = "532bcc93d57b8499:RadiusTrigger",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-2.6312, 4.10828, -1.59235],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	RigidBody = 
+	{
+		bool Static = false,
+		bool Asleep = false,
+		bool Kinematic = false,
+		bool RotationLocked = false,
+		bool Mode2D = true,
+		bool AllowSleep = true,
+		bool Inherit2DMode = true,
+		Vec3 Velocity = [0, 0, 0],
+		Vec3 AngularVelocity = [0, 0, 0],
+	},
+	SphereCollider = 
+	{
+		bool Ghost = true,
+		bool SendsMessages = true,
+		bool Seamless = true,
+		string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+		string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+		Vec3 Offset = [0, 0, 0],
+		float Radius = 10,
+	},
+	CreateOnCollide = 
+	{
+		bool onStart = true,
+		bool onPersist = false,
+		bool onEnd = false,
+		string detectSpecificObject = "player",
+		string Archetype = "532baee9152c8f48:ChatBubble",
+		Vec3 Offset = [5, 4, 3],
+		Vec3 Position = [0.1, 0.1, 0.1],
+		string chatText = "I like journals!",
+		string listeningfor = "",
+		string changeTo = "",
+	},
+},

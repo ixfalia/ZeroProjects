@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "CraftingEngine",
+		uint64 ResourceId = 52d0abcc09ac05ee,
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Fader",
+		uint64 ResourceId = 547c3e044ac20663,
+	},
+},

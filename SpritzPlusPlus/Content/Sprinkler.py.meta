@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Sprinkler",
+		uint64 ResourceId = 5216a7b6634144cc,
+	},
+},

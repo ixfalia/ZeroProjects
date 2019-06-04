@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "SendEventOnFlagChange",
+		uint64 ResourceId = 533b80ecc55ce804,
+	},
+},

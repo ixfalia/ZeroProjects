@@ -1,0 +1,11 @@
+DataContent = 
+{
+	DataBuilder = 
+	{
+		string Name = "SpikeyHoleVert",
+		uint64 ResourceId = 5286d6a8c210681d,
+		string LoaderType = "Path",
+		uint Version = 0,
+		bool ShowInEditor = true,
+	},
+},

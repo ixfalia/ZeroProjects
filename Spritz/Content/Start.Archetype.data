@@ -1,0 +1,61 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "Start",
+	},
+	Archetyped = 
+	{
+		string Name = "5215fd450f0a3bd9:Checkpoint",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-17.1675, -0.316093, -0.1],
+		Vec3 Scale = [0.5, 0.5, 0.5],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "520eff6c8d5a619c:CheckpointUnused",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = false,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	Checkpoint = 
+	{
+		bool DebugMode = true,
+		uint ID = 2,
+		Vec2 Position = [0, 0],
+		bool isUsed = false,
+	},
+	BoxCollider = 
+	{
+		bool Ghost = false,
+		bool SendsMessages = true,
+		bool Seamless = false,
+		string MaterialName = "4faa6050b8692851:HardMaterial",
+		string SerializedGroupName = "5217aaa5614a18de:Checkpoint",
+		Vec3 Offset = [0, 0, 0],
+		Vec3 Size = [2, 6, 2],
+	},
+	SoundEmitter = 
+	{
+		bool StartPlaying = false,
+		int ExtraPriority = 0,
+		string CueName = "5216e5d72aa0229b:Flower",
+		float Volume = 0.65,
+		float Pitch = 2,
+		bool Positional = true,
+	},
+},

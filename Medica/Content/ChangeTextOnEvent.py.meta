@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "ChangeTextOnEvent",
+		uint64 ResourceId = 532bfcc24301dcdb,
+	},
+},

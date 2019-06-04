@@ -1,0 +1,88 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "Celebration",
+	},
+	Archetyped = 
+	{
+		string Name = "52de6ccd0dc48afd:UICelebration",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-0.03228, -0.0233197, 21.5913],
+		Vec3 Scale = [0.111111, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	SpriteParticleSystem = 
+	{
+		SystemChildMode ChildMode = Independent,
+		SystemSpace SystemSpace = WorldSpace,
+		uint DrawOrder = 0,
+		ParticleGeometry GeometryMode = Beam,
+		ParticleRenderMode RenderMode = Additive,
+		ParticleSortMode SortMode = None,
+		string Texture = "52d1787ee2335267:FillTile",
+		Vec4 Tint = [1, 0.956, 0.725, 0.6],
+		float VelocityScale = 0,
+		float LengthScale = 1,
+		float MaxParticleSize = 100,
+		Vec3 SystemSize = [4, 4, 4],
+	},
+	SphericalParticleEmitter = 
+	{
+		bool Active = true,
+		uint EmitCount = 0,
+		float EmitRate = 18,
+		float EmitVariance = 2,
+		float Size = 0.25,
+		float SizeVariance = 0.15,
+		float Lifetime = 2,
+		float LifetimeVariance = 1,
+		float Spin = 0,
+		float SpinVariance = 0,
+		bool RandomSpin = true,
+		float Fill = 1,
+		float EmitterVelocityPercent = 0,
+		Vec3 StartVelocity = [0, 5, 0],
+		Vec3 RandomVelocity = [10, 10, 10],
+		Vec3 TangentVelocity = [0, 0, 0],
+		Vec3 EmitterSize = [4, 4, 4],
+		bool FastMovingEmitter = true,
+	},
+	LinearParticleAnimator = 
+	{
+		Vec3 Force = [0, -3, 0],
+		Vec3 RandomForce = [0, 0, 0],
+		float Torque = 0,
+		float Growth = 0,
+		float Dampening = 0,
+		Vec3 Twist = [0, 0, 0],
+	},
+	ParticleWander = 
+	{
+		float WanderAngle = 1,
+		float WanderAngleVariance = 1,
+		float WanderStrength = 5,
+	},
+	ParticleColorAnimator = 
+	{
+		Vec4 Color0 = [0.745, 0.0745, 0.0745, 1],
+		Vec4 Color1 = [0.97425, 1, 0.485, 1],
+		Vec4 Color2 = [0, 0.375, 0.1275, 1],
+		Vec4 Color3 = [0.0799999, 0, 1, 1],
+		Vec4 Color4 = [0, 0.55, 1, 1],
+	},
+	Lifetime = 
+	{
+		float Duration = 2,
+		string SendEvent = "",
+		bool sendToHUDSpace = false,
+		bool sendToGameSpace = false,
+		bool sendToOwner = false,
+	},
+},

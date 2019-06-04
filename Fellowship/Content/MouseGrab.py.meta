@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "MouseGrab",
+		uint64 ResourceId = 546c007d8a72d55d,
+	},
+},

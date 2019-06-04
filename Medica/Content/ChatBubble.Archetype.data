@@ -1,0 +1,105 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "chatText",
+	},
+	Archetyped = 
+	{
+		string Name = "532baee9152c8f48:ChatBubble",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, 0, 0],
+		Vec3 Scale = [2, 2, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	SpriteText = 
+	{
+		SpriteGeometryMode GeometryMode = ZPlane,
+		TextPositionMode Position = Centered,
+		string FontName = "532b9b025a28a473:Cookies",
+		uint FontSize = 24,
+		Vec4 Color = [0, 0, 0, 1],
+		bool Visible = true,
+		string Text = "Hey! Listen.",
+		bool OnTop = false,
+		BlendMode BlendMode = Alpha,
+		Vec2 Size = [0, 0],
+		TextAlign Align = Left,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+	},
+	Fader = 
+	{
+		bool DebugMode = false,
+		float FadeInDuration = 0.25,
+		float FadeOutDuration = 0.25,
+		bool FadeInOnCreation = true,
+		bool InvisibleOnCreation = false,
+	},
+	ChatBubble = 
+	{
+		string Messages = "",
+		bool useTextBlock = false,
+		string Block = "4f122516b2da6f17:DefaultTextBlock",
+		Vec4 BubbleColor = [1, 1, 1, 1],
+		Vec4 TextColor = [1, 1, 1, 1],
+		Vec3 Offset = [1, 2, 1],
+		string WaitForEvent = "LevelStarted",
+	},
+	ChangeTextOnEvent = 
+	{
+		string ListenFor = "",
+		string ChangeTextTo = "",
+	},
+	Hierarchy = 
+	{
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 2,
+			},
+			Named = 
+			{
+				string Name = "chatBack",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [0, 0, 0],
+				Vec3 Scale = [4, 1, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				string SpriteSource = "52d0dc199ab33c97:FillTile",
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [1, 1, 1, 1],
+				bool Visible = true,
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+			},
+			Rotator = 
+			{
+				bool RotateX = false,
+				float RotatorX = 0,
+				bool RotateY = false,
+				float RotatorY = 0,
+				bool RotateZ = true,
+				float RotatorZ = 0.4,
+				bool Sway = true,
+				float SwayPeriod = 0.2,
+			},
+		},
+	},
+},

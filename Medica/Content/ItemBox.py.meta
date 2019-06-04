@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "ItemBox",
+		uint64 ResourceId = 52c36a8b1a96633e,
+	},
+},

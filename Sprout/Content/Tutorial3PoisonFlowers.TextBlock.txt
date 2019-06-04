@@ -1,0 +1,5 @@
+Careful of the purple flowers, they're poisonous!
+
+Plant anything around a bloomed purple flower and it will take longer to grow.
+
+The more purple flowers, the stronger the effect.

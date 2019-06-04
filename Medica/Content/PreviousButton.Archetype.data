@@ -1,0 +1,80 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "PreviousButton",
+	},
+	Archetyped = 
+	{
+		string Name = "532b0cbcf24ef9c5:PreviousButton",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-4.88351, 0.370967, 0.1],
+		Vec3 Scale = [0.75, 0.75, 0.75],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "52d178a6018cfd4a:next",
+		bool FlipX = true,
+		bool FlipY = false,
+		Vec4 Color = [0.91, 0.819, 0, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	SphereCollider = 
+	{
+		bool Ghost = false,
+		bool SendsMessages = true,
+		bool Seamless = false,
+		string MaterialName = "4faa6050b8692851:HardMaterial",
+		string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+		Vec3 Offset = [0, 0, 0],
+		float Radius = 0.5,
+	},
+	Reactive = 
+	{
+		bool Active = true,
+		bool CaptureMouse = false,
+	},
+	BroadcastButton = 
+	{
+		string EventName = "PreviousEvent",
+		bool spaceEvent = false,
+		bool ownerEvent = true,
+		bool hudEvent = false,
+		bool gameEvent = false,
+		bool parentEvent = true,
+		bool allParentsEvent = true,
+		bool childrenEvent = false,
+		bool allChildrenEvent = false,
+	},
+	MouseResponse = 
+	{
+		bool SimpleDarken = false,
+		bool MergeColors = true,
+		float ergePercent = 0.75,
+		Vec2 ouseSlide = [-0.25, 0],
+		Vec4 hoverColor = [0.98, 0.926492, 0.2156, 1],
+		Vec4 downColor = [0.405, 0.405, 0.405, 1],
+		float defaultOpacity = 1,
+	},
+	MouseBox = 
+	{
+		string EventName = "MouseActivateEvent",
+		bool DetectLeftClick = true,
+		bool DetectRightClick = false,
+		bool DetectMiddleClick = false,
+		bool sendReactiveEvent = false,
+	},
+},

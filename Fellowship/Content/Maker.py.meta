@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Maker",
+		uint64 ResourceId = 540932acef988b44,
+	},
+},

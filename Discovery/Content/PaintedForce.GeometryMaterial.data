@@ -1,0 +1,14 @@
+GeometryMaterial = 
+{
+	string ArchetypeName = "5471833c5040c8c1:GeoPaintedForceArchetype",
+	GraphicsMaterialBlock = 
+	{
+		string MultiMaterialName = "5471833c505e9035:GeoPaintedForceMulti",
+		Vec2 TextureScalarFace = [2, 2],
+		float TextureScalarSurface = 1,
+		bool DoubleSided = true,
+	},
+	PhysicsMaterialBlock = 
+	{
+	},
+},

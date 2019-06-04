@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "SpaceEventDispatcher",
+		uint64 ResourceId = 52eca86f515da48e,
+	},
+},

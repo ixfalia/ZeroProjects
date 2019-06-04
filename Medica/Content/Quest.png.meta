@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "Quest",
+		uint64 ResourceId = 52dbd1251dba1022,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 494,
+		uint FrameSizeY = 494,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333,
+		float OriginX = 247,
+		float OriginY = 247,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

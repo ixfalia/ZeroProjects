@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "WaveSpawner",
+		uint64 ResourceId = 511b6b2afe4250b5,
+	},
+},

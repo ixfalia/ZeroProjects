@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "MoodController",
+		uint64 ResourceId = 546c5154fcc59d8f,
+	},
+},

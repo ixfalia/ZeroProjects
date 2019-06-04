@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "PushMessage",
+		uint64 ResourceId = 52de630efeae5da1,
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "OrbType",
+		uint64 ResourceId = 547bc1e22a0b48c4,
+	},
+},

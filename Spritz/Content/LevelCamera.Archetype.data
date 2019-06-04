@@ -1,0 +1,64 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "myCamera",
+	},
+	Archetyped = 
+	{
+		string Name = "5272972d0c6c7c50:LevelCamera",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [241.563, 1.3638, 40],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Camera = 
+	{
+		ProjectionMode ProjectionMode = Orthographic,
+		Facing Facing = NegativeZ,
+		SpriteSort SpriteSort = ZDepth,
+		float FieldOfView = 45,
+		float NearPlane = 0.5,
+		float FarPlane = 200,
+		float Size = 20,
+	},
+	CameraController = 
+	{
+		bool DebugMode = false,
+		bool Freeze = false,
+		uint targetObject = 2,
+		uint startingTarget = 3,
+		float ZValue = 40,
+		bool goalViewing = true,
+		float viewtime = 1.5,
+		float traveltime = 5,
+	},
+	CameraGroupFocuser = 
+	{
+		Vec3 PlaneNormal = [-0, -0, -1],
+		float PlaneDistanceScalar = 1,
+		float PlaneDistanceConstant = 10,
+		float MinDistance = 20,
+		float Smoothness = 0.6,
+		float TranslationSmoothness = 0.593023,
+		Vec3 PositionOffset = [0, 0, 0],
+		bool ControlsOrientation = true,
+	},
+	CameraViewport = 
+	{
+		bool Background = true,
+		Vec2 Offset = [0, 0],
+		Vec2 Size = [1, 1],
+		uint Layer = 0,
+		bool Active = true,
+		bool Blocking = false,
+		uint Renderer = 4,
+		uint Camera = 1,
+	},
+},

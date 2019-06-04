@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "EggHatch",
+		uint64 ResourceId = 54302b8190891d87,
+	},
+},

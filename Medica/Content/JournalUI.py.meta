@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "JournalUI",
+		uint64 ResourceId = 52cce0b55f81ceaf,
+	},
+},

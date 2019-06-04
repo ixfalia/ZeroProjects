@@ -1,0 +1,43 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "UITank",
+	},
+	Archetyped = 
+	{
+		string Name = "5216c068950a7f02:WaterTank",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-5.44566, -8.39498, 2],
+		Vec3 Scale = [1, 7, 1],
+		Quat Rotation = [0, 0, 0.707107, 0.707107],
+	},
+	Model = 
+	{
+		string MaterialName = "5216c11fa27b6737:Water",
+		string MeshName = "4de0354322b345ae:Cube",
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+	},
+	Rotator = 
+	{
+		bool RotateX = true,
+		float RotatorX = 4,
+		bool RotateY = false,
+		float RotatorY = 0,
+		bool RotateZ = false,
+		float RotatorZ = 0,
+		bool Sway = false,
+		float SwayPeriod = 1.5,
+	},
+	HUDWater = 
+	{
+		bool DebugMode = false,
+	},
+},

@@ -1,0 +1,74 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "CheckpointEffects",
+	},
+	Archetyped = 
+	{
+		string Name = "526c149858829e9a:CheckpointEffect",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [47.6799, 1.76734, 2.69905e-006],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	SpriteParticleSystem = 
+	{
+		SystemChildMode ChildMode = Independent,
+		SystemSpace SystemSpace = WorldSpace,
+		uint DrawOrder = 0,
+		ParticleGeometry GeometryMode = Beam,
+		ParticleRenderMode RenderMode = Additive,
+		ParticleSortMode SortMode = None,
+		string Texture = "521dbf91ebf6ba2f:Texture-Bubble_0",
+		Vec4 Tint = [1, 1, 1, 1],
+		float VelocityScale = 0.1,
+		float LengthScale = 0.1,
+		float MaxParticleSize = 100,
+		Vec3 SystemSize = [1, 1, 1],
+	},
+	SphericalParticleEmitter = 
+	{
+		bool Active = false,
+		uint EmitCount = 0,
+		float EmitRate = 20,
+		float EmitVariance = 0,
+		float Size = 0.1,
+		float SizeVariance = 0.1,
+		float Lifetime = 2.5,
+		float LifetimeVariance = 0,
+		float Spin = 0,
+		float SpinVariance = 0,
+		bool RandomSpin = false,
+		float Fill = 1,
+		float EmitterVelocityPercent = 0,
+		Vec3 StartVelocity = [0, 3, 0],
+		Vec3 RandomVelocity = [2, 0, 0],
+		Vec3 TangentVelocity = [0, 0, 0],
+		Vec3 EmitterSize = [1, 1, 1],
+		bool FastMovingEmitter = false,
+	},
+	LinearParticleAnimator = 
+	{
+		Vec3 Force = [0, -5, 0],
+		Vec3 RandomForce = [0, 0, 0],
+		float Torque = 0,
+		float Growth = 0,
+		float Dampening = 0,
+		Vec3 Twist = [0, 5, 0],
+	},
+	CelebrationMessage = 
+	{
+		string EventType = "CheckpointActive",
+		bool OwnerEvent = false,
+		bool SpaceEvent = true,
+		float Duration = 2,
+		string Message = "",
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "ChangeColor",
+		uint64 ResourceId = 5216e118d8e1177b,
+	},
+},

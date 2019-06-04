@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Traction",
+		uint64 ResourceId = 52a9dfee9b87bb51,
+	},
+},

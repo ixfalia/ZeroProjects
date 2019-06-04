@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "TestHUD",
+		uint64 ResourceId = 540cb547f8e4a9f1,
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Rope",
+		uint64 ResourceId = 52b16257c06e2a31,
+	},
+},

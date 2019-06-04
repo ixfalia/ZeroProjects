@@ -1,0 +1,15 @@
+MultiMaterial = 
+{
+	MultiMaterialBlock = 
+	{
+		Array Materials = 
+		[
+			{
+				string MaterialName = "549fa7822ffe8c4f:Crystal",
+			},
+			{
+				string MaterialName = "549fa7822ffe8c4f:Crystal",
+			},
+		],
+	},
+},

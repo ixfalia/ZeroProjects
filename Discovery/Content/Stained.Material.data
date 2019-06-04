@@ -1,0 +1,13 @@
+Material = 
+{
+	Lambert = 
+	{
+	},
+	TextureDiffuse = 
+	{
+		string DiffuseTexture = "54706fda7cbf0d6e:Stained",
+		Vec2 DiffuseScroll = [1, 1],
+		Vec2 DiffuseTiling = [0.5, 0.5],
+		Vec2 DiffuseOffset = [0.5, 0.5],
+	},
+},

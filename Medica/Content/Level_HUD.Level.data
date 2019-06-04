@@ -1,0 +1,897 @@
+Level = 
+{
+	LevelSettings = 
+	{
+		LinkId = 
+		{
+			uint Id = 1,
+		},
+		Named = 
+		{
+			string Name = "LevelSettings",
+		},
+		GravityEffect = 
+		{
+			bool Active = false,
+			bool WakeUpOnChange = false,
+			bool LocalSpaceDirection = true,
+			float Strength = 10,
+			Vec3 Direction = [0, -1, 0],
+		},
+		DragEffect = 
+		{
+			bool Active = false,
+			bool WakeUpOnChange = false,
+			float Drag = 0.25,
+		},
+		CameraViewport = 
+		{
+			bool Background = false,
+			Vec2 Offset = [0, 0],
+			Vec2 Size = [1, 1],
+			int Layer = 1,
+			bool Active = true,
+			bool Blocking = true,
+			uint Renderer = 1,
+			uint Camera = 2,
+			ViewportScaling Scaling = Fill,
+			Vec2 Resolution = [1280, 720],
+			Vec4 MarginColor = [0, 0, 0, 1],
+		},
+		ForwardRenderer = 
+		{
+			Vec4 ClearColor = [0.278431, 0.278431, 0.278431, 1],
+		},
+		GameSpaceEventDispatcher = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 3,
+		},
+		Named = 
+		{
+			string Name = "EditorCamera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-1.1776, 8.15779, 48.4077],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [-0, -1.09278e-008, 0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			SpriteSort SpriteSort = ZDepth,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 500,
+			float Size = 22,
+		},
+		EditorCameraController = 
+		{
+			ControlMode ControlMode = ZPlane,
+			float LookDistance = 50,
+			float VerticalAngle = 0,
+			float HorizontalAngle = 0,
+			Vec3 LookTarget = [-1.1776, 8.15779, -1.59232],
+		},
+		EditorRenderer = 
+		{
+			Vec4 ClearColor = [0.278431, 0.278431, 0.278431, 1],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 2,
+		},
+		Named = 
+		{
+			string Name = "Camera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 40],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			SpriteSort SpriteSort = ZDepth,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 200,
+			float Size = 20,
+		},
+		Hierarchy = 
+		{
+			Cog = 
+			{
+				LinkId = 
+				{
+					uint Id = 4,
+				},
+				Named = 
+				{
+					string Name = "cameraBack",
+				},
+				Transform = 
+				{
+					Vec3 Translation = [0, 0, -42],
+					Vec3 Scale = [20, 20, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				Sprite = 
+				{
+					string SpriteSource = "5275aa4d802dd6dc:Square",
+					bool FlipX = false,
+					bool FlipY = false,
+					Vec4 Color = [0.145, 0.145, 0.145, 1],
+					bool Visible = false,
+					bool OnTop = false,
+					bool AnimationActive = true,
+					float AnimationSpeed = 1,
+					uint StartFrame = 0,
+					BlendMode BlendMode = Alpha,
+					SpriteGeometryMode GeometryMode = ZPlane,
+				},
+			},
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 5,
+		},
+		Named = 
+		{
+			string Name = "inventorybutton",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-8, -8.26422, 1],
+			Vec3 Scale = [0.4, 0.4, 0.4],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "52d178a6019a4f6a:inventory",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		MouseBox = 
+		{
+			string EventName = "MouseActivateEvent",
+			bool DetectLeftClick = true,
+			bool DetectRightClick = false,
+			bool DetectMiddleClick = false,
+			bool sendReactiveEvent = true,
+		},
+		HoverText = 
+		{
+			string Text = "Inventory",
+			string Archetype = "4faa6050b86884ec:DefaultArchetype",
+			Vec4 BackColor = [1, 1, 1, 1],
+			float Size = 1,
+			Vec3 Offset = [0, 2, 0],
+		},
+		MouseResponse = 
+		{
+			bool SimpleDarken = false,
+			bool MergeColors = true,
+			float ergePercent = 0.75,
+			Vec2 ouseSlide = [0, 0],
+			Vec4 hoverColor = [0.175, 0.175, 0.175, 1],
+			Vec4 downColor = [0, 0, 0, 1],
+			float defaultOpacity = 1,
+			string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
+			string downSound = "532389ce8033c884:PopUp",
+		},
+		InventoryUI = 
+		{
+			Vec4 BackColor = [0.0705882, 0.101961, 0.176471, 1],
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "532b04108f1c92b3:MenuSelect",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 6,
+		},
+		Named = 
+		{
+			string Name = "journalButton",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-5, -8.26422, 1],
+			Vec3 Scale = [0.4, 0.4, 0.4],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "52d178a601803272:Journal",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		MouseBox = 
+		{
+			string EventName = "MouseActivateEvent",
+			bool DetectLeftClick = true,
+			bool DetectRightClick = false,
+			bool DetectMiddleClick = false,
+			bool sendReactiveEvent = true,
+		},
+		HoverText = 
+		{
+			string Text = "Journal",
+			string Archetype = "4faa6050b86884ec:DefaultArchetype",
+			Vec4 BackColor = [1, 1, 1, 1],
+			float Size = 1,
+			Vec3 Offset = [0, 2, 0],
+		},
+		MouseResponse = 
+		{
+			bool SimpleDarken = false,
+			bool MergeColors = true,
+			float ergePercent = 0.75,
+			Vec2 ouseSlide = [0, 0],
+			Vec4 hoverColor = [0.215, 0.0774, 0.0774, 1],
+			Vec4 downColor = [0, 0, 0, 1],
+			float defaultOpacity = 1,
+			string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
+			string downSound = "532389ce8033c884:PopUp",
+		},
+		JournalUI = 
+		{
+			Vec4 BackColor = [0.462745, 0.054902, 0.0705882, 1],
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "532b04108f1c92b3:MenuSelect",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 7,
+		},
+		Named = 
+		{
+			string Name = "mapButton",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [1.2, -8.26422, 1],
+			Vec3 Scale = [0.4, 0.4, 0.4],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "52d178a601827a91:Map",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = false,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		Reactive = 
+		{
+			bool Active = false,
+			bool CaptureMouse = false,
+		},
+		MouseBox = 
+		{
+			string EventName = "MouseActivateEvent",
+			bool DetectLeftClick = true,
+			bool DetectRightClick = false,
+			bool DetectMiddleClick = false,
+			bool sendReactiveEvent = true,
+		},
+		HoverText = 
+		{
+			string Text = "Map",
+			string Archetype = "4faa6050b86884ec:DefaultArchetype",
+			Vec4 BackColor = [1, 1, 1, 1],
+			float Size = 1,
+			Vec3 Offset = [0, 2, 0],
+		},
+		MouseResponse = 
+		{
+			bool SimpleDarken = false,
+			bool MergeColors = true,
+			float ergePercent = 0.75,
+			Vec2 ouseSlide = [0, 0],
+			Vec4 hoverColor = [0.335, 0.335, 0.335, 1],
+			Vec4 downColor = [0.17, 0.17, 0.17, 1],
+			float defaultOpacity = 1,
+			string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
+			string downSound = "4e1bd44008b4dc2a:DefaultCue",
+		},
+		MapUI = 
+		{
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "52dbcc51feed1c62:BGM_Forest",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 8,
+		},
+		Named = 
+		{
+			string Name = "craftingbutton",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [4, -8.26422, 1],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "52d178a70199b418:Crafting",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = false,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		Reactive = 
+		{
+			bool Active = false,
+			bool CaptureMouse = false,
+		},
+		MouseBox = 
+		{
+			string EventName = "MouseActivateEvent",
+			bool DetectLeftClick = true,
+			bool DetectRightClick = false,
+			bool DetectMiddleClick = false,
+			bool sendReactiveEvent = true,
+		},
+		HoverText = 
+		{
+			string Text = "Crafting Tools",
+			string Archetype = "4faa6050b86884ec:DefaultArchetype",
+			Vec4 BackColor = [1, 1, 1, 1],
+			float Size = 1,
+			Vec3 Offset = [0, 2, 0],
+		},
+		MouseResponse = 
+		{
+			bool SimpleDarken = false,
+			bool MergeColors = false,
+			float ergePercent = 0.75,
+			Vec2 ouseSlide = [0, 0],
+			Vec4 hoverColor = [0.2, 0.2, 0.2, 1],
+			Vec4 downColor = [0.06, 0.06, 0.06, 1],
+			float defaultOpacity = 1,
+			string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
+			string downSound = "532389ce8033c884:PopUp",
+		},
+		CraftingUI = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 9,
+		},
+		Named = 
+		{
+			string Name = "HUDManager",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 7.3217e-008],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "4e07948c35993095:DefaultSprite",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = false,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		HUDFactory = 
+		{
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "4e1bd44008b4dc2a:DefaultCue",
+			float Volume = 0.85,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+		SoundManager = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 10,
+		},
+		Named = 
+		{
+			string Name = "journalButton",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-2, -8.26422, 1],
+			Vec3 Scale = [0.4, 0.4, 0.4],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "52dbd1251dba1022:Quest",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		MouseBox = 
+		{
+			string EventName = "MouseActivateEvent",
+			bool DetectLeftClick = true,
+			bool DetectRightClick = false,
+			bool DetectMiddleClick = false,
+			bool sendReactiveEvent = true,
+		},
+		HoverText = 
+		{
+			string Text = "Quest",
+			string Archetype = "4faa6050b86884ec:DefaultArchetype",
+			Vec4 BackColor = [1, 1, 1, 1],
+			float Size = 1,
+			Vec3 Offset = [0, 2, 0],
+		},
+		MouseResponse = 
+		{
+			bool SimpleDarken = false,
+			bool MergeColors = true,
+			float ergePercent = 0.75,
+			Vec2 ouseSlide = [0, 0],
+			Vec4 hoverColor = [0.215, 0.0774, 0.0774, 1],
+			Vec4 downColor = [0, 0, 0, 1],
+			float defaultOpacity = 1,
+			string hoverSound = "4e1bd44008b4dc2a:DefaultCue",
+			string downSound = "532389ce8033c884:PopUp",
+		},
+		QuestUI = 
+		{
+			Vec4 BackColor = [0.321569, 0.32549, 0.333333, 1],
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "532b04108f1c92b3:MenuSelect",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = true,
+		},
+		Hierarchy = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 11,
+		},
+		Named = 
+		{
+			string Name = "MessageBlocker",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [9, 8.34767, 1],
+			Vec3 Scale = [9, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "52de60ab9dd0f279:UIItem",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 12,
+		},
+		Named = 
+		{
+			string Name = "effectPlayer",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [6.9174, 1.49029, -1.59232],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "4e1bd44008b4dc2a:DefaultCue",
+			float Volume = 0.75,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 13,
+		},
+		Named = 
+		{
+			string Name = "Transform",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-13.7653, 8.91285, -1.59232],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = UpperLeft,
+			string FontName = "532d3dfe2a58d2c8:Prociono",
+			uint FontSize = 32,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			string Text = "Town Repairs:",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 14,
+		},
+		Named = 
+		{
+			string Name = "Transform",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-13.7653, 7.96662, -1.59232],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = UpperLeft,
+			string FontName = "532d3dfe2a58d2c8:Prociono",
+			uint FontSize = 32,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			string Text = "CurrentTime:",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 15,
+		},
+		Named = 
+		{
+			string Name = "Transform",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-13.7653, 7.16375, -1.59232],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = UpperLeft,
+			string FontName = "532d3dfe2a58d2c8:Prociono",
+			uint FontSize = 32,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			string Text = "Days Remaining:",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 16,
+		},
+		Named = 
+		{
+			string Name = "Transform",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-10.3531, 8.91285, -1.59232],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = UpperLeft,
+			string FontName = "532d3dfe2a58d2c8:Prociono",
+			uint FontSize = 32,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			string Text = "0 / 0",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+		HUDData = 
+		{
+			string Name = "Repairs",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 17,
+		},
+		Named = 
+		{
+			string Name = "Transform",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-10.7043, 7.96662, -1.59232],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = UpperLeft,
+			string FontName = "532d3dfe2a58d2c8:Prociono",
+			uint FontSize = 32,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			string Text = "6AM on Day 3",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+		HUDData = 
+		{
+			string Name = "CurrentTime",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 18,
+		},
+		Named = 
+		{
+			string Name = "Transform",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-10.0018, 7.16375, -1.59232],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = UpperLeft,
+			string FontName = "532d3dfe2a58d2c8:Prociono",
+			uint FontSize = 32,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			string Text = "5 Days remaining",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+		HUDData = 
+		{
+			string Name = "DaysRemaining",
+		},
+	},
+},

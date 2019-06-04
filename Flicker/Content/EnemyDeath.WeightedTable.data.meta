@@ -1,0 +1,11 @@
+DataContent = 
+{
+	DataBuilder = 
+	{
+		string Name = "EnemyDeath",
+		uint64 ResourceId = 516548bb790f464e,
+		string LoaderType = "WeightedTable",
+		uint Version = 0,
+		bool ShowInEditor = true,
+	},
+},

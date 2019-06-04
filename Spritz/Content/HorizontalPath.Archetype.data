@@ -1,0 +1,60 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "Path",
+	},
+	Archetyped = 
+	{
+		string Name = "526c509c183b3991:HorizontalPath",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [19.2893, -1.91386, 0],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "5275aa4d802dd6dc:Square",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 0.84, 0, 1],
+		bool Visible = false,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	SpacePath = 
+	{
+		bool DebugDraw = false,
+		bool ProxyObjects = false,
+		bool TransformProxies = true,
+		bool Closed = false,
+		Array ControlPoints = 
+		[
+			{
+				Vec3 Position = [0, 0, 0],
+				bool IsProxy = true,
+				uint ControlPointId = 4294967293,
+			},
+			{
+				Vec3 Position = [-15, 0, 0],
+				bool IsProxy = true,
+				uint ControlPointId = 4294967293,
+			},
+		],
+		uint Resolution = 10,
+		string PathResource = "526c5baaa5129320:Horizontal",
+	},
+	Hierarchy = 
+	{
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "LightFade",
+		uint64 ResourceId = 54aba9be2d5cc1f7,
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Rotator",
+		uint64 ResourceId = 5240fed203082edb,
+	},
+},

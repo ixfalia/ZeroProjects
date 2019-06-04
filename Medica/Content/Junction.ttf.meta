@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "Junction",
+		uint64 ResourceId = 532d32c4a3c37890,
+	},
+},

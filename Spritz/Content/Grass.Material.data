@@ -1,0 +1,16 @@
+Material = 
+{
+	Lambert = 
+	{
+	},
+	AutoMapping = 
+	{
+	},
+	TextureDiffuse = 
+	{
+		string DiffuseTexture = "52731749c2988c7b:Grass",
+		Vec2 DiffuseScroll = [0, 0],
+		Vec2 DiffuseTiling = [3, 3],
+		Vec2 DiffuseOffset = [0, 0],
+	},
+},

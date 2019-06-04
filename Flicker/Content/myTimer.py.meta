@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "myTimer",
+		uint64 ResourceId = 510d6d56d67f8f9e,
+	},
+},

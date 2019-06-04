@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Orbit",
+		uint64 ResourceId = 54707e4aa561e636,
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "FeverEffect",
+		uint64 ResourceId = 52a7eacc130c13d6,
+	},
+},

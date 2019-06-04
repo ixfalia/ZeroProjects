@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Scalerator",
+		uint64 ResourceId = 540cbffa1bd72b34,
+	},
+},

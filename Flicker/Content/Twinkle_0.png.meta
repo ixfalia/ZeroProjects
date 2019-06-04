@@ -1,0 +1,15 @@
+ImageContent = 
+{
+	TextureBuilder = 
+	{
+		string Name = "Twinkle_0",
+		uint64 ResourceId = 511565bb6572131c,
+		string Layer = "",
+		OutputTextureFormat Format = RGBA8,
+		FixPowerOf2 FixPowerOf2 = Auto,
+		ImageFilter ResizeFilter = Cubic,
+		bool GenerateMipMaps = true,
+		bool NormalizeMips = false,
+		ImageFilter MipFilter = Cubic,
+	},
+},

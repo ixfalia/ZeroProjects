@@ -1,0 +1,30 @@
+Material = 
+{
+	Lambert = 
+	{
+	},
+	EmissiveMapping = 
+	{
+		float EmissiveScale = 0.2,
+		string EmissiveMapTexture = "4fab71e8bcb7a8ce:DefaultTexture",
+		Vec2 EmissiveScroll = [0, 0],
+		Vec2 EmissiveTiling = [1, 1],
+		Vec2 EmissiveOffset = [0, 0],
+	},
+	Transparency = 
+	{
+		MaterialBlendMode BlendMode = Additive,
+		bool CastShadow = true,
+	},
+	ColorDiffuse = 
+	{
+		Vec4 DiffuseColor = [0.55, 0.9325, 1, 1],
+	},
+	TextureDiffuse = 
+	{
+		string DiffuseTexture = "4fab71e8bcb7a8ce:DefaultTexture",
+		Vec2 DiffuseScroll = [0, 0],
+		Vec2 DiffuseTiling = [1, 1],
+		Vec2 DiffuseOffset = [0, 0],
+	},
+},

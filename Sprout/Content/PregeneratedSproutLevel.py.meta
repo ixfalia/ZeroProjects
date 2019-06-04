@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "PregeneratedSproutLevel",
+		uint64 ResourceId = 52a214208b613c04,
+	},
+},

@@ -1,0 +1,93 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "face",
+	},
+	Archetyped = 
+	{
+		string Name = "5286a6945966b682:ChubbyIcon",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [21.441, -1.5045, 1],
+		Vec3 Scale = [0.45, 0.45, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "526de86b0eed9659:ChubbyFaceHappy",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	Hierarchy = 
+	{
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 2,
+			},
+			Named = 
+			{
+				string Name = "petal",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [-7.62939e-006, 0, -1],
+				Vec3 Scale = [0.777778, 0.777778, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				string SpriteSource = "526de86b0ee88401:ChubbyPetal",
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [1, 1, 1, 1],
+				bool Visible = true,
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+			},
+			Rotator = 
+			{
+				bool RotateX = false,
+				float RotatorX = 0,
+				bool RotateY = false,
+				float RotatorY = 0,
+				bool RotateZ = true,
+				float RotatorZ = 2,
+				bool Sway = false,
+				float SwayPeriod = 1.5,
+			},
+			ChangeColor = 
+			{
+				bool DebugMode = false,
+				Vec4 NewColor = [0.82, 0.0287, 0.0287, 1],
+				bool RandomColor = true,
+				bool RandomColorAtStart = false,
+				bool ColorShifting = true,
+				float ShiftTime = 1,
+				string AnotherSprite = "4e07948c35993095:DefaultSprite",
+				string DetectEventType = "",
+				bool SpaceEvent = false,
+				bool OwnerEvent = true,
+			},
+		},
+	},
+},

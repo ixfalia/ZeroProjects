@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "HUDFlowerText",
+		uint64 ResourceId = 521591b1694641db,
+	},
+},

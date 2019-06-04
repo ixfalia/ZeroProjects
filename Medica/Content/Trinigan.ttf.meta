@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "Trinigan",
+		uint64 ResourceId = 52d462359819619c,
+	},
+},

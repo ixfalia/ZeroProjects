@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "sproutSunflower",
+		uint64 ResourceId = 524733a66c29f6b1,
+	},
+},

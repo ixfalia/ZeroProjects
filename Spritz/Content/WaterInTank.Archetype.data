@@ -1,0 +1,28 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "UITank",
+	},
+	Archetyped = 
+	{
+		string Name = "4faa6050b86884ec:DefaultArchetype",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-5.44566, -8.39498, 1],
+		Vec3 Scale = [1, 7, 1],
+		Quat Rotation = [0, 0, 0.707107, 0.707107],
+	},
+	Model = 
+	{
+		string MaterialName = "5216c11fa27b6737:Water",
+		string MeshName = "4de0354322b345ae:Cube",
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+	},
+},

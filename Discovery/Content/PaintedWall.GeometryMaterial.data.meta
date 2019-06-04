@@ -1,0 +1,11 @@
+DataContent = 
+{
+	DataBuilder = 
+	{
+		string Name = "PaintedWall",
+		uint64 ResourceId = 547180f16279b333,
+		string LoaderType = "GeometryMaterial",
+		uint Version = 0,
+		bool ShowInEditor = true,
+	},
+},

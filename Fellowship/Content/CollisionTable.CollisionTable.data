@@ -1,0 +1,54 @@
+CollisionTable = 
+{
+	Array RegisteredGroups = 
+	[
+		"4e740859314e5515:DefaultGroup",
+		"546c27dbe03e27b9:Food",
+		"546c262de54223e3:Pet",
+		"546d90f0a93fd3a7:Trigger",
+	],
+	Array CollisionFilters = 
+	[
+		{
+			string TypeA = "546d90f0a93fd3a7:Trigger",
+			string TypeB = "546d90f0a93fd3a7:Trigger",
+			bool SkipResolution = false,
+			bool SkipDetectingCollision = true,
+			bool StartEvent = false,
+			bool EndEvent = false,
+			bool PersistedEvent = false,
+			bool PreSolveEvent = false,
+		},
+		{
+			string TypeA = "546c27dbe03e27b9:Food",
+			string TypeB = "546d90f0a93fd3a7:Trigger",
+			bool SkipResolution = true,
+			bool SkipDetectingCollision = false,
+			bool StartEvent = false,
+			bool EndEvent = false,
+			bool PersistedEvent = false,
+			bool PreSolveEvent = false,
+		},
+		{
+			string TypeA = "546c27dbe03e27b9:Food",
+			string TypeB = "546c262de54223e3:Pet",
+			bool SkipResolution = false,
+			bool SkipDetectingCollision = false,
+			bool StartEvent = false,
+			bool EndEvent = false,
+			bool PersistedEvent = false,
+			bool PreSolveEvent = false,
+		},
+		{
+			string TypeA = "546c27dbe03e27b9:Food",
+			string TypeB = "546c27dbe03e27b9:Food",
+			bool SkipResolution = true,
+			bool SkipDetectingCollision = false,
+			bool StartEvent = false,
+			bool EndEvent = false,
+			bool PersistedEvent = false,
+			bool PreSolveEvent = false,
+		},
+	],
+	bool AutoRegister = true,
+},

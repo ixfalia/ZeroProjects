@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "EnumDeclarations",
+		uint64 ResourceId = 54ead43dbc8da388,
+	},
+},

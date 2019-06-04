@@ -1,0 +1,75 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "Sprite",
+	},
+	Archetyped = 
+	{
+		string Name = "526d0067fd13270c:BasicPath",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [35.9251, 6.55321, 3.6946e-006],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "5275aa4d802dd6dc:Square",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = false,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	SpacePath = 
+	{
+		bool DebugDraw = true,
+		bool ProxyObjects = false,
+		bool TransformProxies = true,
+		bool Closed = false,
+		Array ControlPoints = 
+		[
+			{
+				Vec3 Position = [0, 0, 0],
+				bool IsProxy = true,
+				uint ControlPointId = 4294967293,
+			},
+			{
+				Vec3 Position = [6, 0, 0],
+				bool IsProxy = true,
+				uint ControlPointId = 4294967293,
+			},
+			{
+				Vec3 Position = [9, -1, 0],
+				bool IsProxy = true,
+				uint ControlPointId = 4294967293,
+			},
+			{
+				Vec3 Position = [12, 1, 0],
+				bool IsProxy = true,
+				uint ControlPointId = 4294967293,
+			},
+			{
+				Vec3 Position = [15, 3, 0],
+				bool IsProxy = true,
+				uint ControlPointId = 4294967293,
+			},
+		],
+		uint Resolution = 10,
+		string PathResource = "521de1fd95c78f40:Floating",
+	},
+	Hierarchy = 
+	{
+	},
+},

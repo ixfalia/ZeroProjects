@@ -1,0 +1,577 @@
+Level = 
+{
+	LevelSettings = 
+	{
+		LinkId = 
+		{
+			uint Id = 1,
+		},
+		Named = 
+		{
+			string Name = "LevelSettings",
+		},
+		GravityEffect = 
+		{
+			bool Active = false,
+			bool WakeUpOnChange = false,
+			bool LocalSpaceDirection = true,
+			float Strength = 10,
+			Vec3 Direction = [0, -1, 0],
+		},
+		DragEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			float Drag = 0.7,
+		},
+		CameraViewport = 
+		{
+			bool Background = true,
+			Vec2 Offset = [0, 0],
+			Vec2 Size = [1, 1],
+			int Layer = 0,
+			bool Active = true,
+			bool Blocking = true,
+			uint Renderer = 1,
+			uint Camera = 2,
+			ViewportScaling Scaling = Fill,
+			Vec2 Resolution = [1280, 720],
+			Vec4 MarginColor = [0, 0, 0, 1],
+		},
+		ForwardRenderer = 
+		{
+			Vec4 ClearColor = [0.155, 0.155, 0.155, 1],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 3,
+		},
+		Named = 
+		{
+			string Name = "EditorCamera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 50],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [-0, -1.09278e-008, 0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			SpriteSort SpriteSort = ZDepth,
+			string SpriteLayerOrder = "52b23ad3c402d436:DefaultSpriteLayerOrder",
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 500,
+			float Size = 34,
+		},
+		EditorCameraController = 
+		{
+			ControlMode ControlMode = ZPlane,
+			float LookDistance = 50,
+			float VerticalAngle = 0,
+			float HorizontalAngle = 0,
+			Vec3 LookTarget = [0, 0, 0],
+		},
+		EditorRenderer = 
+		{
+			Vec4 ClearColor = [0.155, 0.155, 0.155, 1],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 2,
+		},
+		Named = 
+		{
+			string Name = "Camera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 20],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			SpriteSort SpriteSort = ViewDepth,
+			string SpriteLayerOrder = "52b23ad3c402d436:DefaultSpriteLayerOrder",
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 200,
+			float Size = 20,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 4,
+		},
+		Named = 
+		{
+			string Name = "Lamp",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0.349508, 3.66008, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5275aa4d802dd6dc:Square",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "545e022a8a30eefe:KeyNode",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = true,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Light = 
+		{
+			LightType LightType = Point,
+			bool Active = true,
+			float Range = 10,
+			float MinRange = 2,
+			float Angle = 45,
+			float Intensity = 1.57,
+			Vec4 Color = [1, 1, 1, 1],
+			float MinRange = 2,
+			float Size = 20,
+			bool Baked = false,
+		},
+		Inventory = 
+		{
+			string StartingInventory = "KeyOrb: 1",
+			int ItemMax = 1,
+			int MaxCapacity = 1,
+		},
+		TextParser = 
+		{
+		},
+		Shadow = 
+		{
+			Quality Quality = HighQuality,
+			ShadowType ShadowType = Esm,
+			bool SoftShadows = true,
+			float Size = 2,
+			uint Splits = 1,
+			uint CurrentSplit = 0,
+			float PaddingScaler = 0.3,
+			Vec4 Color = [0, 0, 0, 1],
+			bool Active = true,
+		},
+		KeyNode = 
+		{
+			bool Active = true,
+		},
+		LightPulse = 
+		{
+			float LightOn = 0.5,
+			float LightOff = 0.5,
+			float FadeTime = 0.5,
+			float defaultIntensity = -1,
+			bool StartsOn = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 5,
+		},
+		Named = 
+		{
+			string Name = "Light",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [4.17, 1.37, -0.000999817],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Light = 
+		{
+			LightType LightType = Directional,
+			bool Active = true,
+			float Range = 50,
+			float MinRange = 2,
+			float Angle = 10,
+			float Intensity = 0.3,
+			Vec4 Color = [1, 1, 1, 1],
+			float MinRange = 2,
+			float Size = 20,
+			bool Baked = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 6,
+		},
+		Named = 
+		{
+			string Name = "Lamp",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [6.2861, 3.66008, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5275aa4d802dd6dc:Square",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "545e022a8a30eefe:KeyNode",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = true,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Light = 
+		{
+			LightType LightType = Point,
+			bool Active = true,
+			float Range = 10,
+			float MinRange = 2,
+			float Angle = 45,
+			float Intensity = 1.57,
+			Vec4 Color = [1, 1, 1, 1],
+			float MinRange = 2,
+			float Size = 20,
+			bool Baked = false,
+		},
+		Inventory = 
+		{
+			string StartingInventory = "",
+			int ItemMax = 1,
+			int MaxCapacity = 1,
+		},
+		TextParser = 
+		{
+		},
+		Shadow = 
+		{
+			Quality Quality = HighQuality,
+			ShadowType ShadowType = Esm,
+			bool SoftShadows = true,
+			float Size = 1,
+			uint Splits = 1,
+			uint CurrentSplit = 0,
+			float PaddingScaler = 0.3,
+			Vec4 Color = [0, 0, 0, 1],
+			bool Active = true,
+		},
+		KeyNode = 
+		{
+			bool Active = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 7,
+		},
+		Named = 
+		{
+			string Name = "Lamp",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-4.03968, 3.66008, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5275aa4d802dd6dc:Square",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "545e022a8a30eefe:KeyNode",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = true,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Light = 
+		{
+			LightType LightType = Point,
+			bool Active = true,
+			float Range = 10,
+			float MinRange = 2,
+			float Angle = 45,
+			float Intensity = 1.57,
+			Vec4 Color = [1, 1, 1, 1],
+			float MinRange = 2,
+			float Size = 20,
+			bool Baked = false,
+		},
+		Inventory = 
+		{
+			string StartingInventory = "",
+			int ItemMax = 1,
+			int MaxCapacity = 1,
+		},
+		TextParser = 
+		{
+		},
+		Shadow = 
+		{
+			Quality Quality = HighQuality,
+			ShadowType ShadowType = Esm,
+			bool SoftShadows = true,
+			float Size = 1,
+			uint Splits = 1,
+			uint CurrentSplit = 0,
+			float PaddingScaler = 0.3,
+			Vec4 Color = [0, 0, 0, 1],
+			bool Active = true,
+		},
+		KeyNode = 
+		{
+			bool Active = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 8,
+		},
+		Named = 
+		{
+			string Name = "Player",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0.120001, -0.385, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5274db4c2e7c11f9:Circle",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.68, 0.4862, 0.4862, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+		},
+		PlayerLogic = 
+		{
+		},
+		MovementController = 
+		{
+			bool Active = true,
+			bool UseDelta = true,
+			float MovementScalar = 10,
+		},
+		KeyboardController = 
+		{
+			bool Active = true,
+			bool Debug = false,
+		},
+		GamepadController = 
+		{
+			bool Active = true,
+		},
+		Inventory = 
+		{
+			string StartingInventory = "",
+			int ItemMax = 64,
+			int MaxCapacity = 1,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "545e02906c819580:Player",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 0.5,
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Light = 
+		{
+			LightType LightType = Point,
+			bool Active = true,
+			float Range = 2,
+			float MinRange = 2,
+			float Angle = 45,
+			float Intensity = 0.5,
+			Vec4 Color = [1, 1, 1, 1],
+			float MinRange = 2,
+			float Size = 20,
+			bool Baked = false,
+		},
+		Shadow = 
+		{
+			Quality Quality = HighQuality,
+			ShadowType ShadowType = Esm,
+			bool SoftShadows = true,
+			float Size = 2,
+			uint Splits = 1,
+			uint CurrentSplit = 0,
+			float PaddingScaler = 0.3,
+			Vec4 Color = [0, 0, 0, 1],
+			bool Active = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 9,
+		},
+		Named = 
+		{
+			string Name = "Cube",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, -2],
+			Vec3 Scale = [25.418, 25.418, 2],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Model = 
+		{
+			string MaterialName = "4de020863e816dde:Grid",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+	},
+},

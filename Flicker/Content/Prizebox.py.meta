@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Prizebox",
+		uint64 ResourceId = 5166f598c8f57067,
+	},
+},

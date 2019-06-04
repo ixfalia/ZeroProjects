@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "LevelDataUpdater",
+		uint64 ResourceId = 5282c0819b732b2c,
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Damager",
+		uint64 ResourceId = 520eff3c86d6cc1c,
+	},
+},

@@ -1,0 +1,18 @@
+Cog = 
+{
+	Project = 
+	{
+		string ProjectName = "Medica",
+		string ProjectOwner = "",
+		string DefaultLevel = "Level",
+		string ProjectSpace = "GameSpace",
+		uint ProjectEngineRevision = 8256,
+	},
+	EditorSettings = 
+	{
+		EditorMode EditorMode = Mode2D,
+		float DefaultPixelsPerUnit = 64,
+		bool SpriteSmoothing = true,
+		float DefaultImportScale = 1,
+	},
+},

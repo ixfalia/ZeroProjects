@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "LightActivator",
+		uint64 ResourceId = 547aff42cdcc3db9,
+	},
+},

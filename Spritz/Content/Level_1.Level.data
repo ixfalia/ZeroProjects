@@ -1,0 +1,5757 @@
+Level = 
+{
+	LevelSettings = 
+	{
+		LinkId = 
+		{
+			uint Id = 1,
+		},
+		Named = 
+		{
+			string Name = "LevelSettings",
+		},
+		Archetyped = 
+		{
+			string Name = "5272962df4bc1ed5:DefaultLevelSettings",
+		},
+		GravityEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			bool LocalSpaceDirection = true,
+			float Strength = 10,
+			Vec3 Direction = [0, -1, 0],
+		},
+		DragEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			float Drag = 0.7,
+		},
+		ForwardRenderer = 
+		{
+			Vec4 ClearColor = [0.278431, 0.278431, 0.278431, 1],
+		},
+		HUDMaker = 
+		{
+			bool DebugMode = true,
+			string HUDLevel = "520e0ac1b9f0c170:HUD",
+		},
+		CameraViewport = 
+		{
+			bool Background = false,
+			Vec2 Offset = [0, 0],
+			Vec2 Size = [1, 1],
+			uint Layer = 0,
+			bool Active = true,
+			bool Blocking = false,
+			uint Renderer = 1,
+			uint Camera = 2,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 3,
+		},
+		Named = 
+		{
+			string Name = "EditorCamera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [260.195, -4.515, 50],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, -0, -0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			SpriteSort SpriteSort = ZDepth,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 500,
+			float Size = 44,
+		},
+		EditorCameraController = 
+		{
+			ControlMode ControlMode = ZPlane,
+			float LookDistance = 50,
+			float VerticalAngle = 0,
+			float HorizontalAngle = 0,
+			Vec3 LookTarget = [260.195, -4.515, 1.13734e-005],
+		},
+		EditorRenderer = 
+		{
+			Vec4 ClearColor = [0.278431, 0.278431, 0.278431, 1],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 4,
+		},
+		Named = 
+		{
+			string Name = "TileMap",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		MultiSprite = 
+		{
+		},
+		TileMap = 
+		{
+			string SourceName = "5272a7fcbf790388:Level_1_TileMap01",
+			float UnitsPerTile = 1,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 2,
+		},
+		Named = 
+		{
+			string Name = "myCamera",
+		},
+		Archetyped = 
+		{
+			string Name = "5272972d0c6c7c50:LevelCamera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [2.51685, -0.37258, 40],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			SpriteSort SpriteSort = ZDepth,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 200,
+			float Size = 20,
+		},
+		CameraController = 
+		{
+			bool DebugMode = false,
+			bool Freeze = false,
+			uint targetObject = 5,
+			uint startingTarget = 6,
+			float ZValue = 40,
+			bool goalViewing = true,
+			float viewtime = 1.5,
+			float traveltime = 5,
+		},
+		CameraGroupFocuser = 
+		{
+			Vec3 PlaneNormal = [-0, -0, -1],
+			float PlaneDistanceScalar = 1,
+			float PlaneDistanceConstant = 10,
+			float MinDistance = 20,
+			float Smoothness = 0.6,
+			float TranslationSmoothness = 0.593023,
+			Vec3 PositionOffset = [0, 0, 0],
+			bool ControlsOrientation = true,
+		},
+		CameraViewport = 
+		{
+			bool Background = true,
+			Vec2 Offset = [0, 0],
+			Vec2 Size = [1, 1],
+			uint Layer = 0,
+			bool Active = true,
+			bool Blocking = false,
+			uint Renderer = 1,
+			uint Camera = 2,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 5,
+		},
+		Named = 
+		{
+			string Name = "MainCharacter",
+		},
+		Archetyped = 
+		{
+			string Name = "526d0005f19169c6:Player",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0.981191, -2.55896, 0],
+			Vec3 Scale = [2, 2, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520eff6a8d6f1e7e:MainCharacter",
+			bool FlipX = true,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = true,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		CapsuleCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "52151fb078f175b7:Basic",
+			string SerializedGroupName = "5217ab189ff2aa2b:Player",
+			Vec3 Offset = [0, -0.08, 0],
+			float Radius = 0.5,
+			float Height = 0.0001,
+			uint Direction = 1,
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = true,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		GamepadController = 
+		{
+			bool DebugMode = true,
+			bool Paused = false,
+			float deadzone = 0.2,
+			bool disableControlPad = false,
+		},
+		WaterTank = 
+		{
+			bool DebugMode = false,
+			float Tank = 1,
+			float MinimumWater = 0.2,
+			float MaximumWater = 1,
+			bool Replenishing = true,
+			float ReplenishingLimit = 0.21,
+			bool UnlimitedWater = false,
+		},
+		MovementController = 
+		{
+			bool DebugMode = false,
+			float JumpStrength = 10,
+			float GroundForgiveness = 1,
+			float MovementStrength = 12,
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216ad1950454d15:Spray",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+		Sprinkler = 
+		{
+			bool DebugMode = false,
+			float SpraySpeed = 0.025,
+			bool AutoSpray = false,
+			float SprayDuration = 0.5,
+			float SprayDelay = 1.5,
+			Vec2 SprayInDirection = [1, 1],
+		},
+		SoundManager = 
+		{
+			bool DebugMode = false,
+			int MaxSoundLimit = 50,
+			float SoundLimit = 0.25,
+		},
+		Player = 
+		{
+			float DeathLength = 3,
+		},
+		PointsCounter = 
+		{
+			bool DebugMode = false,
+			uint Points = 0,
+		},
+		Teleport = 
+		{
+			bool DebugMode = true,
+			Vec2 Checkpoint = [0, 0],
+			uint CurrentCheckpoint = 0,
+		},
+		HUDEventDispatcher = 
+		{
+		},
+		GravityEffect = 
+		{
+			bool Active = false,
+			bool WakeUpOnChange = false,
+			bool LocalSpaceDirection = false,
+			float Strength = 0,
+			Vec3 Direction = [0, -1, 0],
+		},
+		DragEffect = 
+		{
+			bool Active = false,
+			bool WakeUpOnChange = false,
+			float Drag = 0.8,
+		},
+		Microphone = 
+		{
+			bool Active = true,
+		},
+		GamepadDispatcher = 
+		{
+			bool DebugMode = false,
+			bool DisableControl = false,
+			float deadzone = 0.8,
+		},
+		Cheater = 
+		{
+			bool CheatModeActive = false,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "526d00eaeccb78f2:Goal",
+		LinkId = 
+		{
+			uint Id = 6,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [307.433, -43.5124, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "EndGoal",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 7,
+		},
+		Named = 
+		{
+			string Name = "Start",
+		},
+		Archetyped = 
+		{
+			string Name = "526d00aa1afdff2c:StartingPoint",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [5.62173, -1.19645, 0],
+			Vec3 Scale = [0.5, 0.5, 0.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520eff6c8d5a619c:CheckpointUnused",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = false,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		Checkpoint = 
+		{
+			bool DebugMode = true,
+			uint ID = 0,
+			Vec2 Position = [0, 0],
+			bool isUsed = false,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217aaa5614a18de:Checkpoint",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [2, 6, 2],
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216e5d72aa0229b:Flower",
+			float Volume = 0.65,
+			float Pitch = 2,
+			bool Positional = true,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 8,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [26.9455, -0.717772, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 9,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [26.9455, 0.873627, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 10,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [26.9455, 2.59764, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 11,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [26.9455, 4.52058, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "52737503a396ba82:BlueCoin",
+		LinkId = 
+		{
+			uint Id = 12,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [26.9455, 6.3109, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "52737503a396ba82:BlueCoin",
+		LinkId = 
+		{
+			uint Id = 13,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [26.9455, 8.16753, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "52737503a396ba82:BlueCoin",
+		LinkId = 
+		{
+			uint Id = 14,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [27.8738, 9.82524, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 15,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [29.7967, 9.89155, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 16,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [32.5476, 9.89155, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 17,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [34.148, 9.89155, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 18,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [35.8719, 9.89155, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 19,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [32.5477, 11.2177, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 20,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [35.8719, 11.2177, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 21,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [34.148, 11.2177, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 22,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-14.019, 4.6532, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 23,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-14.019, 1.53671, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 24,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-14.019, 8.03492, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "52737503a396ba82:BlueCoin",
+		LinkId = 
+		{
+			uint Id = 25,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-14.019, 9.56, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "52737503a396ba82:BlueCoin",
+		LinkId = 
+		{
+			uint Id = 26,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-14.019, 6.24459, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5216d863499fe905:WaterWheel",
+		LinkId = 
+		{
+			uint Id = 27,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-26.5582, 18.309, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Flower",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "52737503a396ba82:BlueCoin",
+		LinkId = 
+		{
+			uint Id = 28,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-14.019, -0.262576, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "52737503a396ba82:BlueCoin",
+		LinkId = 
+		{
+			uint Id = 29,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-14.019, 3.19441, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5216d863499fe905:WaterWheel",
+		LinkId = 
+		{
+			uint Id = 30,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [77.8504, 15.4846, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Flower",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 31,
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+		Archetyped = 
+		{
+			string Name = "52737503a396ba82:BlueCoin",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-14.019, 12.8351, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "527372ca9c4ed583:MoonCollectible",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 0.8],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217ab7799116ab9:Collectible",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 0.2,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Collectible = 
+		{
+			bool DebugMode = false,
+			string Type = "replenish",
+			float PrizeStrength = 0.3,
+			float Timing = 5,
+			float Lifetime = 0,
+			bool Blinking = false,
+			float BlinkDuration = 1.5,
+			uint BlinkNumber = 4,
+			string respawnOnEvent = "",
+		},
+		Rotator = 
+		{
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 1.3,
+			bool Sway = false,
+			float SwayPeriod = 1.5,
+		},
+		HUDEventDispatcher = 
+		{
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216b2fc72880ba3:Coin",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 32,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-14.019, -0.253613, 0.01],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 33,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-14.019, 3.20159, 0.01],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 34,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-14.019, 11.2123, 0.01],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "52737503a396ba82:BlueCoin",
+		LinkId = 
+		{
+			uint Id = 35,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [26.9455, 2.5833, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 36,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-6.45636, 0.104999, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 37,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-4.62303, -0.728334, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 38,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-8.45636, -0.728334, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 39,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-0.387838, 14.5403, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 40,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-0.387838, 12.9489, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 41,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-0.387838, 9.9489, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 42,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-0.387838, 11.5403, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 43,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-1.16562, 15.7625, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5271b8fbc95c5eb0:ArrowSign",
+		LinkId = 
+		{
+			uint Id = 44,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [10.7325, -3.46556, 0],
+			Vec3 Scale = [1.5, 1.5, 1.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "arrowSign",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 45,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [13.9921, -1.50452, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 46,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [15.5924, -1.50452, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 47,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [17.3163, -1.50452, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 48,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [17.1547, 0.327222, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 49,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [18.9881, 0.882778, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 50,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [15.1547, 0.882778, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521dc79222fed2fb:Fountain",
+		LinkId = 
+		{
+			uint Id = 51,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-20.6065, 13.9502, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Fountain",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 52,
+		},
+		Named = 
+		{
+			string Name = "sign",
+		},
+		Archetyped = 
+		{
+			string Name = "5273183a51c9de15:InfoSign",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [50.4128, 8.65619, 3.8147e-006],
+			Vec3 Scale = [1.5, 1.5, 2],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520eff6b8d60bfd1:InfoSign",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0.5, 0],
+			Vec3 Size = [1.5, 1, 1],
+		},
+		Sign = 
+		{
+			bool DebugMode = false,
+			bool TypeTrigger = false,
+			float TriggerTimeDelay = 0,
+			bool TypeControlDown = true,
+			bool TypeControlA = false,
+			bool TypeAuto = false,
+			bool TypeOnGameStart = false,
+			bool TypeOnSpaceEvent = false,
+			bool TypeOnOwnerEvent = false,
+			string EventType = "",
+			string MenuType = "52733e2f11a2edf4:Menu_SprayObjects",
+			string SpriteMenu = "52728d8b953f8c47:HelpJumpBoost2",
+			Vec3 MenuOffset = [0, 3, 1],
+		},
+		HoverSprite = 
+		{
+			string Sprite = "5273684ac0547530:MoveRight",
+			Vec3 Offset = [0, 2.75, 0.5],
+			Vec3 Rotate = [0, 0, -90],
+			Vec3 Scale = [0.6, 0.6, 0.6],
+			float FadeInTime = 0.5,
+			float FadeOutTime = 0.5,
+			string EventType = "",
+			float Duration = 1.5,
+			bool SpaceEvent = true,
+			bool OwnerEvent = false,
+			float Delay = 0,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521dc79222fed2fb:Fountain",
+		LinkId = 
+		{
+			uint Id = 53,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [52.3075, 7.95378, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Fountain",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 54,
+		},
+		Named = 
+		{
+			string Name = "Vertical",
+		},
+		Archetyped = 
+		{
+			string Name = "526c1f15fec75035:VerticalPath",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [49.3101, -3.40463, 3.8147e-006],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5275aa4d802dd6dc:Square",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.975, 0.96525, 0, 1],
+			bool Visible = false,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SpacePath = 
+		{
+			bool DebugDraw = false,
+			bool ProxyObjects = false,
+			bool TransformProxies = true,
+			bool Closed = false,
+			Array ControlPoints = 
+			[
+				{
+					Vec3 Position = [0, 1, 0],
+					bool IsProxy = true,
+					uint ControlPointId = 4294967293,
+				},
+				{
+					Vec3 Position = [0, 10, 0],
+					bool IsProxy = true,
+					uint ControlPointId = 4294967293,
+				},
+			],
+			uint Resolution = 10,
+			string PathResource = "526cdce76fa2f222:Vertical",
+		},
+		Hierarchy = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 55,
+		},
+		Named = 
+		{
+			string Name = "platform",
+		},
+		Archetyped = 
+		{
+			string Name = "52737b4ac370a28a:MovingPlatform",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [56.5037, -1.46914, 3.8147e-006],
+			Vec3 Scale = [3, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = true,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Model = 
+		{
+			string MaterialName = "527316cedd8b8264:Grass",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+		},
+		PathFollower = 
+		{
+			string PathResourceName = "526cdce76fa2f222:Vertical",
+			float TimeToTake = 4,
+			Vec3 LocalFollowPoint = [0, 0, 0],
+			EndCondition EndCondition = Reverse,
+			Positioning Positioning = Relative,
+			bool Paused = false,
+			bool StartAtBeginning = true,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 56,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [58.2842, 11.9704, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 57,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [60.0081, 11.9704, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 58,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [56.6839, 11.9704, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 59,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [55.1786, 11.2679, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 60,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [63.1694, 12.1711, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 61,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [61.4957, 11.9704, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 62,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [80.8483, 15.338, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 63,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [75.092, 15.338, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 64,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [85.8649, 6.56001, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 65,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [85.8649, 11.1514, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 66,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [85.0871, 12.3736, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 67,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [85.8649, 9.56001, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 68,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [85.8649, 8.15141, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 69,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [85.8649, 3.38976, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 70,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [85.8649, 4.98116, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 71,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [124.765, -3.77154, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 72,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [129.576, -3.77154, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 73,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [128.089, -3.77154, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 74,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [126.365, -3.77154, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 75,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [131.25, -3.78231, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 76,
+		},
+		Named = 
+		{
+			string Name = "sign",
+		},
+		Archetyped = 
+		{
+			string Name = "5273183a51c9de15:InfoSign",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [102.366, -4.40295, -0.01],
+			Vec3 Scale = [1.5, 1.5, 2],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520eff6b8d60bfd1:InfoSign",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0.5, 0],
+			Vec3 Size = [1.5, 1, 1],
+		},
+		Sign = 
+		{
+			bool DebugMode = false,
+			bool TypeTrigger = false,
+			float TriggerTimeDelay = 0,
+			bool TypeControlDown = true,
+			bool TypeControlA = false,
+			bool TypeAuto = false,
+			bool TypeOnGameStart = false,
+			bool TypeOnSpaceEvent = false,
+			bool TypeOnOwnerEvent = false,
+			string EventType = "",
+			string MenuType = "52733e2f11a2edf4:Menu_SprayObjects",
+			string SpriteMenu = "5271cbfdd45f1e72:HelpSpikes",
+			Vec3 MenuOffset = [0, 3, 1],
+		},
+		HoverSprite = 
+		{
+			string Sprite = "5273684ac0547530:MoveRight",
+			Vec3 Offset = [0, 2.75, 0.5],
+			Vec3 Rotate = [0, 0, -90],
+			Vec3 Scale = [0.6, 0.6, 0.6],
+			float FadeInTime = 0.5,
+			float FadeOutTime = 0.5,
+			string EventType = "",
+			float Duration = 1.5,
+			bool SpaceEvent = true,
+			bool OwnerEvent = false,
+			float Delay = 0,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 77,
+		},
+		Named = 
+		{
+			string Name = "Checkpoint",
+		},
+		Archetyped = 
+		{
+			string Name = "5215fd450f0a3bd9:Checkpoint",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [96.0813, -1.70746, -0.01],
+			Vec3 Scale = [0.5, 0.5, 0.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520eff6c8d5a619c:CheckpointUnused",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		Checkpoint = 
+		{
+			bool DebugMode = true,
+			uint ID = 2,
+			Vec2 Position = [0, 0],
+			bool isUsed = false,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217aaa5614a18de:Checkpoint",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [2, 6, 2],
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216e5d72aa0229b:Flower",
+			float Volume = 0.65,
+			float Pitch = 2,
+			bool Positional = true,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 78,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [152.705, -4.91849, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 79,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [157.517, -4.91849, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 80,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [156.03, -4.91849, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 81,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [151.2, -5.62099, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 82,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [154.306, -4.91849, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 83,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [159.191, -4.71779, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5216d863499fe905:WaterWheel",
+		LinkId = 
+		{
+			uint Id = 84,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [163.363, -12.8451, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Flower",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 85,
+		},
+		Named = 
+		{
+			string Name = "Checkpoint",
+		},
+		Archetyped = 
+		{
+			string Name = "5215fd450f0a3bd9:Checkpoint",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [178.741, -9.0623, -0.01],
+			Vec3 Scale = [0.5, 0.5, 0.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520eff6c8d5a619c:CheckpointUnused",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		Checkpoint = 
+		{
+			bool DebugMode = true,
+			uint ID = 3,
+			Vec2 Position = [0, 0],
+			bool isUsed = false,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217aaa5614a18de:Checkpoint",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [2, 6, 2],
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216e5d72aa0229b:Flower",
+			float Volume = 0.65,
+			float Pitch = 2,
+			bool Positional = true,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 86,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [186.243, -7.15307, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 87,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [182.409, -7.15307, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 88,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [184.409, -7.70862, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 89,
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+		Archetyped = 
+		{
+			string Name = "52737503a396ba82:BlueCoin",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [308.597, -37.664, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "527372ca9c4ed583:MoonCollectible",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 0.8],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217ab7799116ab9:Collectible",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 0.2,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Collectible = 
+		{
+			bool DebugMode = false,
+			string Type = "replenish",
+			float PrizeStrength = 0.15,
+			float Timing = 5,
+			float Lifetime = 0,
+			bool Blinking = false,
+			float BlinkDuration = 1.5,
+			uint BlinkNumber = 4,
+			string respawnOnEvent = "",
+		},
+		Rotator = 
+		{
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 1.3,
+			bool Sway = false,
+			float SwayPeriod = 1.5,
+		},
+		HUDEventDispatcher = 
+		{
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216b2fc72880ba3:Coin",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 90,
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+		Archetyped = 
+		{
+			string Name = "52737503a396ba82:BlueCoin",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [163.43, -8.20881, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "527372ca9c4ed583:MoonCollectible",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 0.8],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217ab7799116ab9:Collectible",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 0.2,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Collectible = 
+		{
+			bool DebugMode = false,
+			string Type = "replenish",
+			float PrizeStrength = 0.2,
+			float Timing = 5,
+			float Lifetime = 0,
+			bool Blinking = false,
+			float BlinkDuration = 1.5,
+			uint BlinkNumber = 4,
+			string respawnOnEvent = "",
+		},
+		Rotator = 
+		{
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 1.3,
+			bool Sway = false,
+			float SwayPeriod = 1.5,
+		},
+		HUDEventDispatcher = 
+		{
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216b2fc72880ba3:Coin",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521dc79222fed2fb:Fountain",
+		LinkId = 
+		{
+			uint Id = 91,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [272.37, 1.93228, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Fountain",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 92,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [190.832, -7.15307, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 93,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [192.832, -7.70862, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 94,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [194.666, -7.15307, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 95,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [196.885, -7.6873, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 96,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [196.885, -9.26615, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 97,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [196.885, -6.0959, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 98,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [197.998, -4.7769, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 99,
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+		Archetyped = 
+		{
+			string Name = "52737503a396ba82:BlueCoin",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [200.849, 2.50446, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "527372ca9c4ed583:MoonCollectible",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 0.8],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217ab7799116ab9:Collectible",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 0.2,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Collectible = 
+		{
+			bool DebugMode = false,
+			string Type = "replenish",
+			float PrizeStrength = 0.35,
+			float Timing = 5,
+			float Lifetime = 0,
+			bool Blinking = false,
+			float BlinkDuration = 1.5,
+			uint BlinkNumber = 4,
+			string respawnOnEvent = "",
+		},
+		Rotator = 
+		{
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 1.3,
+			bool Sway = false,
+			float SwayPeriod = 1.5,
+		},
+		HUDEventDispatcher = 
+		{
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216b2fc72880ba3:Coin",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 100,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [200.887, -2.40951, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 101,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [200.887, -0.830669, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 102,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [200.887, 0.760732, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 103,
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+		Archetyped = 
+		{
+			string Name = "52737503a396ba82:BlueCoin",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [200.849, 0.778649, -0.01],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "527372ca9c4ed583:MoonCollectible",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 0.8],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217ab7799116ab9:Collectible",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 0.2,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Collectible = 
+		{
+			bool DebugMode = false,
+			string Type = "replenish",
+			float PrizeStrength = 0.35,
+			float Timing = 5,
+			float Lifetime = 0,
+			bool Blinking = false,
+			float BlinkDuration = 1.5,
+			uint BlinkNumber = 4,
+			string respawnOnEvent = "",
+		},
+		Rotator = 
+		{
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 1.3,
+			bool Sway = false,
+			float SwayPeriod = 1.5,
+		},
+		HUDEventDispatcher = 
+		{
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216b2fc72880ba3:Coin",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5216d863499fe905:WaterWheel",
+		LinkId = 
+		{
+			uint Id = 104,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [213.266, 7.21404, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Flower",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5271b8fbc95c5eb0:ArrowSign",
+		LinkId = 
+		{
+			uint Id = 105,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [213.141, 2.75487, 0],
+			Vec3 Scale = [1.5, 1.5, 1.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "arrowSign",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 106,
+		},
+		Named = 
+		{
+			string Name = "sign",
+		},
+		Archetyped = 
+		{
+			string Name = "5273183a51c9de15:InfoSign",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [225.753, 2.6759, -0.01],
+			Vec3 Scale = [1.5, 1.5, 2],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520eff6b8d60bfd1:InfoSign",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0.5, 0],
+			Vec3 Size = [1.5, 1, 1],
+		},
+		Sign = 
+		{
+			bool DebugMode = false,
+			bool TypeTrigger = false,
+			float TriggerTimeDelay = 0,
+			bool TypeControlDown = true,
+			bool TypeControlA = false,
+			bool TypeAuto = false,
+			bool TypeOnGameStart = false,
+			bool TypeOnSpaceEvent = false,
+			bool TypeOnOwnerEvent = false,
+			string EventType = "",
+			string MenuType = "52733e2f11a2edf4:Menu_SprayObjects",
+			string SpriteMenu = "5271c7efed88b983:HelpSpikey",
+			Vec3 MenuOffset = [0, 3, 2],
+		},
+		HoverSprite = 
+		{
+			string Sprite = "5273684ac0547530:MoveRight",
+			Vec3 Offset = [0, 2.75, 0.5],
+			Vec3 Rotate = [0, 0, -90],
+			Vec3 Scale = [0.6, 0.6, 0.6],
+			float FadeInTime = 0.5,
+			float FadeOutTime = 0.5,
+			string EventType = "",
+			float Duration = 1.5,
+			bool SpaceEvent = true,
+			bool OwnerEvent = false,
+			float Delay = 0,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "526c509c183b3991:HorizontalPath",
+		LinkId = 
+		{
+			uint Id = 107,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [249.219, -5.55611, 1.14441e-005],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Path",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 108,
+		},
+		Named = 
+		{
+			string Name = "Flower",
+		},
+		Archetyped = 
+		{
+			string Name = "521acfd9ff85c7e2:Spikey",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [246.352, 7.97435, 1.14441e-005],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "521ac8601bcb514a:SpikeySpikes",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217ab7e9bfb2092:DeathCausing",
+			Vec3 Offset = [0, 0, 0.5],
+			float Radius = 2.5,
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = true,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = false,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 1,
+			string CueName = "4e1bd44008b4dc2a:DefaultCue",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+		ChangeColor = 
+		{
+			bool DebugMode = true,
+			Vec4 NewColor = [0.52608, 0.0704, 0.64, 1],
+			bool RandomColor = true,
+			bool ColorShifting = false,
+			float ShiftTime = 1,
+			string AnotherSprite = "520eff6b8d44e453:FlowerFace",
+			string DetectEventType = "FlowerGet",
+			bool SpaceEvent = false,
+			bool OwnerEvent = true,
+		},
+		Rotator = 
+		{
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 3,
+			bool Sway = true,
+			float SwayPeriod = 0.051,
+		},
+		PutAnotherSprite = 
+		{
+			bool DebugMode = false,
+			string SpriteSource = "521ac80b1e3ba2be:SpikeyFace",
+			Vec3 Offset = [0, 0, 0.1],
+			float Size = 1,
+		},
+		PathFollower = 
+		{
+			string PathResourceName = "526c5baaa5129320:Horizontal",
+			float TimeToTake = 3,
+			Vec3 LocalFollowPoint = [0, 0, 0],
+			EndCondition EndCondition = Reverse,
+			Positioning Positioning = Relative,
+			bool Paused = false,
+			bool StartAtBeginning = true,
+		},
+		Spikey = 
+		{
+			string FaceSprite = "521ac80b1e3ba2be:SpikeyFace",
+			string AngrySprite = "521db94d3f675725:SpikeyFaceAngry",
+			float WaterPauseTime = 1.5,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 109,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [233.457, 3.21771, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 110,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [236.781, 3.21771, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 111,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [239.942, 3.20694, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 112,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [238.268, 3.21771, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 113,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [235.057, 3.21771, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 114,
+		},
+		Named = 
+		{
+			string Name = "Flower",
+		},
+		Archetyped = 
+		{
+			string Name = "5216d863499fe905:WaterWheel",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [256.621, -3.17306, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5216ecf650e1dbd2:FlowerPetal",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.28, 0.252868, 0.2002, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "52179520c7990ff8:WaterColliding",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 1.5,
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = false,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Prizebox = 
+		{
+			bool DebugMode = true,
+			string PrizeType = "twinkle",
+			float VelocityY = 10,
+			uint PrizeAmount = 8,
+			string SoundCue = "5216e5d72aa0229b:Flower",
+			bool isUsed = false,
+			bool playSound = false,
+		},
+		PutAnotherSprite = 
+		{
+			bool DebugMode = false,
+			string SpriteSource = "520eff6b8d4f1ef4:FlowerSadFace",
+			Vec3 Offset = [0, 0, 0.001],
+			float Size = 1.24,
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 1,
+			string CueName = "5216e5d72aa0229b:Flower",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = true,
+		},
+		DragEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			float Drag = 0.1,
+		},
+		ChangeColor = 
+		{
+			bool DebugMode = true,
+			Vec4 NewColor = [0.52608, 0.0704, 0.64, 1],
+			bool RandomColor = true,
+			bool ColorShifting = false,
+			float ShiftTime = 1,
+			string AnotherSprite = "520eff6b8d44e453:FlowerFace",
+			string DetectEventType = "FlowerGet",
+			bool SpaceEvent = false,
+			bool OwnerEvent = true,
+		},
+		Rotator = 
+		{
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 1,
+			bool Sway = true,
+			float SwayPeriod = 0.2,
+		},
+		ChangeOnActivation = 
+		{
+			string DetectEventType = "",
+			bool SpaceEvent = false,
+			bool OwnerEvent = true,
+		},
+		ChangeSpriteOnActivation = 
+		{
+			string MainSprite = "5216ecf650e1dbd2:FlowerPetal",
+			string AnotherSprite = "520eff6b8d44e453:FlowerFace",
+			string DetectEventType = "FlowerGet",
+			bool SpaceEvent = false,
+			bool OwnerEvent = true,
+			bool EventFunction = false,
+		},
+		FlowerSpin = 
+		{
+			bool DebugMode = false,
+			float AngularVelocity = 0.75,
+			float SpinCount = 0,
+			float SpinLimit = 1.5,
+			bool Windback = false,
+			string SoundCue = "5216b1fe59111c88:PodDrop",
+			bool uteWindingSound = false,
+			bool isUsed = false,
+			bool ChubbyFlower = false,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521dc79222fed2fb:Fountain",
+		LinkId = 
+		{
+			uint Id = 115,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [292.01, -4.12686, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Fountain",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 116,
+		},
+		Named = 
+		{
+			string Name = "Checkpoint",
+		},
+		Archetyped = 
+		{
+			string Name = "5215fd450f0a3bd9:Checkpoint",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [223.573, 4.87318, -0.01],
+			Vec3 Scale = [0.5, 0.5, 0.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520eff6c8d5a619c:CheckpointUnused",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		Checkpoint = 
+		{
+			bool DebugMode = true,
+			uint ID = 4,
+			Vec2 Position = [0, 0],
+			bool isUsed = false,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217aaa5614a18de:Checkpoint",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [2, 6, 2],
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216e5d72aa0229b:Flower",
+			float Volume = 0.65,
+			float Pitch = 2,
+			bool Positional = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 117,
+		},
+		Named = 
+		{
+			string Name = "Checkpoint",
+		},
+		Archetyped = 
+		{
+			string Name = "5215fd450f0a3bd9:Checkpoint",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [269.057, 4.87318, -0.01],
+			Vec3 Scale = [0.5, 0.5, 0.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520eff6c8d5a619c:CheckpointUnused",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		Checkpoint = 
+		{
+			bool DebugMode = true,
+			uint ID = 4,
+			Vec2 Position = [0, 0],
+			bool isUsed = false,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217aaa5614a18de:Checkpoint",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [2, 6, 2],
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216e5d72aa0229b:Flower",
+			float Volume = 0.65,
+			float Pitch = 2,
+			bool Positional = true,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 118,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [258.251, 6.25195, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 119,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [258.251, 6.25195, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 120,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [255.348, 6.25195, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 121,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [255.039, 3.21771, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 122,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [251.715, 3.21771, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 123,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [258.2, 3.20694, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 124,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [256.526, 3.21771, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 125,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [253.315, 3.21771, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521dc79222fed2fb:Fountain",
+		LinkId = 
+		{
+			uint Id = 126,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [256.37, -10.1107, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Fountain",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 127,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [268.541, -9.91669, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 128,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [265.715, -7.99734, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 129,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [271.702, -11.1533, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 130,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [270.028, -10.8791, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 131,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [267.283, -8.81992, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 132,
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+		Archetyped = 
+		{
+			string Name = "52737503a396ba82:BlueCoin",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [285.193, -11.155, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "527372ca9c4ed583:MoonCollectible",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 0.8],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217ab7799116ab9:Collectible",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 0.2,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Collectible = 
+		{
+			bool DebugMode = false,
+			string Type = "replenish",
+			float PrizeStrength = 0.25,
+			float Timing = 5,
+			float Lifetime = 0,
+			bool Blinking = false,
+			float BlinkDuration = 1.5,
+			uint BlinkNumber = 4,
+			string respawnOnEvent = "",
+		},
+		Rotator = 
+		{
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 1.3,
+			bool Sway = false,
+			float SwayPeriod = 1.5,
+		},
+		HUDEventDispatcher = 
+		{
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216b2fc72880ba3:Coin",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 133,
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+		Archetyped = 
+		{
+			string Name = "52737503a396ba82:BlueCoin",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [285.259, -7.64069, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "527372ca9c4ed583:MoonCollectible",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 0.8],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217ab7799116ab9:Collectible",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 0.2,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Collectible = 
+		{
+			bool DebugMode = false,
+			string Type = "replenish",
+			float PrizeStrength = 0.25,
+			float Timing = 5,
+			float Lifetime = 0,
+			bool Blinking = false,
+			float BlinkDuration = 1.5,
+			uint BlinkNumber = 4,
+			string respawnOnEvent = "",
+		},
+		Rotator = 
+		{
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 1.3,
+			bool Sway = false,
+			float SwayPeriod = 1.5,
+		},
+		HUDEventDispatcher = 
+		{
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216b2fc72880ba3:Coin",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 134,
+		},
+		Named = 
+		{
+			string Name = "Checkpoint",
+		},
+		Archetyped = 
+		{
+			string Name = "5215fd450f0a3bd9:Checkpoint",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [295.779, 0.165295, -0.01],
+			Vec3 Scale = [0.5, 0.5, 0.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520eff6c8d5a619c:CheckpointUnused",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		Checkpoint = 
+		{
+			bool DebugMode = true,
+			uint ID = 4,
+			Vec2 Position = [0, 0],
+			bool isUsed = false,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217aaa5614a18de:Checkpoint",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [2, 6, 2],
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216e5d72aa0229b:Flower",
+			float Volume = 0.65,
+			float Pitch = 2,
+			bool Positional = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 135,
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+		Archetyped = 
+		{
+			string Name = "52737503a396ba82:BlueCoin",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [285.259, -4.19266, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "527372ca9c4ed583:MoonCollectible",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 0.8],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217ab7799116ab9:Collectible",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 0.2,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Collectible = 
+		{
+			bool DebugMode = false,
+			string Type = "replenish",
+			float PrizeStrength = 0.25,
+			float Timing = 5,
+			float Lifetime = 0,
+			bool Blinking = false,
+			float BlinkDuration = 1.5,
+			uint BlinkNumber = 4,
+			string respawnOnEvent = "",
+		},
+		Rotator = 
+		{
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 1.3,
+			bool Sway = false,
+			float SwayPeriod = 1.5,
+		},
+		HUDEventDispatcher = 
+		{
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216b2fc72880ba3:Coin",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 136,
+		},
+		Named = 
+		{
+			string Name = "Flower",
+		},
+		Archetyped = 
+		{
+			string Name = "521acfd9ff85c7e2:Spikey",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [322.223, -6.0579, 1.14441e-005],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "521ac8601bcb514a:SpikeySpikes",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217ab7e9bfb2092:DeathCausing",
+			Vec3 Offset = [0, 0, 0.5],
+			float Radius = 2.5,
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = true,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = false,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 1,
+			string CueName = "4e1bd44008b4dc2a:DefaultCue",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+		ChangeColor = 
+		{
+			bool DebugMode = true,
+			Vec4 NewColor = [0.52608, 0.0704, 0.64, 1],
+			bool RandomColor = true,
+			bool ColorShifting = false,
+			float ShiftTime = 1,
+			string AnotherSprite = "520eff6b8d44e453:FlowerFace",
+			string DetectEventType = "FlowerGet",
+			bool SpaceEvent = false,
+			bool OwnerEvent = true,
+		},
+		Rotator = 
+		{
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 3,
+			bool Sway = true,
+			float SwayPeriod = 0.051,
+		},
+		PutAnotherSprite = 
+		{
+			bool DebugMode = false,
+			string SpriteSource = "521ac80b1e3ba2be:SpikeyFace",
+			Vec3 Offset = [0, 0, 0.1],
+			float Size = 1,
+		},
+		PathFollower = 
+		{
+			string PathResourceName = "526cdce76fa2f222:Vertical",
+			float TimeToTake = 1.5,
+			Vec3 LocalFollowPoint = [0, 0, 0],
+			EndCondition EndCondition = Reverse,
+			Positioning Positioning = Relative,
+			bool Paused = false,
+			bool StartAtBeginning = true,
+		},
+		Spikey = 
+		{
+			string FaceSprite = "521ac80b1e3ba2be:SpikeyFace",
+			string AngrySprite = "521db94d3f675725:SpikeyFaceAngry",
+			float WaterPauseTime = 1.5,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 137,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [314.107, -2.87907, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 138,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [315.781, -2.88984, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 139,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [312.62, -2.87907, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 140,
+		},
+		Named = 
+		{
+			string Name = "Checkpoint",
+		},
+		Archetyped = 
+		{
+			string Name = "5215fd450f0a3bd9:Checkpoint",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [336.281, -1.11428, -0.01],
+			Vec3 Scale = [0.5, 0.5, 0.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520eff6c8d5a619c:CheckpointUnused",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		Checkpoint = 
+		{
+			bool DebugMode = true,
+			uint ID = 5,
+			Vec2 Position = [0, 0],
+			bool isUsed = false,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217aaa5614a18de:Checkpoint",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [2, 6, 2],
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216e5d72aa0229b:Flower",
+			float Volume = 0.65,
+			float Pitch = 2,
+			bool Positional = true,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521dc79222fed2fb:Fountain",
+		LinkId = 
+		{
+			uint Id = 141,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [342.096, -4.12686, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Fountain",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 142,
+		},
+		Named = 
+		{
+			string Name = "Checkpoint",
+		},
+		Archetyped = 
+		{
+			string Name = "5215fd450f0a3bd9:Checkpoint",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [352.976, -39.1358, -0.01],
+			Vec3 Scale = [0.5, 0.5, 0.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520eff6c8d5a619c:CheckpointUnused",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		Checkpoint = 
+		{
+			bool DebugMode = true,
+			uint ID = 5,
+			Vec2 Position = [0, 0],
+			bool isUsed = false,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217aaa5614a18de:Checkpoint",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [2, 6, 2],
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216e5d72aa0229b:Flower",
+			float Volume = 0.65,
+			float Pitch = 2,
+			bool Positional = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 143,
+		},
+		Named = 
+		{
+			string Name = "Flower",
+		},
+		Archetyped = 
+		{
+			string Name = "5216d863499fe905:WaterWheel",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [337.383, -35.7967, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5216ecf650e1dbd2:FlowerPetal",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.28, 0.252868, 0.2002, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "52179520c7990ff8:WaterColliding",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 1.5,
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = false,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Prizebox = 
+		{
+			bool DebugMode = true,
+			string PrizeType = "twinkle",
+			float VelocityY = 10,
+			uint PrizeAmount = 8,
+			string SoundCue = "5216e5d72aa0229b:Flower",
+			bool isUsed = false,
+			bool playSound = false,
+		},
+		PutAnotherSprite = 
+		{
+			bool DebugMode = false,
+			string SpriteSource = "520eff6b8d4f1ef4:FlowerSadFace",
+			Vec3 Offset = [0, 0, 0.001],
+			float Size = 1.24,
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 1,
+			string CueName = "5216e5d72aa0229b:Flower",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = true,
+		},
+		DragEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			float Drag = 0.1,
+		},
+		ChangeColor = 
+		{
+			bool DebugMode = true,
+			Vec4 NewColor = [0.52608, 0.0704, 0.64, 1],
+			bool RandomColor = true,
+			bool ColorShifting = false,
+			float ShiftTime = 1,
+			string AnotherSprite = "520eff6b8d44e453:FlowerFace",
+			string DetectEventType = "FlowerGet",
+			bool SpaceEvent = false,
+			bool OwnerEvent = true,
+		},
+		Rotator = 
+		{
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 1,
+			bool Sway = true,
+			float SwayPeriod = 0.2,
+		},
+		ChangeOnActivation = 
+		{
+			string DetectEventType = "",
+			bool SpaceEvent = false,
+			bool OwnerEvent = true,
+		},
+		ChangeSpriteOnActivation = 
+		{
+			string MainSprite = "5216ecf650e1dbd2:FlowerPetal",
+			string AnotherSprite = "520eff6b8d44e453:FlowerFace",
+			string DetectEventType = "FlowerGet",
+			bool SpaceEvent = false,
+			bool OwnerEvent = true,
+			bool EventFunction = false,
+		},
+		FlowerSpin = 
+		{
+			bool DebugMode = false,
+			float AngularVelocity = 0.75,
+			float SpinCount = 0,
+			float SpinLimit = 1.5,
+			bool Windback = false,
+			string SoundCue = "5216b1fe59111c88:PodDrop",
+			bool uteWindingSound = false,
+			bool isUsed = false,
+			bool ChubbyFlower = false,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 144,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [333.708, -36.3287, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 145,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [333.708, -36.3287, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 146,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [340.411, -36.3287, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 147,
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+		Archetyped = 
+		{
+			string Name = "52737503a396ba82:BlueCoin",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [163.763, -4.66401, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "527372ca9c4ed583:MoonCollectible",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 0.8],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217ab7799116ab9:Collectible",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 0.2,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Collectible = 
+		{
+			bool DebugMode = false,
+			string Type = "replenish",
+			float PrizeStrength = 0.35,
+			float Timing = 5,
+			float Lifetime = 0,
+			bool Blinking = false,
+			float BlinkDuration = 1.5,
+			uint BlinkNumber = 4,
+			string respawnOnEvent = "",
+		},
+		Rotator = 
+		{
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 1.3,
+			bool Sway = false,
+			float SwayPeriod = 1.5,
+		},
+		HUDEventDispatcher = 
+		{
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216b2fc72880ba3:Coin",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 148,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [342.578, -34.9954, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 149,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [344.578, -36.8287, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 150,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [346.745, -35.4954, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 151,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [329.078, -35.9954, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 152,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [331.245, -34.6621, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 153,
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+		Archetyped = 
+		{
+			string Name = "52737503a396ba82:BlueCoin",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [305.93, -37.664, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "527372ca9c4ed583:MoonCollectible",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 0.8],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "5217ab7799116ab9:Collectible",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 0.2,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Collectible = 
+		{
+			bool DebugMode = false,
+			string Type = "replenish",
+			float PrizeStrength = 0.2,
+			float Timing = 5,
+			float Lifetime = 0,
+			bool Blinking = false,
+			float BlinkDuration = 1.5,
+			uint BlinkNumber = 4,
+			string respawnOnEvent = "",
+		},
+		Rotator = 
+		{
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 1.3,
+			bool Sway = false,
+			float SwayPeriod = 1.5,
+		},
+		HUDEventDispatcher = 
+		{
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216b2fc72880ba3:Coin",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521dc79222fed2fb:Fountain",
+		LinkId = 
+		{
+			uint Id = 154,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [324.214, -42.0408, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Fountain",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 155,
+		},
+		Named = 
+		{
+			string Name = "arrowSign",
+		},
+		Archetyped = 
+		{
+			string Name = "5271b8fbc95c5eb0:ArrowSign",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [337.059, -41.401, 0],
+			Vec3 Scale = [1.5, 1.5, 1.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520eff6a8d0c8d34:Sign",
+			bool FlipX = true,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 156,
+		},
+		Named = 
+		{
+			string Name = "arrowSign",
+		},
+		Archetyped = 
+		{
+			string Name = "5271b8fbc95c5eb0:ArrowSign",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [348.604, -6.91272, 0],
+			Vec3 Scale = [1.5, 1.5, 1.5],
+			Quat Rotation = [0, 0, -0.675388, 0.737463],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520eff6a8d0c8d34:Sign",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = false,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 157,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [358.449, -7.7662, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 158,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [352.776, -3.66938, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 159,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [357.089, -6.55114, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 160,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [354.344, -4.49196, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 161,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [355.602, -5.58873, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 162,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [359.703, -9.14613, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 163,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [360.518, -11.4669, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 164,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [362.086, -12.9096, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 165,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [364.031, -14.3523, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 166,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [366.805, -32.7394, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 167,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [368.712, -28.7572, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 168,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [368.473, -31.1677, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 169,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [364.934, -33.2555, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 170,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [368.647, -26.4991, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 171,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [361.257, -34.2232, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 172,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [363.128, -33.7071, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 173,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [343.243, -40.9364, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 174,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [340.158, -40.9257, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 175,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [341.645, -40.9257, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 176,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [343.244, -39.5565, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 177,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [341.645, -39.5458, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 178,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [340.158, -39.5458, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 179,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [334.176, -40.9364, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 180,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [334.176, -39.5565, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 181,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [332.577, -39.5458, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 182,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [332.577, -40.9257, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 183,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [331.09, -40.9257, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "5263fe2871297871:Coin",
+		LinkId = 
+		{
+			uint Id = 184,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [331.09, -39.5458, 0],
+			Vec3 Scale = [2.5, 2.5, 2.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Collectible",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 185,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [294.869, -35.9524, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 186,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [294.869, -35.9524, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 187,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [290.315, -35.9954, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521a9cc3fb706e60:DropFlower",
+		LinkId = 
+		{
+			uint Id = 188,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [292.482, -34.6621, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "521dc79222fed2fb:Fountain",
+		LinkId = 
+		{
+			uint Id = 189,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [188.394, -11.9548, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "Fountain",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 190,
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+		Archetyped = 
+		{
+			string Name = "521a9cc3fb706e60:DropFlower",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [210.404, 6.25195, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520eff698d3749f6:SprayFlower",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		Prizebox = 
+		{
+			bool DebugMode = true,
+			string PrizeType = "twinkle",
+			float VelocityY = 1,
+			uint PrizeAmount = 1,
+			string SoundCue = "4e1bd44008b4dc2a:DefaultCue",
+			bool isUsed = false,
+			bool playSound = false,
+		},
+		ChangeSpriteOnActivation = 
+		{
+			string MainSprite = "520eff698d33fb7e:SprayFlowerEmpty",
+			string AnotherSprite = "4e07948c35993095:DefaultSprite",
+			string DetectEventType = "ActivateEvent",
+			bool SpaceEvent = false,
+			bool OwnerEvent = true,
+			bool EventFunction = false,
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216b1fe59111c88:PodDrop",
+			float Volume = 0.5,
+			float Pitch = 1,
+			bool Positional = true,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "52179520c7990ff8:WaterColliding",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 1.75,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		SpritzFlower = 
+		{
+			bool isUsed = false,
+		},
+		Rotator = 
+		{
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 0.4,
+			bool Sway = true,
+			float SwayPeriod = 0.8,
+		},
+		HUDEventDispatcher = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 191,
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+		Archetyped = 
+		{
+			string Name = "521a9cc3fb706e60:DropFlower",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [216.251, 6.25195, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520eff698d3749f6:SprayFlower",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		Prizebox = 
+		{
+			bool DebugMode = true,
+			string PrizeType = "twinkle",
+			float VelocityY = 1,
+			uint PrizeAmount = 1,
+			string SoundCue = "4e1bd44008b4dc2a:DefaultCue",
+			bool isUsed = false,
+			bool playSound = false,
+		},
+		ChangeSpriteOnActivation = 
+		{
+			string MainSprite = "520eff698d33fb7e:SprayFlowerEmpty",
+			string AnotherSprite = "4e07948c35993095:DefaultSprite",
+			string DetectEventType = "ActivateEvent",
+			bool SpaceEvent = false,
+			bool OwnerEvent = true,
+			bool EventFunction = false,
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216b1fe59111c88:PodDrop",
+			float Volume = 0.5,
+			float Pitch = 1,
+			bool Positional = true,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "52179520c7990ff8:WaterColliding",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 1.75,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		SpritzFlower = 
+		{
+			bool isUsed = false,
+		},
+		Rotator = 
+		{
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 0.4,
+			bool Sway = true,
+			float SwayPeriod = 0.8,
+		},
+		HUDEventDispatcher = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 192,
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+		Archetyped = 
+		{
+			string Name = "521a9cc3fb706e60:DropFlower",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [252.404, 6.25195, 0],
+			Vec3 Scale = [0.35, 0.35, 0.35],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "520eff698d3749f6:SprayFlower",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		Prizebox = 
+		{
+			bool DebugMode = true,
+			string PrizeType = "twinkle",
+			float VelocityY = 1,
+			uint PrizeAmount = 1,
+			string SoundCue = "4e1bd44008b4dc2a:DefaultCue",
+			bool isUsed = false,
+			bool playSound = false,
+		},
+		ChangeSpriteOnActivation = 
+		{
+			string MainSprite = "520eff698d33fb7e:SprayFlowerEmpty",
+			string AnotherSprite = "4e07948c35993095:DefaultSprite",
+			string DetectEventType = "ActivateEvent",
+			bool SpaceEvent = false,
+			bool OwnerEvent = true,
+			bool EventFunction = false,
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "5216b1fe59111c88:PodDrop",
+			float Volume = 0.5,
+			float Pitch = 1,
+			bool Positional = true,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "52179520c7990ff8:WaterColliding",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 1.75,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		SpritzFlower = 
+		{
+			bool isUsed = false,
+		},
+		Rotator = 
+		{
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 0.4,
+			bool Sway = true,
+			float SwayPeriod = 0.8,
+		},
+		HUDEventDispatcher = 
+		{
+		},
+	},
+},

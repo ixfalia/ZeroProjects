@@ -1,0 +1,3 @@
+Gooey Concoction=Saiga Flax:2, Whoober Tuber
+Sacred Crystal Water=Serenian Water:2,Flag:Lake Crystal:True
+Frigid Concoction:2=Glacia Berry:2, Serenian Water:1

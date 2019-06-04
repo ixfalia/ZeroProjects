@@ -1,0 +1,42 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "controllerPlug",
+	},
+	Archetyped = 
+	{
+		string Name = "52733e2f11a2edf4:Menu_SprayObjects",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, 0, 0],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "52733e78e60ab699:HelpSpritzDaisy",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	Fader = 
+	{
+		bool DebugMode = false,
+		float defaultOpacity = 1,
+		float FadeInDuration = 1,
+		float FadeOutDuration = 1,
+	},
+},

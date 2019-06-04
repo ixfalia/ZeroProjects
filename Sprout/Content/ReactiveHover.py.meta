@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "ReactiveHover",
+		uint64 ResourceId = 52a161cb1bd75e95,
+	},
+},

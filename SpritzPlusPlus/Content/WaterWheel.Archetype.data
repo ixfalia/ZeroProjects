@@ -1,0 +1,139 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "Flower",
+	},
+	Archetyped = 
+	{
+		string Name = "5216d863499fe905:WaterWheel",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [160.11, -4.28901, -1],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "5216ecf650e1dbd2:FlowerPetal",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [0.28, 0.252868, 0.2002, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	SphereCollider = 
+	{
+		bool Ghost = false,
+		bool SendsMessages = true,
+		bool Seamless = false,
+		string MaterialName = "4faa6050b8692851:HardMaterial",
+		string SerializedGroupName = "52179520c7990ff8:WaterColliding",
+		Vec3 Offset = [0, 0, 0],
+		float Radius = 1.5,
+	},
+	RigidBody = 
+	{
+		bool Static = false,
+		bool Asleep = false,
+		bool Kinematic = false,
+		bool RotationLocked = false,
+		bool Mode2D = true,
+		bool AllowSleep = true,
+		bool Inherit2DMode = false,
+		Vec3 Velocity = [0, 0, 0],
+		Vec3 AngularVelocity = [0, 0, 0],
+	},
+	Prizebox = 
+	{
+		bool DebugMode = true,
+		string PrizeType = "twinkle",
+		float VelocityY = 10,
+		uint PrizeAmount = 8,
+		string SoundCue = "5216e5d72aa0229b:Flower",
+		bool isUsed = false,
+		bool playSound = false,
+	},
+	PutAnotherSprite = 
+	{
+		bool DebugMode = false,
+		string SpriteSource = "520eff6b8d4f1ef4:FlowerSadFace",
+		Vec3 Offset = [0, 0, 0.001],
+		float Size = 1.24,
+	},
+	SoundEmitter = 
+	{
+		bool StartPlaying = false,
+		int ExtraPriority = 1,
+		string CueName = "5216e5d72aa0229b:Flower",
+		float Volume = 1,
+		float Pitch = 1,
+		bool Positional = true,
+	},
+	DragEffect = 
+	{
+		bool Active = true,
+		bool WakeUpOnChange = false,
+		float Drag = 0.1,
+	},
+	ChangeColor = 
+	{
+		bool DebugMode = true,
+		Vec4 NewColor = [0.52608, 0.0704, 0.64, 1],
+		bool RandomColor = true,
+		bool ColorShifting = false,
+		float ShiftTime = 1,
+		string AnotherSprite = "520eff6b8d44e453:FlowerFace",
+		string DetectEventType = "FlowerGet",
+		bool SpaceEvent = false,
+		bool OwnerEvent = true,
+	},
+	Rotator = 
+	{
+		bool RotateX = false,
+		float RotatorX = 0,
+		bool RotateY = false,
+		float RotatorY = 0,
+		bool RotateZ = true,
+		float RotatorZ = 1,
+		bool Sway = true,
+		float SwayPeriod = 0.2,
+	},
+	ChangeOnActivation = 
+	{
+		string DetectEventType = "",
+		bool SpaceEvent = false,
+		bool OwnerEvent = true,
+	},
+	ChangeSpriteOnActivation = 
+	{
+		string MainSprite = "5216ecf650e1dbd2:FlowerPetal",
+		string AnotherSprite = "520eff6b8d44e453:FlowerFace",
+		string DetectEventType = "FlowerGet",
+		bool SpaceEvent = false,
+		bool OwnerEvent = true,
+		bool EventFunction = false,
+	},
+	FlowerSpin = 
+	{
+		bool DebugMode = false,
+		float AngularVelocity = 0.75,
+		float SpinCount = 0,
+		float SpinLimit = 1.5,
+		bool Windback = false,
+		string SoundCue = "5216b1fe59111c88:PodDrop",
+		bool uteWindingSound = false,
+		bool isUsed = false,
+		bool ChubbyFlower = false,
+	},
+},

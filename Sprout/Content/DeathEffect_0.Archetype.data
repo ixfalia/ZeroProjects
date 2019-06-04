@@ -1,0 +1,47 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "deathEffect",
+	},
+	Archetyped = 
+	{
+		string Name = "524b26462a818072:DeathEffect",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-16.2422, 2.49426, 0.1],
+		Vec3 Scale = [0.5, 0.5, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "524b26302602cae5:Dead",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	Rotator = 
+	{
+		bool Disabled = false,
+		bool RotateX = false,
+		float RotatorX = 0,
+		bool RotateY = false,
+		float RotatorY = 0,
+		bool RotateZ = true,
+		float RotatorZ = 0.75,
+		bool Sway = true,
+		float SwayPeriod = 0.25,
+	},
+},

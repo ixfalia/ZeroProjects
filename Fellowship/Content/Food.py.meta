@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Food",
+		uint64 ResourceId = 546c5aedea5ab467,
+	},
+},

@@ -1,0 +1,19 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "roundTriangleOutline",
+		uint64 ResourceId = 52a0c597e85f3b3c,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 125,
+		uint FrameSizeY = 112,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333,
+		float OriginX = 62,
+		float OriginY = 56,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+	},
+},

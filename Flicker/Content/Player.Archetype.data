@@ -1,0 +1,161 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "MainCharacter",
+	},
+	Archetyped = 
+	{
+		string Name = "510a463628219cab:Player",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, 16.6965, 1],
+		Vec3 Scale = [1.5, 1.5, 1.5],
+		Quat Rotation = [1, 0, 0, -1.49012e-008],
+	},
+	RigidBody = 
+	{
+		bool Static = false,
+		bool Asleep = false,
+		bool Kinematic = false,
+		bool RotationLocked = false,
+		bool Mode2D = false,
+		bool AllowSleep = true,
+		bool Inherit2DMode = true,
+		Vec3 Velocity = [0, 0, 0],
+		Vec3 AngularVelocity = [0, 0, 0],
+	},
+	GamepadDispatcher = 
+	{
+		bool DebugMode = false,
+		bool DisableControl = false,
+		bool UIDispatcher = false,
+		float deadzone = 0.8,
+	},
+	GameTimer = 
+	{
+		float TimeToCount = 5,
+		bool AutoCountDown = false,
+		bool InstantReset = false,
+	},
+	GamepadController = 
+	{
+		bool DebugMode = true,
+		float deadzone = 0.4,
+		bool DisableControlPad = false,
+	},
+	PlayerController = 
+	{
+		bool DebugMode = false,
+		float FireRate = 0.2,
+		float BulletSpeed = 30,
+	},
+	SoundEmitter = 
+	{
+		bool StartPlaying = false,
+		int ExtraPriority = 0,
+		string CueName = "5165354d135d5a9e:Shoot",
+		float Volume = 1,
+		float Pitch = 1,
+		bool Positional = false,
+	},
+	UIMaker = 
+	{
+		bool DebugMode = true,
+	},
+	Sprite = 
+	{
+		string SpriteSource = "5165287923a743ec:Ship",
+		bool FlipX = false,
+		bool FlipY = true,
+		Vec4 Color = [0.92, 0.92, 0.92, 1],
+		bool Visible = true,
+		bool OnTop = true,
+		bool AnimationActive = false,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+	},
+	LightTank = 
+	{
+		bool DebugMode = true,
+		float RedTank = 0,
+		float GreenTank = 0,
+		float BlueTank = 0,
+		float TankLimit = 255,
+		float TankScale = 255,
+		uint StartingAmount = 15,
+		uint CurrentWeapon = 0,
+	},
+	LockAspect = 
+	{
+	},
+	Health = 
+	{
+		bool DebugMode = false,
+		float MaxHealth = 100,
+		float CurrentHealth = 100,
+		bool hasDamageReduction = false,
+		float DamageReduction = 10,
+	},
+	CapsuleCollider = 
+	{
+		bool Ghost = false,
+		bool SendsMessages = true,
+		bool Seamless = false,
+		string MaterialName = "4faa6050b8692851:HardMaterial",
+		string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+		Vec3 Offset = [0, 0, 0],
+		float Radius = 0.75,
+		float Height = 1,
+		uint Direction = 1,
+	},
+	SpriteParticleSystem = 
+	{
+		SystemChildMode ChildMode = Independent,
+		SystemSpace SystemSpace = WorldSpace,
+		uint DrawOrder = 0,
+		ParticleGeometry GeometryMode = Billboarded,
+		ParticleRenderMode RenderMode = Additive,
+		ParticleSortMode SortMode = None,
+		string Texture = "51651178860fa61d:playerParticle",
+		Vec4 Tint = [1, 1, 1, 1],
+		float VelocityScale = 1,
+		float LengthScale = 0,
+		float MaxParticleSize = 20,
+		Vec3 SystemSize = [2, 2, -2],
+	},
+	SphericalParticleEmitter = 
+	{
+		bool Active = true,
+		uint EmitCount = 0,
+		float EmitRate = 50,
+		float EmitVariance = 0,
+		float Size = 0.5,
+		float SizeVariance = 0.25,
+		float Lifetime = 1,
+		float LifetimeVariance = 0.25,
+		float Spin = 1,
+		float SpinVariance = 0,
+		bool RandomSpin = true,
+		float Fill = 1,
+		float EmitterVelocityPercent = 5,
+		Vec3 StartVelocity = [0, 1, 0],
+		Vec3 RandomVelocity = [0, 0.5, 0],
+		Vec3 TangentVelocity = [0, 1, 0],
+		Vec3 EmitterSize = [1, 1, 1],
+	},
+	LinearParticleAnimator = 
+	{
+		Vec3 Force = [0, 0, 0],
+		Vec3 RandomForce = [0, 0, 0],
+		float Torque = 0,
+		float Growth = 0,
+		float Dampening = 0,
+		Vec3 Twist = [0, 0, 0],
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Warp",
+		uint64 ResourceId = 547af90f097bed4c,
+	},
+},

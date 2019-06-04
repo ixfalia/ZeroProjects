@@ -1,0 +1,152 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "MainCharacter",
+	},
+	Archetyped = 
+	{
+		string Name = "526d0005f19169c6:Player",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-4.36487, -2.55896, 0],
+		Vec3 Scale = [2, 2, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "520eff6a8d6f1e7e:MainCharacter",
+		bool FlipX = true,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		bool OnTop = true,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	CapsuleCollider = 
+	{
+		bool Ghost = false,
+		bool SendsMessages = true,
+		bool Seamless = false,
+		string MaterialName = "52151fb078f175b7:Basic",
+		string SerializedGroupName = "5217ab189ff2aa2b:Player",
+		Vec3 Offset = [0, -0.08, 0],
+		float Radius = 0.5,
+		float Height = 0.0001,
+		uint Direction = 1,
+	},
+	RigidBody = 
+	{
+		bool Static = false,
+		bool Asleep = false,
+		bool Kinematic = false,
+		bool RotationLocked = true,
+		bool Mode2D = true,
+		bool AllowSleep = true,
+		bool Inherit2DMode = true,
+		Vec3 Velocity = [0, 0, 0],
+		Vec3 AngularVelocity = [0, 0, 0],
+	},
+	GamepadController = 
+	{
+		bool DebugMode = true,
+		bool Paused = false,
+		float deadzone = 0.2,
+		bool disableControlPad = false,
+	},
+	WaterTank = 
+	{
+		bool DebugMode = false,
+		float Tank = 1,
+		float MinimumWater = 0.2,
+		float MaximumWater = 1,
+		bool Replenishing = true,
+		float ReplenishingLimit = 0.21,
+		bool UnlimitedWater = false,
+	},
+	MovementController = 
+	{
+		bool DebugMode = false,
+		float JumpStrength = 10,
+		float GroundForgiveness = 1,
+		float MovementStrength = 12,
+	},
+	SoundEmitter = 
+	{
+		bool StartPlaying = false,
+		int ExtraPriority = 0,
+		string CueName = "5216ad1950454d15:Spray",
+		float Volume = 1,
+		float Pitch = 1,
+		bool Positional = false,
+	},
+	Sprinkler = 
+	{
+		bool DebugMode = false,
+		float SpraySpeed = 0.025,
+		bool AutoSpray = false,
+		float SprayDuration = 0.5,
+		float SprayDelay = 1.5,
+		Vec2 SprayInDirection = [1, 1],
+	},
+	SoundManager = 
+	{
+		bool DebugMode = false,
+		int MaxSoundLimit = 50,
+		float SoundLimit = 0.25,
+	},
+	Player = 
+	{
+		float DeathLength = 2.5,
+	},
+	PointsCounter = 
+	{
+		bool DebugMode = false,
+		uint Points = 0,
+	},
+	Teleport = 
+	{
+		bool DebugMode = true,
+		Vec2 Checkpoint = [0, 0],
+	},
+	HUDEventDispatcher = 
+	{
+	},
+	GravityEffect = 
+	{
+		bool Active = false,
+		bool WakeUpOnChange = false,
+		bool LocalSpaceDirection = false,
+		float Strength = 0,
+		Vec3 Direction = [0, -1, 0],
+	},
+	DragEffect = 
+	{
+		bool Active = false,
+		bool WakeUpOnChange = false,
+		float Drag = 0.8,
+	},
+	Microphone = 
+	{
+		bool Active = true,
+	},
+	GamepadDispatcher = 
+	{
+		bool DebugMode = false,
+		bool DisableControl = false,
+		float deadzone = 0.8,
+	},
+	Cheater = 
+	{
+		bool CheatModeActive = false,
+	},
+},

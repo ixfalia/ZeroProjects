@@ -1,0 +1,13 @@
+ResourceTable = 
+{
+	string ResourceType = "TextBlock",
+	Array EntryList = 
+	[
+		{
+			string Name = "GlowingCrystals",
+			string Value = "547afae2557fa27e:GlowingCrystals",
+			float Weight = 1,
+		},
+	],
+	float MaxWeight = 1,
+},

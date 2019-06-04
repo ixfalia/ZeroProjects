@@ -1,0 +1,19 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "Goal",
+		uint64 ResourceId = 520eff6b8d7c6920,
+		uint64 AtlasId = 0000000000000000,
+		uint FrameSizeX = 0,
+		uint FrameSizeY = 0,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333,
+		float OriginX = 353,
+		float OriginY = 777,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+	},
+},

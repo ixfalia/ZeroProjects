@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "TextUpdateListener",
+		uint64 ResourceId = 510d7c092ee4f824,
+	},
+},

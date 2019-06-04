@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "Overlock-Bold",
+		uint64 ResourceId = 541f85c240127a8e,
+	},
+},

@@ -1,0 +1,90 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "Bullet",
+	},
+	Archetyped = 
+	{
+		string Name = "516511f6a83a2679:HomingBullet",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-18.1917, 11.9866, 0],
+		Vec3 Scale = [5, 5, 3],
+		Quat Rotation = [0, 0, 0.707107, 0.707107],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "510d74db1b476b55:blankbullet",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Additive,
+	},
+	RigidBody = 
+	{
+		bool Static = false,
+		bool Asleep = false,
+		bool Kinematic = false,
+		bool RotationLocked = true,
+		bool Mode2D = false,
+		bool AllowSleep = true,
+		bool Inherit2DMode = true,
+		Vec3 Velocity = [0, 0, 0],
+		Vec3 AngularVelocity = [0, 0, 0],
+	},
+	Bullet = 
+	{
+		bool DebugMode = false,
+		string BulletType = "BasicBullet",
+		float TimeToLive = 2,
+		bool isHoming = false,
+		bool isUsed = false,
+	},
+	GameTimer = 
+	{
+		float TimeToCount = 3,
+		bool AutoCountDown = true,
+		bool InstantReset = false,
+	},
+	Rotator = 
+	{
+		bool RotateX = false,
+		float RotatorX = 0,
+		bool RotateY = false,
+		float RotatorY = 16,
+		bool RotateZ = false,
+		float RotatorZ = 16,
+	},
+	CapsuleCollider = 
+	{
+		bool Ghost = true,
+		bool SendsMessages = true,
+		bool Seamless = true,
+		string MaterialName = "4faa6050b8692851:HardMaterial",
+		string SerializedGroupName = "510e131ccb0675e2:Bullet",
+		Vec3 Offset = [0, 0, 0],
+		float Radius = 0.2,
+		float Height = 0.2,
+		uint Direction = 1,
+	},
+	FollowTarget = 
+	{
+		bool DebugMode = false,
+		string TargetName = "MainCharacter",
+		bool isMovingTarget = true,
+		bool isActive = true,
+		bool isSmoothStep = false,
+		float Speed = 0.7,
+		float ResponseTime = 0.5,
+	},
+},

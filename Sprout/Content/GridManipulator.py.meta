@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "GridManipulator",
+		uint64 ResourceId = 5247f5f87851a739,
+	},
+},

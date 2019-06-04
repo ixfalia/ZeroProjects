@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "ManipulatorManager",
+		uint64 ResourceId = 524e6a61e3f99023,
+	},
+},

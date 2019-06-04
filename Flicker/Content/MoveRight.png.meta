@@ -1,0 +1,15 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "MoveRight",
+		uint64 ResourceId = 51656cb4cbaa1776,
+		uint FrameSizeX = 187,
+		uint FrameSizeY = 185,
+		uint FrameCount = 2,
+		float FrameDelay = 0.5,
+		float Scale = 1,
+		float OriginX = 92,
+		float OriginY = 92,
+	},
+},

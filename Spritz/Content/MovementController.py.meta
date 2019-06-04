@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "MovementController",
+		uint64 ResourceId = 520d94a5e1686451,
+	},
+},

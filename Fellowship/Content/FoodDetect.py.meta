@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "FoodDetect",
+		uint64 ResourceId = 546c61384f26de91,
+	},
+},

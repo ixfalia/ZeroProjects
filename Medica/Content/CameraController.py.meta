@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "CameraController",
+		uint64 ResourceId = 52c3798944b36952,
+	},
+},

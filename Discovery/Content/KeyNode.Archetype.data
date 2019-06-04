@@ -1,0 +1,109 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "RightDoor",
+	},
+	Archetyped = 
+	{
+		string Name = "54707e35b0e35582:KeyNode",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [11.8741, 18.6846, 0],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Model = 
+	{
+		string MaterialName = "54474892e723fe8f:ForceField",
+		string MeshName = "4de0354322b345ae:Cube",
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+	},
+	BoxCollider = 
+	{
+		bool Ghost = false,
+		bool SendsMessages = true,
+		bool Seamless = true,
+		string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+		string SerializedGroupName = "545e022a8a30eefe:KeyNode",
+		Vec3 Offset = [0, 0, 0],
+		Vec3 Size = [0.5, 0.5, 0.5],
+	},
+	RigidBody = 
+	{
+		bool Static = true,
+		bool Asleep = false,
+		bool Kinematic = false,
+		bool RotationLocked = true,
+		bool Mode2D = true,
+		bool AllowSleep = true,
+		bool Inherit2DMode = true,
+		Vec3 Velocity = [0, 0, 0],
+		Vec3 AngularVelocity = [0, 0, 0],
+	},
+	Light = 
+	{
+		LightType LightType = Point,
+		bool Active = true,
+		float Range = 12,
+		float MinRange = 2,
+		float Angle = 45,
+		float Intensity = 1.5,
+		Vec4 Color = [1, 1, 1, 1],
+		float MinRange = 2,
+		float Size = 1,
+		bool Baked = false,
+	},
+	Inventory = 
+	{
+		string StartingInventory = "",
+		int ItemMax = 1,
+		int MaxCapacity = 1,
+		string Accepts = "",
+	},
+	TextParser = 
+	{
+	},
+	Shadow = 
+	{
+		Quality Quality = HighQuality,
+		ShadowType ShadowType = Esm,
+		bool SoftShadows = true,
+		float Size = 2,
+		uint Splits = 1,
+		uint CurrentSplit = 0,
+		float PaddingScaler = 0.3,
+		Vec4 Color = [0, 0, 0, 1],
+		bool Active = true,
+	},
+	KeyNode = 
+	{
+		bool Active = true,
+	},
+	LightPulse = 
+	{
+		float LightOn = 0.5,
+		float LightOff = 0.5,
+		float FadeTime = 0.5,
+		float defaultIntensity = -1,
+		bool StartsOn = true,
+	},
+	Key = 
+	{
+		bool DebugMode = true,
+		int KeyID = 0,
+		string KeyName = "",
+		bool isMultiuse = true,
+		bool isUsed = false,
+		string BroadCastOnEvent = "TurnOn",
+		bool SpaceEvent = true,
+		bool OwnerEvent = false,
+		bool BroadcastToHUD = false,
+	},
+},

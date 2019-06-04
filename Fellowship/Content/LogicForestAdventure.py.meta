@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "LogicForestAdventure",
+		uint64 ResourceId = 540d0e274a104443,
+	},
+},

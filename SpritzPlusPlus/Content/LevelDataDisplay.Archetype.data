@@ -1,0 +1,336 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "LData",
+	},
+	Archetyped = 
+	{
+		string Name = "5282b1581b5d352f:LevelDataDisplay",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [14, 1, 0],
+		Vec3 Scale = [0.45, 0.45, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "5282bc8a8cd3d7a5:genericBack",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [0.482125, 0.95, 0.01425, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	LevelDataUpdater = 
+	{
+		Vec3 Offset = [0, 3.6, 0],
+	},
+	Fader = 
+	{
+		bool DebugMode = false,
+		float defaultOpacity = 1,
+		float FadeInDuration = 0.35,
+		float FadeOutDuration = 0.5,
+		bool FadeInOnCreation = false,
+	},
+	Hierarchy = 
+	{
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 2,
+			},
+			Named = 
+			{
+				string Name = "FlowerTrack",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [0.848534, 2.38108, 0],
+				Vec3 Scale = [2, 2, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			SpriteText = 
+			{
+				SpriteGeometryMode GeometryMode = ZPlane,
+				TextPositionMode Position = Centered,
+				string FontName = "52725258b386131d:Cookies",
+				uint FontSize = 32,
+				Vec4 Color = [1, 1, 1, 1],
+				bool Visible = true,
+				string Text = "5 / 5",
+				bool OnTop = false,
+				BlendMode BlendMode = Alpha,
+				Vec2 Size = [0, 0],
+				TextAlign Align = Left,
+				float PixelsPerUnit = 64,
+				bool Smoothing = true,
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 3,
+			},
+			Named = 
+			{
+				string Name = "ScoreTrack",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [0.219304, -1.28634, 0],
+				Vec3 Scale = [2, 2, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			SpriteText = 
+			{
+				SpriteGeometryMode GeometryMode = ZPlane,
+				TextPositionMode Position = UpperLeft,
+				string FontName = "52725258b386131d:Cookies",
+				uint FontSize = 28,
+				Vec4 Color = [1, 1, 1, 1],
+				bool Visible = true,
+				string Text = "5000",
+				bool OnTop = false,
+				BlendMode BlendMode = Alpha,
+				Vec2 Size = [0, 0],
+				TextAlign Align = Left,
+				float PixelsPerUnit = 64,
+				bool Smoothing = true,
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 4,
+			},
+			Named = 
+			{
+				string Name = "TimeTrack",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [0.223287, 0.373909, 0],
+				Vec3 Scale = [2, 2, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			SpriteText = 
+			{
+				SpriteGeometryMode GeometryMode = ZPlane,
+				TextPositionMode Position = UpperLeft,
+				string FontName = "52725258b386131d:Cookies",
+				uint FontSize = 28,
+				Vec4 Color = [1, 1, 1, 1],
+				bool Visible = true,
+				string Text = "3m 23s",
+				bool OnTop = false,
+				BlendMode BlendMode = Alpha,
+				Vec2 Size = [0, 0],
+				TextAlign Align = Left,
+				float PixelsPerUnit = 64,
+				bool Smoothing = true,
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 5,
+			},
+			Named = 
+			{
+				string Name = "FlowerFaceIcon",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [-2.35404, 2.43031, 1],
+				Vec3 Scale = [0.75, 0.75, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				string SpriteSource = "520eff6b8d44e453:FlowerFace",
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [1, 1, 1, 1],
+				bool Visible = true,
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+			},
+			Hierarchy = 
+			{
+				Cog = 
+				{
+					LinkId = 
+					{
+						uint Id = 6,
+					},
+					Named = 
+					{
+						string Name = "FlowerPetal",
+					},
+					Transform = 
+					{
+						Vec3 Translation = [1.90735e-006, 0, 0],
+						Vec3 Scale = [1, 1, 1],
+						Quat Rotation = [0, 0, 0, 1],
+					},
+					Sprite = 
+					{
+						string SpriteSource = "5216ecf650e1dbd2:FlowerPetal",
+						bool FlipX = false,
+						bool FlipY = false,
+						Vec4 Color = [1, 1, 1, 1],
+						bool Visible = true,
+						bool OnTop = false,
+						bool AnimationActive = true,
+						float AnimationSpeed = 0,
+						uint StartFrame = 0,
+						BlendMode BlendMode = Alpha,
+						SpriteGeometryMode GeometryMode = ZPlane,
+					},
+					Rotator = 
+					{
+						bool RotateX = false,
+						float RotatorX = 0,
+						bool RotateY = false,
+						float RotatorY = 0,
+						bool RotateZ = true,
+						float RotatorZ = 0.75,
+						bool Sway = true,
+						float SwayPeriod = 0.75,
+					},
+					ChangeColor = 
+					{
+						bool DebugMode = false,
+						Vec4 NewColor = [0.795, 0.027825, 0.027825, 1],
+						bool RandomColor = true,
+						bool ColorShifting = false,
+						float ShiftTime = 1,
+						string AnotherSprite = "4e07948c35993095:DefaultSprite",
+						string DetectEventType = "",
+						bool SpaceEvent = false,
+						bool OwnerEvent = true,
+					},
+				},
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 7,
+			},
+			Named = 
+			{
+				string Name = "ScoreText",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [-1.38165, -0.973914, 0],
+				Vec3 Scale = [2, 2, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			SpriteText = 
+			{
+				SpriteGeometryMode GeometryMode = ZPlane,
+				TextPositionMode Position = Centered,
+				string FontName = "52725258b386131d:Cookies",
+				uint FontSize = 24,
+				Vec4 Color = [1, 0.93, 0, 1],
+				bool Visible = true,
+				string Text = "High Score:",
+				bool OnTop = false,
+				BlendMode BlendMode = Alpha,
+				Vec2 Size = [0, 0],
+				TextAlign Align = Left,
+				float PixelsPerUnit = 64,
+				bool Smoothing = true,
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 8,
+			},
+			Named = 
+			{
+				string Name = "NameText",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [0, -5, 0],
+				Vec3 Scale = [2, 2, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			SpriteText = 
+			{
+				SpriteGeometryMode GeometryMode = ZPlane,
+				TextPositionMode Position = Centered,
+				string FontName = "52725258b386131d:Cookies",
+				uint FontSize = 42,
+				Vec4 Color = [0.477725, 0.756726, 0.985, 1],
+				bool Visible = true,
+				string Text = "Main Menu",
+				bool OnTop = false,
+				BlendMode BlendMode = Alpha,
+				Vec2 Size = [0, 0],
+				TextAlign Align = Left,
+				float PixelsPerUnit = 64,
+				bool Smoothing = true,
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 9,
+			},
+			Named = 
+			{
+				string Name = "TimeText",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [-1.59671, 0.746517, 0],
+				Vec3 Scale = [2, 2, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			SpriteText = 
+			{
+				SpriteGeometryMode GeometryMode = ZPlane,
+				TextPositionMode Position = Centered,
+				string FontName = "52725258b386131d:Cookies",
+				uint FontSize = 24,
+				Vec4 Color = [1, 0.93, 0, 1],
+				bool Visible = true,
+				string Text = "Best Time:",
+				bool OnTop = false,
+				BlendMode BlendMode = Alpha,
+				Vec2 Size = [0, 0],
+				TextAlign Align = Left,
+				float PixelsPerUnit = 64,
+				bool Smoothing = true,
+			},
+		},
+	},
+},

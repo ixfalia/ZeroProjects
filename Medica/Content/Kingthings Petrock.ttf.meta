@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "Kingthings Petrock",
+		uint64 ResourceId = 532d39e2c8207931,
+	},
+},

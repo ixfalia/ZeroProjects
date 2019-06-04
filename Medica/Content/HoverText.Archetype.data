@@ -1,0 +1,79 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "HoverText",
+	},
+	Archetyped = 
+	{
+		string Name = "52c367bd4b52a44c:HoverText",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-127.949, 45.6515, 2.1],
+		Vec3 Scale = [1.25, 1.25, 1.25],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	SpriteText = 
+	{
+		SpriteGeometryMode GeometryMode = ZPlane,
+		TextPositionMode Position = Centered,
+		string FontName = "4e7bac697bec55c5:Verdana",
+		uint FontSize = 42,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		string Text = "Undefined Text",
+		bool OnTop = false,
+		BlendMode BlendMode = Alpha,
+		Vec2 Size = [0, 0],
+		TextAlign Align = Left,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+	},
+	Fader = 
+	{
+		bool DebugMode = false,
+		float FadeInDuration = 0.25,
+		float FadeOutDuration = 0.25,
+		bool FadeInOnCreation = false,
+		bool InvisibleOnCreation = false,
+	},
+	Hierarchy = 
+	{
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 2,
+			},
+			Named = 
+			{
+				string Name = "HoverTextBack",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [0, 0, 0],
+				Vec3 Scale = [8, 1, 1],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				string SpriteSource = "52d0dc199ab33c97:FillTile",
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [0.059375, 0.0659375, 0.125, 1],
+				bool Visible = true,
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+			},
+		},
+	},
+},

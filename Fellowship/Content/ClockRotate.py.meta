@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "ClockRotate",
+		uint64 ResourceId = 5430b95b4dcdd4dd,
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "SpaceManager",
+		uint64 ResourceId = 52eca20579bb5798,
+	},
+},

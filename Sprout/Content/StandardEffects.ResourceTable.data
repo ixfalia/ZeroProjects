@@ -1,0 +1,38 @@
+ResourceTable = 
+{
+	string ResourceType = "String",
+	Array EntryList = 
+	[
+		{
+			string Name = "red",
+			string Value = "red",
+			float Weight = 1.2,
+		},
+		{
+			string Name = "yellow",
+			string Value = "yellow",
+			float Weight = 1,
+		},
+		{
+			string Name = "blue",
+			string Value = "blue",
+			float Weight = 1,
+		},
+		{
+			string Name = "weed",
+			string Value = "weed",
+			float Weight = 0.45,
+		},
+		{
+			string Name = "poison",
+			string Value = "poison",
+			float Weight = 0.44,
+		},
+		{
+			string Name = "rainbow",
+			string Value = "rainbow",
+			float Weight = 0.35,
+		},
+	],
+	float MaxWeight = 2,
+},

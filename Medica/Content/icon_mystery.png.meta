@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "icon_mystery",
+		uint64 ResourceId = 52d4b97ad6ddf968,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 200,
+		uint FrameSizeY = 203,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333,
+		float OriginX = 100,
+		float OriginY = 101,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

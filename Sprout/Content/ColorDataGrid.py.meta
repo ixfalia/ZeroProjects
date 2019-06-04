@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "ColorDataGrid",
+		uint64 ResourceId = 525d37e163b93cd6,
+	},
+},

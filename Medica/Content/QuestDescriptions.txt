@@ -1,0 +1,8 @@
+Name:Thirst Too Far
+QuestText="Tutorial_FirstQuest"
+KeyItems=
+Items=Serenian Water
+Flags=
+Rewards=
+[END]
+Filling Up The Journal="Quest_FillingUpTheJournal"][Serenian Water, Saiga Flax, Linjee Mushroom, Whoober Tuber, Purgidine Ore][][][Riverside Seal:1][

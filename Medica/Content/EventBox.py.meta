@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "EventBox",
+		uint64 ResourceId = 52c32c5fc604c4e4,
+	},
+},

@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "Cookies",
+		uint64 ResourceId = 532b9b025a28a473,
+	},
+},

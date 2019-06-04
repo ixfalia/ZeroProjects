@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "Orbitron Medium",
+		uint64 ResourceId = 532d3db02081026e,
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "restartGame",
+		uint64 ResourceId = 5246d0aea17def20,
+	},
+},

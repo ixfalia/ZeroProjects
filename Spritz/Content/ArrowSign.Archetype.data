@@ -1,0 +1,35 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "arrowSign",
+	},
+	Archetyped = 
+	{
+		string Name = "5271b8fbc95c5eb0:ArrowSign",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-10.4644, -2.37152, 3.70672e-007],
+		Vec3 Scale = [1.5, 1.5, 1.5],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "520eff6a8d0c8d34:Sign",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+},

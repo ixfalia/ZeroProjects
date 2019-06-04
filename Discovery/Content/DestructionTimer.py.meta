@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "DestructionTimer",
+		uint64 ResourceId = 54603526342fcbc8,
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "WarpLogic",
+		uint64 ResourceId = 5471942ff9bdd311,
+	},
+},

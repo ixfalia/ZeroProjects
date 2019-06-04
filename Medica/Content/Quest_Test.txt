@@ -1,0 +1,6 @@
+Name = Test Quest
+RequireFlags = Help The Town:Active
+CheckItems = Serenia Water:True
+CheckFlags = Bellama Town:True
+QuestText = Demo
+[/Quest]

@@ -1,0 +1,130 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "locationText",
+	},
+	Archetyped = 
+	{
+		string Name = "532bc4f3976596ce:LocationMessage",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [2.24447, 7.4215, -1.59232],
+		Vec3 Scale = [2, 2, 3],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	SpriteText = 
+	{
+		SpriteGeometryMode GeometryMode = ZPlane,
+		TextPositionMode Position = Centered,
+		string FontName = "532d39e2c8207931:Kingthings Petrock",
+		uint FontSize = 32,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		string Text = "",
+		bool OnTop = false,
+		BlendMode BlendMode = Alpha,
+		Vec2 Size = [0, 0],
+		TextAlign Align = Left,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+	},
+	RigidBody = 
+	{
+		bool Static = false,
+		bool Asleep = false,
+		bool Kinematic = false,
+		bool RotationLocked = false,
+		bool Mode2D = true,
+		bool AllowSleep = true,
+		bool Inherit2DMode = true,
+		Vec3 Velocity = [0, 0, 0],
+		Vec3 AngularVelocity = [0, 0, 0],
+	},
+	Fader = 
+	{
+		bool DebugMode = false,
+		float FadeInDuration = 0.5,
+		float FadeOutDuration = 0.35,
+		bool FadeInOnCreation = false,
+		bool InvisibleOnCreation = false,
+	},
+	Lifetime = 
+	{
+		float Duration = 4,
+		string SendEvent = "",
+		bool sendToHUDSpace = false,
+		bool sendToGameSpace = false,
+		bool sendToOwner = false,
+	},
+	Hierarchy = 
+	{
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 2,
+			},
+			Named = 
+			{
+				string Name = "back",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [0, 0, 0],
+				Vec3 Scale = [4.5, 0.8, 0.333333],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				string SpriteSource = "52d0dc199ab33c97:FillTile",
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [0.00719999, 0.233016, 0.24, 1],
+				bool Visible = true,
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+			},
+		},
+		Cog = 
+		{
+			LinkId = 
+			{
+				uint Id = 3,
+			},
+			Named = 
+			{
+				string Name = "back",
+			},
+			Transform = 
+			{
+				Vec3 Translation = [0.0215054, -0.0286739, -0.01],
+				Vec3 Scale = [4.5, 0.8, 0.333333],
+				Quat Rotation = [0, 0, 0, 1],
+			},
+			Sprite = 
+			{
+				string SpriteSource = "52d0dc199ab33c97:FillTile",
+				bool FlipX = false,
+				bool FlipY = false,
+				Vec4 Color = [0, 0, 0, 1],
+				bool Visible = true,
+				bool OnTop = false,
+				bool AnimationActive = true,
+				float AnimationSpeed = 1,
+				uint StartFrame = 0,
+				BlendMode BlendMode = Alpha,
+				SpriteGeometryMode GeometryMode = ZPlane,
+			},
+		},
+	},
+},

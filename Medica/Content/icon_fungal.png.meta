@@ -1,0 +1,20 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "icon_fungal",
+		uint64 ResourceId = 52d48a8b649077ea,
+		uint64 AtlasId = 0000000000000000,
+		uint FrameSizeX = 0,
+		uint FrameSizeY = 0,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333,
+		float OriginX = 69,
+		float OriginY = 74,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+		SpriteFill Fill = Stretch,
+	},
+},

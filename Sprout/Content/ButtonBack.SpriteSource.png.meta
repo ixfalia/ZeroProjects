@@ -1,0 +1,19 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "ButtonBack",
+		uint64 ResourceId = 52a7b0e52f4a7f9b,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 512,
+		uint FrameSizeY = 170,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333,
+		float OriginX = 256,
+		float OriginY = 85,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+	},
+},

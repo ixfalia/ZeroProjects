@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "TurnsTracker",
+		uint64 ResourceId = 524e68fea14d6028,
+	},
+},

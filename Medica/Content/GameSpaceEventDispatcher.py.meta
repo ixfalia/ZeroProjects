@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "GameSpaceEventDispatcher",
+		uint64 ResourceId = 52c36193809692c7,
+	},
+},

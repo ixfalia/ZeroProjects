@@ -1,0 +1,8 @@
+TextContent = 
+{
+	TextBuilder = 
+	{
+		string Name = "GlowingCrystals",
+		uint64 ResourceId = 547afae2557fa27e,
+	},
+},

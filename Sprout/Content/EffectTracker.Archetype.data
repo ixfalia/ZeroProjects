@@ -1,0 +1,70 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "EffectTracker",
+	},
+	Archetyped = 
+	{
+		string Name = "5254ad4c5211785b:EffectTracker",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-7.99103, 4.43421, 7.27795e-008],
+		Vec3 Scale = [0.85, 0.85, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "5274db4c2e7c11f9:Circle",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	EffectTracker = 
+	{
+		bool Debug = false,
+	},
+	Rotator = 
+	{
+		bool Disabled = false,
+		bool RotateX = false,
+		float RotatorX = 0,
+		bool RotateY = false,
+		float RotatorY = 0,
+		bool RotateZ = true,
+		float RotatorZ = 0.2,
+		bool Sway = true,
+		float SwayPeriod = 0.8,
+	},
+	SoundManage = 
+	{
+		bool Debug = false,
+	},
+	SoundEmitter = 
+	{
+		bool StartPlaying = false,
+		int ExtraPriority = 0,
+		string CueName = "52a3c5d2db28e053:LevelEnd",
+		float Volume = 1,
+		float Pitch = 1,
+		bool Positional = false,
+	},
+	ColorShifting = 
+	{
+		bool Debug = false,
+		bool Active = false,
+		float ShiftTime = 0.7,
+	},
+},

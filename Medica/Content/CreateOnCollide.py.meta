@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "CreateOnCollide",
+		uint64 ResourceId = 532bbd0b4686259c,
+	},
+},

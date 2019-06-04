@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "UIManager",
+		uint64 ResourceId = 510d7cce5ba971af,
+	},
+},

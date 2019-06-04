@@ -1,0 +1,11 @@
+DataContent = 
+{
+	DataBuilder = 
+	{
+		string Name = "GeoPaintedForceMulti",
+		uint64 ResourceId = 5471833c505e9035,
+		string LoaderType = "MultiMaterial",
+		uint Version = 0,
+		bool ShowInEditor = true,
+	},
+},

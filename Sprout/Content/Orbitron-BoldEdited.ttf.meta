@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "Orbitron-BoldEdited",
+		uint64 ResourceId = 52a203e6319997cc,
+	},
+},

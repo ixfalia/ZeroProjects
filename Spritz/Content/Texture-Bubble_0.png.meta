@@ -1,0 +1,13 @@
+ImageContent = 
+{
+	TextureBuilder = 
+	{
+		string Name = "Texture-Bubble_0",
+		uint64 ResourceId = 521dbf91ebf6ba2f,
+		OutputTextureFormat Format = AutoColor,
+		FixPowerOf2 FixPowerOf2 = Auto,
+		ImageFilter ResizeFilter = Cubic,
+		bool GenerateMipMaps = true,
+		ImageFilter MipFilter = Cubic,
+	},
+},

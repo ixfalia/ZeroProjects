@@ -1,0 +1,76 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "leafEffect",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-0.0447538, 0.00249296, 1],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	SpriteParticleSystem = 
+	{
+		SystemChildMode ChildMode = Independent,
+		SystemSpace SystemSpace = WorldSpace,
+		uint DrawOrder = 0,
+		ParticleGeometry GeometryMode = Beam,
+		ParticleRenderMode RenderMode = Additive,
+		ParticleSortMode SortMode = None,
+		string Texture = "526defef1981b222:Shine",
+		Vec4 Tint = [1, 1, 1, 1],
+		float VelocityScale = 0.25,
+		float LengthScale = 0,
+		float MaxParticleSize = 100,
+		Vec3 SystemSize = [2, 2, 2],
+	},
+	BoxParticleEmitter = 
+	{
+		bool Active = true,
+		uint EmitCount = 0,
+		float EmitRate = 16,
+		float EmitVariance = 4,
+		float Size = 0.15,
+		float SizeVariance = 0.05,
+		float Lifetime = 3,
+		float LifetimeVariance = 0,
+		float Spin = 0,
+		float SpinVariance = 0,
+		bool RandomSpin = false,
+		float Fill = 1,
+		float EmitterVelocityPercent = 0,
+		Vec3 StartVelocity = [1, 0, 0],
+		Vec3 RandomVelocity = [0, 0, 0],
+		Vec3 TangentVelocity = [0, 0, 0],
+		Vec3 EmitterSize = [12, 12, 12],
+		bool FastMovingEmitter = false,
+	},
+	LinearParticleAnimator = 
+	{
+		Vec3 Force = [1.5, -5, 0],
+		Vec3 RandomForce = [0, 0, 0],
+		float Torque = 0,
+		float Growth = 0,
+		float Dampening = 0,
+		Vec3 Twist = [0, 0, 0],
+	},
+	ParticleWander = 
+	{
+		float WanderAngle = 1.8,
+		float WanderAngleVariance = 1,
+		float WanderStrength = 8,
+	},
+	ParticleColorAnimator = 
+	{
+		Vec4 Color0 = [0.639388, 0.94, 0.2068, 1],
+		Vec4 Color1 = [0.94, 0.773009, 0.0611, 1],
+		Vec4 Color2 = [0.636862, 0.925, 0.10175, 0.355],
+		Vec4 Color3 = [0.915, 0.909693, 0.3843, 1],
+		Vec4 Color4 = [0.14915, 0.785, 0.289037, 0.095],
+	},
+},

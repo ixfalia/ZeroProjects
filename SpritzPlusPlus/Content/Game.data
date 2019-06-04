@@ -1,0 +1,28 @@
+GameSession = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Archetyped = 
+	{
+		string Name = "520effafaf8ba7c4:Game",
+	},
+	Viewports = 
+	{
+	},
+	LevelManager = 
+	{
+		string levelTable = "526dcd708a828c0e:LevelTable",
+		string OverrideLevel = "527262c15d349a4c:CheckGamepad",
+		string LevelSelect = "526dc4d02080dcdf:LevelSelect",
+	},
+	GameSessionManager = 
+	{
+	},
+	AccomplishmentDataManager = 
+	{
+		uint PointsTotal = 0,
+		uint TotalDeaths = 0,
+	},
+},

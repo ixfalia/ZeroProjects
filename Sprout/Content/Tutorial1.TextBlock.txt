@@ -1,0 +1,5 @@
+Click an empty seed bed to plant the next seed you have on hand.
+
+Create combos by planting seeds of the same color adjacent to each other.
+
+When they bloom, you'll create a combo and they'll be removed.

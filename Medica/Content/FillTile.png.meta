@@ -1,0 +1,13 @@
+ImageContent = 
+{
+	TextureBuilder = 
+	{
+		string Name = "FillTile",
+		uint64 ResourceId = 52d1787ee2335267,
+		OutputTextureFormat Format = AutoColor,
+		FixPowerOf2 FixPowerOf2 = Auto,
+		ImageFilter ResizeFilter = Cubic,
+		bool GenerateMipMaps = true,
+		ImageFilter MipFilter = Cubic,
+	},
+},

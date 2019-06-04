@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "COMICNEUE-ANGULAR-REGULAR",
+		uint64 ResourceId = 5430ab76ad121d06,
+	},
+},

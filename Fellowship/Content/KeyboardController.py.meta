@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "KeyboardController",
+		uint64 ResourceId = 546d9b9b2700ad9d,
+	},
+},

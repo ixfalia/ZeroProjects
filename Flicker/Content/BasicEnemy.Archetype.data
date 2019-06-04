@@ -1,0 +1,102 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "Enemy",
+	},
+	Archetyped = 
+	{
+		string Name = "510e14e8d0765239:BasicEnemy",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-4.57091, 30.2672, 0],
+		Vec3 Scale = [2, 2, 2],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	RigidBody = 
+	{
+		bool Static = false,
+		bool Asleep = false,
+		bool Kinematic = false,
+		bool RotationLocked = true,
+		bool Mode2D = false,
+		bool AllowSleep = true,
+		bool Inherit2DMode = true,
+		Vec3 Velocity = [0, 0, 0],
+		Vec3 AngularVelocity = [0, 0, 0],
+	},
+	DragEffect = 
+	{
+		bool Active = true,
+		bool WakeUpOnChange = false,
+		float Drag = 0.9,
+	},
+	Health = 
+	{
+		bool DebugMode = true,
+		float MaxHealth = 100,
+		float CurrentHealth = 100,
+		bool hasDamageReduction = false,
+		float DamageReduction = 10,
+	},
+	Timer = 
+	{
+		bool DebugMode = false,
+	},
+	FollowTarget = 
+	{
+		bool DebugMode = false,
+		string TargetName = "Beacon1",
+		bool isMovingTarget = false,
+		bool isActive = true,
+		bool isSmoothStep = false,
+		float Speed = 0.5,
+		float ResponseTime = 0,
+	},
+	BasicEnemy = 
+	{
+		bool DebugMode = true,
+		Vec3 OriginalPosition = [0, 0, 0],
+		string EnemyDrops = "",
+		float ContactDamage = 25,
+		float VisionRange = 256,
+	},
+	Prizebox = 
+	{
+		bool DebugMode = false,
+		string PrizeType = "BasicPowerup",
+		float VelocityY = -10,
+		uint PrizeAmount = 1,
+		string SoundCue = "",
+		string EventType = "DropPrize",
+		bool isUsed = false,
+		bool playSound = false,
+	},
+	Sprite = 
+	{
+		string SpriteSource = "5165231562066190:NormalEnemy",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 0, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+	},
+	BoxCollider = 
+	{
+		bool Ghost = false,
+		bool SendsMessages = true,
+		bool Seamless = false,
+		string MaterialName = "4faa6050b8692851:HardMaterial",
+		string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+		Vec3 Offset = [0, 0, 0],
+		Vec3 Size = [1, 1, 1],
+	},
+},

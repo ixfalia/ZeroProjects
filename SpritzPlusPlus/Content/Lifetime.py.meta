@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Lifetime",
+		uint64 ResourceId = 527360e3a3a52801,
+	},
+},

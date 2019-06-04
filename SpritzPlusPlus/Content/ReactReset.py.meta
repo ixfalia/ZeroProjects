@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "ReactReset",
+		uint64 ResourceId = 520eff3b8690c6f6,
+	},
+},

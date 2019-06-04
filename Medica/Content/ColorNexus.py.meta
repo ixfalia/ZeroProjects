@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "ColorNexus",
+		uint64 ResourceId = 52dbdf921b607d60,
+	},
+},

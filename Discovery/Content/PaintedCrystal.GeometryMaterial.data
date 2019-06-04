@@ -1,0 +1,14 @@
+GeometryMaterial = 
+{
+	string ArchetypeName = "549fa7dd4008e80a:GeoPaintedCrystalArchetype",
+	GraphicsMaterialBlock = 
+	{
+		string MultiMaterialName = "549fa7dd401f61a1:GeoPaintedCrystalMulti",
+		Vec2 TextureScalarFace = [1, 1],
+		float TextureScalarSurface = 1,
+		bool DoubleSided = false,
+	},
+	PhysicsMaterialBlock = 
+	{
+	},
+},

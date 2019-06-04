@@ -1,0 +1,8 @@
+TextContent = 
+{
+	TextBuilder = 
+	{
+		string Name = "ItemParameters",
+		uint64 ResourceId = 52d0ce1c5051a179,
+	},
+},

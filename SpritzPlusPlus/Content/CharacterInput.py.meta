@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "CharacterInput",
+		uint64 ResourceId = 52a9df889f978317,
+	},
+},

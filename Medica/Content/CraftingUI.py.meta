@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "CraftingUI",
+		uint64 ResourceId = 52cce091241029a1,
+	},
+},

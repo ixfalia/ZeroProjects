@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Spikey",
+		uint64 ResourceId = 526e8a1f91ad588e,
+	},
+},

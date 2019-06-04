@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "ReactiveColor",
+		uint64 ResourceId = 5247d046add99ff0,
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "SoundManager",
+		uint64 ResourceId = 5216bfa027fb6b16,
+	},
+},

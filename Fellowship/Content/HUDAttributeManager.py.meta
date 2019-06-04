@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "HUDAttributeManager",
+		uint64 ResourceId = 541f8e4c65fd44b1,
+	},
+},

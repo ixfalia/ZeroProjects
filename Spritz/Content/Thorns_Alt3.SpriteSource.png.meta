@@ -1,0 +1,19 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "Thorns_Alt3",
+		uint64 ResourceId = 5215105a31cad73a,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 217,
+		uint FrameSizeY = 217,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333,
+		float OriginX = 108,
+		float OriginY = 108,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+	},
+},

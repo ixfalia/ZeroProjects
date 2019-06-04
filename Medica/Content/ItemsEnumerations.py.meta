@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "ItemsEnumerations",
+		uint64 ResourceId = 52c36472a7b1da67,
+	},
+},

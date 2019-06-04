@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "BarScaler",
+		uint64 ResourceId = 532c4d5b62d605b8,
+	},
+},

@@ -1,0 +1,19 @@
+ImageContent = 
+{
+	SpriteSourceBuilder = 
+	{
+		string Name = "grassBlow",
+		uint64 ResourceId = 525cdd3e88584d80,
+		uint64 AtlasId = 5274cf95e4a661fd,
+		uint FrameSizeX = 371,
+		uint FrameSizeY = 128,
+		uint FrameCount = 1,
+		float FrameDelay = 0.0833333,
+		float OriginX = 185,
+		float OriginY = 64,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+		bool Looping = true,
+		Vec4 Slices = [0, 0, 0, 0],
+	},
+},

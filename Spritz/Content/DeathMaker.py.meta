@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "DeathMaker",
+		uint64 ResourceId = 520eff3c86d38815,
+	},
+},

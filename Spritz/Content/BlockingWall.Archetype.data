@@ -1,0 +1,81 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "Sprite",
+	},
+	Archetyped = 
+	{
+		string Name = "526c2dfa32a188b0:BlockingWall",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [84.3308, 2.98831, -1],
+		Vec3 Scale = [15, 1, 2],
+		Quat Rotation = [0, 0, 0.707107, 0.707107],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "5275aa4d802dd6dc:Square",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [0.045, 0.225, 0, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	BoxCollider = 
+	{
+		bool Ghost = false,
+		bool SendsMessages = true,
+		bool Seamless = false,
+		string MaterialName = "4faa6050b8692851:HardMaterial",
+		string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+		Vec3 Offset = [0, 0, 0],
+		Vec3 Size = [0.5, 0.5, 0.5],
+	},
+	RigidBody = 
+	{
+		bool Static = false,
+		bool Asleep = false,
+		bool Kinematic = true,
+		bool RotationLocked = false,
+		bool Mode2D = true,
+		bool AllowSleep = true,
+		bool Inherit2DMode = true,
+		Vec3 Velocity = [0, 0, 0],
+		Vec3 AngularVelocity = [0, 0, 0],
+	},
+	Lock = 
+	{
+		bool DebugMode = true,
+		int LockID = 0,
+		int LookingFor = 0,
+		bool isLocked = true,
+		bool isListening = true,
+	},
+	PathFollower = 
+	{
+		string PathResourceName = "526cdce76fa2f222:Vertical",
+		float TimeToTake = 2,
+		Vec3 LocalFollowPoint = [0, 0, 0],
+		EndCondition EndCondition = Stop,
+		Positioning Positioning = Absolute,
+		bool Paused = true,
+		bool StartAtBeginning = true,
+	},
+	LockedPath = 
+	{
+		string EventListened = "LockUnlocked",
+		bool SpaceEvent = false,
+		bool OwnerEvent = true,
+	},
+},

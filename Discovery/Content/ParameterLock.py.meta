@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "ParameterLock",
+		uint64 ResourceId = 547ab43574a5813c,
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "MapUI",
+		uint64 ResourceId = 52cce01130626693,
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "LevelSelectController",
+		uint64 ResourceId = 52bd28b456cf0bcd,
+	},
+},

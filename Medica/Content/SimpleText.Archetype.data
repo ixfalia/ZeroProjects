@@ -1,0 +1,33 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "Transform",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-8.12726, 0.0945411, -1.59232],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	SpriteText = 
+	{
+		SpriteGeometryMode GeometryMode = ZPlane,
+		TextPositionMode Position = UpperLeft,
+		string FontName = "4e7bac697bec55c5:Verdana",
+		uint FontSize = 10,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		string Text = "",
+		bool OnTop = false,
+		BlendMode BlendMode = Alpha,
+		Vec2 Size = [0, 0],
+		TextAlign Align = Left,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+	},
+},

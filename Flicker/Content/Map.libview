@@ -1,0 +1,544 @@
+Folder = 
+{
+	string Name = "Root",
+	Folder = 
+	{
+		string Name = "Archetype",
+		Node = 
+		{
+			uint64 Value = 510a4812a2ea3d86,
+		},
+		Node = 
+		{
+			uint64 Value = 510a463628219cab,
+		},
+		Node = 
+		{
+			uint64 Value = 510a463b2a16bdcb,
+		},
+		Node = 
+		{
+			uint64 Value = 510a465138773516,
+		},
+		Node = 
+		{
+			uint64 Value = 510e1fe79a929c8c,
+		},
+		Node = 
+		{
+			uint64 Value = 510e14e8d0765239,
+		},
+		Node = 
+		{
+			uint64 Value = 510d5356e36f6aab,
+		},
+		Node = 
+		{
+			uint64 Value = 510d68eb46e7732a,
+		},
+		Node = 
+		{
+			uint64 Value = 510d6534858215e5,
+		},
+		Node = 
+		{
+			uint64 Value = 511525ad72dbc519,
+		},
+		Node = 
+		{
+			uint64 Value = 511578a0a0795258,
+		},
+		Node = 
+		{
+			uint64 Value = 51157fea93fb25a5,
+		},
+		Node = 
+		{
+			uint64 Value = 5162adaa98c057ad,
+		},
+		Node = 
+		{
+			uint64 Value = 5162ad2b6b1e934e,
+		},
+		Node = 
+		{
+			uint64 Value = 5162a390350ef258,
+		},
+		Node = 
+		{
+			uint64 Value = 516608fc125a7fe9,
+		},
+		Node = 
+		{
+			uint64 Value = 51660824181408e5,
+		},
+		Node = 
+		{
+			uint64 Value = 51660803e5219674,
+		},
+		Node = 
+		{
+			uint64 Value = 5165023e52fa7879,
+		},
+		Node = 
+		{
+			uint64 Value = 516511f6a83a2679,
+		},
+		Node = 
+		{
+			uint64 Value = 51657952e256b9da,
+		},
+		Node = 
+		{
+			uint64 Value = 5165786dc38fde94,
+		},
+		Node = 
+		{
+			uint64 Value = 51648bbceb7cf7d9,
+		},
+		Node = 
+		{
+			uint64 Value = 51648c18da52a920,
+		},
+		Node = 
+		{
+			uint64 Value = 516483afad0eabbc,
+		},
+		Node = 
+		{
+			uint64 Value = 516499a431ba105e,
+		},
+	},
+	Folder = 
+	{
+		string Name = "Level",
+		Node = 
+		{
+			uint64 Value = 510a4812a2ea2505,
+		},
+		Node = 
+		{
+			uint64 Value = 510d53fc1474b0b7,
+		},
+		Node = 
+		{
+			uint64 Value = 511bb48939e67946,
+		},
+		Node = 
+		{
+			uint64 Value = 511b5bf994c712df,
+		},
+		Node = 
+		{
+			uint64 Value = 5165022656af40e1,
+		},
+	},
+	Folder = 
+	{
+		string Name = "PyScript",
+		Node = 
+		{
+			uint64 Value = 510a400b652f8532,
+		},
+		Node = 
+		{
+			uint64 Value = 510a581925693753,
+		},
+		Node = 
+		{
+			uint64 Value = 510ef092794abe37,
+		},
+		Node = 
+		{
+			uint64 Value = 510ef0e945a59256,
+		},
+		Node = 
+		{
+			uint64 Value = 510e1e884780e56a,
+		},
+		Node = 
+		{
+			uint64 Value = 510e15c8f52d3f47,
+		},
+		Node = 
+		{
+			uint64 Value = 510e21661ee56d93,
+		},
+		Node = 
+		{
+			uint64 Value = 510e3f49697bed25,
+		},
+		Node = 
+		{
+			uint64 Value = 510d5cc62d009d9c,
+		},
+		Node = 
+		{
+			uint64 Value = 510d6d56d67f8f9e,
+		},
+		Node = 
+		{
+			uint64 Value = 510d7f4cb87ea4c1,
+		},
+		Node = 
+		{
+			uint64 Value = 510d7ef68843680a,
+		},
+		Node = 
+		{
+			uint64 Value = 510d7cce5ba971af,
+		},
+		Node = 
+		{
+			uint64 Value = 510d7c092ee4f824,
+		},
+		Node = 
+		{
+			uint64 Value = 510c1b6da1473508,
+		},
+		Node = 
+		{
+			uint64 Value = 51153e35244e74dc,
+		},
+		Node = 
+		{
+			uint64 Value = 51153df03bd91309,
+		},
+		Node = 
+		{
+			uint64 Value = 51145874d93ce759,
+		},
+		Node = 
+		{
+			uint64 Value = 51145ee1939f1836,
+		},
+		Node = 
+		{
+			uint64 Value = 511b9c6e277ecd1d,
+		},
+		Node = 
+		{
+			uint64 Value = 511b9092af84dd0c,
+		},
+		Node = 
+		{
+			uint64 Value = 511b6b2afe4250b5,
+		},
+		Node = 
+		{
+			uint64 Value = 5166f598c8f57067,
+		},
+		Node = 
+		{
+			uint64 Value = 5166f539de0db486,
+		},
+		Node = 
+		{
+			uint64 Value = 5166f50cd804f2a7,
+		},
+		Node = 
+		{
+			uint64 Value = 5165798c03cb3d9a,
+		},
+		Node = 
+		{
+			uint64 Value = 51657839c47a778c,
+		},
+		Node = 
+		{
+			uint64 Value = 51657ea9bd5b28be,
+		},
+		Node = 
+		{
+			uint64 Value = 51657e9a8408ae20,
+		},
+		Node = 
+		{
+			uint64 Value = 51657e589a00ec35,
+		},
+		Node = 
+		{
+			uint64 Value = 5165732d077b50fe,
+		},
+		Node = 
+		{
+			uint64 Value = 5165726df1fbef75,
+		},
+		Node = 
+		{
+			uint64 Value = 5165754a0439e782,
+		},
+		Node = 
+		{
+			uint64 Value = 51648bfffdf7207f,
+		},
+		Node = 
+		{
+			uint64 Value = 51648c8dc389b45d,
+		},
+	},
+	Folder = 
+	{
+		string Name = "CollisionGroup",
+		Node = 
+		{
+			uint64 Value = 510e131ccb0675e2,
+		},
+		Node = 
+		{
+			uint64 Value = 510d7fb0df02939e,
+		},
+		Node = 
+		{
+			uint64 Value = 511bb2bd089a5296,
+		},
+	},
+	Folder = 
+	{
+		string Name = "CollisionTable",
+		Node = 
+		{
+			uint64 Value = 510e137fd09f97ed,
+		},
+	},
+	Folder = 
+	{
+		string Name = "WeightedTable",
+		Node = 
+		{
+			uint64 Value = 510e3c58e3c1bd42,
+		},
+		Node = 
+		{
+			uint64 Value = 516548bb790f464e,
+		},
+	},
+	Folder = 
+	{
+		string Name = "SpriteSource",
+		Node = 
+		{
+			uint64 Value = 510d688f7862b40c,
+		},
+		Node = 
+		{
+			uint64 Value = 510d68967af44e91,
+		},
+		Node = 
+		{
+			uint64 Value = 510d74db1b476b55,
+		},
+		Node = 
+		{
+			uint64 Value = 5115612e10d74574,
+		},
+		Node = 
+		{
+			uint64 Value = 511bbda395282e92,
+		},
+		Node = 
+		{
+			uint64 Value = 5165a1f3118bc6e3,
+		},
+		Node = 
+		{
+			uint64 Value = 516504b36ba5d0b4,
+		},
+		Node = 
+		{
+			uint64 Value = 5165043447d0c293,
+		},
+		Node = 
+		{
+			uint64 Value = 51651919c44a0e9a,
+		},
+		Node = 
+		{
+			uint64 Value = 5165287923a743ec,
+		},
+		Node = 
+		{
+			uint64 Value = 5165231562066190,
+		},
+		Node = 
+		{
+			uint64 Value = 5165231c6ce19ba2,
+		},
+		Node = 
+		{
+			uint64 Value = 516521ad58dee2f8,
+		},
+		Node = 
+		{
+			uint64 Value = 51656cb4cbaa1776,
+		},
+		Node = 
+		{
+			uint64 Value = 51656362967b4001,
+		},
+		Node = 
+		{
+			uint64 Value = 51657811c0b30303,
+		},
+		Node = 
+		{
+			uint64 Value = 51657e1c908c2f94,
+		},
+		Node = 
+		{
+			uint64 Value = 51657e639101fadc,
+		},
+		Node = 
+		{
+			uint64 Value = 516489f783da8df4,
+		},
+		Node = 
+		{
+			uint64 Value = 51648dbd19eeccf4,
+		},
+	},
+	Folder = 
+	{
+		string Name = "TileSet",
+		Node = 
+		{
+			uint64 Value = 510d7298ec95b176,
+		},
+	},
+	Folder = 
+	{
+		string Name = "Material",
+		Node = 
+		{
+			uint64 Value = 511562e1252a9d02,
+		},
+		Node = 
+		{
+			uint64 Value = 511b99001ce78b06,
+		},
+		Node = 
+		{
+			uint64 Value = 511b995ae146c754,
+		},
+		Node = 
+		{
+			uint64 Value = 51651bef5bdd9069,
+		},
+		Node = 
+		{
+			uint64 Value = 51651ae40132151c,
+		},
+	},
+	Folder = 
+	{
+		string Name = "Texture",
+		Node = 
+		{
+			uint64 Value = 5115625e39615e8d,
+		},
+		Node = 
+		{
+			uint64 Value = 5115605dc9f43595,
+		},
+		Node = 
+		{
+			uint64 Value = 511565bb6572131c,
+		},
+		Node = 
+		{
+			uint64 Value = 51156580678c1e3f,
+		},
+		Node = 
+		{
+			uint64 Value = 511565966022169a,
+		},
+		Node = 
+		{
+			uint64 Value = 5115659b6277bf92,
+		},
+		Node = 
+		{
+			uint64 Value = 511565fe6fc7b44a,
+		},
+		Node = 
+		{
+			uint64 Value = 511565c4684b1624,
+		},
+		Node = 
+		{
+			uint64 Value = 51651b9b59e47ebe,
+		},
+		Node = 
+		{
+			uint64 Value = 51651a9000f68da3,
+		},
+		Node = 
+		{
+			uint64 Value = 51651178860fa61d,
+		},
+	},
+	Folder = 
+	{
+		string Name = "Sound",
+		Node = 
+		{
+			uint64 Value = 5165ccf5965a8d43,
+		},
+		Node = 
+		{
+			uint64 Value = 5165356c1619c6f5,
+		},
+		Node = 
+		{
+			uint64 Value = 5165357210ec7052,
+		},
+		Node = 
+		{
+			uint64 Value = 51654b8dcdc55f12,
+		},
+		Node = 
+		{
+			uint64 Value = 51654a9bb75869dc,
+		},
+		Node = 
+		{
+			uint64 Value = 51654ae0b1ffb291,
+		},
+		Node = 
+		{
+			uint64 Value = 51654ac9bf824231,
+		},
+	},
+	Folder = 
+	{
+		string Name = "SoundCue",
+		Node = 
+		{
+			uint64 Value = 5165038999257d31,
+		},
+		Node = 
+		{
+			uint64 Value = 5165354d135d5a9e,
+		},
+		Node = 
+		{
+			uint64 Value = 5165342ef4e351d0,
+		},
+		Node = 
+		{
+			uint64 Value = 51654b93ce405389,
+		},
+		Node = 
+		{
+			uint64 Value = 51654a678cdd4191,
+		},
+		Node = 
+		{
+			uint64 Value = 516549b690a3ed5c,
+		},
+		Node = 
+		{
+			uint64 Value = 516548e747bec2e9,
+		},
+	},
+},

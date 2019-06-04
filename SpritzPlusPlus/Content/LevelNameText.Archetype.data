@@ -1,0 +1,37 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "lButton",
+	},
+	Archetyped = 
+	{
+		string Name = "528150005af67571:LevelNameText",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [14, -1.5, 1.63918e-007],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	SpriteText = 
+	{
+		SpriteGeometryMode GeometryMode = ZPlane,
+		TextPositionMode Position = Centered,
+		string FontName = "52725258b386131d:Cookies",
+		uint FontSize = 42,
+		Vec4 Color = [0.2752, 0.702104, 0.86, 1],
+		bool Visible = true,
+		string Text = "Main Menu",
+		bool OnTop = false,
+		BlendMode BlendMode = Alpha,
+		Vec2 Size = [0, 0],
+		TextAlign Align = Left,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+	},
+},

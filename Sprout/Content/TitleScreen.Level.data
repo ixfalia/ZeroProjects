@@ -1,0 +1,458 @@
+Level = 
+{
+	LevelSettings = 
+	{
+		LinkId = 
+		{
+			uint Id = 1,
+		},
+		Named = 
+		{
+			string Name = "LevelSettings",
+		},
+		GravityEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			bool LocalSpaceDirection = true,
+			float Strength = 10,
+			Vec3 Direction = [0, -1, 0],
+		},
+		DragEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			float Drag = 0.7,
+		},
+		CameraViewport = 
+		{
+			bool Background = true,
+			Vec2 Offset = [0, 0],
+			Vec2 Size = [1, 1],
+			uint Layer = 0,
+			bool Active = true,
+			bool Blocking = true,
+			uint Renderer = 1,
+			uint Camera = 2,
+		},
+		ForwardRenderer = 
+		{
+			Vec4 ClearColor = [0.345, 0.220541, 0.008625, 1],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 3,
+		},
+		Named = 
+		{
+			string Name = "EditorCamera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-2.18557e-006, 0, 50],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, -2.18557e-008, -0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			SpriteSort SpriteSort = ZDepth,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 500,
+			float Size = 9,
+		},
+		EditorCameraController = 
+		{
+			ControlMode ControlMode = ZPlane,
+			float LookDistance = 50,
+			float VerticalAngle = 0,
+			float HorizontalAngle = 0,
+			Vec3 LookTarget = [0, 0, 0],
+		},
+		EditorRenderer = 
+		{
+			Vec4 ClearColor = [0.278431, 0.278431, 0.278431, 1],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 2,
+		},
+		Named = 
+		{
+			string Name = "Camera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, -0.569893, 40],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			SpriteSort SpriteSort = ZDepth,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 200,
+			float Size = 9,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 4,
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "52a0cc2be18c0b1a:SproutLogo",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		Scalarator = 
+		{
+			bool Active = true,
+			float Delay = 0.1,
+			float Duration = 0.5,
+			float ScaleX = 0.05,
+			float ScaleY = 0.08,
+		},
+		Rotator = 
+		{
+			bool Disabled = false,
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 0.15,
+			bool Sway = true,
+			float SwayPeriod = 0.8,
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = true,
+			int ExtraPriority = 0,
+			string CueName = "52a3b77c62947e56:Wind",
+			float Volume = 0.6,
+			float Pitch = 1,
+			bool Positional = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 5,
+		},
+		Named = 
+		{
+			string Name = "GrassBlowEffect",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-2.89439, 1.20464, 4.08155e-007],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteParticleSystem = 
+		{
+			SystemChildMode ChildMode = Independent,
+			SystemSpace SystemSpace = WorldSpace,
+			uint DrawOrder = 2,
+			ParticleGeometry GeometryMode = Billboarded,
+			ParticleRenderMode RenderMode = Additive,
+			ParticleSortMode SortMode = None,
+			string Texture = "525cd32f5df314e6:leaf",
+			Vec4 Tint = [1, 1, 1, 1],
+			float VelocityScale = 0,
+			float LengthScale = 0,
+			float MaxParticleSize = 100,
+			Vec3 SystemSize = [50, 50, 50],
+		},
+		LinearParticleAnimator = 
+		{
+			Vec3 Force = [0, 0, 0],
+			Vec3 RandomForce = [0, 0, 0],
+			float Torque = 0,
+			float Growth = 0,
+			float Dampening = 0,
+			Vec3 Twist = [0, 0, 0],
+		},
+		BoxParticleEmitter = 
+		{
+			bool Active = true,
+			uint EmitCount = 0,
+			float EmitRate = 12,
+			float EmitVariance = 4,
+			float Size = 0.1,
+			float SizeVariance = 0.05,
+			float Lifetime = 2,
+			float LifetimeVariance = 0,
+			float Spin = 1,
+			float SpinVariance = 2.5,
+			bool RandomSpin = true,
+			float Fill = 1,
+			float EmitterVelocityPercent = 0,
+			Vec3 StartVelocity = [2, -2.5, 0],
+			Vec3 RandomVelocity = [2, -1.5, 0],
+			Vec3 TangentVelocity = [0, 0, 0],
+			Vec3 EmitterSize = [10, 10, 1],
+			bool FastMovingEmitter = false,
+		},
+		ParticleWander = 
+		{
+			float WanderAngle = 1,
+			float WanderAngleVariance = 2,
+			float WanderStrength = 2,
+		},
+		ParticleColorAnimator = 
+		{
+			Vec4 Color0 = [1, 1, 1, 1],
+			Vec4 Color1 = [0.415, 0.33615, 0, 1],
+			Vec4 Color2 = [0.245, 0.245, 0.245, 1],
+			Vec4 Color3 = [0, 0, 0, 1],
+			Vec4 Color4 = [0.16, 0.1056, 0, 1],
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = true,
+			int ExtraPriority = 0,
+			string CueName = "52a3b6dc7bd11748:TitleMusic",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = true,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 6,
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, -2.83154, 0],
+			Vec3 Scale = [0.5, 0.5, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "52a3b5bd534a45a4:StartGame",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.545, 1, 0.95905, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		UIButton = 
+		{
+			bool Active = true,
+			string enterState = "MouseEnter",
+			string defaultEvent = "UIState_Default",
+			string hoverEvent = "UIState_Hover",
+			string activateEvent = "UIState_Activate",
+			string rightClickEvent = "UIState_RClick",
+			string iddleClickEvent = "UIState_MClick",
+			string State = "",
+		},
+		ReactiveColor = 
+		{
+			bool disableMouseEvents = false,
+			Vec4 DefaultColor = [0, 0, 0, 0],
+			Vec4 HoverColor = [0, 0.2205, 0.45, 1],
+			Vec4 DownColor = [0.45, 0.45, 0.45, 1],
+			string hoverEvent = "UIState_Hover",
+			string resetEvent = "UIState_Default",
+			string activateEvent = "UIState_Activate",
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [3.85, 1.25, 0.5],
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		LevelChangeButton = 
+		{
+			bool DebugMode = false,
+			string LevelChange = "5240c437ed18b8e2:Level",
+			bool useLevelTable = true,
+			string PlaySoundOnPress = "525cc47084717901:Combo",
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "4e1bd44008b4dc2a:DefaultCue",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = true,
+		},
+		HUDClear = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 7,
+		},
+		Named = 
+		{
+			string Name = "Transform",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, -3.88172, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = Centered,
+			string FontName = "4e7bac697bec55c5:Verdana",
+			uint FontSize = 16,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			string Text = "All content © 2013 DigiPen (USA) Corporation, all rights reserved.",
+			bool OnTop = false,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 8,
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-0.0286738, -1.84946, 0],
+			Vec3 Scale = [0.4, 0.4, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "52a0a32d79ee0fc0:BeginTutorial",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		UIButton = 
+		{
+			bool Active = true,
+			string enterState = "MouseEnter",
+			string defaultEvent = "UIState_Default",
+			string hoverEvent = "UIState_Hover",
+			string activateEvent = "UIState_Activate",
+			string rightClickEvent = "UIState_RClick",
+			string iddleClickEvent = "UIState_MClick",
+			string State = "",
+		},
+		ReactiveColor = 
+		{
+			bool disableMouseEvents = false,
+			Vec4 DefaultColor = [0, 0, 0, 0],
+			Vec4 HoverColor = [0, 0.2205, 0.45, 1],
+			Vec4 DownColor = [0.45, 0.45, 0.45, 1],
+			string hoverEvent = "UIState_Hover",
+			string resetEvent = "UIState_Default",
+			string activateEvent = "UIState_Activate",
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [3.85, 1.25, 0.5],
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		LevelChangeButton = 
+		{
+			bool DebugMode = false,
+			string LevelChange = "52a0a2a74b51da3c:Tutorial1",
+			bool useLevelTable = false,
+			string PlaySoundOnPress = "525cc47084717901:Combo",
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "4e1bd44008b4dc2a:DefaultCue",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = true,
+		},
+		HUDClear = 
+		{
+		},
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "WaterSpin",
+		uint64 ResourceId = 520eff3a868e1b9d,
+	},
+},

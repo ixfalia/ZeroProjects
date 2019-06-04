@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "Prociono",
+		uint64 ResourceId = 532d3dfe2a58d2c8,
+	},
+},

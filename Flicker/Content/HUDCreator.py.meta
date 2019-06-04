@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "UIMaker",
+		uint64 ResourceId = 510d5cc62d009d9c,
+	},
+},

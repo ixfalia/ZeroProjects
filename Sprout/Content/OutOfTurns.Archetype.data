@@ -1,0 +1,51 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "noMOre",
+	},
+	Archetyped = 
+	{
+		string Name = "52a3024090e8c954:OutOfTurns",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, 0, 0],
+		Vec3 Scale = [2, 2, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "52a30354aabb1297:TurnOut",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = false,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	Fader = 
+	{
+		bool DebugMode = false,
+		float defaultOpacity = 1,
+		float FadeInDuration = 1,
+		float FadeOutDuration = 1,
+		bool FadeInOnCreation = true,
+	},
+	Lifetime = 
+	{
+		float Duration = 3,
+		string SendEvent = "GameOver",
+		bool sendToHUDSpace = false,
+		bool sendToGameSpace = true,
+		bool sendToOwner = false,
+	},
+},

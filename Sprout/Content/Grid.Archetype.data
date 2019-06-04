@@ -1,0 +1,75 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "MasterGrid",
+	},
+	Archetyped = 
+	{
+		string Name = "5240c478f2d23ab8:Grid",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [-12.1864, 4.80287, 0],
+		Vec3 Scale = [0.5, 0.5, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "5240d35599781974:DemoFlower",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = false,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	GridManager = 
+	{
+		bool Debug = false,
+		int rows = 7,
+		int cols = 7,
+	},
+	FlowerGrid = 
+	{
+		bool randomFlowers = false,
+		string flowerTypes = "",
+	},
+	restartGame = 
+	{
+	},
+	HUDMaker = 
+	{
+		bool DebugMode = true,
+		string HUDLevel = "524e6a48e9bb45e5:Level_HUD",
+	},
+	HUDEventDispatcher = 
+	{
+	},
+	ColorDataGrid = 
+	{
+		bool Debug = true,
+		bool limitGrid = true,
+		string gridLimit = "rainbow",
+	},
+	SoundEmitter = 
+	{
+		bool StartPlaying = false,
+		int ExtraPriority = 0,
+		string CueName = "525cc4f0a86a367b:BGM",
+		float Volume = 0.85,
+		float Pitch = 1,
+		bool Positional = false,
+	},
+	ComboTracker = 
+	{
+	},
+},

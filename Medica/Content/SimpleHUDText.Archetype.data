@@ -1,0 +1,41 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "usefulTextR",
+	},
+	Archetyped = 
+	{
+		string Name = "532b943bf4ef639d:SimpleHUDText",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0.172943, 0.472697, -1.19209e-006],
+		Vec3 Scale = [0.0555556, 0.0769231, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	SpriteText = 
+	{
+		SpriteGeometryMode GeometryMode = ZPlane,
+		TextPositionMode Position = UpperLeft,
+		string FontName = "52d4637f84d54c64:DoulosSILR",
+		uint FontSize = 36,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		string Text = "",
+		bool OnTop = false,
+		BlendMode BlendMode = Alpha,
+		Vec2 Size = [0, 0],
+		TextAlign Align = Left,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+	},
+	ColorNexus = 
+	{
+		Vec4 BaseColor = [1, 1, 1, 1],
+	},
+},

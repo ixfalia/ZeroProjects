@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "ButtonLogic",
+		uint64 ResourceId = 51657839c47a778c,
+	},
+},

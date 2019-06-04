@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "ChangeTexture",
+		uint64 ResourceId = 520eff3d8525c7d5,
+	},
+},

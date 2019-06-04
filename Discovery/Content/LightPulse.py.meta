@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "LightPulse",
+		uint64 ResourceId = 544734644f7e5452,
+	},
+},

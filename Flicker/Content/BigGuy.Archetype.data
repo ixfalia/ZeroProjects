@@ -1,0 +1,103 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "Enemy",
+	},
+	Archetyped = 
+	{
+		string Name = "5162a390350ef258:BigGuy",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [84.4099, 34.4526, 0],
+		Vec3 Scale = [1.5, 1.5, 1.5],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	RigidBody = 
+	{
+		bool Static = false,
+		bool Asleep = false,
+		bool Kinematic = false,
+		bool RotationLocked = true,
+		bool Mode2D = false,
+		bool AllowSleep = true,
+		bool Inherit2DMode = true,
+		Vec3 Velocity = [0, 0, 0],
+		Vec3 AngularVelocity = [0, 0, 0],
+	},
+	BoxCollider = 
+	{
+		bool Ghost = false,
+		bool SendsMessages = true,
+		bool Seamless = true,
+		string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+		string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+		Vec3 Offset = [0, 0, 0],
+		Vec3 Size = [2, 2, 2],
+	},
+	DragEffect = 
+	{
+		bool Active = true,
+		bool WakeUpOnChange = false,
+		float Drag = 0.9,
+	},
+	Health = 
+	{
+		bool DebugMode = false,
+		float MaxHealth = 175,
+		float CurrentHealth = 150,
+		bool hasDamageReduction = true,
+		float DamageReduction = 15,
+	},
+	Timer = 
+	{
+		bool DebugMode = false,
+	},
+	FollowTarget = 
+	{
+		bool DebugMode = false,
+		string TargetName = "Beacon1",
+		bool isMovingTarget = false,
+		bool isActive = true,
+		bool isSmoothStep = false,
+		float Speed = 0.3,
+		float ResponseTime = 0,
+	},
+	BasicEnemy = 
+	{
+		bool DebugMode = true,
+		Vec3 OriginalPosition = [0, 0, 0],
+		string EnemyDrops = "",
+		float ContactDamage = 50,
+		float VisionRange = 64,
+		Vec4 OriginalColor = [0, 0, 0, 0],
+	},
+	Prizebox = 
+	{
+		bool DebugMode = true,
+		string PrizeType = "BasicPowerup",
+		float VelocityY = -10,
+		uint PrizeAmount = 1,
+		string SoundCue = "",
+		string EventType = "DropPrize",
+		bool isUsed = false,
+		bool playSound = false,
+	},
+	Sprite = 
+	{
+		string SpriteSource = "516521ad58dee2f8:BigGuy",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [0.665, 0, 0.665, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+	},
+},

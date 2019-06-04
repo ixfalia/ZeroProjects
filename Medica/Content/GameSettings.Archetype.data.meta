@@ -1,0 +1,11 @@
+DataContent = 
+{
+	DataBuilder = 
+	{
+		string Name = "GameSettings",
+		uint64 ResourceId = 533b7b132b79776e,
+		string LoaderType = "LevelSettings",
+		uint Version = 0,
+		bool ShowInEditor = true,
+	},
+},

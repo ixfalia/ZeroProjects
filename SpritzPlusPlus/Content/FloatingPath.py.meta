@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "FloatingPath",
+		uint64 ResourceId = 521dec3ae04da45c,
+	},
+},

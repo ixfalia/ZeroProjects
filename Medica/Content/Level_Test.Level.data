@@ -1,0 +1,2809 @@
+Level = 
+{
+	LevelSettings = 
+	{
+		LinkId = 
+		{
+			uint Id = 1,
+		},
+		Named = 
+		{
+			string Name = "LevelSettings",
+		},
+		GravityEffect = 
+		{
+			bool Active = false,
+			bool WakeUpOnChange = false,
+			bool LocalSpaceDirection = true,
+			float Strength = 10,
+			Vec3 Direction = [0, -1, 0],
+		},
+		DragEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			float Drag = 0.7,
+		},
+		CameraViewport = 
+		{
+			bool Background = true,
+			Vec2 Offset = [0, 0],
+			Vec2 Size = [1, 1],
+			int Layer = 0,
+			bool Active = true,
+			bool Blocking = true,
+			uint Renderer = 1,
+			uint Camera = 2,
+			ViewportScaling Scaling = Fill,
+			Vec2 Resolution = [1280, 720],
+			Vec4 MarginColor = [0, 0, 0, 1],
+		},
+		ForwardRenderer = 
+		{
+			Vec4 ClearColor = [0.189384, 0.24, 0.1068, 1],
+		},
+		HUDMaker = 
+		{
+			bool DebugMode = true,
+			string HUDLevel = "52edbeda2b0f5d37:Level_HUD",
+		},
+		HUDEventDispatcher = 
+		{
+			bool Debug = true,
+		},
+		GameSpaceEventDispatcher = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 3,
+		},
+		Named = 
+		{
+			string Name = "EditorCamera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [10.7863, -22.1582, 45.1],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [-0, -1.09278e-008, 0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			SpriteSort SpriteSort = ZDepth,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 500,
+			float Size = 70,
+		},
+		EditorCameraController = 
+		{
+			ControlMode ControlMode = ZPlane,
+			float LookDistance = 43,
+			float VerticalAngle = 0,
+			float HorizontalAngle = 0,
+			Vec3 LookTarget = [10.7863, -22.1582, 2.1],
+		},
+		EditorRenderer = 
+		{
+			Vec4 ClearColor = [0.278431, 0.278431, 0.278431, 1],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 2,
+		},
+		Named = 
+		{
+			string Name = "Camera",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 40],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Camera = 
+		{
+			ProjectionMode ProjectionMode = Orthographic,
+			Facing Facing = NegativeZ,
+			SpriteSort SpriteSort = ZDepth,
+			float FieldOfView = 45,
+			float NearPlane = 0.5,
+			float FarPlane = 200,
+			float Size = 38,
+		},
+		CameraController = 
+		{
+			uint Target = 4,
+			Vec3 Offset = [0, 0, 0],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 4,
+		},
+		Named = 
+		{
+			string Name = "player",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-2.1201, -5.94795, 0],
+			Vec3 Scale = [1.5, 1.5, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = true,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		MovementController = 
+		{
+			float speed = 11,
+		},
+		CollisionCaster = 
+		{
+			bool DebugMode = true,
+		},
+		MouseController = 
+		{
+			bool Debug = false,
+			bool Disabled = false,
+		},
+		HUDEventDispatcher = 
+		{
+			bool Debug = true,
+		},
+		Microphone = 
+		{
+			bool Active = true,
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5302b02afdad045a:Player",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		CapsuleCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "5302e379f9692902:Player",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 1.3,
+			float Height = 0.5,
+			uint Direction = 1,
+		},
+		DragEffect = 
+		{
+			bool Active = true,
+			bool WakeUpOnChange = false,
+			float Drag = 0.3,
+		},
+		Hierarchy = 
+		{
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "52d092560860e5f5:WhooberTuber",
+		LinkId = 
+		{
+			uint Id = 5,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-12.2241, 1.29764, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "whoober",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 6,
+		},
+		Named = 
+		{
+			string Name = "LevelGeometry",
+		},
+		Archetyped = 
+		{
+			string Name = "4de020863e84941e:Transform",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		LevelGeometry = 
+		{
+			float LayerDepth = 1,
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		EventBox = 
+		{
+			string Archetype = "4faa6050b86884ec:DefaultArchetype",
+			string NameParameter = "",
+			bool DetectHover = false,
+			Vec3 Offset = [0, 2, 0],
+			bool Active = false,
+			bool Used = false,
+		},
+		Hierarchy = 
+		{
+			ArchetypeInstance = 
+			{
+				string Name = "52d17c7340584eb1:GeoBlueArchetype",
+				LinkId = 
+				{
+					uint Id = 7,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-0.608073, -24.7675, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				GeometryMesh = 
+				{
+					int Layer = 0,
+					string GeometryMaterialName = "52d17c734044cf63:Blue",
+					uint64 CachedGeometryId = 530dee68f6ceed93,
+					Shape2D Shape = 
+					{
+						Array Contours = 
+						[
+							{
+								Array Data = 
+								[
+[22.5587, 54.6425],
+[20.1137, 53.3005],
+[19.6917, 52.9835],
+[19.2837, 52.9555],
+[18.0017, 52.0145],
+[16.5297, 51.2215],
+[14.7107, 50.8265],
+[13.0547, 50.1175],
+[12.5027, 49.8015],
+[9.89775, 48.6975],
+[7.61175, 47.5155],
+[6.34875, 45.8595],
+[5.61275, 44.2275],
+[5.37575, 43.5175],
+[5.13875, 42.0985],
+[5.13975, 39.8125],
+[5.37875, 38.7095],
+[5.38275, 36.8855],
+[5.53675, 36.1855],
+[6.11575, 35.1855],
+[6.98375, 34.9575],
+[6.98375, 34.7595],
+[8.56675, 34.4335],
+[9.40575, 34.1535],
+[11.3517, 32.9165],
+[11.8457, 32.2365],
+[13.0437, 29.6885],
+[13.1777, 28.5845],
+[13.0537, 27.5105],
+[12.4787, 25.8815],
+[11.4537, 23.5025],
+[11.1747, 22.2925],
+[11.1747, 20.5435],
+[11.6407, 19.0545],
+[12.3887, 18.0755],
+[13.4227, 17.1065],
+[13.8547, 15.9225],
+[13.6567, 15.6335],
+[11.7797, 14.2315],
+[11.4087, 12.9735],
+[11.6297, 9.81446],
+[11.2977, 8.94946],
+[10.3657, 7.76346],
+[9.18975, 7.54446],
+[8.18875, 7.54546],
+[7.95875, 7.43046],
+[6.60675, 7.41246],
+[4.47275, 7.70246],
+[1.76775, 8.28346],
+[-0.320253, 9.29546],
+[-1.74025, 9.62346],
+[-2.61525, 9.73246],
+[-4.27125, 9.73246],
+[-6.23925, 9.18646],
+[-7.47825, 9.40146],
+[-7.53525, 9.51546],
+[-8.67625, 9.45146],
+[-9.14525, 8.51546],
+[-8.58425, 7.51446],
+[-7.55025, 7.18646],
+[-6.54325, 7.20046],
+[-3.55625, 7.02246],
+[-1.32025, 7.29546],
+[-0.117253, 6.63846],
+[4.25475, 5.21746],
+[8.42375, 5.21746],
+[9.20175, 5.57146],
+[10.4407, 5.60546],
+[10.1807, 4.46746],
+[7.66575, 1.84446],
+[6.79075, 1.29846],
+[5.69775, 0.970456],
+[3.07475, 0.314455],
+[1.87075, -0.123545],
+[1.10275, -0.785545],
+[0.0587473, -2.54454],
+[-0.486253, -3.85754],
+[-0.814253, -5.05954],
+[-0.379253, -8.11854],
+[0.776747, -10.4295],
+[1.76075, -12.1785],
+[2.24075, -12.8345],
+[3.99375, -16.3175],
+[4.43075, -17.6295],
+[5.58575, -19.8315],
+[5.81575, -20.0495],
+[6.89775, -22.1265],
+[8.15075, -23.5475],
+[9.08375, -25.4055],
+[9.33775, -25.6245],
+[10.7237, -28.0315],
+[11.1807, -29.9175],
+[12.6617, -33.1625],
+[12.8537, -34.7465],
+[12.8527, -37.5875],
+[12.6327, -39.6655],
+[11.8837, -41.0925],
+[11.1637, -41.9465],
+[10.0697, -42.4935],
+[8.42975, -43.8065],
+[7.33675, -44.4625],
+[5.14975, -45.0085],
+[-1.83025, -45.2265],
+[-2.81425, -45.1175],
+[-4.01725, -44.7895],
+[-4.78325, -44.7895],
+[-5.54825, -44.5705],
+[-6.86925, -44.3505],
+[-11.2323, -43.8485],
+[-13.2003, -42.7555],
+[-14.6203, -41.7725],
+[-15.6043, -40.6785],
+[-16.3063, -39.6015],
+[-16.4163, -38.5085],
+[-16.6323, -34.5745],
+[-17.0713, -33.1535],
+[-17.9453, -30.8565],
+[-18.8203, -26.2655],
+[-19.1473, -25.5005],
+[-21.1613, -21.4965],
+[-23.1043, -20.0655],
+[-24.0243, -18.7375],
+[-25.0453, -16.7975],
+[-25.3513, -16.4915],
+[-26.3733, -14.6525],
+[-26.6793, -14.2435],
+[-28.9623, -10.6425],
+[-29.8553, -8.70654],
+[-30.2633, -6.96954],
+[-30.6713, -3.90654],
+[-30.4663, 0.0774555],
+[-30.0463, 1.42846],
+[-28.8303, 3.75746],
+[-27.8393, 5.95946],
+[-27.1873, 7.04846],
+[-26.0643, 7.86446],
+[-25.0423, 8.27346],
+[-23.3053, 8.78346],
+[-20.8883, 9.29446],
+[-20.0373, 9.29446],
+[-19.5373, 10.3975],
+[-20.0373, 11.3975],
+[-21.1003, 11.3975],
+[-21.2503, 11.6965],
+[-24.2183, 11.6965],
+[-25.6383, 11.2585],
+[-27.6073, 10.2735],
+[-28.8103, 8.96146],
+[-29.2323, 8.27346],
+[-29.6853, 8.08746],
+[-30.2973, 6.92946],
+[-30.5603, 6.66646],
+[-31.8253, 3.80746],
+[-32.1603, 1.30346],
+[-32.5693, -0.636545],
+[-32.5693, -1.76154],
+[-32.6713, -3.90654],
+[-32.2633, -6.96954],
+[-31.8553, -8.70755],
+[-30.9353, -10.7495],
+[-29.8233, -12.8735],
+[-27.3753, -16.6495],
+[-26.1363, -18.8195],
+[-25.6363, -19.8195],
+[-23.7093, -22.6755],
+[-22.5053, -23.8785],
+[-21.8493, -24.4245],
+[-20.8073, -26.2395],
+[-19.9453, -30.8575],
+[-19.0713, -33.1535],
+[-18.6323, -34.5745],
+[-18.4163, -39.0565],
+[-17.9783, -40.3665],
+[-17.0413, -42.1335],
+[-15.6213, -43.7725],
+[-14.1983, -44.7565],
+[-12.2323, -45.8485],
+[-10.7023, -46.6135],
+[-8.95225, -47.2715],
+[-6.10925, -48.0355],
+[-3.70525, -48.4725],
+[-0.0972527, -48.8005],
+[1.76175, -48.8005],
+[3.40175, -48.9105],
+[5.93175, -48.9105],
+[7.68075, -48.6925],
+[9.21175, -48.3655],
+[11.0697, -47.7085],
+[12.4907, -46.9445],
+[13.8067, -45.9515],
+[14.5667, -44.8665],
+[15.3317, -43.5545],
+[16.4877, -41.2415],
+[17.0347, -40.0395],
+[17.3627, -39.0555],
+[17.4717, -38.0715],
+[17.4717, -35.6665],
+[17.1437, -34.6825],
+[15.7697, -31.7145],
+[15.2207, -30.8405],
+[14.2377, -29.6375],
+[13.0357, -27.6705],
+[11.4867, -25.6655],
+[9.21075, -21.6575],
+[8.03075, -20.2815],
+[6.19075, -16.9075],
+[5.99375, -16.3175],
+[3.63475, -11.4895],
+[2.97875, -10.5055],
+[1.47975, -7.74854],
+[1.18575, -5.49654],
+[1.40775, -4.17554],
+[2.10675, -2.77754],
+[2.87175, -2.12154],
+[4.07475, -1.68554],
+[8.00975, -0.701545],
+[11.1807, 2.46746],
+[11.8367, 3.34146],
+[12.4467, 4.99746],
+[12.7407, 7.00546],
+[13.6257, 9.60446],
+[13.6257, 12.2285],
+[14.2197, 13.1975],
+[15.0287, 14.1345],
+[15.2507, 14.1625],
+[16.1327, 16.0025],
+[15.6327, 17.2385],
+[13.6867, 20.6545],
+[13.5707, 21.4075],
+[14.1327, 22.1775],
+[15.0277, 24.0445],
+[15.4187, 25.2195],
+[15.9737, 26.5685],
+[16.2097, 27.9065],
+[16.2077, 28.6995],
+[15.8927, 30.0355],
+[14.6047, 32.5335],
+[14.1307, 33.3225],
+[12.3307, 34.9555],
+[11.6097, 36.1615],
+[10.5057, 37.5805],
+[9.71775, 38.3695],
+[8.40375, 40.1295],
+[8.00875, 41.8645],
+[7.98275, 42.9135],
+[9.48075, 44.7265],
+[10.6637, 45.5955],
+[12.2407, 46.3835],
+[13.6597, 46.8575],
+[15.7877, 47.4875],
+[17.9177, 48.2765],
+[18.4707, 48.3585],
+[20.8347, 49.4605],
+[22.3347, 50.5665],
+[23.5177, 51.5925],
+[24.9757, 53.4045],
+[25.5127, 54.4045],
+[25.0127, 55.5625],
+[24.5047, 55.6665],
+[23.5047, 55.6665],
+								],
+							},
+						],
+					},
+					bool Dynamic = false,
+					float MinEdgeLength = 0,
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "52d17c7340584eb1:GeoBlueArchetype",
+				LinkId = 
+				{
+					uint Id = 8,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [-0.608073, -24.7675, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				GeometryMesh = 
+				{
+					int Layer = 0,
+					string GeometryMaterialName = "52d17c734044cf63:Blue",
+					uint64 CachedGeometryId = 530dee68f6c9649c,
+					Shape2D Shape = 
+					{
+						Array Contours = 
+						[
+							{
+								Array Data = 
+								[
+[22.5587, 54.6425],
+[20.1137, 53.3005],
+[19.6917, 52.9835],
+[19.2837, 52.9555],
+[18.0017, 52.0145],
+[16.5297, 51.2215],
+[14.7107, 50.8265],
+[13.0547, 50.1175],
+[12.5027, 49.8015],
+[9.89775, 48.6975],
+[7.61175, 47.5155],
+[6.34875, 45.8595],
+[5.61275, 44.2275],
+[5.37575, 43.5175],
+[5.13875, 42.0985],
+[5.13975, 39.8125],
+[5.37875, 38.7095],
+[5.38275, 36.8855],
+[5.53675, 36.1855],
+[6.11575, 35.1855],
+[6.98375, 34.9575],
+[6.98375, 34.7595],
+[8.56675, 34.4335],
+[9.40575, 34.1535],
+[11.3517, 32.9165],
+[11.8457, 32.2365],
+[13.0437, 29.6885],
+[13.1777, 28.5845],
+[13.0537, 27.5105],
+[12.4787, 25.8815],
+[11.4537, 23.5025],
+[11.1747, 22.2925],
+[11.1747, 20.5435],
+[11.6407, 19.0545],
+[12.3887, 18.0755],
+[13.4227, 17.1065],
+[13.8547, 15.9225],
+[13.6567, 15.6335],
+[11.7797, 14.2315],
+[11.4087, 12.9735],
+[11.6297, 9.81446],
+[11.2977, 8.94946],
+[10.3657, 7.76346],
+[9.18975, 7.54446],
+[8.18875, 7.54546],
+[7.95875, 7.43046],
+[6.60675, 7.41246],
+[4.47275, 7.70246],
+[1.76775, 8.28346],
+[-0.320254, 9.29546],
+[-1.74025, 9.62346],
+[-2.61525, 9.73246],
+[-4.27125, 9.73246],
+[-6.23925, 9.18646],
+[-7.47825, 9.40146],
+[-7.53525, 9.51546],
+[-8.67625, 9.45146],
+[-9.14525, 8.51546],
+[-8.58425, 7.51446],
+[-7.55025, 7.18646],
+[-6.54325, 7.20046],
+[-3.55625, 7.02246],
+[-1.32025, 7.29546],
+[-0.117254, 6.63846],
+[4.25475, 5.21746],
+[8.42375, 5.21746],
+[9.20175, 5.57146],
+[10.4407, 5.60546],
+[10.1807, 4.46746],
+[7.66575, 1.84446],
+[6.79075, 1.29846],
+[5.69775, 0.970455],
+[3.07475, 0.314455],
+[1.87075, -0.123545],
+[1.10275, -0.785545],
+[0.0587464, -2.54454],
+[-0.486254, -3.85754],
+[-0.814254, -5.05955],
+[-0.379254, -8.11854],
+[0.776746, -10.4295],
+[1.76075, -12.1785],
+[2.24075, -12.8345],
+[3.99375, -16.3175],
+[4.43075, -17.6295],
+[5.58575, -19.8315],
+[5.81575, -20.0495],
+[6.89775, -22.1265],
+[8.15075, -23.5475],
+[9.08375, -25.4055],
+[9.33775, -25.6245],
+[10.7237, -28.0315],
+[11.1807, -29.9175],
+[12.6617, -33.1625],
+[12.8537, -34.7465],
+[12.8527, -37.5875],
+[12.6327, -39.6655],
+[11.8837, -41.0925],
+[11.1637, -41.9465],
+[10.0697, -42.4935],
+[8.42975, -43.8065],
+[7.33675, -44.4625],
+[5.14975, -45.0085],
+[-1.83025, -45.2265],
+[-2.81425, -45.1175],
+[-4.01725, -44.7895],
+[-4.78325, -44.7895],
+[-5.54825, -44.5705],
+[-6.86925, -44.3505],
+[-11.2323, -43.8485],
+[-13.2003, -42.7555],
+[-14.6203, -41.7725],
+[-15.6043, -40.6785],
+[-16.3063, -39.6015],
+[-16.4163, -38.5085],
+[-16.6323, -34.5745],
+[-17.0713, -33.1535],
+[-17.9453, -30.8565],
+[-18.8203, -26.2655],
+[-19.1473, -25.5005],
+[-21.1613, -21.4965],
+[-23.1043, -20.0655],
+[-24.0243, -18.7375],
+[-25.0453, -16.7975],
+[-25.3513, -16.4915],
+[-26.3733, -14.6525],
+[-26.6793, -14.2435],
+[-28.9623, -10.6425],
+[-29.8553, -8.70654],
+[-30.2633, -6.96955],
+[-30.6713, -3.90654],
+[-30.4663, 0.0774552],
+[-30.0463, 1.42846],
+[-28.8303, 3.75746],
+[-27.8393, 5.95946],
+[-27.1873, 7.04846],
+[-26.0643, 7.86446],
+[-25.0423, 8.27346],
+[-23.3053, 8.78346],
+[-20.8883, 9.29446],
+[-20.0373, 9.29446],
+[-19.5373, 10.3975],
+[-20.0373, 11.3975],
+[-21.1003, 11.3975],
+[-21.2503, 11.6965],
+[-24.2183, 11.6965],
+[-25.6383, 11.2585],
+[-27.6073, 10.2735],
+[-28.8103, 8.96146],
+[-29.2323, 8.27346],
+[-29.6853, 8.08746],
+[-30.2973, 6.92946],
+[-30.5603, 6.66646],
+[-31.8253, 3.80746],
+[-32.1603, 1.30346],
+[-32.5693, -0.636545],
+[-32.5693, -1.76154],
+[-32.6713, -3.90654],
+[-32.2633, -6.96955],
+[-31.8553, -8.70755],
+[-30.9353, -10.7495],
+[-29.8233, -12.8735],
+[-27.3753, -16.6495],
+[-26.1363, -18.8195],
+[-25.6363, -19.8195],
+[-23.7093, -22.6755],
+[-22.5053, -23.8785],
+[-21.8493, -24.4245],
+[-20.8073, -26.2395],
+[-19.9453, -30.8575],
+[-19.0713, -33.1535],
+[-18.6323, -34.5745],
+[-18.4163, -39.0565],
+[-17.9783, -40.3665],
+[-17.0413, -42.1335],
+[-15.6213, -43.7725],
+[-14.1983, -44.7565],
+[-12.2323, -45.8485],
+[-10.7023, -46.6135],
+[-8.95225, -47.2715],
+[-6.10925, -48.0355],
+[-3.70525, -48.4725],
+[-0.0972536, -48.8005],
+[1.76175, -48.8005],
+[3.40175, -48.9105],
+[5.93175, -48.9105],
+[7.68075, -48.6925],
+[9.21175, -48.3655],
+[11.0697, -47.7085],
+[12.4907, -46.9445],
+[13.8067, -45.9515],
+[14.5667, -44.8665],
+[15.3317, -43.5545],
+[16.4877, -41.2415],
+[17.0347, -40.0395],
+[17.3627, -39.0555],
+[17.4717, -38.0715],
+[17.4717, -35.6665],
+[17.1437, -34.6825],
+[15.7697, -31.7145],
+[15.2207, -30.8405],
+[14.2377, -29.6375],
+[13.0357, -27.6705],
+[11.4867, -25.6655],
+[9.21075, -21.6575],
+[8.03075, -20.2815],
+[6.19075, -16.9075],
+[5.99375, -16.3175],
+[3.63475, -11.4895],
+[2.97875, -10.5055],
+[1.47975, -7.74855],
+[1.18575, -5.49655],
+[1.40775, -4.17555],
+[2.10675, -2.77754],
+[2.87175, -2.12154],
+[4.07475, -1.68554],
+[8.00975, -0.701545],
+[11.1807, 2.46746],
+[11.8367, 3.34146],
+[12.4467, 4.99746],
+[12.7407, 7.00546],
+[13.6257, 9.60446],
+[13.6257, 12.2285],
+[14.2197, 13.1975],
+[15.0287, 14.1345],
+[15.2507, 14.1625],
+[16.1327, 16.0025],
+[15.6327, 17.2385],
+[13.6867, 20.6545],
+[13.5707, 21.4075],
+[14.1327, 22.1775],
+[15.0277, 24.0445],
+[15.4187, 25.2195],
+[15.9737, 26.5685],
+[16.2097, 27.9065],
+[16.2077, 28.6995],
+[15.8927, 30.0355],
+[14.6047, 32.5335],
+[14.1307, 33.3225],
+[12.3307, 34.9555],
+[11.6097, 36.1615],
+[10.5057, 37.5805],
+[9.71775, 38.3695],
+[8.40375, 40.1295],
+[8.00875, 41.8645],
+[7.98275, 42.9135],
+[9.48075, 44.7265],
+[10.6637, 45.5955],
+[12.2407, 46.3835],
+[13.6597, 46.8575],
+[15.7877, 47.4875],
+[17.9177, 48.2765],
+[18.4707, 48.3585],
+[20.8347, 49.4605],
+[22.3347, 50.5665],
+[23.5177, 51.5925],
+[24.9757, 53.4045],
+[25.5127, 54.4045],
+[25.0127, 55.5625],
+[24.5047, 55.6665],
+[23.5047, 55.6665],
+								],
+							},
+						],
+					},
+					bool Dynamic = false,
+					float MinEdgeLength = 0,
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "52d17c7340584eb1:GeoBlueArchetype",
+				LinkId = 
+				{
+					uint Id = 9,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [8.17458, 9.56403, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				GeometryMesh = 
+				{
+					int Layer = 0,
+					string GeometryMaterialName = "52d17c734044cf63:Blue",
+					uint64 CachedGeometryId = 530dee68f6c96807,
+					Shape2D Shape = 
+					{
+						Array Contours = 
+						[
+							{
+								Array Data = 
+								[
+[0.721833, -0.166917],
+[-0.145167, 0.148083],
+[-0.301167, 0.226083],
+[-0.382167, 0.226083],
+[-1.17017, 0.463083],
+[-1.80217, 0.630083],
+[-1.80617, 0.425083],
+[-0.223167, 0.0990834],
+[0.615833, -0.180917],
+[1.65783, -0.771917],
+[1.59083, -0.721917],
+[1.24383, -0.375917],
+								],
+							},
+						],
+					},
+					bool Dynamic = false,
+					float MinEdgeLength = 0,
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "52d17c7340584eb1:GeoBlueArchetype",
+				LinkId = 
+				{
+					uint Id = 10,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [8.17458, 9.56403, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				GeometryMesh = 
+				{
+					int Layer = 0,
+					string GeometryMaterialName = "52d17c734044cf63:Blue",
+					uint64 CachedGeometryId = 530dee68f6c96ad2,
+					Shape2D Shape = 
+					{
+						Array Contours = 
+						[
+							{
+								Array Data = 
+								[
+[0.721833, -0.166917],
+[-0.145167, 0.148083],
+[-0.301167, 0.226083],
+[-0.382167, 0.226083],
+[-1.17017, 0.463083],
+[-1.80217, 0.630083],
+[-1.80617, 0.425083],
+[-0.223167, 0.0990833],
+[0.615833, -0.180917],
+[1.65783, -0.771917],
+[1.59083, -0.721917],
+[1.24383, -0.375917],
+								],
+							},
+						],
+					},
+					bool Dynamic = false,
+					float MinEdgeLength = 0,
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "52d17c7340584eb1:GeoBlueArchetype",
+				LinkId = 
+				{
+					uint Id = 11,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [8.17458, 9.56403, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				GeometryMesh = 
+				{
+					int Layer = 0,
+					string GeometryMaterialName = "52d17c734044cf63:Blue",
+					uint64 CachedGeometryId = 530dee68f6c96d8d,
+					Shape2D Shape = 
+					{
+						Array Contours = 
+						[
+							{
+								Array Data = 
+								[
+[0.721833, -0.166917],
+[-0.145167, 0.148083],
+[-0.301167, 0.226083],
+[-0.382167, 0.226083],
+[-1.17017, 0.463083],
+[-1.80217, 0.630083],
+[-1.80617, 0.425083],
+[-0.223167, 0.0990834],
+[0.615833, -0.180917],
+[1.65783, -0.771917],
+[1.59083, -0.721917],
+[1.24383, -0.375917],
+								],
+							},
+						],
+					},
+					bool Dynamic = false,
+					float MinEdgeLength = 0,
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "52d17c7340584eb1:GeoBlueArchetype",
+				LinkId = 
+				{
+					uint Id = 12,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [8.17458, 9.56403, 0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				GeometryMesh = 
+				{
+					int Layer = 0,
+					string GeometryMaterialName = "52d17c734044cf63:Blue",
+					uint64 CachedGeometryId = 530dee68f6c9707b,
+					Shape2D Shape = 
+					{
+						Array Contours = 
+						[
+							{
+								Array Data = 
+								[
+[0.721833, -0.166917],
+[-0.145167, 0.148083],
+[-0.301167, 0.226083],
+[-0.382167, 0.226083],
+[-1.17017, 0.463083],
+[-1.80217, 0.630083],
+[-1.80617, 0.425083],
+[-0.223167, 0.0990833],
+[0.615833, -0.180917],
+[1.65783, -0.771917],
+[1.59083, -0.721917],
+[1.24383, -0.375917],
+								],
+							},
+						],
+					},
+					bool Dynamic = false,
+					float MinEdgeLength = 0,
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "52d17c7340584eb1:GeoBlueArchetype",
+				LinkId = 
+				{
+					uint Id = 13,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [12.3847, 5.07748, -0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				GeometryMesh = 
+				{
+					int Layer = 0,
+					string GeometryMaterialName = "52d17c734044cf63:Blue",
+					uint64 CachedGeometryId = 530dee68f6c9731e,
+					Shape2D Shape = 
+					{
+						Array Contours = 
+						[
+							{
+								Array Data = 
+								[
+[0.0333333, -0.0456667],
+[-0.0666667, 0.154333],
+[0.0333333, -0.108667],
+								],
+							},
+						],
+					},
+					bool Dynamic = false,
+					float MinEdgeLength = 0,
+				},
+			},
+			ArchetypeInstance = 
+			{
+				string Name = "52d17c7340584eb1:GeoBlueArchetype",
+				LinkId = 
+				{
+					uint Id = 14,
+				},
+				Transform = 
+				{
+					Vec3 Translation = [12.3847, 5.07748, -0],
+					Vec3 Scale = [1, 1, 1],
+					Quat Rotation = [0, 0, 0, 1],
+				},
+				GeometryMesh = 
+				{
+					int Layer = 0,
+					string GeometryMaterialName = "52d17c734044cf63:Blue",
+					uint64 CachedGeometryId = 530dee68f6c97405,
+					Shape2D Shape = 
+					{
+						Array Contours = 
+						[
+							{
+								Array Data = 
+								[
+[0.0333333, -0.0456667],
+[-0.0666667, 0.154333],
+[0.0333333, -0.108667],
+								],
+							},
+						],
+					},
+					bool Dynamic = false,
+					float MinEdgeLength = 0,
+				},
+			},
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 15,
+		},
+		Named = 
+		{
+			string Name = "ThirstyNPC",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-18.8836, -15.586, 0],
+			Vec3 Scale = [0.7, 0.7, 0.7],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "52d083adc3c22771:villager",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		MouseBox = 
+		{
+			string EventName = "MouseActivateEvent",
+			bool DetectLeftClick = false,
+			bool DetectRightClick = true,
+			bool DetectMiddleClick = false,
+			bool sendReactiveEvent = true,
+		},
+		HoverText = 
+		{
+			string Text = "Quest Taker",
+			string Archetype = "4faa6050b86884ec:DefaultArchetype",
+			Vec4 BackColor = [0.49, 0.39935, 0.1274, 1],
+			float HoverSize = 1.25,
+			Vec3 Offset = [0, 2, 0],
+		},
+		Prompter = 
+		{
+			string CheckKeyItems = "",
+			string CheckItems = "Serenian Water",
+			string CheckFlags = "",
+			string RequireFlags = "",
+			string RequireKeyItems = "",
+			string RequireItems = "",
+			string Rewards = "Thirsty Villager's Gratitude:Set",
+			string SetFlags = "",
+			string PopUpType = "PromptBox",
+			string PromptName = "Thirst Too Far",
+			string PromptText = "532bd53c359366cd:Tutorial_FirstQuest",
+			bool FreezeGame = true,
+			bool onEvent = false,
+			string DetectedEvent = "MouseActivateEvent",
+			string sendEventOnCompletion = "",
+			bool unlimitedUse = false,
+			bool used = false,
+			bool deactivated = false,
+			Vec3 offset = [0, 0, 0],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		NPC = 
+		{
+			string NPCName = "Thirsty Villager",
+			string Quests = "0:A Thirst Too Far, 1:",
+			string ChatterText = "",
+			float Radius = 0,
+		},
+		Hierarchy = 
+		{
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "52d091a70bd81b11:SaigaFlax",
+		LinkId = 
+		{
+			uint Id = 16,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [10.2687, 7.00732, 1],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "saiga",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 17,
+		},
+		Named = 
+		{
+			string Name = "rock",
+		},
+		Archetyped = 
+		{
+			string Name = "52d0918410a924c6:PurgidineOre",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-2.3603, 12.7059, 0],
+			Vec3 Scale = [0.5, 0.5, 0.5],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "52d09bab805d5275:rock",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.64, 0, 0, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		MouseBox = 
+		{
+			string EventName = "MouseActivateEvent",
+			bool DetectLeftClick = false,
+			bool DetectRightClick = true,
+			bool DetectMiddleClick = false,
+			bool sendReactiveEvent = true,
+		},
+		ItemBox = 
+		{
+			bool Debug = true,
+			string ItemName = "Purgidine Ore",
+			bool isUsed = false,
+			uint AmountGiven = 2,
+			int Limit = 2,
+			Vec4 Color = [1, 1, 1, 1],
+			bool FadeOut = true,
+			float RespawnDuration = 65,
+			float RespawnVariance = 10,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 1.5,
+		},
+		Fader = 
+		{
+			bool DebugMode = false,
+			float FadeInDuration = 1,
+			float FadeOutDuration = 1,
+			bool FadeInOnCreation = false,
+			bool InvisibleOnCreation = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 18,
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+		Archetyped = 
+		{
+			string Name = "52d09787a786a30a:LinjeeMushroom",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [6.05905, -7.102, 0],
+			Vec3 Scale = [0.5, 0.5, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "52d0aa5ccfba3ad6:mushroom",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.995, 0.166165, 0.0199, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		MouseBox = 
+		{
+			string EventName = "MouseActivateEvent",
+			bool DetectLeftClick = false,
+			bool DetectRightClick = true,
+			bool DetectMiddleClick = false,
+			bool sendReactiveEvent = true,
+		},
+		ItemBox = 
+		{
+			bool Debug = true,
+			string ItemName = "Linjee Mushroom",
+			bool isUsed = false,
+			uint AmountGiven = 1,
+			int Limit = 2,
+			Vec4 Color = [1, 1, 1, 1],
+			bool FadeOut = true,
+			float RespawnDuration = 30,
+			float RespawnVariance = 10,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 1.5,
+		},
+		Fader = 
+		{
+			bool DebugMode = false,
+			float FadeInDuration = 1,
+			float FadeOutDuration = 1,
+			bool FadeInOnCreation = false,
+			bool InvisibleOnCreation = false,
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "52d091a9158153c4:ItemNode",
+		LinkId = 
+		{
+			uint Id = 19,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [11.5268, 3.76538, 1],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "saiga",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 20,
+		},
+		Named = 
+		{
+			string Name = "whoober",
+		},
+		Archetyped = 
+		{
+			string Name = "52d092560860e5f5:WhooberTuber",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-15.4857, 6.62918, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "52d178a60189aef4:plant",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.6534, 0.99, 0.56925, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		MouseBox = 
+		{
+			string EventName = "MouseActivateEvent",
+			bool DetectLeftClick = false,
+			bool DetectRightClick = true,
+			bool DetectMiddleClick = false,
+			bool sendReactiveEvent = true,
+		},
+		ItemBox = 
+		{
+			bool Debug = true,
+			string ItemName = "Whoober Tuber",
+			bool isUsed = false,
+			uint AmountGiven = 1,
+			int Limit = 2,
+			Vec4 Color = [1, 1, 1, 1],
+			bool FadeOut = true,
+			float RespawnDuration = 30,
+			float RespawnVariance = 10,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 1.5,
+		},
+		Fader = 
+		{
+			bool DebugMode = false,
+			float FadeInDuration = 1,
+			float FadeOutDuration = 1,
+			bool FadeInOnCreation = false,
+			bool InvisibleOnCreation = false,
+		},
+		Hierarchy = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 21,
+		},
+		Named = 
+		{
+			string Name = "InteractionTutorial",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-16.3137, -41.2312, -3.43323e-005],
+			Vec3 Scale = [0.7, 0.7, 0.7],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "52d083adc3c22771:villager",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		MouseBox = 
+		{
+			string EventName = "MouseActivateEvent",
+			bool DetectLeftClick = false,
+			bool DetectRightClick = true,
+			bool DetectMiddleClick = false,
+			bool sendReactiveEvent = true,
+		},
+		HoverText = 
+		{
+			string Text = "Donny",
+			string Archetype = "4faa6050b86884ec:DefaultArchetype",
+			Vec4 BackColor = [0.49, 0.39935, 0.1274, 1],
+			float HoverSize = 1.25,
+			Vec3 Offset = [0, 2.5, 0],
+		},
+		Prompter = 
+		{
+			string CheckKeyItems = "",
+			string CheckItems = "",
+			string CheckFlags = "",
+			string RequireFlags = "",
+			string RequireKeyItems = "",
+			string RequireItems = "",
+			string Rewards = "",
+			string SetFlags = "",
+			string PopUpType = "EntryBox",
+			string PromptName = "First Interactions",
+			string PromptText = "532bade0fcb912b2:Tutorial_FirstSteps",
+			bool FreezeGame = true,
+			bool onEvent = false,
+			string DetectedEvent = "MouseActivateEvent",
+			string sendEventOnCompletion = "",
+			bool unlimitedUse = false,
+			bool used = false,
+			bool deactivated = false,
+			Vec3 offset = [0, 0, 0],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		NPC = 
+		{
+			string NPCName = "Donny",
+			string Quests = "",
+			string ChatterText = "Right click me!",
+			float Radius = 0,
+		},
+		Hierarchy = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 22,
+		},
+		Named = 
+		{
+			string Name = "Movement Tutorial",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0.481978, -51.7975, -0.000137329],
+			Vec3 Scale = [0.7, 0.7, 0.7],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "52d083adc3c22771:villager",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		MouseBox = 
+		{
+			string EventName = "MouseActivateEvent",
+			bool DetectLeftClick = false,
+			bool DetectRightClick = true,
+			bool DetectMiddleClick = false,
+			bool sendReactiveEvent = true,
+		},
+		HoverText = 
+		{
+			string Text = "Steve",
+			string Archetype = "4faa6050b86884ec:DefaultArchetype",
+			Vec4 BackColor = [0.49, 0.39935, 0.1274, 1],
+			float HoverSize = 1.25,
+			Vec3 Offset = [0, 2.5, 0],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		NPC = 
+		{
+			string NPCName = "Steve",
+			string Quests = "",
+			string ChatterText = "Right Click to Move!",
+			float Radius = 0,
+		},
+		Hierarchy = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 23,
+		},
+		Named = 
+		{
+			string Name = "Serenian Riverside Location",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [0, 0, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SphereCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "532bc8ca7f023da2:Triggers",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 32,
+		},
+		LocationTrigger = 
+		{
+			string Location = "Serenia Riverside",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 24,
+		},
+		Named = 
+		{
+			string Name = "journalmaniac",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-2.53951, 3.8692, 0],
+			Vec3 Scale = [0.7, 0.7, 0.7],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "52d083adc3c22771:villager",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		MouseBox = 
+		{
+			string EventName = "MouseActivateEvent",
+			bool DetectLeftClick = false,
+			bool DetectRightClick = true,
+			bool DetectMiddleClick = false,
+			bool sendReactiveEvent = true,
+		},
+		HoverText = 
+		{
+			string Text = "Journal Enthusiast",
+			string Archetype = "4faa6050b86884ec:DefaultArchetype",
+			Vec4 BackColor = [0.49, 0.39935, 0.1274, 1],
+			float HoverSize = 1.25,
+			Vec3 Offset = [0, 2, 0],
+		},
+		Prompter = 
+		{
+			string CheckKeyItems = "",
+			string CheckItems = "",
+			string CheckFlags = "Serenian Water:Obtained, Saiga Flax:Obtained, Linjee Mushroom:Obtained, Whoober Tuber:Obtained, Purgidine Ore:Obtained",
+			string RequireFlags = "",
+			string RequireKeyItems = "",
+			string RequireItems = "",
+			string Rewards = "Riverside Seal:1",
+			string SetFlags = "",
+			string PopUpType = "PromptBox",
+			string PromptName = "Filling Up The Journal",
+			string PromptText = "532beef53fac6603:Quest_FillingUpTheJournal",
+			bool FreezeGame = true,
+			bool onEvent = false,
+			string DetectedEvent = "MouseActivateEvent",
+			string sendEventOnCompletion = "",
+			bool unlimitedUse = false,
+			bool used = false,
+			bool deactivated = false,
+			Vec3 offset = [0, 0, 0],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		Hierarchy = 
+		{
+		},
+	},
+	ArchetypeInstance = 
+	{
+		string Name = "532bcc93d57b8499:RadiusTrigger",
+		LinkId = 
+		{
+			uint Id = 25,
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-2.6312, 4.10828, -1.59235],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Named = 
+		{
+			string Name = "chatter",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 26,
+		},
+		Named = 
+		{
+			string Name = "Sphere",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-73.2314, 18.1203, 0],
+			Vec3 Scale = [5, 5, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Model = 
+		{
+			string MaterialName = "533a8b5cb038e7a5:DirtyWater",
+			string MeshName = "4de0354322b376ae:Sphere",
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		SphereCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 1,
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		ItemBox = 
+		{
+			bool Debug = true,
+			string ItemName = "Murky Water",
+			bool isUsed = false,
+			uint AmountGiven = 1,
+			int Limit = 4,
+			Vec4 Color = [1, 1, 1, 1],
+			bool FadeOut = true,
+			float RespawnDuration = 65,
+			float RespawnVariance = 10,
+		},
+		MouseBox = 
+		{
+			string EventName = "MouseActivateEvent",
+			bool DetectLeftClick = false,
+			bool DetectRightClick = true,
+			bool DetectMiddleClick = false,
+			bool sendReactiveEvent = true,
+		},
+		Hierarchy = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 27,
+		},
+		Named = 
+		{
+			string Name = "TownHall",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-73.646, 52.006, 0],
+			Vec3 Scale = [24, 16, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Model = 
+		{
+			string MaterialName = "533b78a4cff6f070:Roof",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		HoverText = 
+		{
+			string Text = "Town Hall",
+			string Archetype = "4faa6050b86884ec:DefaultArchetype",
+			Vec4 BackColor = [1, 1, 1, 1],
+			float HoverSize = 1.25,
+			Vec3 Offset = [0, 2, 0],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 28,
+		},
+		Named = 
+		{
+			string Name = "Cube",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-72.4553, -12.8125, 0],
+			Vec3 Scale = [10, 10, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Model = 
+		{
+			string MaterialName = "533b7889d5106ee8:Roof_Blue",
+			string MeshName = "4de0354322b345ae:Cube",
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		HoverText = 
+		{
+			string Text = "Clock Tower",
+			string Archetype = "4faa6050b86884ec:DefaultArchetype",
+			Vec4 BackColor = [1, 1, 1, 1],
+			float HoverSize = 1.25,
+			Vec3 Offset = [0, 2, 0],
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 29,
+		},
+		Named = 
+		{
+			string Name = "MurkyWaterNPC",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-81.2457, 33.586, 0],
+			Vec3 Scale = [0.7, 0.7, 0.7],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "52d083adc3c22771:villager",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		MouseBox = 
+		{
+			string EventName = "MouseActivateEvent",
+			bool DetectLeftClick = false,
+			bool DetectRightClick = true,
+			bool DetectMiddleClick = false,
+			bool sendReactiveEvent = true,
+		},
+		HoverText = 
+		{
+			string Text = "Quest Taker",
+			string Archetype = "4faa6050b86884ec:DefaultArchetype",
+			Vec4 BackColor = [0.49, 0.39935, 0.1274, 1],
+			float HoverSize = 1.25,
+			Vec3 Offset = [0, 2, 0],
+		},
+		Prompter = 
+		{
+			string CheckKeyItems = "",
+			string CheckItems = "",
+			string CheckFlags = "",
+			string RequireFlags = "Help The Town:Active",
+			string RequireKeyItems = "",
+			string RequireItems = "",
+			string Rewards = "Serenian Water",
+			string SetFlags = "",
+			string PopUpType = "PromptBox",
+			string PromptName = "Dirty Water",
+			string PromptText = "5301940149d57279:Quest_DirtyWater",
+			bool FreezeGame = true,
+			bool onEvent = false,
+			string DetectedEvent = "MouseActivateEvent",
+			string sendEventOnCompletion = "",
+			bool unlimitedUse = false,
+			bool used = false,
+			bool deactivated = false,
+			Vec3 offset = [0, 0, 0],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		NPC = 
+		{
+			string NPCName = "Thirsty Villager",
+			string Quests = "0:A Thirst Too Far, 1:Dirty Water, ",
+			string ChatterText = "",
+			float Radius = 0,
+		},
+		Hierarchy = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 30,
+		},
+		Named = 
+		{
+			string Name = "Mayor",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-79.2779, 40.2706, 0],
+			Vec3 Scale = [0.75, 0.75, 0.75],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5302b02afd548466:villager_mayor",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 0.5, 0.5],
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		MouseBox = 
+		{
+			string EventName = "MouseActivateEvent",
+			bool DetectLeftClick = false,
+			bool DetectRightClick = true,
+			bool DetectMiddleClick = false,
+			bool sendReactiveEvent = true,
+		},
+		HoverText = 
+		{
+			string Text = "Quest Taker",
+			string Archetype = "4faa6050b86884ec:DefaultArchetype",
+			Vec4 BackColor = [0.49, 0.39935, 0.1274, 1],
+			float HoverSize = 1.25,
+			Vec3 Offset = [0, 2, 0],
+		},
+		Prompter = 
+		{
+			string CheckKeyItems = "",
+			string CheckItems = "",
+			string CheckFlags = "",
+			string RequireFlags = "",
+			string RequireKeyItems = "",
+			string RequireItems = "",
+			string Rewards = "",
+			string SetFlags = "",
+			string PopUpType = "PromptBox",
+			string PromptName = "Help The Town",
+			string PromptText = "53019131009d1f3c:Quest_HelpTheTown",
+			bool FreezeGame = true,
+			bool onEvent = false,
+			string DetectedEvent = "MouseActivateEvent",
+			string sendEventOnCompletion = "",
+			bool unlimitedUse = false,
+			bool used = false,
+			bool deactivated = false,
+			Vec3 offset = [0, 0, 0],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		NPC = 
+		{
+			string NPCName = "Mayor of Bellama",
+			string Quests = "",
+			string ChatterText = "",
+			float Radius = 0,
+		},
+		NPC_Mayor = 
+		{
+		},
+		TextParser = 
+		{
+		},
+		Hierarchy = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 31,
+		},
+		Named = 
+		{
+			string Name = "rock",
+		},
+		Archetyped = 
+		{
+			string Name = "5302b75bb6810f12:Tree",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-66.6614, 26.4317, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5302b02afda8acea:tree",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.674009, 0.73, 0.51465, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		MouseBox = 
+		{
+			string EventName = "MouseActivateEvent",
+			bool DetectLeftClick = false,
+			bool DetectRightClick = true,
+			bool DetectMiddleClick = false,
+			bool sendReactiveEvent = true,
+		},
+		ItemBox = 
+		{
+			bool Debug = true,
+			string ItemName = "Nattle Wood",
+			bool isUsed = false,
+			uint AmountGiven = 1,
+			int Limit = 4,
+			Vec4 Color = [0.596078, 0.635294, 0.470588, 1],
+			bool FadeOut = true,
+			float RespawnDuration = 65,
+			float RespawnVariance = 10,
+		},
+		SphereCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = false,
+			string MaterialName = "4faa6050b8692851:HardMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 1.5,
+		},
+		Fader = 
+		{
+			bool DebugMode = false,
+			float FadeInDuration = 1,
+			float FadeOutDuration = 1,
+			bool FadeInOnCreation = false,
+			bool InvisibleOnCreation = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 32,
+		},
+		Named = 
+		{
+			string Name = "TownLocation",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-72.8065, 18.2096, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SphereCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "532bc8ca7f023da2:Triggers",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 50,
+		},
+		LocationTrigger = 
+		{
+			string Location = "Bellama Town",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 33,
+		},
+		Named = 
+		{
+			string Name = "House",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-98.8149, 20.4631, -3.8147e-006],
+			Vec3 Scale = [2.5, 2.5, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [3, 2, 0.5],
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		HoverText = 
+		{
+			string Text = "Amert Gant's House",
+			string Archetype = "4faa6050b86884ec:DefaultArchetype",
+			Vec4 BackColor = [1, 1, 1, 1],
+			float HoverSize = 1.25,
+			Vec3 Offset = [0, 2, 0],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5302d8e4218d34a9:House",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.120239, 0.0801, 0.445, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 34,
+		},
+		Named = 
+		{
+			string Name = "House",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-98.8149, 2.75701, -3.8147e-006],
+			Vec3 Scale = [2.5, 2.5, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [3, 2, 0.5],
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		HoverText = 
+		{
+			string Text = "Ciphus Collow's House",
+			string Archetype = "4faa6050b86884ec:DefaultArchetype",
+			Vec4 BackColor = [1, 1, 1, 1],
+			float HoverSize = 1.25,
+			Vec3 Offset = [0, 2, 0],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5302d8e4218d34a9:House",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.85, 0, 0, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 35,
+		},
+		Named = 
+		{
+			string Name = "House",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-46.745, 2.75701, -3.8147e-006],
+			Vec3 Scale = [2.5, 2.5, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [3, 2, 0.5],
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		HoverText = 
+		{
+			string Text = "Barkoft Zasser's House",
+			string Archetype = "4faa6050b86884ec:DefaultArchetype",
+			Vec4 BackColor = [1, 1, 1, 1],
+			float HoverSize = 1.25,
+			Vec3 Offset = [0, 2, 0],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5302d8e4218d34a9:House",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.86, 0.7224, 0, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 36,
+		},
+		Named = 
+		{
+			string Name = "House",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-47.0945, 20.4631, -3.8147e-006],
+			Vec3 Scale = [2.5, 2.5, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [3, 2, 0.5],
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		HoverText = 
+		{
+			string Text = "Nersa Melocht's House",
+			string Archetype = "4faa6050b86884ec:DefaultArchetype",
+			Vec4 BackColor = [1, 1, 1, 1],
+			float HoverSize = 1.25,
+			Vec3 Offset = [0, 2, 0],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5302d8e4218d34a9:House",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.85, 0, 0, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 37,
+		},
+		Named = 
+		{
+			string Name = "House",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-98.8149, 36.7713, -3.8147e-006],
+			Vec3 Scale = [2.5, 2.5, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [3, 2, 0.5],
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		HoverText = 
+		{
+			string Text = "Tema Altenne's House",
+			string Archetype = "4faa6050b86884ec:DefaultArchetype",
+			Vec4 BackColor = [1, 1, 1, 1],
+			float HoverSize = 1.25,
+			Vec3 Offset = [0, 2, 0],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5302d8e4218d34a9:House",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.85, 0, 0, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 38,
+		},
+		Named = 
+		{
+			string Name = "House",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-48.1429, 36.7713, -3.8147e-006],
+			Vec3 Scale = [2.5, 2.5, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		RigidBody = 
+		{
+			bool Static = true,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [3, 2, 0.5],
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		HoverText = 
+		{
+			string Text = "Harona Yuba's House",
+			string Archetype = "4faa6050b86884ec:DefaultArchetype",
+			Vec4 BackColor = [1, 1, 1, 1],
+			float HoverSize = 1.25,
+			Vec3 Offset = [0, 2, 0],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5302d8e4218d34a9:House",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.0714, 0.51, 0, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 39,
+		},
+		Named = 
+		{
+			string Name = "thirstyChatter",
+		},
+		Archetyped = 
+		{
+			string Name = "532bcc93d57b8499:RadiusTrigger",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-18.866, -15.8774, -1.59235],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		RigidBody = 
+		{
+			bool Static = false,
+			bool Asleep = false,
+			bool Kinematic = false,
+			bool RotationLocked = false,
+			bool Mode2D = true,
+			bool AllowSleep = true,
+			bool Inherit2DMode = true,
+			Vec3 Velocity = [0, 0, 0],
+			Vec3 AngularVelocity = [0, 0, 0],
+		},
+		SphereCollider = 
+		{
+			bool Ghost = true,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			float Radius = 10,
+		},
+		CreateOnCollide = 
+		{
+			bool onStart = true,
+			bool onPersist = false,
+			bool onEnd = false,
+			string detectSpecificObject = "player",
+			string Archetype = "532baee9152c8f48:ChatBubble",
+			Vec3 Offset = [5, 4, 3],
+			Vec3 Position = [0.1, 0.1, 0.1],
+			string chatText = "Ugh.. So  Thirsty",
+			string listeningfor = "ThirstyCompleteEvent",
+			string changeTo = "Ah! So refreshing!",
+		},
+		SendEventOnFlagChange = 
+		{
+			string Flag = "Thirst Too Far",
+			string State = "True",
+			string EventToSend = "ThirstyCompleteEvent",
+			bool OwnerEvent = true,
+			bool SpaceEvent = true,
+			bool GameEvent = false,
+		},
+	},
+},

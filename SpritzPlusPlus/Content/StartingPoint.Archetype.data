@@ -1,0 +1,78 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "Start",
+	},
+	Archetyped = 
+	{
+		string Name = "526d00aa1afdff2c:StartingPoint",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [5.62173, -0.0781703, 0],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "52816c5c420a4665:CheckpointUnused",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = false,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+	Checkpoint = 
+	{
+		bool DebugMode = true,
+		uint ID = 0,
+		Vec2 Position = [0, 0],
+		bool textVisible = false,
+		bool isUsed = false,
+	},
+	BoxCollider = 
+	{
+		bool Ghost = false,
+		bool SendsMessages = true,
+		bool Seamless = false,
+		string MaterialName = "4faa6050b8692851:HardMaterial",
+		string SerializedGroupName = "5217aaa5614a18de:Checkpoint",
+		Vec3 Offset = [0, 0, 0],
+		Vec3 Size = [2, 6, 2],
+	},
+	SoundEmitter = 
+	{
+		bool StartPlaying = false,
+		int ExtraPriority = 0,
+		string CueName = "5216e5d72aa0229b:Flower",
+		float Volume = 0.65,
+		float Pitch = 2,
+		bool Positional = true,
+	},
+	SpriteText = 
+	{
+		SpriteGeometryMode GeometryMode = ZPlane,
+		TextPositionMode Position = Centered,
+		string FontName = "4e7bac697bec55c5:Verdana",
+		uint FontSize = 64,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		string Text = "0",
+		bool OnTop = true,
+		BlendMode BlendMode = Alpha,
+		Vec2 Size = [0, 0],
+		TextAlign Align = Left,
+		float PixelsPerUnit = 64,
+		bool Smoothing = true,
+	},
+},

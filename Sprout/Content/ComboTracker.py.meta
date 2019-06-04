@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "ComboTracker",
+		uint64 ResourceId = 525cdf3ef9e8074b,
+	},
+},

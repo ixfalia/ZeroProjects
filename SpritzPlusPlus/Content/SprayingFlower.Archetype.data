@@ -1,0 +1,35 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "sprayingFlower",
+	},
+	Archetyped = 
+	{
+		string Name = "526c2d373a951278:SprayingFlower",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [72.0625, -3.09644, 2.90614e-006],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	Sprite = 
+	{
+		string SpriteSource = "526c16f1945c4847:SprayingFlower",
+		bool FlipX = false,
+		bool FlipY = false,
+		Vec4 Color = [1, 1, 1, 1],
+		bool Visible = true,
+		bool OnTop = false,
+		bool AnimationActive = true,
+		float AnimationSpeed = 1,
+		uint StartFrame = 0,
+		BlendMode BlendMode = Alpha,
+		SpriteGeometryMode GeometryMode = ZPlane,
+	},
+},

@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "UIItem",
+		uint64 ResourceId = 52d0dd4db9751255,
+	},
+},

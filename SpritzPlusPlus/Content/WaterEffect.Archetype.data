@@ -1,0 +1,74 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "wEffect",
+	},
+	Archetyped = 
+	{
+		string Name = "52816f98f6347fca:WaterEffect",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [0, 0, 0],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	SpriteParticleSystem = 
+	{
+		SystemChildMode ChildMode = Independent,
+		SystemSpace SystemSpace = WorldSpace,
+		uint DrawOrder = 0,
+		ParticleGeometry GeometryMode = Billboarded,
+		ParticleRenderMode RenderMode = Additive,
+		ParticleSortMode SortMode = None,
+		string Texture = "521dbf91ebf6ba2f:Texture-Bubble_0",
+		Vec4 Tint = [1, 1, 1, 1],
+		float VelocityScale = 0.25,
+		float LengthScale = 0,
+		float MaxParticleSize = 100,
+		Vec3 SystemSize = [1, 1, 1],
+	},
+	SphericalParticleEmitter = 
+	{
+		bool Active = true,
+		uint EmitCount = 0,
+		float EmitRate = 8,
+		float EmitVariance = 3,
+		float Size = 0.2,
+		float SizeVariance = 0.15,
+		float Lifetime = 1.5,
+		float LifetimeVariance = 0,
+		float Spin = 0,
+		float SpinVariance = 0,
+		bool RandomSpin = false,
+		float Fill = 1,
+		float EmitterVelocityPercent = 0,
+		Vec3 StartVelocity = [0, 2, 0],
+		Vec3 RandomVelocity = [2.5, 0, 0],
+		Vec3 TangentVelocity = [0, 0, 0],
+		Vec3 EmitterSize = [1, 1, 1],
+		bool FastMovingEmitter = false,
+	},
+	LinearParticleAnimator = 
+	{
+		Vec3 Force = [0, -12, 0],
+		Vec3 RandomForce = [0, 0, 0],
+		float Torque = 0,
+		float Growth = 0,
+		float Dampening = 0,
+		Vec3 Twist = [0, 0, 0],
+	},
+	Lifetime = 
+	{
+		float Duration = 2.5,
+		string SendEvent = "",
+		bool sendToHUDSpace = false,
+		bool sendToGameSpace = false,
+		bool sendToOwner = false,
+	},
+},

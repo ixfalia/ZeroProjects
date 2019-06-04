@@ -1,0 +1,16 @@
+Material = 
+{
+	Lambert = 
+	{
+	},
+	EmissiveMapping = 
+	{
+		float EmissiveScale = 1,
+		string EmissiveMapTexture = "4fab71e8bcb7a8ce:DefaultTexture",
+		Vec2 EmissiveScroll = [0, 0],
+	},
+	ColorDiffuse = 
+	{
+		Vec4 DiffuseColor = [0.16, 0.5716, 1, 1],
+	},
+},

@@ -1,0 +1,69 @@
+GameSession = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Archetyped = 
+	{
+		string Name = "52edbfff4651e3ce:Game",
+	},
+	Viewports = 
+	{
+	},
+	DefaultGameSetup = 
+	{
+		string StartingSpaceName = "52c9842927cd5b51:GameSpace",
+		string StartingLevelName = "532b03b6d8699875:MainMenu",
+	},
+	Inventory = 
+	{
+		bool Debug = false,
+		string ParameterText = "52d0ce1c5051a179:ItemParameters",
+	},
+	Journal = 
+	{
+		bool Debug = true,
+		string ItemDescriptions = "52ccebace2fad739:itemDescriptions",
+		string LocationDescriptions = "532d2e92c395ab16:LocationsDescriptions",
+	},
+	GameSpaceEventDispatcher = 
+	{
+	},
+	HUDEventDispatcher = 
+	{
+		bool Debug = true,
+	},
+	CraftingEngine = 
+	{
+		string RecipeDocument = "52d0ae814c22e97d:Recipes",
+	},
+	LevelManager = 
+	{
+		string levelTable = "51e9a089780c2060:DefaultResourceTable",
+		string OverrideLevel = "4faa6050b86892a8:DefaultLevel",
+		string LevelSelect = "4faa6050b86892a8:DefaultLevel",
+	},
+	HUDFactory = 
+	{
+	},
+	NotificationManager = 
+	{
+		Vec3 SpawnPoint = [9, 0, 1],
+	},
+	QuestManager = 
+	{
+	},
+	TimeManager = 
+	{
+		uint IncrementInHours = 6,
+		int DaysRemaining = 4,
+	},
+	TownManager = 
+	{
+		uint TimeRemaining = 10,
+	},
+	TextParser = 
+	{
+	},
+},

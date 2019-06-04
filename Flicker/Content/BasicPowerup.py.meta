@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "BasicPowerup",
+		uint64 ResourceId = 510d7ef68843680a,
+	},
+},

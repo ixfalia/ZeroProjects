@@ -1,0 +1,12 @@
+Material = 
+{
+	Lambert = 
+	{
+	},
+	EmissiveMapping = 
+	{
+		float EmissiveScale = 1.25,
+		string EmissiveMapTexture = "51651a9000f68da3:SpectrumTexScroll",
+		Vec2 EmissiveScroll = [0.25, 0],
+	},
+},

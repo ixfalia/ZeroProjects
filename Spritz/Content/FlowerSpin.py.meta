@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "FlowerSpin",
+		uint64 ResourceId = 521ace1aa80fabda,
+	},
+},

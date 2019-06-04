@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Sign",
+		uint64 ResourceId = 520eff3a869e3458,
+	},
+},

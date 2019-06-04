@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Bullet",
+		uint64 ResourceId = 510e21661ee56d93,
+	},
+},

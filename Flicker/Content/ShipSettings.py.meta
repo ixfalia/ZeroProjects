@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "ShipSettings",
+		uint64 ResourceId = 510e1e884780e56a,
+	},
+},

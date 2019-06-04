@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "Scannable",
+		uint64 ResourceId = 5471b2b3cf34cb56,
+	},
+},

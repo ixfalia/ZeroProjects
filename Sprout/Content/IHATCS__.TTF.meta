@@ -1,0 +1,8 @@
+FontContent = 
+{
+	FontBuilder = 
+	{
+		string Name = "IHATCS__",
+		uint64 ResourceId = 52a0cca314e6dc96,
+	},
+},
