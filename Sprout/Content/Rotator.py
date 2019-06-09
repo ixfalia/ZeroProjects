@@ -27,8 +27,8 @@ class Rotator:
         self.Timer = 0.0
         self.negator = 1.0
         
-        #debug
-        self.Active = False;
+        #debug - 05 JUN 2019
+        #self.Active = False;
     
     def onUpdate(self, Event):
         if not self.Active:
@@ -40,6 +40,7 @@ class Rotator:
         if self.Sway and self.Timer >= self.SwayPeriod:
             self.negator *= -1.0
             self.Timer = 0.0
+            #print("Rotator:OnUpdate() Negator:", self.negator)
         
         ##########################################
         ### The Following commented Code dictates how to rotate to certain points using methods that are most efficient to the Zero Engine
@@ -62,9 +63,13 @@ class Rotator:
         if self.RotateZ:
             vecAxis = Vec3(0, 0, 1);
             angle = self.negator * self.RotatorZ * math.pi * self.Timer;
-            angle = self.negator * math.radians(self.RotatorZ * 360) * self.Timer;
+            #angle = self.negator * math.radians(self.RotatorZ * 180) * self.Timer;
+            #angle = self.negator * self.RotatorZ * 180 * self.Timer;
+            #print("Rotator:OnUpdate() RotateZ: timer =", self.Timer," dt =", Event.Dt, "angle =", angle, "\n")
             self.Owner.Transform.Rotation = VectorMath.Quat.AxisAngle(vecAxis, angle);
             #self.Owner.Transform.Translation = self.Owner.Transform.Rotation.rotate(Vec3(5, 0, 0))
+            
+        
     #enddef
     
     def onRotToggle(self, tEvent):

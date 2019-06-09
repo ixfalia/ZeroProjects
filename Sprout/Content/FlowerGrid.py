@@ -105,9 +105,9 @@ class FlowerGrid:
     
     def getArchetype(self, ID):
         #return '{0}Flower'.format(ID)
-        return "redFlower"
+        return "sproutSeed"
     
-    def createFlower(self, ID):
+    def createFlower(self, ID = "redFlower"):
         ID = self.getArchetype(ID)
         flower = self.Space.Create(ID)
         return flower
@@ -137,7 +137,7 @@ class FlowerGrid:
         for i in range(rows):
             for k in range(cols):
                 #randomID = random.choice(flowerList)
-                randomElement = self.createFlower("redFlower")
+                randomElement = self.createFlower()
                 #size = randomElement.Sprite.Size.x*randomElement.Transform.Scale.x
                 size = self.Owner.Sprite.Size.x*self.Owner.Transform.Scale.x
                 

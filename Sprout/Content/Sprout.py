@@ -34,6 +34,7 @@ class Sprout:
         Zero.Connect(self.Owner, "FullHealth", self.onFullHealth)
         Zero.Connect(self.Owner, "DeathEvent", self.onDeath)
         Zero.Connect(self.Owner, "UIState_Activate", self.onActivate)
+        Zero.Connect(self.Owner, Events.MouseDown, self.onActivate)
         Zero.Connect(self.Space, "EffectEvent", self.onEffect)
         Zero.Connect(self.Space, "ReactivateEvent", self.onReactivate)
         Zero.Connect(self.Owner, "BloomEvent", self.onBloom)
@@ -174,6 +175,7 @@ class Sprout:
         self.changeType(self.currentEffect)
         row, column = self.getGridPosition()
         print("********************************************************************")
+        print("== Sprout.onActivate() ==")
         print("Placed", self.Type, "sprout at (", row, ",",column,")") 
         print("\tTurns set to:", self.TurnCount, "current GrowthTime is", self.GrowthTime)
         print("********************************************************************")
@@ -200,6 +202,7 @@ class Sprout:
         row, column = self.getGridPosition()
         
         print("********************************************************************")
+        print("== Sprout.plantSeed() ==")
         print("Placed", self.Type, "sprout at (", row, ",",column,")") 
         print("\tTurns set to:", self.TurnCount, "current GrowthTime is", self.GrowthTime)
         print("********************************************************************")

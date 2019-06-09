@@ -20,17 +20,20 @@ Cog =
 	},
 	Sprite = 
 	{
+		bool Visible = true,
+		bool VisibilityCulling = true,
 		string SpriteSource = "5274db4c2e7c11f9:Circle",
+		bool RenderMask = false,
 		bool FlipX = false,
 		bool FlipY = false,
 		Vec4 Color = [1, 1, 1, 1],
-		bool Visible = true,
 		bool OnTop = false,
 		bool AnimationActive = true,
 		float AnimationSpeed = 1,
 		uint StartFrame = 0,
 		BlendMode BlendMode = Alpha,
 		SpriteGeometryMode GeometryMode = ZPlane,
+		string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 	},
 	EffectTracker = 
 	{
@@ -38,14 +41,14 @@ Cog =
 	},
 	Rotator = 
 	{
-		bool Disabled = false,
+		bool Active = true,
 		bool RotateX = false,
 		float RotatorX = 0,
 		bool RotateY = false,
 		float RotatorY = 0,
 		bool RotateZ = true,
 		float RotatorZ = 0.2,
-		bool Sway = true,
+		bool Sway = false,
 		float SwayPeriod = 0.8,
 	},
 	SoundManage = 
@@ -65,6 +68,9 @@ Cog =
 	{
 		bool Debug = false,
 		bool Active = false,
-		float ShiftTime = 0.7,
+		bool RandomShift = true,
+		float ShiftTime = 0.5,
+		bool SpriteShift = true,
+		bool TextShift = false,
 	},
 },

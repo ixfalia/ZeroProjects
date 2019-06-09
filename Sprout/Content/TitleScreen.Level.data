@@ -55,7 +55,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0, 0, 50],
+			Vec3 Translation = [1.67148, 1.03903, 50],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [-0, -1.09278e-008, 0, 1],
 		},
@@ -67,7 +67,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
-			float Size = 9,
+			float Size = 10.9926,
 		},
 		EditorCameraController = 
 		{
@@ -75,7 +75,7 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
-			Vec3 LookTarget = [0, 0, 0],
+			Vec3 LookTarget = [1.67148, 1.03903, 7.30627e-008],
 			float MoveSensitivity = 1,
 		},
 		EditorRenderer = 
@@ -158,7 +158,7 @@ Level =
 			float RotatorX = 0,
 			bool RotateY = false,
 			float RotatorY = 0,
-			bool RotateZ = false,
+			bool RotateZ = true,
 			float RotatorZ = 0.01,
 			bool Sway = true,
 			float SwayPeriod = 0.8,
@@ -178,95 +178,6 @@ Level =
 		LinkId = 
 		{
 			uint Id = 5,
-		},
-		Named = 
-		{
-			string Name = "GrassBlowEffect",
-		},
-		Transform = 
-		{
-			Vec3 Translation = [-2.89439, 1.20464, 4.08155e-007],
-			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-		SpriteParticleSystem = 
-		{
-			bool Visible = true,
-			bool VisibilityCulling = true,
-			SystemChildMode ChildMode = Independent,
-			SystemSpace SystemSpace = WorldSpace,
-			uint DrawOrder = 2,
-			float WarmUpTime = 0,
-			ParticleGeometry GeometryMode = Billboarded,
-			ParticleRenderMode RenderMode = Additive,
-			ParticleSortMode SortMode = Youngest,
-			ParticleAnimation ParticleAnimation = Single,
-			string Texture = "525cd32f5df314e6:leaf",
-			Vec4 Tint = [1, 1, 1, 1],
-			float VelocityScale = 0,
-			float LengthScale = 0,
-			float MaxParticleSize = 100,
-			Vec3 SystemSize = [50, 50, 50],
-		},
-		LinearParticleAnimator = 
-		{
-			Vec3 Force = [0, 0, 0],
-			Vec3 RandomForce = [0, 0, 0],
-			float Torque = 0,
-			float Growth = 0,
-			float Dampening = 0,
-			Vec3 Twist = [0, 0, 0],
-		},
-		BoxParticleEmitter = 
-		{
-			bool Active = true,
-			uint EmitCount = 0,
-			float EmitRate = 12,
-			float EmitVariance = 4,
-			float Size = 0.1,
-			float SizeVariance = 0.05,
-			float Lifetime = 2,
-			float LifetimeVariance = 0,
-			float Spin = 1,
-			float SpinVariance = 2.5,
-			bool RandomSpin = true,
-			float Fill = 1,
-			float EmitterVelocityPercent = 0,
-			Vec3 StartVelocity = [2, -2.5, 0],
-			Vec3 RandomVelocity = [2, -1.5, 0],
-			Vec3 TangentVelocity = [0, 0, 0],
-			Vec3 EmitterSize = [10, 10, 1],
-			bool FastMovingEmitter = false,
-		},
-		ParticleWander = 
-		{
-			float WanderAngle = 1,
-			float WanderAngleVariance = 2,
-			float WanderStrength = 2,
-		},
-		ParticleColorAnimator = 
-		{
-			Vec4 Color0 = [1, 1, 1, 1],
-			Vec4 Color1 = [0.415, 0.33615, 0, 1],
-			Vec4 Color2 = [0.245, 0.245, 0.245, 1],
-			Vec4 Color3 = [0, 0, 0, 1],
-			Vec4 Color4 = [0.16, 0.1056, 0, 1],
-		},
-		SoundEmitter = 
-		{
-			bool StartPlaying = true,
-			int ExtraPriority = 0,
-			string CueName = "52a3b6dc7bd11748:TitleMusic",
-			float Volume = 1,
-			float Pitch = 1,
-			bool Positional = true,
-		},
-	},
-	Cog = 
-	{
-		LinkId = 
-		{
-			uint Id = 6,
 		},
 		Named = 
 		{
@@ -298,6 +209,7 @@ Level =
 		UIButton = 
 		{
 			bool Active = true,
+			bool Debug = false,
 			string enterState = "MouseEnter",
 			string defaultEvent = "UIState_Default",
 			string hoverEvent = "UIState_Hover",
@@ -355,7 +267,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 7,
+			uint Id = 6,
 		},
 		Named = 
 		{
@@ -390,7 +302,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 8,
+			uint Id = 7,
 		},
 		Named = 
 		{
@@ -422,6 +334,7 @@ Level =
 		UIButton = 
 		{
 			bool Active = true,
+			bool Debug = true,
 			string enterState = "MouseEnter",
 			string defaultEvent = "UIState_Default",
 			string hoverEvent = "UIState_Hover",

@@ -29,11 +29,14 @@ Level =
 			bool Background = true,
 			Vec2 Offset = [0, 0],
 			Vec2 Size = [1, 1],
-			uint Layer = 0,
+			int Layer = 0,
 			bool Active = true,
 			bool Blocking = true,
 			uint Renderer = 1,
 			uint Camera = 2,
+			ViewportScaling Scaling = Fill,
+			Vec2 Resolution = [1280, 720],
+			Vec4 MarginColor = [0, 0, 0, 1],
 		},
 		ForwardRenderer = 
 		{
@@ -67,15 +70,15 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [5.3159, -5.7269, 90],
+			Vec3 Translation = [9.26521, -3.64608, 90],
 			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, -2.38419e-008, -0, 1],
+			Quat Rotation = [-0, -1.09278e-008, 0, 1],
 		},
 		Camera = 
 		{
 			ProjectionMode ProjectionMode = Orthographic,
 			Facing Facing = NegativeZ,
-			SpriteSort SpriteSort = ZDepth,
+			CameraTransparentSort TransparentSort = InheritFromSpace,
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
@@ -87,7 +90,8 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
-			Vec3 LookTarget = [5.3159, -5.7269, 40],
+			Vec3 LookTarget = [9.26521, -3.64608, 40],
+			float MoveSensitivity = 1,
 		},
 		EditorRenderer = 
 		{
@@ -114,7 +118,7 @@ Level =
 		{
 			ProjectionMode ProjectionMode = Orthographic,
 			Facing Facing = NegativeZ,
-			SpriteSort SpriteSort = ZDepth,
+			CameraTransparentSort TransparentSort = InheritFromSpace,
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 200,
@@ -143,17 +147,20 @@ Level =
 		},
 		Sprite = 
 		{
+			bool Visible = false,
+			bool VisibilityCulling = true,
 			string SpriteSource = "5240d35599781974:DemoFlower",
+			bool RenderMask = false,
 			bool FlipX = false,
 			bool FlipY = false,
 			Vec4 Color = [1, 1, 1, 1],
-			bool Visible = false,
 			bool OnTop = false,
 			bool AnimationActive = true,
 			float AnimationSpeed = 1,
 			uint StartFrame = 0,
 			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 		GridManager = 
 		{
@@ -222,21 +229,24 @@ Level =
 		},
 		Sprite = 
 		{
+			bool Visible = false,
+			bool VisibilityCulling = true,
 			string SpriteSource = "524b26302602cae5:Dead",
+			bool RenderMask = false,
 			bool FlipX = false,
 			bool FlipY = false,
 			Vec4 Color = [1, 1, 1, 1],
-			bool Visible = false,
 			bool OnTop = false,
 			bool AnimationActive = true,
 			float AnimationSpeed = 1,
 			uint StartFrame = 0,
 			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 		Rotator = 
 		{
-			bool Disabled = false,
+			bool Active = true,
 			bool RotateX = false,
 			float RotatorX = 0,
 			bool RotateY = false,
@@ -269,17 +279,20 @@ Level =
 		},
 		Sprite = 
 		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
 			string SpriteSource = "5274db4c2e7c11f9:Circle",
+			bool RenderMask = false,
 			bool FlipX = false,
 			bool FlipY = false,
 			Vec4 Color = [1, 1, 1, 1],
-			bool Visible = true,
 			bool OnTop = false,
 			bool AnimationActive = true,
 			float AnimationSpeed = 1,
 			uint StartFrame = 0,
 			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 		EffectTracker = 
 		{
@@ -287,7 +300,7 @@ Level =
 		},
 		Rotator = 
 		{
-			bool Disabled = false,
+			bool Active = true,
 			bool RotateX = false,
 			float RotatorX = 0,
 			bool RotateY = false,
@@ -338,12 +351,16 @@ Level =
 		},
 		SpriteParticleSystem = 
 		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
 			SystemChildMode ChildMode = Independent,
 			SystemSpace SystemSpace = WorldSpace,
 			uint DrawOrder = 2,
+			float WarmUpTime = 0,
 			ParticleGeometry GeometryMode = Billboarded,
 			ParticleRenderMode RenderMode = Additive,
-			ParticleSortMode SortMode = None,
+			ParticleSortMode SortMode = Youngest,
+			ParticleAnimation ParticleAnimation = Single,
 			string Texture = "525cd32f5df314e6:leaf",
 			Vec4 Tint = [1, 1, 1, 1],
 			float VelocityScale = 0,
@@ -448,17 +465,20 @@ Level =
 		},
 		Sprite = 
 		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
 			string SpriteSource = "525ccc94eec5f3b0:GroundPlot",
+			bool RenderMask = false,
 			bool FlipX = false,
 			bool FlipY = false,
 			Vec4 Color = [1, 1, 1, 1],
-			bool Visible = true,
 			bool OnTop = false,
 			bool AnimationActive = true,
 			float AnimationSpeed = 1,
 			uint StartFrame = 0,
 			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 	},
 	Cog = 
@@ -479,18 +499,21 @@ Level =
 		},
 		SpriteText = 
 		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
 			SpriteGeometryMode GeometryMode = ZPlane,
 			TextPositionMode Position = UpperLeft,
 			string FontName = "52a203d5383863c8:Orbitron Bold",
 			uint FontSize = 64,
 			Vec4 Color = [1, 1, 1, 1],
-			bool Visible = true,
 			string Text = "Current Seed",
 			bool OnTop = false,
 			BlendMode BlendMode = Alpha,
 			Vec2 Size = [0, 0],
 			TextAlign Align = Left,
 			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 	},
 	Cog = 
@@ -511,17 +534,20 @@ Level =
 		},
 		Sprite = 
 		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
 			string SpriteSource = "52a0c1ed952f0f79:Indicator",
+			bool RenderMask = false,
 			bool FlipX = false,
 			bool FlipY = false,
 			Vec4 Color = [1, 1, 1, 1],
-			bool Visible = true,
 			bool OnTop = false,
 			bool AnimationActive = true,
 			float AnimationSpeed = 1,
 			uint StartFrame = 0,
 			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 	},
 },

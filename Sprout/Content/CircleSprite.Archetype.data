@@ -20,17 +20,20 @@ Cog =
 	},
 	Sprite = 
 	{
+		bool Visible = true,
+		bool VisibilityCulling = true,
 		string SpriteSource = "525ccc94eec16fb5:mysteryseed",
+		bool RenderMask = false,
 		bool FlipX = false,
 		bool FlipY = false,
 		Vec4 Color = [1, 1, 1, 1],
-		bool Visible = true,
 		bool OnTop = false,
 		bool AnimationActive = true,
 		float AnimationSpeed = 1,
 		uint StartFrame = 0,
 		BlendMode BlendMode = Alpha,
 		SpriteGeometryMode GeometryMode = ZPlane,
+		string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 	},
 	Scalarator = 
 	{
@@ -42,13 +45,13 @@ Cog =
 	},
 	Rotator = 
 	{
-		bool Disabled = false,
+		bool Active = true,
 		bool RotateX = false,
 		float RotatorX = 0,
 		bool RotateY = false,
 		float RotatorY = 0,
 		bool RotateZ = true,
-		float RotatorZ = 0.8,
+		float RotatorZ = 0.15,
 		bool Sway = true,
 		float SwayPeriod = 0.3,
 	},
@@ -56,6 +59,9 @@ Cog =
 	{
 		bool Debug = false,
 		bool Active = false,
+		bool RandomShift = true,
 		float ShiftTime = 0.25,
+		bool SpriteShift = true,
+		bool TextShift = false,
 	},
 },

@@ -6,15 +6,15 @@ Cog =
 	},
 	Named = 
 	{
-		string Name = "red",
+		string Name = "seed",
 	},
 	Archetyped = 
 	{
-		string Name = "5240e0c5bc4f4b51:redFlower",
+		string Name = "5cacc889098b3f00:sproutSeed",
 	},
 	Transform = 
 	{
-		Vec3 Translation = [3, 4, 0],
+		Vec3 Translation = [0, 0, 0],
 		Vec3 Scale = [0.5, 0.5, 1],
 		Quat Rotation = [0, 0, 0, 1],
 	},
@@ -26,7 +26,7 @@ Cog =
 		bool RenderMask = false,
 		bool FlipX = false,
 		bool FlipY = false,
-		Vec4 Color = [1, 0, 0, 1],
+		Vec4 Color = [1, 1, 1, 1],
 		bool OnTop = false,
 		bool AnimationActive = true,
 		float AnimationSpeed = 1,
@@ -90,14 +90,6 @@ Cog =
 		bool Smoothing = true,
 		string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 	},
-	Sprout = 
-	{
-		string Type = "blank",
-		string Effect = "sunny",
-		Vec2 gridPosition = [0, 0],
-		bool bloomed = false,
-		int GrowthTime = 3,
-	},
 	Rotator = 
 	{
 		bool Active = true,
@@ -143,5 +135,13 @@ Cog =
 		float Volume = 0.75,
 		float Pitch = 1,
 		bool Positional = true,
+	},
+	Sprout = 
+	{
+		string Type = "blank",
+		string Effect = "",
+		Vec2 gridPosition = [0, 0],
+		bool bloomed = false,
+		int GrowthTime = 3,
 	},
 },
