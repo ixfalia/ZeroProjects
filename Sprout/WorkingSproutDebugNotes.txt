@@ -1,0 +1,5 @@
+Sprout Debugging IDeas
+    = Go through all components in redFlower/sproutSeed and see if any of them could block messages
+    = Bypass UIButton altogether for Sprout
+    = Look up resources for mouse events
+    = Change Build Version to see if that fixes things. 

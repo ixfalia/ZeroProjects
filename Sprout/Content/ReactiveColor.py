@@ -12,6 +12,7 @@ Vec3 = VectorMath.Vec3
 Vec4 = VectorMath.Vec4
 
 class ReactiveColor:
+    DebugMode = Property.Bool(default = False)
     disableMouseEvents =  Property.Bool(default = False)
     
     DefaultColor = Property.Color(default=Vec4())
@@ -41,6 +42,8 @@ class ReactiveColor:
             self.Owner.Sprite.Color = self.DefaultColor
         
         self.Defaulta = self.DefaultColor.a
+        
+        self.ComponentName = "ReactiveColor";
     #enddef
     
     def getDefaultColor(self):
@@ -64,6 +67,8 @@ class ReactiveColor:
     
     def onHover(self, mEvent):
         color = self.DefaultColor
+        
+        self.debugPrint("onHover()");
         
         if self.Owner.Sprite:
             if self.Owner.Sprout:
@@ -110,8 +115,16 @@ class ReactiveColor:
             nuColor = self.DownColor.lerp(self.DefaultColor, 0.15)
             #self.Owner.Sprite.Color = nuColor
         #endif
-        
+        self.debugPrint("onActivate()");
         pass
+    #enddef
+    
+    def debugPrint(self, string):
+        if(self.DebugMode):
+            if(self.Owner.ArchetypeName):
+                print(" = ", self.Owner.ArchetypeName, "= ", self.ComponentName, "():", string);
+            else:
+                print(" = ", self.Owner.Name, "= ", self.ComponentName, "():", string);
     #enddef
 
 Zero.RegisterComponent("ReactiveColor", ReactiveColor)

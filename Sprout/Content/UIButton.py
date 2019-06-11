@@ -10,7 +10,7 @@ Vec4 = VectorMath.Vec4
 
 class UIButton:
     Active = Property.Bool(default = True)
-    Debug = Property.Bool(default = False)
+    DebugMode = Property.Bool(default = False)
     
     enterState = Property.String(default = Events.MouseEnter)
     
@@ -33,6 +33,8 @@ class UIButton:
         self.StartingPosition = self.Owner.Transform.Translation
         self.StartingScale = self.Owner.Transform.Scale
         self.isRightMouseDown = False
+        
+        self.ComponentName = "UIButton";
     #end init()
     
     def onEnter(self, mEvent):
@@ -122,7 +124,11 @@ class UIButton:
     
     #debug print adds a detailed name to the front of the desired text
     def debugPrint(self, string):
-        if(self.Debug):
-            print(self.Owner.ArchetypeName, string);
+        if(self.DebugMode):
+            if(self.Owner.ArchetypeName):
+                print(" = ", self.Owner.ArchetypeName, "= ", self.ComponentName, "():", string);
+            else:
+                print(" = ", self.Owner.Name, "= ", self.ComponentName, "():", string);
+    #enddef
 
 Zero.RegisterComponent("UIButton", UIButton)
