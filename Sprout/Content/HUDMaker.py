@@ -13,7 +13,7 @@ class HUDMaker:
         #Zero.Connect(self.Space, "HUDCreate", self.onHUDCreate)
         
         self.HUDSpace = self.GameSession.CreateNamedSpace( "HUDSpace", "Space")
-        self.HUDSpace.LoadLevel(self.HUDLevel)
+        self.HUDSpace.LoadLevel(self.HUDLevel) #this is likely an issue
         
         pEvent = Zero.ScriptEvent()
         pEvent.Space = self.Space

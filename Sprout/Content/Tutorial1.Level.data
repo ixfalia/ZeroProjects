@@ -10,6 +10,10 @@ Level =
 		{
 			string Name = "LevelSettings",
 		},
+		Archetyped = 
+		{
+			string Name = "5d50af3e184c8db7:LevelSettingsTutorial1",
+		},
 		GravityEffect = 
 		{
 			bool Active = true,
@@ -41,6 +45,11 @@ Level =
 		ForwardRenderer = 
 		{
 			Vec4 ClearColor = [0.278431, 0.278431, 0.278431, 1],
+			bool DrawNonVisible = false,
+			bool DrawDebugObjects = true,
+			bool DrawEditorIcons = true,
+			bool EditorIconDepth = true,
+			bool Wireframe = false,
 		},
 		TurnManager = 
 		{
@@ -70,7 +79,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [14.7488, -11.6445, 50],
+			Vec3 Translation = [14.7488, -10.8104, 50],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [-0, -1.09278e-008, 0, 1],
 		},
@@ -82,7 +91,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
-			float Size = 15.645,
+			float Size = 42.5275,
 		},
 		EditorCameraController = 
 		{
@@ -90,12 +99,16 @@ Level =
 			float LookDistance = 50,
 			float VerticalAngle = 0,
 			float HorizontalAngle = 0,
-			Vec3 LookTarget = [14.7488, -11.6445, 6.44693e-007],
+			Vec3 LookTarget = [14.7488, -10.8104, 6.44693e-007],
 			float MoveSensitivity = 1,
 		},
 		EditorRenderer = 
 		{
 			Vec4 ClearColor = [0.278431, 0.278431, 0.278431, 1],
+			bool DrawNonVisible = true,
+			bool DrawDebugObjects = true,
+			bool DrawEditorIcons = true,
+			bool Wireframe = false,
 		},
 	},
 	Cog = 
@@ -145,6 +158,8 @@ Level =
 		{
 			bool Visible = true,
 			bool VisibilityCulling = true,
+			bool VisibilityEvents = false,
+			bool CastShadows = false,
 			SystemChildMode ChildMode = Independent,
 			SystemSpace SystemSpace = WorldSpace,
 			uint DrawOrder = 2,
@@ -281,18 +296,20 @@ Level =
 		{
 			bool Visible = false,
 			bool VisibilityCulling = true,
+			bool VisibilityEvents = false,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 			string SpriteSource = "5240d35599781974:DemoFlower",
 			bool RenderMask = false,
 			bool FlipX = false,
 			bool FlipY = false,
-			Vec4 Color = [1, 1, 1, 1],
 			bool OnTop = false,
 			bool AnimationActive = true,
 			float AnimationSpeed = 1,
 			uint StartFrame = 0,
-			BlendMode BlendMode = Alpha,
-			SpriteGeometryMode GeometryMode = ZPlane,
-			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 		GridManager = 
 		{
@@ -368,18 +385,20 @@ Level =
 		{
 			bool Visible = true,
 			bool VisibilityCulling = true,
+			bool VisibilityEvents = false,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 			string SpriteSource = "52a0c1ed952f0f79:Indicator",
 			bool RenderMask = false,
 			bool FlipX = false,
 			bool FlipY = false,
-			Vec4 Color = [1, 1, 1, 1],
 			bool OnTop = false,
 			bool AnimationActive = true,
 			float AnimationSpeed = 1,
 			uint StartFrame = 0,
-			BlendMode BlendMode = Alpha,
-			SpriteGeometryMode GeometryMode = ZPlane,
-			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 	},
 	Cog = 
@@ -402,18 +421,20 @@ Level =
 		{
 			bool Visible = true,
 			bool VisibilityCulling = true,
+			bool VisibilityEvents = false,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 			string SpriteSource = "525ccc94eec5f3b0:GroundPlot",
 			bool RenderMask = false,
 			bool FlipX = false,
 			bool FlipY = false,
-			Vec4 Color = [1, 1, 1, 1],
 			bool OnTop = false,
 			bool AnimationActive = true,
 			float AnimationSpeed = 1,
 			uint StartFrame = 0,
-			BlendMode BlendMode = Alpha,
-			SpriteGeometryMode GeometryMode = ZPlane,
-			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 	},
 	Cog = 
@@ -436,19 +457,21 @@ Level =
 		{
 			bool Visible = true,
 			bool VisibilityCulling = true,
+			bool VisibilityEvents = false,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 			TextPositionMode Position = UpperLeft,
 			string FontName = "52a203d5383863c8:Orbitron Bold",
 			uint FontSize = 64,
-			Vec4 Color = [1, 1, 1, 1],
 			string Text = "Current Seed",
 			bool OnTop = false,
-			BlendMode BlendMode = Alpha,
 			Vec2 Size = [0, 0],
 			TextAlign Align = Left,
 			float PixelsPerUnit = 64,
 			bool Smoothing = true,
-			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 	},
 	Cog = 
@@ -475,36 +498,40 @@ Level =
 		{
 			bool Visible = true,
 			bool VisibilityCulling = true,
+			bool VisibilityEvents = false,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 			string SpriteSource = "52a7bf2c25ad1031:textBack",
 			bool RenderMask = false,
 			bool FlipX = false,
 			bool FlipY = false,
-			Vec4 Color = [1, 1, 1, 1],
 			bool OnTop = false,
 			bool AnimationActive = true,
 			float AnimationSpeed = 1,
 			uint StartFrame = 0,
-			BlendMode BlendMode = Alpha,
-			SpriteGeometryMode GeometryMode = ZPlane,
-			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 		SpriteText = 
 		{
 			bool Visible = true,
 			bool VisibilityCulling = true,
+			bool VisibilityEvents = false,
+			bool CastShadows = false,
+			Vec4 Color = [0.984314, 0.8, 0.0196078, 1],
+			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 			TextPositionMode Position = Centered,
 			string FontName = "52a203d5383863c8:Orbitron Bold",
 			uint FontSize = 30,
-			Vec4 Color = [0.984314, 0.8, 0.0196078, 1],
 			string Text = "",
 			bool OnTop = false,
-			BlendMode BlendMode = Alpha,
 			Vec2 Size = [6, 6],
 			TextAlign Align = Left,
 			float PixelsPerUnit = 64,
 			bool Smoothing = true,
-			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 		SetText = 
 		{
@@ -512,6 +539,7 @@ Level =
 		},
 		ReactiveColor = 
 		{
+			bool DebugMode = false,
 			bool disableMouseEvents = false,
 			Vec4 DefaultColor = [0, 0, 0, 0],
 			Vec4 HoverColor = [0.8, 0.8, 0.8, 0.45],
@@ -523,7 +551,7 @@ Level =
 		UIButton = 
 		{
 			bool Active = true,
-			bool Debug = false,
+			bool DebugMode = false,
 			string enterState = "MouseEnter",
 			string defaultEvent = "UIState_Default",
 			string hoverEvent = "UIState_Hover",
@@ -546,6 +574,134 @@ Level =
 		{
 			bool Active = true,
 			bool CaptureMouse = false,
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 12,
+		},
+		Named = 
+		{
+			string Name = "Shine",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-3.96712, 4.89648, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = false,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5240d27145dd6688:Shine",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		BoxCollider = 
+		{
+			bool Ghost = false,
+			bool SendsMessages = true,
+			bool Seamless = true,
+			string MaterialName = "4de020863e872da8:DefaultPhysicsMaterial",
+			string SerializedGroupName = "4e740859314e5515:DefaultGroup",
+			Vec3 Offset = [0, 0, 0],
+			Vec3 Size = [0.5, 1, 0.5],
+		},
+		Reactive = 
+		{
+			bool Active = true,
+			bool CaptureMouse = false,
+		},
+		UIButton = 
+		{
+			bool Active = true,
+			bool DebugMode = true,
+			string enterState = "MouseEnter",
+			string defaultEvent = "UIState_Default",
+			string hoverEvent = "UIState_Hover",
+			string activateEvent = "UIState_Activate",
+			string rightClickEvent = "UIState_RClick",
+			string iddleClickEvent = "UIState_MClick",
+			string State = "",
+		},
+		ReactiveColor = 
+		{
+			bool DebugMode = true,
+			bool disableMouseEvents = false,
+			Vec4 DefaultColor = [0, 0, 0, 0],
+			Vec4 HoverColor = [0.640934, 0.03115, 0.89, 1],
+			Vec4 DownColor = [0.21602, 0.0308, 0.56, 1],
+			string hoverEvent = "UIState_Hover",
+			string resetEvent = "UIState_Default",
+			string activateEvent = "UIState_Activate",
+		},
+		SpriteText = 
+		{
+			bool Visible = false,
+			bool VisibilityCulling = false,
+			bool VisibilityEvents = false,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			TextPositionMode Position = UpperLeft,
+			string FontName = "4e7bac697bec55c5:Verdana",
+			uint FontSize = 10,
+			string Text = "",
+			bool OnTop = false,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+		},
+		Scalarator = 
+		{
+			bool Active = true,
+			float Delay = 0.1,
+			float Duration = 0.5,
+			float ScaleX = 0.5,
+			float ScaleY = 0,
+		},
+		ColorShifting = 
+		{
+			bool Debug = false,
+			bool Active = true,
+			bool RandomShift = true,
+			float ShiftTime = 1,
+			bool SpriteShift = true,
+			bool TextShift = false,
+		},
+		Rotator = 
+		{
+			bool Active = true,
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 0.25,
+			bool Sway = false,
+			float SwayPeriod = 1.5,
+		},
+		HealthPoints = 
+		{
+			int HealthMax = 3,
+			int CurrentHealth = 2,
 		},
 	},
 },

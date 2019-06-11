@@ -16,4 +16,7 @@ GameSession =
 		string levelTable = "52a3cbf0f4bc799c:LevelTable",
 		string OverrideLevel = "4faa6050b86892a8:DefaultLevel",
 	},
+	CameraViewports = 
+	{
+	},
 },

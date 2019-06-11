@@ -2,4 +2,10 @@ Sprout Debugging IDeas
     = Go through all components in redFlower/sproutSeed and see if any of them could block messages
     = Bypass UIButton altogether for Sprout
     = Look up resources for mouse events
-    = Change Build Version to see if that fixes things. 
+//    = Change Build Version to see if that fixes things. 
+	= UIButton activation behavior is lost on the level change, the same object in the tutorial level cannot be clicked in another
+		= Find out the Source of this. Note the different objects in the levels
+		= See level settings I might be missing
+		= See the components that might cause this
+		
+		+ the loading of the UIHUD level seems to be causing this. It may be that it is taking up mouseclicks. Not sure how to solve

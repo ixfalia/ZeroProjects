@@ -41,6 +41,11 @@ Level =
 		ForwardRenderer = 
 		{
 			Vec4 ClearColor = [0.345, 0.220541, 0.008625, 1],
+			bool DrawNonVisible = false,
+			bool DrawDebugObjects = true,
+			bool DrawEditorIcons = true,
+			bool EditorIconDepth = true,
+			bool Wireframe = false,
 		},
 	},
 	Cog = 
@@ -67,7 +72,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
-			float Size = 13.4264,
+			float Size = 8.99999,
 		},
 		EditorCameraController = 
 		{
@@ -81,6 +86,10 @@ Level =
 		EditorRenderer = 
 		{
 			Vec4 ClearColor = [0.278431, 0.278431, 0.278431, 1],
+			bool DrawNonVisible = true,
+			bool DrawDebugObjects = true,
+			bool DrawEditorIcons = true,
+			bool Wireframe = false,
 		},
 	},
 	Cog = 
@@ -118,7 +127,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "Sprite",
+			string Name = "TitleLogo",
 		},
 		Transform = 
 		{
@@ -130,18 +139,20 @@ Level =
 		{
 			bool Visible = true,
 			bool VisibilityCulling = true,
+			bool VisibilityEvents = false,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 			string SpriteSource = "52a0cc2be18c0b1a:SproutLogo",
 			bool RenderMask = false,
 			bool FlipX = false,
 			bool FlipY = false,
-			Vec4 Color = [1, 1, 1, 1],
 			bool OnTop = false,
 			bool AnimationActive = true,
 			float AnimationSpeed = 1,
 			uint StartFrame = 0,
-			BlendMode BlendMode = Alpha,
-			SpriteGeometryMode GeometryMode = ZPlane,
-			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 		Scalarator = 
 		{
@@ -181,7 +192,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "Sprite",
+			string Name = "StartGame",
 		},
 		Transform = 
 		{
@@ -193,23 +204,25 @@ Level =
 		{
 			bool Visible = true,
 			bool VisibilityCulling = true,
+			bool VisibilityEvents = false,
+			bool CastShadows = false,
+			Vec4 Color = [0.545, 1, 0.95905, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 			string SpriteSource = "52a3b5bd534a45a4:StartGame",
 			bool RenderMask = false,
 			bool FlipX = false,
 			bool FlipY = false,
-			Vec4 Color = [0.545, 1, 0.95905, 1],
 			bool OnTop = false,
 			bool AnimationActive = true,
 			float AnimationSpeed = 1,
 			uint StartFrame = 0,
-			BlendMode BlendMode = Alpha,
-			SpriteGeometryMode GeometryMode = ZPlane,
-			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 		UIButton = 
 		{
 			bool Active = true,
-			bool Debug = false,
+			bool DebugMode = false,
 			string enterState = "MouseEnter",
 			string defaultEvent = "UIState_Default",
 			string hoverEvent = "UIState_Hover",
@@ -272,7 +285,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "Transform",
+			string Name = "Copyright",
 		},
 		Transform = 
 		{
@@ -284,19 +297,21 @@ Level =
 		{
 			bool Visible = true,
 			bool VisibilityCulling = true,
+			bool VisibilityEvents = false,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 			TextPositionMode Position = Centered,
 			string FontName = "4e7bac697bec55c5:Verdana",
 			uint FontSize = 16,
-			Vec4 Color = [1, 1, 1, 1],
 			string Text = "All content © 2013 DigiPen (USA) Corporation, all rights reserved.",
 			bool OnTop = false,
-			BlendMode BlendMode = Alpha,
 			Vec2 Size = [0, 0],
 			TextAlign Align = Left,
 			float PixelsPerUnit = 64,
 			bool Smoothing = true,
-			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 	},
 	Cog = 
@@ -307,7 +322,7 @@ Level =
 		},
 		Named = 
 		{
-			string Name = "Sprite",
+			string Name = "BeginTutorial",
 		},
 		Transform = 
 		{
@@ -319,23 +334,25 @@ Level =
 		{
 			bool Visible = true,
 			bool VisibilityCulling = true,
+			bool VisibilityEvents = false,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 			string SpriteSource = "52a0a32d79ee0fc0:BeginTutorial",
 			bool RenderMask = false,
 			bool FlipX = false,
 			bool FlipY = false,
-			Vec4 Color = [1, 1, 1, 1],
 			bool OnTop = false,
 			bool AnimationActive = true,
 			float AnimationSpeed = 1,
 			uint StartFrame = 0,
-			BlendMode BlendMode = Alpha,
-			SpriteGeometryMode GeometryMode = ZPlane,
-			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 		UIButton = 
 		{
 			bool Active = true,
-			bool Debug = true,
+			bool DebugMode = false,
 			string enterState = "MouseEnter",
 			string defaultEvent = "UIState_Default",
 			string hoverEvent = "UIState_Hover",
@@ -402,7 +419,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [3.25673, -2.44389, 0],
+			Vec3 Translation = [3.62891, -2.3317, 0],
 			Vec3 Scale = [1, 1, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -410,18 +427,20 @@ Level =
 		{
 			bool Visible = true,
 			bool VisibilityCulling = true,
+			bool VisibilityEvents = false,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 			string SpriteSource = "5240d27145dd6688:Shine",
 			bool RenderMask = false,
 			bool FlipX = false,
 			bool FlipY = false,
-			Vec4 Color = [1, 1, 1, 1],
 			bool OnTop = false,
 			bool AnimationActive = true,
 			float AnimationSpeed = 1,
 			uint StartFrame = 0,
-			BlendMode BlendMode = Alpha,
-			SpriteGeometryMode GeometryMode = ZPlane,
-			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 		BoxCollider = 
 		{
@@ -441,7 +460,7 @@ Level =
 		UIButton = 
 		{
 			bool Active = true,
-			bool Debug = true,
+			bool DebugMode = true,
 			string enterState = "MouseEnter",
 			string defaultEvent = "UIState_Default",
 			string hoverEvent = "UIState_Hover",
@@ -465,26 +484,28 @@ Level =
 		{
 			bool Visible = false,
 			bool VisibilityCulling = false,
+			bool VisibilityEvents = false,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 			TextPositionMode Position = UpperLeft,
 			string FontName = "4e7bac697bec55c5:Verdana",
 			uint FontSize = 10,
-			Vec4 Color = [1, 1, 1, 1],
 			string Text = "",
 			bool OnTop = false,
-			BlendMode BlendMode = Alpha,
 			Vec2 Size = [0, 0],
 			TextAlign Align = Left,
 			float PixelsPerUnit = 64,
 			bool Smoothing = true,
-			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 		Scalarator = 
 		{
-			bool Active = false,
+			bool Active = true,
 			float Delay = 0.1,
 			float Duration = 0.5,
-			float ScaleX = 0,
+			float ScaleX = 0.5,
 			float ScaleY = 0,
 		},
 		ColorShifting = 
@@ -495,6 +516,23 @@ Level =
 			float ShiftTime = 1,
 			bool SpriteShift = true,
 			bool TextShift = false,
+		},
+		Rotator = 
+		{
+			bool Active = true,
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 0.25,
+			bool Sway = false,
+			float SwayPeriod = 1.5,
+		},
+		HealthPoints = 
+		{
+			int HealthMax = 3,
+			int CurrentHealth = 2,
 		},
 	},
 },
