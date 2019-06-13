@@ -34,7 +34,7 @@ class Sprout:
         Zero.Connect(self.Owner, "FullHealth", self.onFullHealth)
         Zero.Connect(self.Owner, "DeathEvent", self.onDeath)
         Zero.Connect(self.Owner, "UIState_Activate", self.onActivate)
-        Zero.Connect(self.Owner, Events.MouseDown, self.onActivate)
+        #Zero.Connect(self.Owner, Events.MouseDown, self.onActivate)
         Zero.Connect(self.Space, "EffectEvent", self.onEffect)
         Zero.Connect(self.Space, "ReactivateEvent", self.onReactivate)
         Zero.Connect(self.Owner, "BloomEvent", self.onBloom)
@@ -159,7 +159,9 @@ class Sprout:
             self.Owner.Scalarator.Active = False
     
     def onActivate(self, aEvent):
+        print("Sprout.onActivate()")
         if self.GameOver:
+            print("self.Gameover")
             return
         
         if not self.Type == sproutTypes.blank:
@@ -437,7 +439,8 @@ class Sprout:
         self.GameOver = False
     
     def onLevel(self, lEvent):
-        self.GameOver = True
+        #self.GameOver = True
+        pass
     
     def playCue(self, sound, pitch = None):
         if not pitch:

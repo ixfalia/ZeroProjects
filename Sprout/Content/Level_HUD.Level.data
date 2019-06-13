@@ -29,11 +29,14 @@ Level =
 			bool Background = false,
 			Vec2 Offset = [0, 0],
 			Vec2 Size = [1, 1],
-			uint Layer = 1,
+			int Layer = 0,
 			bool Active = true,
 			bool Blocking = true,
 			uint Renderer = 1,
 			uint Camera = 2,
+			ViewportScaling Scaling = Fill,
+			Vec2 Resolution = [1280, 720],
+			Vec4 MarginColor = [0, 0, 0, 1],
 		},
 		ForwardRenderer = 
 		{
@@ -54,13 +57,14 @@ Level =
 		{
 			Vec3 Translation = [-1.5519, -2.58199, 50],
 			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, -2.14577e-008, -0, 1],
+			Quat Rotation = [-0, -1.09278e-008, 0, 1],
 		},
 		Camera = 
 		{
 			ProjectionMode ProjectionMode = Orthographic,
 			Facing Facing = NegativeZ,
-			SpriteSort SpriteSort = ZDepth,
+			SpriteSort SpriteSort = ViewDepth,
+			string SpriteLayerOrder = "52b23ad3c402d436:DefaultSpriteLayerOrder",
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
@@ -99,7 +103,8 @@ Level =
 		{
 			ProjectionMode ProjectionMode = Orthographic,
 			Facing Facing = NegativeZ,
-			SpriteSort SpriteSort = ZDepth,
+			SpriteSort SpriteSort = ViewDepth,
+			string SpriteLayerOrder = "52b23ad3c402d436:DefaultSpriteLayerOrder",
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 200,
@@ -115,6 +120,10 @@ Level =
 		Named = 
 		{
 			string Name = "HUDCameraSizeDummy",
+		},
+		Archetyped = 
+		{
+			string Name = "5d517aa087c5e7e6:HUD",
 		},
 		Transform = 
 		{
@@ -135,104 +144,10 @@ Level =
 			uint StartFrame = 0,
 			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
-	},
-	Cog = 
-	{
-		LinkId = 
+		Hierarchy = 
 		{
-			uint Id = 5,
-		},
-		Named = 
-		{
-			string Name = """TurnsRemaining"" Text",
-		},
-		Transform = 
-		{
-			Vec3 Translation = [-11.7807, -10.5039, 0],
-			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-		SpriteText = 
-		{
-			SpriteGeometryMode GeometryMode = ZPlane,
-			TextPositionMode Position = UpperLeft,
-			string FontName = "52a203d5383863c8:Orbitron Bold",
-			uint FontSize = 42,
-			Vec4 Color = [0.895, 0.040275, 0.040275, 1],
-			bool Visible = true,
-			string Text = "Turns Remaining:",
-			bool OnTop = true,
-			BlendMode BlendMode = Alpha,
-			Vec2 Size = [0, 0],
-			TextAlign Align = Left,
-			float PixelsPerUnit = 64,
-		},
-	},
-	Cog = 
-	{
-		LinkId = 
-		{
-			uint Id = 6,
-		},
-		Named = 
-		{
-			string Name = "TurnTracker",
-		},
-		Transform = 
-		{
-			Vec3 Translation = [-5.20782, -10.5039, 0],
-			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-		SpriteText = 
-		{
-			SpriteGeometryMode GeometryMode = ZPlane,
-			TextPositionMode Position = UpperLeft,
-			string FontName = "52a203d5383863c8:Orbitron Bold",
-			uint FontSize = 42,
-			Vec4 Color = [1, 1, 1, 1],
-			bool Visible = true,
-			string Text = "0",
-			bool OnTop = true,
-			BlendMode BlendMode = Alpha,
-			Vec2 Size = [0, 0],
-			TextAlign Align = Left,
-			float PixelsPerUnit = 64,
-		},
-		TurnsTracker = 
-		{
-		},
-	},
-	Cog = 
-	{
-		LinkId = 
-		{
-			uint Id = 7,
-		},
-		Named = 
-		{
-			string Name = "Sprite",
-		},
-		Transform = 
-		{
-			Vec3 Translation = [-7.62646, -10.9324, -8.90619e-008],
-			Vec3 Scale = [8.71682, 1.25, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-		Sprite = 
-		{
-			string SpriteSource = "5240d27145d05448:FillTile",
-			bool FlipX = false,
-			bool FlipY = false,
-			Vec4 Color = [0.1332, 0.15, 0.0975, 1],
-			bool Visible = true,
-			bool OnTop = false,
-			bool AnimationActive = true,
-			float AnimationSpeed = 1,
-			uint StartFrame = 0,
-			BlendMode BlendMode = Alpha,
-			SpriteGeometryMode GeometryMode = ZPlane,
 		},
 	},
 	ArchetypeInstance = 
@@ -240,11 +155,11 @@ Level =
 		string Name = "52a3046eb9bacef1:PlantYourSeeds",
 		LinkId = 
 		{
-			uint Id = 8,
+			uint Id = 5,
 		},
 		Transform = 
 		{
-			Vec3 Translation = [0, 0, 0],
+			Vec3 Translation = [0, 1.02318e-012, 0],
 			Vec3 Scale = [2.5, 2.5, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -257,39 +172,7 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 9,
-		},
-		Named = 
-		{
-			string Name = """TurnsRemaining"" Text",
-		},
-		Transform = 
-		{
-			Vec3 Translation = [3.74372, 11.892, 0],
-			Vec3 Scale = [1, 1, 1],
-			Quat Rotation = [0, 0, 0, 1],
-		},
-		SpriteText = 
-		{
-			SpriteGeometryMode GeometryMode = ZPlane,
-			TextPositionMode Position = UpperLeft,
-			string FontName = "52a203d5383863c8:Orbitron Bold",
-			uint FontSize = 42,
-			Vec4 Color = [0.349103, 0.89, 0.05785, 1],
-			bool Visible = true,
-			string Text = "Score:",
-			bool OnTop = true,
-			BlendMode BlendMode = Alpha,
-			Vec2 Size = [0, 0],
-			TextAlign Align = Left,
-			float PixelsPerUnit = 64,
-		},
-	},
-	Cog = 
-	{
-		LinkId = 
-		{
-			uint Id = 10,
+			uint Id = 6,
 		},
 		Named = 
 		{
@@ -315,6 +198,8 @@ Level =
 			Vec2 Size = [0, 0],
 			TextAlign Align = Left,
 			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 		ScoreTracker = 
 		{
@@ -324,7 +209,41 @@ Level =
 	{
 		LinkId = 
 		{
-			uint Id = 11,
+			uint Id = 7,
+		},
+		Named = 
+		{
+			string Name = """TurnsRemaining"" Text",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-11.7807, -10.5039, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = UpperLeft,
+			string FontName = "52a203d5383863c8:Orbitron Bold",
+			uint FontSize = 42,
+			Vec4 Color = [0.895, 0.040275, 0.040275, 1],
+			bool Visible = true,
+			string Text = "Turns Remaining:",
+			bool OnTop = true,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 8,
 		},
 		Named = 
 		{
@@ -332,7 +251,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [7.89796, 11.4635, -8.90619e-008],
+			Vec3 Translation = [-7.62645, -10.9324, 0],
 			Vec3 Scale = [8.71682, 1.25, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -349,13 +268,51 @@ Level =
 			uint StartFrame = 0,
 			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 	},
 	Cog = 
 	{
 		LinkId = 
 		{
-			uint Id = 12,
+			uint Id = 9,
+		},
+		Named = 
+		{
+			string Name = "TurnTracker",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [-5.20783, -10.5039, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = UpperLeft,
+			string FontName = "52a203d5383863c8:Orbitron Bold",
+			uint FontSize = 42,
+			Vec4 Color = [1, 1, 1, 1],
+			bool Visible = true,
+			string Text = "0",
+			bool OnTop = true,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+		},
+		TurnsTracker = 
+		{
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 10,
 		},
 		Named = 
 		{
@@ -363,7 +320,7 @@ Level =
 		},
 		Transform = 
 		{
-			Vec3 Translation = [9.66813, -11.8344, 2],
+			Vec3 Translation = [9.66812, -11.8344, 2],
 			Vec3 Scale = [0.85, 0.85, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
@@ -380,6 +337,7 @@ Level =
 			uint StartFrame = 0,
 			BlendMode BlendMode = Alpha,
 			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 		SpriteText = 
 		{
@@ -395,6 +353,8 @@ Level =
 			Vec2 Size = [0, 0],
 			TextAlign Align = Left,
 			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 		BoxCollider = 
 		{
@@ -409,6 +369,7 @@ Level =
 		UIButton = 
 		{
 			bool Active = true,
+			bool DebugMode = false,
 			string enterState = "MouseEnter",
 			string defaultEvent = "UIState_Default",
 			string hoverEvent = "UIState_Hover",
@@ -419,6 +380,7 @@ Level =
 		},
 		ReactiveColor = 
 		{
+			bool DebugMode = false,
 			bool disableMouseEvents = false,
 			Vec4 DefaultColor = [0, 0, 0, 0],
 			Vec4 HoverColor = [0.245, 0.2401, 0.2401, 1],
@@ -438,6 +400,72 @@ Level =
 			string LevelChange = "52a3bde764a949c5:TitleScreen",
 			bool useLevelTable = false,
 			string PlaySoundOnPress = "4e1bd44008b4dc2a:DefaultCue",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 11,
+		},
+		Named = 
+		{
+			string Name = """TurnsRemaining"" Text",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [3.74372, 11.892, 0],
+			Vec3 Scale = [1, 1, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		SpriteText = 
+		{
+			SpriteGeometryMode GeometryMode = ZPlane,
+			TextPositionMode Position = UpperLeft,
+			string FontName = "52a203d5383863c8:Orbitron Bold",
+			uint FontSize = 42,
+			Vec4 Color = [0.349103, 0.89, 0.05785, 1],
+			bool Visible = true,
+			string Text = "Score:",
+			bool OnTop = true,
+			BlendMode BlendMode = Alpha,
+			Vec2 Size = [0, 0],
+			TextAlign Align = Left,
+			float PixelsPerUnit = 64,
+			bool Smoothing = true,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+		},
+	},
+	Cog = 
+	{
+		LinkId = 
+		{
+			uint Id = 12,
+		},
+		Named = 
+		{
+			string Name = "Sprite",
+		},
+		Transform = 
+		{
+			Vec3 Translation = [7.89795, 11.4635, 0],
+			Vec3 Scale = [8.71682, 1.25, 1],
+			Quat Rotation = [0, 0, 0, 1],
+		},
+		Sprite = 
+		{
+			string SpriteSource = "5240d27145d05448:FillTile",
+			bool FlipX = false,
+			bool FlipY = false,
+			Vec4 Color = [0.1332, 0.15, 0.0975, 1],
+			bool Visible = true,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
 		},
 	},
 },

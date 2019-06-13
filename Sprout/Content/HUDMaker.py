@@ -12,7 +12,7 @@ class HUDMaker:
         #Zero.Connect(self.Space, Events.LevelStarted, self.onLevelStarted)
         #Zero.Connect(self.Space, "HUDCreate", self.onHUDCreate)
         
-        self.HUDSpace = self.GameSession.CreateNamedSpace( "HUDSpace", "Space")
+        self.HUDSpace = self.GameSession.CreateNamedSpace( "HUDSpace", "GameSpace")
         self.HUDSpace.LoadLevel(self.HUDLevel) #this is likely an issue
         
         pEvent = Zero.ScriptEvent()
@@ -21,7 +21,7 @@ class HUDMaker:
         
         if self.Owner.CameraViewport:
             self.Owner.CameraViewport.Background = False
-            self.Owner.CameraViewport.Layer = 1
+            self.Owner.CameraViewport.Layer = 0
             #self.Owner.CameraViewport.Renderer = "LevelSettings"
     #end Initialize()
     

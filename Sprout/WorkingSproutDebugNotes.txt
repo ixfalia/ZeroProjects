@@ -9,3 +9,5 @@ Sprout Debugging IDeas
 		= See the components that might cause this
 		
 		+ the loading of the UIHUD level seems to be causing this. It may be that it is taking up mouseclicks. Not sure how to solve
+		+ Part of why Sprouts don't detect behavior to plant is that self.GameOver is set to true upon the Level Start via an event for some reason, unfortunately I have no idea why I did it this way
+		+ game works! if I disable hud, but cannot be ended.
