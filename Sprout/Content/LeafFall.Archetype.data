@@ -1,0 +1,95 @@
+Cog = 
+{
+	LinkId = 
+	{
+		uint Id = 1,
+	},
+	Named = 
+	{
+		string Name = "GrassBlowEffect",
+	},
+	Archetyped = 
+	{
+		string Name = "5d54ff1e62041a54:LeafFall",
+	},
+	Transform = 
+	{
+		Vec3 Translation = [9.3375, -4.95, 4.08155e-007],
+		Vec3 Scale = [1, 1, 1],
+		Quat Rotation = [0, 0, 0, 1],
+	},
+	SpriteParticleSystem = 
+	{
+		bool Visible = true,
+		bool VisibilityCulling = true,
+		bool VisibilityEvents = false,
+		bool CastShadows = false,
+		SystemChildMode ChildMode = Independent,
+		SystemSpace SystemSpace = WorldSpace,
+		uint DrawOrder = 2,
+		float WarmUpTime = 0,
+		ParticleGeometry GeometryMode = Billboarded,
+		ParticleRenderMode RenderMode = Additive,
+		ParticleSortMode SortMode = Youngest,
+		ParticleAnimation ParticleAnimation = Single,
+		string Texture = "525cd32f5df314e6:leaf",
+		Vec4 Tint = [1, 1, 1, 1],
+		float VelocityScale = 0,
+		float LengthScale = 0,
+		float MaxParticleSize = 100,
+		Vec3 SystemSize = [50, 50, 50],
+	},
+	LinearParticleAnimator = 
+	{
+		Vec3 Force = [0, 0, 0],
+		Vec3 RandomForce = [0, 0, 0],
+		float Torque = 0,
+		float Growth = 0,
+		float Dampening = 0,
+		Vec3 Twist = [0, 0, 0],
+	},
+	BoxParticleEmitter = 
+	{
+		bool Active = true,
+		uint EmitCount = 0,
+		float EmitRate = 8,
+		float EmitVariance = 4,
+		float Size = 0.75,
+		float SizeVariance = 0.5,
+		float Lifetime = 5,
+		float LifetimeVariance = 0,
+		float Spin = 1,
+		float SpinVariance = 2.5,
+		bool RandomSpin = true,
+		float Fill = 1,
+		float EmitterVelocityPercent = 0,
+		Vec3 StartVelocity = [5, -5, 0],
+		Vec3 RandomVelocity = [2, -1.5, 0],
+		Vec3 TangentVelocity = [0, 0, 0],
+		Vec3 EmitterSize = [100, 100, 1],
+		bool FastMovingEmitter = false,
+	},
+	ParticleWander = 
+	{
+		float WanderAngle = 1,
+		float WanderAngleVariance = 2,
+		float WanderStrength = 2,
+	},
+	ParticleColorAnimator = 
+	{
+		Vec4 Color0 = [1, 1, 1, 1],
+		Vec4 Color1 = [0.415, 0.33615, 0, 1],
+		Vec4 Color2 = [0.245, 0.245, 0.245, 1],
+		Vec4 Color3 = [0, 0, 0, 0.845],
+		Vec4 Color4 = [0.16, 0.1056, 0, 0.305],
+	},
+	SoundEmitter = 
+	{
+		bool StartPlaying = true,
+		int ExtraPriority = 0,
+		string CueName = "52a3b77c62947e56:Wind",
+		float Volume = 1,
+		float Pitch = 1,
+		bool Positional = true,
+	},
+},

@@ -33,13 +33,20 @@ class Sprout:
         Zero.Connect(self.Owner, "UIState_Default", self.onDefault)
         Zero.Connect(self.Owner, "FullHealth", self.onFullHealth)
         Zero.Connect(self.Owner, "DeathEvent", self.onDeath)
-        Zero.Connect(self.Owner, "UIState_Activate", self.onActivate)
+        #Zero.Connect(self.Owner, "UIState_Activate", self.onActivate)  #disabling the activate functions cuz they broke and I am working around them
         #Zero.Connect(self.Owner, Events.MouseDown, self.onActivate)
+        #Zero.Connect(Zero.Mouse, Events.MouseDown, self.onActivate)
         Zero.Connect(self.Space, "EffectEvent", self.onEffect)
         Zero.Connect(self.Space, "ReactivateEvent", self.onReactivate)
         Zero.Connect(self.Owner, "BloomEvent", self.onBloom)
         Zero.Connect(self.Space, "OutOfTurns", self.onGameOver)
         Zero.Connect(self.Space, Events.LevelStarted, self.onLevel)
+        
+        #HACKS! Getting 'Round Limitations
+        #Zero.Connect(Zero.Keyboard, Events.KeyDown, self.onKeyDown)
+        Zero.Connect(self.Owner, "UIState_Hover", self.onMouseEnter)
+        Zero.Connect(self.Owner, Events.MouseExit, self.onMouseExit)
+        Zero.Connect(self.Space, "SproutClickEvent", self.onActivate)
         
         self.wiltColor = Vec4(0.384,0.412,0.153, 1)
         self.delayOffset = 0
@@ -53,6 +60,9 @@ class Sprout:
         self.isPoisoned = False
         self.TurnCount = self.GrowthTime
         self.GameOver = False
+        
+        #MORE HACKS
+        self.isMouseHover = False;
         
         if self.Type == sproutTypes.blank:
             self.Owner.SpriteText.Visible = False
@@ -110,6 +120,8 @@ class Sprout:
     
     def updateSprout(self):
         if self.GameOver:
+            if(self.GameOver):
+                self.Owner.SpriteText.Visible = False;
             return
         
         self.Owner.Sprite.Color = self.Manager.effectColors(self.Type)
@@ -128,6 +140,7 @@ class Sprout:
             self.Owner.SpriteText.Visible = False
         else:
             self.Owner.SpriteText.Visible = True
+        #endif block
         
         if self.bloomed:
             self.Owner.Sprite.SpriteSource = "DemoFlower"
@@ -139,6 +152,7 @@ class Sprout:
                 self.poison.SphericalParticleEmitter.EmitterSize = Vec3(4,4,1)
         else:
             self.Owner.Scalarator.Active = True
+        #endif block
         
         if self.Type == sproutTypes.blank:
             self.Owner.Sprite.Color = Vec4(0,0,0,0)
@@ -157,12 +171,18 @@ class Sprout:
                 self.poison = self.Space.CreateAtPosition("poisonEffect", self.Owner.Transform.Translation)
         else:
             self.Owner.Scalarator.Active = False
+        #endif block
+    #endef updateSprout()
     
     def onActivate(self, aEvent):
-        print("Sprout.onActivate()")
+        #print("Sprout.onActivate()")
         if self.GameOver:
             print("self.Gameover")
             return
+        
+        if(not self.isMouseHover):
+            return; 
+        #endif
         
         if not self.Type == sproutTypes.blank:
             #self.changeType(sproutTypes.blank)
@@ -502,5 +522,28 @@ class Sprout:
         if ground.Sprite:
             ground.Sprite.Color = Color.White
             #self.FlowerGrid.UpdatePoisonField()
+    
+    def onMouseEnter(self, mouseEvent):
+        self.isMouseHover = True;
+        print("Sprout.onMouseEnter() isMouseHover = {}".format(self.isMouseHover));
+    #endef onMouseEnter()
+    
+    def onMouseExit(self, mouseEvent):
+        self.isMouseHover = False;
+        print("Sprout.onMouseExit() isMouseHover = {}".format(self.isMouseHover));
+    #endef onMouseExit()
+    
+    
+    # This was added in JUN 2019 to test if we can use an event to bypass the HUD. The the message binding should commented out.
+    def onKeyDown(self, keyboardEvent):
+        #print("= Sprout.onKeyDown() = ");
+        if(not self.isMouseHover):
+            return;
+        #endif
+        
+        if(Zero.Keyboard.KeyIsPressed(Zero.Keys.Space)):
+            self.onActivate(keyboardEvent);
+        #endif
+    #endef onKeyDown()
 
 Zero.RegisterComponent("Sprout", Sprout)

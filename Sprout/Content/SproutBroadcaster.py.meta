@@ -1,0 +1,8 @@
+TextContent = 
+{
+	PyScriptBuilder = 
+	{
+		string Name = "SproutBroadcaster",
+		uint64 ResourceId = 5d54ce0267f8e5eb,
+	},
+},

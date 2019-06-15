@@ -19,9 +19,9 @@ class HUDMaker:
         pEvent.Space = self.Space
         self.HUDSpace.DispatchEvent("GameSpaceEvent", pEvent)
         
-        if self.Owner.CameraViewport:
-            self.Owner.CameraViewport.Background = False
-            self.Owner.CameraViewport.Layer = 0
+        #if self.Owner.CameraViewport:
+            #self.Owner.CameraViewport.Background = False
+            #self.Owner.CameraViewport.Layer = 1
             #self.Owner.CameraViewport.Renderer = "LevelSettings"
     #end Initialize()
     

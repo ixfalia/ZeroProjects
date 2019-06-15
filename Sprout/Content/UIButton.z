@@ -1,0 +1,156 @@
+//Copyright: © 2016 DigiPen, All Rights Reserved.
+
+
+// Enums to track the different states a button can be in
+enum ButtonState {Default, Hovered, Clicked}
+
+// Custom event that notifies the UIMenuManager of state changes to a button
+class UIButtonEvent : ZilchEvent
+{
+  // Registers UIButtonEvent as the custom event's string type identifier
+  sends UIButtonEvent : UIButtonEvent;
+  
+  // Button that underwent a state change
+  var Button : Cog = null;
+  
+  // The current state of the button
+  var State : ButtonState = ButtonState.Default;
+  
+  // The level to load when the button is clicked (if any)
+  var LevelToLoad : Level = null;
+}
+
+// Class for the UIButton component
+class UIButton : ZilchComponent
+{
+  // This component requires a reactive component
+  [Dependency]
+  var Reactive : Reactive = null;
+  
+  // Should this component be active?
+  [Property]
+  var Active : Boolean = true;
+  
+  // Sprite Sources for Default, Hovered, and Clicked states
+  [Property]
+  var DefaultSprite : SpriteSource = null;
+  
+  [Property]
+  var HoveredSprite : SpriteSource = null;
+  
+  [Property]
+  var ClickedSprite : SpriteSource = null;
+  
+  // Property to select which level should load when this button is clicked
+  [Property]
+  var LevelToLoad : Level = null;
+  
+  // Current state of the button
+  var CurrentState : ButtonState = ButtonState.Default;
+  
+  function Initialize(init : CogInitializer)
+  {
+    // Connections to the needed Mouse events (Enter, Exit, Up, Down)
+    Zero.Connect(this.Owner, Events.MouseEnter, this.OnMouseEnter);
+    Zero.Connect(this.Owner, Events.MouseExit, this.OnMouseExit);
+    Zero.Connect(this.Owner, Events.MouseUp, this.OnMouseUp);
+    Zero.Connect(this.Owner, Events.MouseDown, this.OnMouseDown);
+  }
+  
+  // Responds to the mouse entering the boundaries of the button
+  function OnMouseEnter(event : ViewportMouseEvent)
+  {
+    // Calls the function for the Hovered state
+    this.HoveredState();
+  }
+  // Responds to the mouse exiting the boundaries of the button
+  function OnMouseExit(event : ViewportMouseEvent)
+  {
+    // Calls the function for the Default state
+    this.DefaultState();
+  }
+  
+  // Responds to the mouse releasing a button
+  function OnMouseUp(event : ViewportMouseEvent)
+  {
+    // Goes back to the hovered space, as mouse would most likely still
+    // be hovering over the button just clicked
+    this.HoveredState();
+  }
+  
+  // Responds to the mouse clicking a button
+  function OnMouseDown(event : ViewportMouseEvent)
+  {
+    // Calls the function for the clicked state
+    this.ClickedState();
+  }
+  
+  // Sets the button to the default state
+  function DefaultState()
+  {
+    
+    // Changes this object's SpriteSource to the one selected in the
+    // DefaultSprite variable
+    this.Owner.Sprite.SpriteSource = this.DefaultSprite;
+    
+    // Changes CurrentState to Default (to be sent as info with event dispatch)
+    this.CurrentState = ButtonState.Default;
+    
+    // Calls the function that dispatches the event with state info
+    this.DispatchState();
+  }
+  
+  // Sets the button the the hovered (or focused) state
+  function HoveredState()
+  {
+    
+    // Changes this object's SpriteSource to the one selected in the
+    // HoveredSprite variable
+    this.Owner.Sprite.SpriteSource = this.HoveredSprite;
+    
+    // Changes CurrentState to Hovered (to be sent as info with event dispatch)
+    this.CurrentState = ButtonState.Hovered;
+    
+    // Calls the function that dispatches the event with state info
+    this.DispatchState();
+  }
+  
+  // If valid, sets the button to the clicked state
+  function ClickedState()
+  {
+    //Check to make sure the ButtonState isn't already in Hovered state 
+    if(this.CurrentState != ButtonState.Hovered)
+    {
+      return;
+    }
+    
+    // Changes this object's SpriteSource to the one selected in the
+    // ClickedSprite variable
+    this.Owner.Sprite.SpriteSource = this.ClickedSprite;
+    
+    // Changes CurrentState to Clicked (to be sent as info with event dispatch)
+    this.CurrentState = ButtonState.Clicked;
+    
+    // Calls the function that dispatches the event with state info
+    this.DispatchState();
+  }
+  
+  
+  // Dispatches an instance of UIButtonEvent that sends the following info: a 
+  // reference to the button object itself, the current state of the button, 
+  // and the level to load to if the button is clicked.
+  function DispatchState()
+  {
+    // Creates a new instance of the UIButtonEvent custom event
+    var buttonEvent : UIButtonEvent = new UIButtonEvent();
+    
+    // Sets the values of the information to be sent with the event
+    buttonEvent.Button = this.Owner;
+    buttonEvent.State = this.CurrentState;
+    buttonEvent.LevelToLoad = this.LevelToLoad;
+    
+    //Dispatches the event onto the space
+    this.Space.DispatchEvent(Events.UIButtonEvent, buttonEvent);
+  }
+}
+

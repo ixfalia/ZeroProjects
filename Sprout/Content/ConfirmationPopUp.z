@@ -1,0 +1,98 @@
+// Copyright: © 2016 DigiPen, All Rights Reserved.
+
+// Class: ConfirmationPopUp
+// Brief: This component is intended to be used with the UIMenuManager component. It
+// should be attached to the LevelSettings object (or any permanent object) of any level
+// where a confirmation may be needed
+
+
+// Class for a custom event that requests a confirmation window to appear
+class ConfirmationPopUpRequest : ZilchEvent
+{
+  // Registers ConfirmationPopUpRequest as the custom event's string type identifier
+  sends ConfirmationPopUpRequest : ConfirmationPopUpRequest;
+  // Variable that sends a reference to the object that made the request
+  var Source : Cog = null;
+}
+
+// Class for a custom event that responds to a confirmation request either affirmtively (true) 
+// or negatiovely (false). Used here for buttons confirmation to quit buttons
+class ConfirmationPopUpResponse : ZilchEvent
+{
+  // Registers ConfirmationPopUpResponse as the custom event's string type identifier
+  sends ConfirmationPopUpResponse : ConfirmationPopUpResponse;
+  // Variable that sends the true/false (yes/no) response to quit confirmation
+  var Response : Boolean = false;
+}
+
+// Class for the ConfirmationPopUp component
+class ConfirmationPopUp : ZilchComponent
+{
+  // The level with the confirmation window in it to be loaded in the new space
+  [Property]
+  var ConfirmationLevel : Level = null;
+  
+  // Variable to reference the new space where the confirmation window will exist
+  var ConSpace : Space = null;
+  
+  // Space archetype used to create the new space for the level containing the
+  // confirmation window
+  [Property]
+  var ConSpaceArchetype : Archetype = null;
+  
+  // The parent object for the buttons in a level
+  [Property]
+  var SourceMenu : CogPath;
+  
+  function Initialize(init : CogInitializer)
+  {
+    // Connects to the ConfirmationPopUpRequest custom event
+    Zero.Connect(this.Space, Events.ConfirmationPopUpRequest, this.OnConfirmationPopUpRequest);
+  }
+  
+  // Response function called when ConfirmationPopUpRequest event is heard
+  function OnConfirmationPopUpRequest(event : ConfirmationPopUpRequest)
+  {
+    // Creates and gets a reference to a new space made the confirmation window level
+    this.ConSpace = this.GameSession.CreateNamedSpace("ConSpace", this.ConSpaceArchetype);
+    
+    // Loads the level that contains the confirmation window
+    this.ConSpace.LoadLevel(this.ConfirmationLevel);
+    
+    // Calls the SetChildrenReactive function in the UIMenuManager component, passing in
+    // false to deactivate the reactive components on the menu buttons
+    this.SourceMenu.Cog.UIMenuManager.SetChildrenReactive(false);
+    
+    // Gets a reference to the SelectionArrow and checks to see if it exists in the level
+    var selectionArrow = this.SourceMenu.Cog.UIMenuManager.SelectionArrow.Cog;
+    if(selectionArrow != null)
+    {
+      // If it does exist, make the SelectionArrow invisible
+      selectionArrow.Sprite.Visible = false;
+    }
+    
+    // Connects to the ConfirmationPopUpResponse custom event
+    Zero.Connect(this.Space, Events.ConfirmationPopUpResponse, this.OnConfirmationPopUpResponse);
+  }
+  
+  // Response function called when ConfirmationPopUpResponse event is heard
+  function OnConfirmationPopUpResponse(event : ConfirmationPopUpResponse)
+  {
+    // If the the response sent with the event is true...
+    if(event.Response)
+    {
+      //Quit out of the game
+      this.GameSession.Quit();
+    }
+    
+    // If it's false, call the SetChildrenReactive function in the UIMenuManager component, 
+    // passing in "true" to activate the reactive components on the menu buttons
+    this.SourceMenu.Cog.UIMenuManager.SetChildrenReactive(true);
+    
+    // Disconnects from the ConfirmationPopUpResponse cusotm event
+    Zero.Disconnect(this.Space, Events.ConfirmationPopUpResponse, this.Owner);
+    
+    //Destroys the space created for the confirmation window level
+    this.ConSpace.Destroy();
+  }
+}
