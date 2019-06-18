@@ -35,6 +35,8 @@ class SproutBroadcaster:
     def onMouseDown(self, keyEvent):
         if(not self.GameSpace):
             print("SproutBroadcaster.onMouseDown(): Game Space is not defined.");
+            return;
+        #endif
         
         sproutEvent = Zero.ScriptEvent();
         

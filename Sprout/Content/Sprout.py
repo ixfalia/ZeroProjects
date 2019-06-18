@@ -22,6 +22,7 @@ def totalSprouts():
     pass
 
 class Sprout:
+    DebugPrint = Property.Bool(False)
     Type = Property.Enum(enum = sproutTypes)
     Effect = Property.Enum(enum = effectTypes)
     gridPosition = Property.Vector2(default=VectorMath.Vec2())
@@ -60,6 +61,8 @@ class Sprout:
         self.isPoisoned = False
         self.TurnCount = self.GrowthTime
         self.GameOver = False
+        
+        #self.StartingScale = self.Owner.Transform.Scale
         
         #MORE HACKS
         self.isMouseHover = False;
@@ -145,6 +148,7 @@ class Sprout:
         if self.bloomed:
             self.Owner.Sprite.SpriteSource = "DemoFlower"
             self.updateText()
+            self.Owner.Transform.Scale = self.Owner.Scalarator.startingScale
             if self.rainbow:
                 self.rainbow.SphericalParticleEmitter.EmitRate = 16
             if self.poison:
@@ -525,12 +529,16 @@ class Sprout:
     
     def onMouseEnter(self, mouseEvent):
         self.isMouseHover = True;
-        print("Sprout.onMouseEnter() isMouseHover = {}".format(self.isMouseHover));
+        
+        if(self.DebugPrint):
+            print("Sprout.onMouseEnter() isMouseHover = {}".format(self.isMouseHover));
     #endef onMouseEnter()
     
     def onMouseExit(self, mouseEvent):
         self.isMouseHover = False;
-        print("Sprout.onMouseExit() isMouseHover = {}".format(self.isMouseHover));
+        
+        if(self.DebugPrint):
+            print("Sprout.onMouseExit() isMouseHover = {}".format(self.isMouseHover));
     #endef onMouseExit()
     
     

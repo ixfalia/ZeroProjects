@@ -1,13 +1,32 @@
 Sprout Debugging Ideas
 
-Sprout Placing Broken (CHECK!)
+(fixed) Sprout Placing Broken (CHECK!)
     #= Go through all components in redFlower/sproutSeed and see if any of them could block messages
     #= Bypass UIButton altogether for Sprout
     #= Look up resources for mouse events
     #= Change Build Version to see if that fixes things. 
+	(Solution) HUD captures mouse clicks, sends an event, and Sprouts Listen for it, the Sprout that the mouse is hovering over is the one that responds. 
 
-On Game Over Sprout Text still Visible
+(Fixed) On Game Over Sprout Text still Visible (Possibly fixed now)
     = Look into making Sprout text invisible using the onGameOver event
 
 Random Fast EndingMusic Played!?
     = Bug? or Feature?
+	(causes) if the pitch is tuned up because a combo chain is occuring on the end of the turn it recreates it.
+	= Possible solution is to move the EndLevel sound logic code in SoundManage.py above the pitch adapting code. Since it has a return it will end.
+	= but I almost want to leave it in as a funny quirk
+	
+Rotator snaps and doesn't smoothly change directions
+
+(possibly fixed?) RainbowFlower is white at first
+
+(posibly fixed?) Rainbow Flower doesn't always display particle effect when it's next to be planted
+
+Bloom Chains on the last turn don't disappear
+
+(Fixed) = Effect Chain (the line up of the next seeds) slowly drifts to the left if you place sprouts too fast, in particular the last one and first one =
+	(solution) = added variable to track original position of all the objects, and another to track the big tracking flower.
+	
+Bloomed Flowers are distorted in scale somewhate
+	= It's likely that when scalerator is turned off it's not setting it back to the original settings
+	(solution) revert back to original scale when it blooms

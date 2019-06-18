@@ -2,7 +2,7 @@ DataContent =
 {
 	DataBuilder = 
 	{
-		string Name = "CircleSprite",
+		string Name = "SproutTracker",
 		uint64 ResourceId = 5254a903e9fdc442,
 		string LoaderType = "Cog",
 		uint Version = 0,

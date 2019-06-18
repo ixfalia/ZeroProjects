@@ -23,11 +23,14 @@ class EffectTracker:
         self.rainbow = None
         self.currentColor = self.Owner.Sprite.Color
         self.trackerList = []
+        self.originalPositionList = []
+        self.TrackerFlowerPosition = self.Owner.Transform.Translation
         
         for i in range(4):
             position += offset
-            obj = self.Space.CreateAtPosition("CircleSprite", position)
+            obj = self.Space.CreateAtPosition("SproutTracker", position)
             self.trackerList.insert(i, obj)
+            self.originalPositionList.insert(i, position)
         
         self.currentEffect = effectTypes.sunny
     
@@ -37,7 +40,7 @@ class EffectTracker:
         
         if self.Owner.Sprite:
             #self.Owner.Sprite.Color = eEvent.Color
-            self.shakeSeed(self.Owner, 0, eEvent.Color)
+            self.shakeSeed(self.Owner, 0, eEvent.Color, self.TrackerFlowerPosition)
             #self.Owner.ColorShifting.shiftColor(eEvent.Color)
             self.Owner.ColorShifting.Active = False
             #self.Owner.ColorShifting.RandomShift = False
@@ -90,12 +93,12 @@ class EffectTracker:
                 #print("EffectTracker.EffectQueue()", color)
                 #self.trackerList[i].ColorShifting.shiftColor(color)
                 #self.trackerList[i].Sprite.Color = color
-                self.shakeSeed(self.trackerList[i], delay+i*0.2, color)
+                self.shakeSeed(self.trackerList[i], delay+i*0.2, color, self.originalPositionList[i])
                 i += 1
         
         self.currentEffect = nuEffect
     
-    def shakeSeed(self, seed, delay, color):
+    def shakeSeed(self, seed, delay, color, originalPosition):
         seq = Action.Sequence(seed)
         offset = VectorMath.Vec3(-0.2,0.1,0)
         position = offset + seed.Transform.Translation
@@ -105,7 +108,7 @@ class EffectTracker:
         Action.Property(seq, seed.Transform, "Translation", position, animationDelay)
         position = seed.Transform.Translation - offset
         Action.Property(seq, seed.Transform, "Translation", position, animationDelay)
-        Action.Property(seq, seed.Transform, "Translation", seed.Transform.Translation)
+        Action.Property(seq, seed.Transform, "Translation", originalPosition)
         Action.Call(seq, self.setColor, (seed,color))
     
     def setColor(self, seed, color):

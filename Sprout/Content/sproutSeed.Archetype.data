@@ -40,7 +40,7 @@ Cog =
 	UIButton = 
 	{
 		bool Active = true,
-		bool DebugMode = true,
+		bool DebugMode = false,
 		string enterState = "MouseEnter",
 		string defaultEvent = "UIState_Default",
 		string hoverEvent = "UIState_Hover",

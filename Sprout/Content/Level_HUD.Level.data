@@ -49,7 +49,7 @@ Level =
 		},
 		SproutBroadcaster = 
 		{
-			bool DebugPrint = true,
+			bool DebugPrint = false,
 			string SproutPlacementEvent = "SproutClickEvent",
 		},
 	},
