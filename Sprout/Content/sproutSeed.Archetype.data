@@ -143,10 +143,23 @@ Cog =
 	},
 	Sprout = 
 	{
+		bool DebugPrint = false,
 		string Type = "blank",
 		string Effect = "",
 		Vec2 gridPosition = [0, 0],
 		bool bloomed = false,
 		int GrowthTime = 3,
+	},
+	SmoothRotator = 
+	{
+		bool Active = false,
+		bool RotateX = false,
+		float RotatorX = 0,
+		bool RotateY = false,
+		float RotatorY = 0,
+		bool RotateZ = true,
+		float RotatorZ = 1,
+		bool Sway = true,
+		float SwayPeriod = 0.75,
 	},
 },

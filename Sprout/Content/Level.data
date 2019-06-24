@@ -87,7 +87,7 @@ Level =
 			float FieldOfView = 45,
 			float NearPlane = 0.5,
 			float FarPlane = 500,
-			float Size = 31,
+			float Size = 51.1103,
 		},
 		EditorCameraController = 
 		{
@@ -270,12 +270,19 @@ Level =
 			float SwayPeriod = 0.25,
 		},
 	},
-	ArchetypeInstance = 
+	Cog = 
 	{
-		string Name = "5254ad4c5211785b:EffectTracker",
 		LinkId = 
 		{
 			uint Id = 6,
+		},
+		Named = 
+		{
+			string Name = "EffectTracker",
+		},
+		Archetyped = 
+		{
+			string Name = "5254ad4c5211785b:EffectTracker",
 		},
 		Transform = 
 		{
@@ -283,9 +290,74 @@ Level =
 			Vec3 Scale = [0.85, 0.85, 1],
 			Quat Rotation = [0, 0, 0, 1],
 		},
-		Named = 
+		Sprite = 
 		{
-			string Name = "EffectTracker",
+			bool Visible = true,
+			bool VisibilityCulling = true,
+			bool VisibilityEvents = false,
+			bool CastShadows = false,
+			Vec4 Color = [1, 1, 1, 1],
+			BlendMode BlendMode = Alpha,
+			SpriteGeometryMode GeometryMode = ZPlane,
+			string SpriteLayer = "52ad5fa30d7fcd50:DefaultSpriteLayer",
+			string SpriteSource = "5274db4c2e7c11f9:Circle",
+			bool RenderMask = false,
+			bool FlipX = false,
+			bool FlipY = false,
+			bool OnTop = false,
+			bool AnimationActive = true,
+			float AnimationSpeed = 1,
+			uint StartFrame = 0,
+		},
+		EffectTracker = 
+		{
+			bool Debug = false,
+		},
+		Rotator = 
+		{
+			bool Active = false,
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 0.2,
+			bool Sway = true,
+			float SwayPeriod = 0.8,
+		},
+		SoundManage = 
+		{
+			bool Debug = false,
+		},
+		SoundEmitter = 
+		{
+			bool StartPlaying = false,
+			int ExtraPriority = 0,
+			string CueName = "52a3c5d2db28e053:LevelEnd",
+			float Volume = 1,
+			float Pitch = 1,
+			bool Positional = false,
+		},
+		ColorShifting = 
+		{
+			bool Debug = false,
+			bool Active = false,
+			bool RandomShift = false,
+			float ShiftTime = 0.4,
+			bool SpriteShift = true,
+			bool TextShift = false,
+		},
+		SmoothRotator = 
+		{
+			bool Active = true,
+			bool RotateX = false,
+			float RotatorX = 0,
+			bool RotateY = false,
+			float RotatorY = 0,
+			bool RotateZ = true,
+			float RotatorZ = 1,
+			bool Sway = true,
+			float SwayPeriod = 0.4,
 		},
 	},
 	Cog = 

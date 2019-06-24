@@ -64,8 +64,7 @@ class Sprout:
         
         #self.StartingScale = self.Owner.Transform.Scale
         
-        #MORE HACKS
-        self.isMouseHover = False;
+        self.isMouseHover = False; #MORE HACKS
         
         if self.Type == sproutTypes.blank:
             self.Owner.SpriteText.Visible = False
@@ -149,6 +148,11 @@ class Sprout:
             self.Owner.Sprite.SpriteSource = "DemoFlower"
             self.updateText()
             self.Owner.Transform.Scale = self.Owner.Scalarator.startingScale
+            
+            #new 2019
+            #self.Owner.Rotator.Active = False;
+            #self.Owner.SmoothRotator.Active = True;
+            
             if self.rainbow:
                 self.rainbow.SphericalParticleEmitter.EmitRate = 16
             if self.poison:
@@ -156,6 +160,8 @@ class Sprout:
                 self.poison.SphericalParticleEmitter.EmitterSize = Vec3(4,4,1)
         else:
             self.Owner.Scalarator.Active = True
+            #self.Owner.Rotator.Active = True;
+            #self.Owner.SmoothRotator.Active = False;
         #endif block
         
         if self.Type == sproutTypes.blank:

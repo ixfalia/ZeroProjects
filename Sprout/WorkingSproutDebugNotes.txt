@@ -10,13 +10,18 @@ Sprout Debugging Ideas
 (Fixed) On Game Over Sprout Text still Visible (Possibly fixed now)
     = Look into making Sprout text invisible using the onGameOver event
 
-Random Fast EndingMusic Played!?
+(ignore) Random Fast EndingMusic Played!?
     = Bug? or Feature?
 	(causes) if the pitch is tuned up because a combo chain is occuring on the end of the turn it recreates it.
 	= Possible solution is to move the EndLevel sound logic code in SoundManage.py above the pitch adapting code. Since it has a return it will end.
 	= but I almost want to leave it in as a funny quirk
 	
-Rotator snaps and doesn't smoothly change directions
+(fixed but with reservations) Rotator snaps and doesn't smoothly change directions
+	= Found a fix change self.Owner.Transform.RotateByAnglesXYZ() to self.Owner.Transform.RotateAnglesLocal() it takes a Vec3()
+	= Just remember to either use VectorMath.Vec3() or set Vec3 = VectorMath.Vec3 at the top
+	= I kinda like the janky jiggling, it's just jarring with the flowers, so I am going to make another component called SmoothRotator to incorporate this functionality.
+	= In the future I might name this component Jiggle
+	= I kept some jiggling.
 
 (possibly fixed?) RainbowFlower is white at first
 
@@ -27,6 +32,6 @@ Bloom Chains on the last turn don't disappear
 (Fixed) = Effect Chain (the line up of the next seeds) slowly drifts to the left if you place sprouts too fast, in particular the last one and first one =
 	(solution) = added variable to track original position of all the objects, and another to track the big tracking flower.
 	
-Bloomed Flowers are distorted in scale somewhate
+(fixed) Bloomed Flowers are distorted in scale somewhate
 	= It's likely that when scalerator is turned off it's not setting it back to the original settings
 	(solution) revert back to original scale when it blooms

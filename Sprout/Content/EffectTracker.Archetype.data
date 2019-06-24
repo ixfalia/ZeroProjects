@@ -43,7 +43,7 @@ Cog =
 	},
 	Rotator = 
 	{
-		bool Active = true,
+		bool Active = false,
 		bool RotateX = false,
 		float RotatorX = 0,
 		bool RotateY = false,
@@ -74,5 +74,17 @@ Cog =
 		float ShiftTime = 0.4,
 		bool SpriteShift = true,
 		bool TextShift = false,
+	},
+	SmoothRotator = 
+	{
+		bool Active = true,
+		bool RotateX = false,
+		float RotatorX = 0,
+		bool RotateY = false,
+		float RotatorY = 0,
+		bool RotateZ = true,
+		float RotatorZ = 1,
+		bool Sway = true,
+		float SwayPeriod = 0.4,
 	},
 },

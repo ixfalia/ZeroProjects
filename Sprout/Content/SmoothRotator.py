@@ -7,7 +7,7 @@ import math
 
 Vec3 = VectorMath.Vec3
 
-class Rotator:
+class SmoothRotator:
     Active = Property.Bool( default = True )
     
     RotateX = Property.Bool( default = False )
@@ -53,12 +53,14 @@ class Rotator:
         if self.RotateX:
             vecAxis = Vec3(1, 0, 0);
             angle = self.negator * self.RotatorX * math.pi * self.Timer;
-            self.Owner.Transform.Rotation = VectorMath.Quat.AxisAngle(vecAxis, angle);
+            #self.Owner.Transform.Rotation = VectorMath.Quat.AxisAngle(vecAxis, angle);
+            self.Owner.Transform.RotateAnglesLocal(Vec3(self.negator * self.RotatorX * NormalizedTime, 0, 0));
         
         if self.RotateY:
             vecAxis = Vec3(0, 1, 0);
             angle = self.negator * self.RotatorY * math.pi * self.Timer;
-            self.Owner.Transform.Rotation = VectorMath.Quat.AxisAngle(vecAxis, angle);
+            #self.Owner.Transform.Rotation = VectorMath.Quat.AxisAngle(vecAxis, angle);
+            self.Owner.Transform.RotateAnglesLocal(Vec3(0, self.negator * self.RotatorY * NormalizedTime, 0));
         
         if self.RotateZ:
             vecAxis = Vec3(0, 0, 1);
@@ -66,8 +68,8 @@ class Rotator:
             #angle = self.negator * math.radians(self.RotatorZ * 180) * self.Timer;
             #angle = self.negator * self.RotatorZ * 180 * self.Timer;
             #print("Rotator:OnUpdate() RotateZ: timer =", self.Timer," dt =", Event.Dt, "angle =", angle, "\n")
-            self.Owner.Transform.Rotation = VectorMath.Quat.AxisAngle(vecAxis, angle);
-            #self.Owner.Transform.RotateAnglesLocal(Vec3(0, 0, self.negator * self.RotatorZ * NormalizedTime));
+            #self.Owner.Transform.Rotation = VectorMath.Quat.AxisAngle(vecAxis, angle);
+            self.Owner.Transform.RotateAnglesLocal(Vec3(0, 0, self.negator * self.RotatorZ * NormalizedTime));
             #self.Owner.Transform.Translation = self.Owner.Transform.Rotation.rotate(Vec3(5, 0, 0))
             
         
@@ -78,4 +80,4 @@ class Rotator:
     
 #endclass
 
-Zero.RegisterComponent("Rotator", Rotator)
+Zero.RegisterComponent("SmoothRotator", SmoothRotator)
