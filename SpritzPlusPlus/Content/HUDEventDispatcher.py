@@ -8,7 +8,7 @@ class HUDEventDispatcher:
         pass
     
     def DispatchHUDEvent(self, EventName, Event):
-        HUDSpace = Zero.Game.FindSpaceByName("HUDSpace")
+        HUDSpace = self.GameSession.FindSpaceByName("HUDSpace")
         
         if HUDSpace:
             HUDSpace.DispatchEvent(EventName, Event)

@@ -42,7 +42,7 @@ class LevelSelectController:
         #print("LevelSelectController.onLevel():")
         #print("\t", self.ButtonList)
         
-        lastLevel = Zero.Game.LevelManager.getLastLevel()
+        lastLevel = self.GameSession.LevelManager.getLastLevel()
         print("onLevel(). Last Level:", lastLevel.Name)
         button, self.currentSelection = self.findButtonWithLevel(lastLevel)
         print("onLevel(). button", button, "currentselection", self.currentSelection)
@@ -122,11 +122,11 @@ class LevelSelectController:
         Action.Call(seq, self.SendUpdateEvent)
     
     def SendUpdateEvent(self):
-        selectionID = Zero.Game.LevelManager.levelTable.FindIndexOfResource(self.ButtonList[self.currentSelection].LevelChangeButton.LevelChange)
+        selectionID = self.GameSession.LevelManager.levelTable.FindIndexOfResource(self.ButtonList[self.currentSelection].LevelChangeButton.LevelChange)
         e = Zero.ScriptEvent()
         e.CurrentSelection = selectionID
         e.Position = self.Owner.Transform.Translation
-        e.LevelData = Zero.Game.AccomplishmentDataManager.getLevelData(selectionID)
+        e.LevelData = self.GameSession.AccomplishmentDataManager.getLevelData(selectionID)
         
         #print(e.LevelData.LevelName)
         #print(e.LevelData.TotalFlowers)
@@ -141,8 +141,8 @@ class LevelSelectController:
     def checkButtonColors(self):
         for button in self.ButtonList:
             level = button.LevelChangeButton.LevelChange
-            index = Zero.Game.LevelManager.levelTable.FindIndexOfResource(level)
-            data = Zero.Game.AccomplishmentDataManager.getLevelData(index)
+            index = self.GameSession.LevelManager.levelTable.FindIndexOfResource(level)
+            data = self.GameSession.AccomplishmentDataManager.getLevelData(index)
             
             if data.Played:
                 button.Sprite.Color = Color.CadetBlue

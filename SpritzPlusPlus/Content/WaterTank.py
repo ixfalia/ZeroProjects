@@ -21,7 +21,7 @@ class WaterTank:
         Zero.Connect(self.Space, Events.LevelStarted, self.onLevelStarted)
         #Zero.Connect(self.Space, "HUDCreated", self.onHUDCreation)
         
-        self.HUDSpace = Zero.Game.FindSpaceByName("HUDSpace")
+        self.HUDSpace = self.GameSession.FindSpaceByName("HUDSpace")
         
         #self.updatePercent()
     #enddef

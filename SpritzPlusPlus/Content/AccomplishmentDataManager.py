@@ -71,7 +71,7 @@ class AccomplishmentDataManager:
         flowers = self.Data[currentID].Flowers
         levelFlowers = fEvent.FlowerCount
         
-        print(Zero.Game.LevelManager.levelTable.GetResourceAt(currentID).Name)
+        print(self.GameSession.LevelManager.levelTable.GetResourceAt(currentID).Name)
         print(flowers)
         print(levelFlowers)
         
@@ -94,7 +94,7 @@ class AccomplishmentDataManager:
         self.Data[currentID].Played = True
     
     def checkIfPlayed(self, Level):
-        ID = Zero.Game.LevelManager.levelTable.FindIndexOfResource(Level)
+        ID = self.GameSession.LevelManager.levelTable.FindIndexOfResource(Level)
         return self.Data[ID].Played
 
 Zero.RegisterComponent("AccomplishmentDataManager", AccomplishmentDataManager)

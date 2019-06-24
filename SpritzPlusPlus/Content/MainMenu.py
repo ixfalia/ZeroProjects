@@ -91,7 +91,7 @@ class MainMenu:
         
         if(self.Owner.Sprinkler):
             #watervel = Vec3( 2*random.uniform(-0.5, 0.5), 0.8, 0 )
-            random.seed(self.Space.TimeSpace.CurrentTime)
+            random.seed(self.Space.TimeSpace.RealTimePassed)
             
             watervel = self.menuPoint.Transform.Translation - self.Owner.Transform.Translation
             watervel *= 0.5

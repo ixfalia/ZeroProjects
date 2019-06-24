@@ -37,7 +37,7 @@ class LevelChangeButton:
         if not self.useLevelTable:
             self.Space.LoadLevel(self.LevelChange)
         else:
-            Zero.Game.LevelManager.loadNextLevel()
+            self.GameSession.LevelManager.loadNextLevel()
 #end Class
 
 Zero.RegisterComponent("LevelChangeButton", LevelChangeButton)

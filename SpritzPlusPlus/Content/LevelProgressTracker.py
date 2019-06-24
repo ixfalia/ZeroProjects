@@ -5,8 +5,8 @@ import VectorMath
 
 class LevelProgressTracker:
     def Initialize(self, initializer):
-        TotalLevels = Zero.Game.LevelManager.getLevelCount()
-        CurrentLevel =  Zero.Game.LevelManager.getCurrentLevelIndex()
+        TotalLevels = self.GameSession.LevelManager.getLevelCount()
+        CurrentLevel =  self.GameSession.LevelManager.getCurrentLevelIndex()
         
         self.Owner.SpriteText.Text = "Levels: %d / %d" %(CurrentLevel-1, TotalLevels-3)
 

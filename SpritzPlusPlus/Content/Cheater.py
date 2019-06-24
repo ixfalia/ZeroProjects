@@ -30,10 +30,10 @@ class Cheater:
                 self.Owner.Teleport.GoToNextCheckpoint()
             
             if Zero.Keyboard.KeyIsPressed(Keys.LeftBracket):
-                Zero.Game.LevelManager.loadPreviousLevel()
+                self.GameSession.LevelManager.loadPreviousLevel()
             
             if Zero.Keyboard.KeyIsPressed(Keys.RightBracket):
-                Zero.Game.LevelManager.loadNextLevel()
+                self.GameSession.LevelManager.loadNextLevel()
             
         #endif
     #enddef

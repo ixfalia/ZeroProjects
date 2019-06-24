@@ -27,7 +27,7 @@ class ButtonLogic:
         elif self.Owner.MenuButton:
             self.Owner.MenuButton.do()
         else:
-            random.seed(self.Space.TimeSpace.CurrentTime)
+            random.seed(self.Space.TimeSpace.RealTimePassed)
         
             for i in range(3):
                 collectible = self.Space.Create("twinkle")

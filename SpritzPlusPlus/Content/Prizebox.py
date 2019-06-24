@@ -25,7 +25,7 @@ class Prizebox:
         if self.isUsed:
             return
             
-        random.seed(self.Space.TimeSpace.CurrentTime)
+        random.seed(self.Space.TimeSpace.RealTimePassed)
         
         if not self.SoundCue == "":
             self.Owner.SoundEmitter.Pitch = 1

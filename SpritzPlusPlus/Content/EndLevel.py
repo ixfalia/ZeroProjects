@@ -12,6 +12,6 @@ class EndLevel:
         or gEvent.Button == Zero.Buttons.DpadLeft or gEvent.Button == Zero.Buttons.DpadRight):
             return
         
-        Zero.Game.LevelManager.loadLevelIndex(1)
+        self.GameSession.LevelManager.loadLevelIndex(1)
 
 Zero.RegisterComponent("EndLevel", EndLevel)

@@ -19,7 +19,7 @@ class Fader:
         Zero.Connect(self.Space, Events.LogicUpdate, self.onUpdate)
         
         #clear any actions that might be lingering
-        self.Owner.Actions.Clear()
+        self.Owner.Actions.Cancel();
         
         currentColor = self.Owner.Sprite.Color
         self.Owner.Sprite.Color = Vec4(currentColor.r, currentColor.g, currentColor.b, self.defaultOpacity)

@@ -47,7 +47,7 @@ class HoverSprite:
             rotX = math.radians(self.Rotate.x)
             rotY = math.radians(self.Rotate.y)
             rotZ = math.radians(self.Rotate.z)
-            self.icon.Transform.RotateByAnglesXYZ(rotX, rotY, rotZ)
+            self.icon.Transform.RotateAnglesLocal(VectorMath.Vec3(rotX, rotY, rotZ))
             
             self.icon.Transform.Scale = self.Scale
             

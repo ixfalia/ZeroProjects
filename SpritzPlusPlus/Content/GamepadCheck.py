@@ -71,7 +71,7 @@ class GamepadCheck:
         self.Owner.Fader.FadeOut()
     
     def NextLevel(self):
-        Zero.Game.LevelManager.loadNextLevel()
+        self.GameSession.LevelManager.loadNextLevel()
     
     def detectController(self):
         for i in range(0,3):

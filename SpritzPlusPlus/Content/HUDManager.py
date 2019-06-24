@@ -159,11 +159,11 @@ class HUDManager:
         if command == "LevelChange":
             self.changeLevel(param)
         elif command == "Quit":
-            Zero.Game.Quit()
+            self.GameSession.Quit()
         elif command == "Reset":
-            Zero.Game.Reset()
+            self.GameSession.Reset()
         elif command == "Pause":
-            Zero.Game.Pause()
+            self.GameSession.Pause()
         else:
             print("UIManager Do: " + command + " is not a UI command.")
         #endif

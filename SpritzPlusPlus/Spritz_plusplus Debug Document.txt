@@ -1,0 +1,25 @@
+ = Spritz Debug Document =
+===========================
+= Key =
+[] unaddressed
+[...] in progress
+[!] major bug! solution is likely unknown
+[?] addressed but unsure if complete, expect potential bugs
+[+] addressed
+[*} addressed, but read notes
+============================
+
+	[...] Zero.Game. is deprecated and no longer works
+		= the solution to this was found in Sprouts, replace Zero.Game. with self.GameSession.
+	
+	[?] Action.Clear() is deprecated and no longer exists
+		= not 100% sure but it's likely that Action.Cancel() is the replacement
+		
+	[] Moving Walls and Paths Broken
+	
+	[] Signs Rotate
+	
+	[] Rotator seems to have X and Y rotations Swapped
+	
+	[] Water Tank no longer translucent
+		= Material is likely broken, there was an error message about it in the beginning.
